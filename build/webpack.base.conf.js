@@ -55,21 +55,12 @@ module.exports = {
         loader: 'babel-loader',
         include: [resolve('resources'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
-      // {
-      //   test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-      //   loader: 'url-loader',
-      //   options: {
-      //     limit: 10000,
-      //     name: utils.assetsPath('img/[name].[ext]'),
-      //   }
-      // },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        use: {
-          loader: 'url-loader',
-          options: {
-              name: 'img/[name].[ext]',
-          },
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: utils.assetsPath('img/[name].[ext]'),
         }
       },
       {
