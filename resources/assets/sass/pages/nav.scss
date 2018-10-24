@@ -1,0 +1,21 @@
+nav {
+    background-color: $black;
+    display: flex;
+    &>a {
+        font-size: 0;
+        svg {
+            display: inline-block;
+            width: 60px;
+            fill: $white;
+            padding: 10px;
+        }
+    }
+    ul {
+        @include ul--style;
+        height: 80px;
+        li {
+            cursor: pointer;
+        }
+        color: $white;
+    }    
+}
