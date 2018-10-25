@@ -1,37 +1,39 @@
 
 <template>
-  <section class="login fadeInDown">
-    <div class="fadeIn first">
-				<img src="../../img/login.svg" id="icon" alt="User Icon" />
-		</div>
-    <form @submit.prevent="login"
-          novalidate="true"
-          >
-      <div class="input__wrap">
-        <input type="text"
-               v-model="userName"
-               placeholder="userName"
-               class="fadeIn second"
-               >
+  <div class="login-wrapper">
+    <section class="login fadeInDown">
+      <div class="fadeIn first">
+          <img src="../../img/login.svg" id="icon" alt="User Icon" />
       </div>
-      <div class="input__wrap">
-        <!-- <label>Password</label> -->
-        <input type="password"
-               v-model="passWord"
-               placeholder="passWord"
-               class="fadeIn third"
-               >
-      </div>
-      <div class="form_buttonbar">
-        <button type="submit"
-                class="primary fadeIn fourth"
-                >Log In</button>
-      </div>
-      <div class="formFooter">
-        <router-link to="/search_password" class="underlineHover">Forgot Password?</router-link>
-      </div>
-    </form>
-  </section>
+      <form @submit.prevent="login"
+            novalidate="true"
+            >
+        <div class="input__wrap">
+          <input type="text"
+                v-model="userName"
+                placeholder="userName"
+                class="fadeIn second"
+                >
+        </div>
+        <div class="input__wrap">
+          <!-- <label>Password</label> -->
+          <input type="password"
+                v-model="passWord"
+                placeholder="passWord"
+                class="fadeIn third"
+                >
+        </div>
+        <div class="form_buttonbar">
+          <button type="submit"
+                  class="primary fadeIn fourth"
+                  >Log In</button>
+        </div>
+        <div class="formFooter">
+          <router-link to="/search_password" class="underlineHover">Forgot Password?</router-link>
+        </div>
+      </form>
+    </section>
+  </div>
 </template>
 <script>
   export default {

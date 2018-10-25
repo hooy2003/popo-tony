@@ -1,18 +1,22 @@
 <template>
   <section class="wrapper">
-    <!-- <nav-w ref="nav"></nav-w> -->
-    <!-- <router-view name="header"></router-view> -->
+    <!-- <navbar v-if="isLogin"></navbar> -->
+    <router-view name="header"></router-view>
     <router-view></router-view>
   </section>
 </template>
 
 <script>
-import NavW from './components/Nav'
-
+import { mapGetters } from 'vuex'
   export default {
     name: 'app',
-    components: {
-      NavW,
-    }
+    computed: {
+      ...mapGetters([
+        'User'
+      ]),
+      isLogin () {
+        return this.User.isLogin;
+      }
+    },
   }
 </script>

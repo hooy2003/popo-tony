@@ -1,6 +1,6 @@
 <template>
     <nav id="nav">
-        <router-link to="/">
+        <router-link to="/home" class="logo">
             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 236.62 236.62" xml:space="preserve"><g><path d="M197.023,225.545c-1.145-9.533-11.68-10.614-17.805-9.958c-6.521-24.554,16.225-61.151,17.563-69.82
                 c1.438-9.312-6.658-63.5-7.513-90.938C188.389,26.662,147.48-4.433,140.65,0.524c-6.768,7.484,9.748,17.585,1.054,26.245
                 c-8.398,8.367-10.588,13.99-16.824,23.46c-15.976,24.255,27.318,24.558,27.318,24.558s-33.882,25.112-41.421,37.768
@@ -8,12 +8,23 @@
                 C76.643,132.406,84.107,86.02,50.016,97.95c-13.189,4.616,2.949,14.325,5.734,17.435c9.318,10.4,1.441,27.896-4.174,38.012
                 c-15.037,27.091-20.496,55.475,11.154,72.978c14.063,7.776,33.055,9.7,52.17,9.982l48.64,0.14
                 C179.564,237.294,197.689,234.298,197.023,225.545z"/></g></svg>
+            <p>System<br /><span>1.01v1</span></p>
         </router-link>
         <ul v-if="isLogin">
-            <li><router-link to="/home" class="color-white">Home</router-link></li>
-            <li><router-link to="/userinfo" class="color-white">userinfo</router-link></li>
+            <router-link to="/home" tag="li">食材管理</router-link>
+            <router-link to="/home" tag="li">食譜管理</router-link>
+            <router-link to="/home" tag="li">餐點管理</router-link>
+            <router-link to="/home" tag="li">套餐管理</router-link>
+            <router-link to="/store" tag="li">店面管理</router-link>
+            <router-link to="/home" tag="li">結帳管理</router-link>
+            <router-link to="/home" tag="li">客戶資訊</router-link>
+            <router-link to="/home" tag="li">系統設定</router-link>
+            <router-link to="/home" tag="li">帳號與權限</router-link>
+            <li @click="logout" >Logout</li>
         </ul>
-        <!-- <button @click="logout" >Logout</button> -->
+        <router-link to="/userinfo" class="info">
+            <p>{{userName}} 您好<br /><span>12:23PM</span></p>
+        </router-link>
     </nav>
 </template>
 <script>
@@ -25,6 +36,9 @@ import { mapGetters } from 'vuex'
       ]),
       isLogin () {
         return this.User.isLogin;
+      },
+      userName () {
+        return this.User.name;
       }
     },
     methods: {
