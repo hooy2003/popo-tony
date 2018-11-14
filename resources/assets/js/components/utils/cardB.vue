@@ -28,7 +28,10 @@
 <script>
     export default {
         name: 'CardB',
-        props: ['cardName', 'isClass'],
+        props: [
+            'cardName',
+            'isClass'
+        ],
         data() {
             return {
                 // 無須通知父組件 madeFrom 異動資訊

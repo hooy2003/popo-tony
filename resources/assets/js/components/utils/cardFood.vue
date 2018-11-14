@@ -11,21 +11,21 @@
             <div class="left">
                 <div class="input-wrap">
                     <p>商品名稱</p>
-                    <Input v-model="cardName" placeholder="Enter something..."></Input>
+                    <Input v-model="cloneName" placeholder="Enter something..."></Input>
                 </div>
                 <div class="input-wrap">
                     <p>價位</p>
-                    <Input v-model="value2" placeholder="Enter something..."></Input>
+                    <Input v-model="clonePrice" placeholder="Enter something..."></Input>
                 </div>
                 <div class="input-wrap">
                     <p>單位</p>
-                    <Input v-model="value3">
-                        <Select v-model="select3" slot="append" style="width: 70px">
-                            <Option value="com">條</Option>
-                            <Option value="org">顆</Option>
-                            <Option value="io">盒</Option>
-                        </Select>
-                    </Input>
+                    <Select v-model="cloneUnit" slot="append" style="width: 70px">
+                        <Option value="strip">條</Option>
+                        <Option value="one">顆</Option>
+                        <Option value="box">盒</Option>
+                        <Option value="g">公克</Option>
+                        <Option value="kg">公斤</Option>
+                    </Select>
                 </div>
             </div>      
         </div>
@@ -40,7 +40,11 @@ import ImageUploader from '../ImageUploader.vue';
             ImageUploader
         },
         name: 'CardFood',
-        props: ['cardName'],
+        props: [
+            'cardName',
+            'cardUnit',
+            'cardPrice',
+        ],
         data() {
             return {
                 value2: 280,
@@ -52,6 +56,46 @@ import ImageUploader from '../ImageUploader.vue';
             ...mapGetters([
                 'imgSrc'
             ]),
+            cloneName: {
+                get: function() {
+                    return this.cardName;
+                },
+                set: function(newValue) {
+                    return this.cardName;
+                }
+            },
+            cloneUnit: {
+                get: function() {
+                    if (this.cardUnit == "條") {
+                        return 'strip';
+                    }
+                    if (this.cardUnit == "顆") {
+                        return 'one';
+                    }
+                    if (this.cardUnit == "盒") {
+                        return 'box';
+                    }
+                    if (this.cardUnit == "公克") {
+                        return 'g';
+                    }
+                    if (this.cardUnit == "公斤") {
+                        return 'kg';
+                    }
+                },
+                set: function(newValue) {
+                    console.log('cloneUnit', newValue);
+                    this.$emit('card-change-unit', newValue);
+                    return this.cardUnit;
+                }
+            },
+            clonePrice: {
+                get: function() {
+                    return this.cardPrice;
+                },
+                set: function(newValue) {
+                    return this.cardPrice;
+                }
+            },
             imgSrc2 () {
                 return this.imgSrc;
             }

@@ -7,17 +7,17 @@
                 <div class="union">
                     <CardA v-for="(item, index) in currentAClass"
                            :key='item.index'
-                           :card-name="item"
+                           :card-name="item[1]"
                            :class="{ active: index === 0 }"
                            @card-change-name="onCardChangeName0($event, index)"
-                           @card-on-click="AClassOnClick($event, index)"
+                           @card-on-click="AClassOnClick($event, item[0])"
+                           @card-delete="deleteAClass($event, item[0])"
                     >
                     </CardA>
-                    <div @click="addNewClassA($event)"
-                         class="add-new-card"
-                         >
-                         <Icon type="ios-add-circle-outline" size="20" /></Icon>新增類別
-                    </div>
+                    <AddNewCard  @add-card-name="addNewAClass($event, currentACardID)"
+                                 class="add-new-card"
+                    >
+                    </AddNewCard>
                 </div>
             </Col>
             <Col span="5">
@@ -26,38 +26,36 @@
                     <h4>類別</h4>
                     <CardB v-for="(item, index) in currentBClass"
                            :key='item.index'
-                           :card-name="item"
+                           :card-name="item[1]"
                            :is-class="true"
-                           :class="{ lastcard: index === (currentBClass.length-1) }"
+                           :class="{ lastcard: index === (currentBClass.length-1) && index > 1 }"
                            @card-change-name="onCardChangeName($event, index)"
-                           @card-on-click="BClassOnClick"
-                           @card-delete="deleteClass($event, currentACardName)"
+                           @card-on-click="BClassOnClick($event, item[0])"
+                           @card-delete="deleteBClass($event, item[0])"
                            class="B-class"
                     >
                     </CardB>
-                    <div @click="addNewClass($event, currentACardName)"
-                         class="add-new-card"
-                         v-show="currentBClass.length >= 0"
-                         >
-                         <Icon type="ios-add-circle-outline" size="20" /></Icon>新增類別
-                    </div>
+                    <AddNewCard  @add-card-name="addNewBClass($event, currentACardID)"
+                                 class="add-new-card"
+                                 v-show="currentBItem.length >= 0"
+                    >
+                    </AddNewCard>
                     </CardA>
                     <h4>項目</h4>
                     <CardB v-for="(item, index) in currentBItem"
                            :key='item.index'
-                           :card-name="item" 
-                           :class="{ lastcard: index === (currentBItem.length-1) }"
+                           :card-name="item[1]" 
+                           :class="{ lastcard: index === (currentBItem.length-1) && index > 1 }"
                            @card-change-name="onCardChangeName2($event, index)"
-                           @card-on-click="BItemOnClick"
-                           @card-delete="deleteItem($event, currentACardName)"
+                           @card-on-click="BItemOnClick($event, item)"
+                           @card-delete="deleteBItem($event, item[0])"
                     >
                     </CardB>
-                    <div @click="addNewItem($event, currentACardName)"
-                         class="add-new-card"
-                         v-show="currentBItem.length >= 0"
-                         >
-                         <Icon type="ios-add-circle-outline" size="20" /></Icon>新增項目
-                    </div>
+                    <AddNewCard  @add-card-name="addNewBItem($event, currentACardID)"
+                                 class="add-new-card"
+                                 v-show="currentBItem.length >= 0"
+                    >
+                    </AddNewCard>                
                 </div>
             </Col>
             <Col span="5">
@@ -66,9 +64,9 @@
                     <h4>項目</h4>                    
                     <CardC v-for="(item, index) in currentCItem"
                            :key='item.index'
-                           :card-name="item" 
-                           :class="{ lastcard: index === (currentCItem.length-1) }"
-                           @card-on-click="CItemOnClick"
+                           :card-name="item[1]"
+                           :class="{ lastcard: index === (currentCItem.length-1) && index > 1 }"
+                           @card-on-click="CItemOnClick($event, item[4])"
                            @card-delete="deleteItemC($event, currentBClassName)"
                     >
                     </CardC>
@@ -81,11 +79,13 @@
                 </div>
             </Col>
             <Col span="9">
-                <div class="title">{{currentCItemName}}</div>
+                <div class="title">{{currentDItemName}}</div>
                 <div class="union">
                     <CardFood
                         v-show="DCardShow"
-                        :card-name="currentCItemName"
+                        :card-name="currentDItem[1]"
+                        :card-unit="currentDItem[2]"
+                        :card-price="currentDItem[3]"
                     ></CardFood>                                 
                 </div>
             </Col>
@@ -98,7 +98,7 @@ import CardA from '../utils/card.vue';
 import CardB from '../utils/cardB.vue';
 import CardC from '../utils/cardC.vue';
 import CardFood from '../utils/cardFood.vue';
-
+import AddNewCard from '../utils/addcard.vue';
 // let WebHelper = require('../../utils/wehelper');
 
 
@@ -107,34 +107,30 @@ import CardFood from '../utils/cardFood.vue';
         CardA, 
         CardB,
         CardC,
-        CardFood
+        CardFood,
+        AddNewCard
     },
     data() {
         return {
             currentAClass: [],
-            currentAClassID: [],
+            currentACardID: '',
             currentACardName: '無',
             currentBClass: [],
             currentBCardName: '尚無類別',
             currentBItem: [],
             currentBItemName: '尚無項目',
             currentCItem: [],
-            currentCItemName: '餐點名',
+            currentDItemName: '尚無項目',
+            currentDItem: [],
             DCardShow: false,
+            DataIsUpdate: false
         }
     },
     mounted: function() {
-        // 設定B塊的預設值`，先找出foodAClass第一個class的第一個名字
-        let Bdefault = this.foodAClass[0].name[0];
-
-        // 給B區塊標題名字
-        this.currentACardName = Bdefault;
-        this.changeBClass(Bdefault);
-        this.changeBItem(Bdefault);
+        
     },
     created () {
-        this.getCurrentAClass();
-        this.getCurrentAClassID();
+        this.getAClass();
     },
     computed: {
       ...mapGetters([
@@ -147,257 +143,225 @@ import CardFood from '../utils/cardFood.vue';
       ]),
     },
     watch: {
+        // 處理非同步
+        currentAClass: function(value) {
+            const BdefaultID = this.currentAClass[0][0];
+            const BdefaultName = this.currentAClass[0][1];
+
+            // // 給B區塊標題名字
+            this.currentACardName = BdefaultName;
+            this.currentACardID = BdefaultID;
+            this.getBClass(BdefaultID);
+            this.getBItem(BdefaultID);
+        },      
     },
     // 改进vue的初始化数据调用时机 --
     // https://www.jianshu.com/p/2048f1a66c33
-    methods: {
-        async getCurrentAClass() {
-            console.log('getCurrentAClass');
-            this.currentAClass = await axios.get(`api/IngredientsCategory/Get`)
-            .then(function (response) {
-                const nameList = response.data.map(item => Object.values(item)[1]);
-                return nameList;
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-        },
-        async getCurrentAClassID() {
-            this.currentAClassID = await axios.get(`api/IngredientsCategory/Get`)
-            .then(function (response) {
-                const idList = response.data.map(item => Object.values(item)[0]);
-                return idList;
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-        },
-        AClassOnClick: function(ACardName, index) {
+    methods: {        
+        AClassOnClick: function(ACardName, ACategoryID) {
             console.log('點了A區哪張卡', ACardName);
-            console.log('點了A區哪張卡', index);
-
-            //找出ID
-            let CategoryID = this.currentAClassID[index];            
+            console.log('點了A區哪張卡', ACategoryID);
+            // ID從卡傳來了        
             this.DCardShow = false;
             // 給B區塊標題名字
             this.currentACardName = ACardName;
+            this.currentACardID   = ACategoryID;
             // 清空C區塊
-            this.currentCItem = '';            
+            this.currentCItem = '';
 
-            this.changeBClass(CategoryID);
-            // this.changeBItem(ACardName);
+            this.getBClass(ACategoryID);
+            this.getBItem(ACategoryID);
         },
-        BClassOnClick: function(BCardName) {
-            console.log('點了B區哪張卡', BCardName);
+        BClassOnClick: function(BCardName, BCategoryID) {
             this.DCardShow = false;
             // 給C區塊名字
-            this.currentBCardName = BCardName;
-            this.changeCItem(BCardName);
+            this.currentBCardName = BCardName;            
+            this.getCItem(BCategoryID);
         },
-        BItemOnClick: function(BItem) {
-            console.log('B Item OnClick', BItem);
-            this.DCardShow = true;
-            this.currentCItemName =  BItem;
-        },
-        CItemOnClick: function(CITem) {
-            console.log('C Item OnClick', CITem);
-            this.DCardShow = true;
-            this.currentCItemName =  CITem;
-        },
-        async changeBClass(CategoryID) {
 
-            this.currentBClass = await axios.get(`api/IngredientsCategory/GetByCategoryID/${CategoryID}`)
+        BItemOnClick: function(BItemName, BItem) {
+            // 這個直接寫在抓來的ITEM裡面了
+            console.log(BItem);
+            this.DCardShow = true;
+            this.currentDItemName =  BItemName;
+            this.currentDItem = BItem;
+        },
+        CItemOnClick: function(CITemName, CItemID) {
+            console.log('C Item OnClick', CITemName);
+            this.DCardShow = true;
+            this.currentDItemName =  CITemName;
+            this.getDItem(CItemID);
+        },
+        async getAClass() {
+            this.currentAClass = await axios.get(`api/IngredientsCategory/Get`)
             .then(function (response) {
-                const nameList = response.data.map(item => Object.values(item)[1]);
+                const nameList = response.data.map(item => Object.values(item));
                 return nameList;
             })
             .catch(function (error) {
                 console.log(error);
             });
-
         },
-        changeBItem: function(ACardName) {
-
-            let filterArray =  _.filter(this.foodBItem, {parent: ACardName} );
-            this.currentBItem = filterArray[0].name;
-
-            console.log('this currentB Item =======',  this.currentBItem);
+        async getBClass(ACategoryID) {
+            this.currentBClass = await axios.get(`api/IngredientsCategory/GetByCategoryID/${ACategoryID}`)
+            .then(function (response) {
+                const nameList = response.data.map(item => Object.values(item));
+                return nameList;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
         },
-        changeCItem: function(BCardName) {
-            // 用ACardName 跟 BCardName 找出Ctiem
-            let pfilterArray = _.filter(this.foodCItem, {parent: this.currentACardName} );
-            let filterArray =  _.filter(pfilterArray[0].class, {parent: BCardName} );
-
-            this.currentCItem = filterArray[0].name;
-
-            console.log('this currentC Item =======',  this.currentBItem);
+        async getBItem(ACategoryID) {
+            this.currentBItem = await axios.get(`api/Ingredients/GetByCategoryID/${ACategoryID}`)
+            .then(function (response) {
+                const nameList = response.data.map(item => Object.values(item));
+                console.log('我要知道的BITEM', nameList);
+                return nameList;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
         },
-        onCardChangeName0: function(newName, index) {
-            this.currentAClass.splice(index, 1, newName);
+        async getCItem(BCategoryID) {
+            console.log('currentCItem CategoryID', BCategoryID);
+            // "ID": 4,
+            // "Name": "南澳小黃瓜",
+            // "Unit": "公克",
+            // "Price": 40,
+            // "IngredientsCategoryID": 10,
+            // "IngredientsCategoryName": "五穀根莖類"
+            this.currentCItem = await axios.get(`api/Ingredients/GetByCategoryID/${BCategoryID}`)
+            .then(function (response) {
+                const nameList = response.data.map(item => Object.values(item));
+                console.log('我要知道的CCCCCC', nameList);
+                return nameList;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        async getDItem(ItemID) {
+            this.currentDItem = await axios.get(`api/Ingredients/GetByCategoryID/${ItemID}`)
+            .then(function (response) {
+                const nameList = response.data.map(item => Object.values(item));
+                console.log('currentDItem', nameList);
+                return nameList[0];
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        addNewAClass ($event) {
+            const ClassFile = {
+                                "Name": $event,
+                                "AccountID": 0,
+                                "IsFirst": true
+                               };
+            this.addNewAClassCard(ClassFile);            
+        },
+        async addNewAClassCard (ClassFile) {
+            // Update Vue object with Axios response data
+            const vm = this;
+            await axios.post(`api/IngredientsCategory/Create`, ClassFile)
+            .then(function (response) {
+                vm.getAClass(vm.currentACardID);
+                return true;
+            })
+            .catch(function (error) {
+                console.log('error', error);
+            });
+        },
+        addNewBClass($event, ACategoryID) {
+            const ClassFile = {
+                                "Name": $event,
+                                "IngredientsCategoryID": ACategoryID,
+                                "AccountID": 0,
+                                "IsFirst": false
+                              };
+            console.log('ClassFile', ClassFile);
+            this.addNewBClassCard(ClassFile);
         }, 
-        onCardChangeName: function(newName, index) {
-            this.currentBClass.splice(index, 1, newName);
-        },
-        onCardChangeName2: function(newName, index) {
-            console.log('this.currentBItem');
-            this.currentBItem.splice(index, 1, newName);
-        },
-        addNewClassA: function($event) {
-            let cloneItem = this.foodAClass;            
-            cloneItem[0].name.push('新項目');
-            console.log('cloneItem');
-
-            this.$store.commit({
-                type: 'AClassAddNewClass',
-                newArray: cloneItem,
+        async addNewBClassCard (ClassFile) {
+            // Update Vue object with Axios response data
+            const vm = this;
+            await axios.post(`api/IngredientsCategory/Create`, ClassFile)
+            .then(function (response) {
+                console.log('addNewBClassCard', response); 
+                vm.getBClass(vm.currentACardID);
+                return true;
+            })
+            .catch(function (error) {
+                console.log('error', error);
             });
         },
-        addNewClass: function($event, parentName) {
-
-            // 找出當前父級的在AClass的index直接套近來
-            let parentArrayIndex = $.map(this.foodAClass[0].name, function(item, index) {
-                return item
-            }).indexOf(parentName);
-
-            // 去改變 BClass
-            let cloneItem = this.foodBClass;            
-            cloneItem[parentArrayIndex].name.push('新項目');
-
-            // 幫CItem加上新的空陣列
-
-            let cloneItemClass = this.foodCItem;
-            cloneItemClass[parentArrayIndex].class.push({
-                parent:'新項目',
-                name: ['新項目']
-            },);
-            
-            console.log('addNewClass cloneItem  =======',  cloneItem);
-            this.$store.commit({
-                type: 'BClassAddNewClass',
-                newArray: cloneItem,
-            });
-
-            this.$store.commit({
-                type: 'CItemAddNewItem',
-                newArray: cloneItemClass,
-            });
-        },        
-        addNewItem: function($event, parentName) {
-
-            // 找出當前父級的在AClass的index直接套近來
-            let parentArrayIndex = $.map(this.foodAClass[0].name, function(item, index) {
-                return item
-            }).indexOf(parentName);
-
-            // 去改變 BItem
-            let cloneItem = this.foodBItem;
-            cloneItem[parentArrayIndex].name.push('新項目');
-
-            console.log('addNewItem cloneItem  =======',  cloneItem);
-            this.$store.commit({
-                type: 'BItemAddNewItem',
-                newArray: cloneItem,
+        addNewBItem($event, ACategoryID) {
+            const ClassFile = {
+                                "Name": $event,
+                                "IngredientsCategoryID": ACategoryID,
+                                "Unit": "公斤",
+                                "Price": 0,
+                                "AccountID": 0
+                              };
+            console.log('1白雲', ClassFile);
+            this.addNewBItemCard(ClassFile);
+        },
+        async addNewBItemCard (ClassFile) {
+            const vm = this;
+            await axios.post(`api/Ingredients/Create`, ClassFile)
+            .then(function (response) {                
+                vm.getBItem(vm.currentACardID);
+                return true;
+            })
+            .catch(function (error) {
+                console.log('error', error);
             });
         },
-        addNewItemC: function($event, parentName, parentparentName) {
-
-            // 找出BClass的在AClass的 parentparentArrayIndex
-            let ppArrayIndex = $.map(this.foodAClass[0].name, function(item, index) {
-                return item
-            }).indexOf(parentparentName);
-
-            // 找出CItem在BClass的在index直接套近來
-            let parentArrayIndex = $.map(this.foodBClass[ppArrayIndex].name, function(item, index) {
-                return item
-            }).indexOf(parentName);
-
-            // 去改變 CItem
-            let cloneItem = this.foodCItem;
-            cloneItem[ppArrayIndex].class[parentArrayIndex].name.push('新項目');
-
-            console.log('addNewItem cloneItem  =======',  cloneItem);
-            this.$store.commit({
-                type: 'CItemAddNewItem',
-                newArray: cloneItem,
+        deleteAClass: function($event, ACategoryID) {
+            this.deleteACard(ACategoryID);
+        },
+        async deleteACard(ACategoryID) {
+            const vm = this;
+            await axios.post(`api/IngredientsCategory/Delete`, { "ID":ACategoryID })
+            .then(function (response) {
+                vm.getAClass();
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
             });
         },
-        deleteClass: function($event, parentName) {
-
-            let currentCardName = $event;
-
-            // 找出當前父級的在AClass的index直接套近來
-            let parentArrayIndex = $.map(this.foodAClass[0].name, function(item, index) {
-                return item
-            }).indexOf(parentName);
-
-            // 找到 這個在foodBClass 的哪裡
-            let cArrayIndex = $.map(this.foodBClass[parentArrayIndex].name, function(item, index) {
-                return item
-            }).indexOf(currentCardName);
-
-             // 對複製的陣列刪去項目
-            let cloneItem = this.foodBClass;
-            cloneItem[parentArrayIndex].name.splice(cArrayIndex, 1);
-
-            console.log('deleteClass  =======', cloneItem);
-
-            this.$store.commit({
-                type: 'BClassDeleteItem',
-                newArray: cloneItem,
+        deleteBClass: function($event, BCategoryID) {
+            this.deleteBCard(BCategoryID);
+        },
+        async deleteBCard(BCategoryID) {
+            const vm = this;
+            await axios.post(`api/IngredientsCategory/Delete`, { "ID":BCategoryID })
+            .then(function (response) {
+                console.log(response);
+                console.log('delete success');
+                vm.getBClass(vm.currentACardID);
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
             });
         },
-        deleteItem: function($event, parentName) {
-            
-            let currentCardName = $event;
-
-            // 找出當前父級的在AClass的index直接套近來
-            let parentArrayIndex = $.map(this.foodAClass[0].name, function(item, index) {
-                return item
-            }).indexOf(parentName);
-
-            // 找到 這個在foodBItem 的哪裡
-            let cArrayIndex = $.map(this.foodBItem[parentArrayIndex].name, function(item, index) {
-                return item
-            }).indexOf(currentCardName);
-
-             // 對複製的陣列刪去項目
-            let cloneItem = this.foodBItem;
-            cloneItem[parentArrayIndex].name.splice(cArrayIndex, 1);
-
-            console.log('deleteItem  =======', cloneItem);
-
-            this.$store.commit({
-                type: 'BItemDeleteItem',
-                newArray: cloneItem,
-            });
-
+        deleteBItem: function($event, BItemID) {
+            // Item[0] 是項目的ID
+            this.deleteBItemCard(BItemID);
         },
-        deleteItemC: function($event, parentName) {
-            
-            let currentCardName = $event;
-
-            // 找出當前父級的在AClass的index直接套近來
-            let parentArrayIndex = $.map(this.foodAClass[0].name, function(item, index) {
-                return item
-            }).indexOf(parentName);
-
-            // 找到 這個在foodBItem 的哪裡
-            let cArrayIndex = $.map(this.foodBItem[parentArrayIndex].name, function(item, index) {
-                return item
-            }).indexOf(currentCardName);
-
-             // 對複製的陣列刪去項目
-            let cloneItem = this.foodBItem;
-            cloneItem[parentArrayIndex].name.splice(cArrayIndex, 1);
-
-            console.log('deleteItemC  =======', cloneItem);
-
-            this.$store.commit({
-                type: 'CItemDeleteItem',
-                newArray: cloneItem,
+        async deleteBItemCard(BItemID) {
+            const vm = this;
+            await axios.post(`api/Ingredients/Delete`, { "ID":BItemID })
+            .then(function (response) {
+                vm.getBItem(vm.currentACardID);
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
             });
-
-        }
+        },
     }
   }
 </script>
