@@ -22,13 +22,24 @@ const state = {
         "strange" : "不得包括特殊符號"
     },
     isLoading: false,
+    billing: [
+        "櫃檯出單機",
+        "廚房出單機"
+    ],
+    rules: [
+        "規則1",
+        "規則2",
+        "規則3"
+    ]    
 };
 
 
 const getters = {
     User: state => state.User,    
     errorState: state => state.errorState,
-    isLoading: state => state.isLoading
+    isLoading: state => state.isLoading,
+    billing: state => state.billing,
+    rules: state => state.rules
 };
 
 const mutations = {
@@ -51,7 +62,7 @@ const mutations = {
     },
     isLoading (state) {
         state.isLoading = !state.isLoading
-    }
+    },
 };
 
 const actions = {

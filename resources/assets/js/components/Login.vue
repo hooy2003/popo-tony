@@ -46,8 +46,8 @@
     methods: {
       login (){
         const resp = { account: 'admin',
-                       name: 'Tony',
-                       phone: '25551234' };
+                       name: 'Admin',
+                       phone: '123456789' };
 
         if( this.userName == '' && this.passWord == '' ) {
           console.log('登入成功');

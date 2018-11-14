@@ -5,24 +5,19 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './app.vue';
 
-// import { sync } from 'vuex-router-sync';
+// Routes & Vuex
 import { routes } from './routes';
 import store from './vuex/store';
 
-// sync(store, router);
-
-// 載入 EasyUI
-import 'vx-easyui/dist/themes/default/easyui.css';
-import 'vx-easyui/dist/themes/icon.css';
-import 'vx-easyui/dist/themes/vue.css';
-import EasyUI from 'vx-easyui';
+// 載入 iview
+import iView from 'iview';
 
 // 載入 App scss
 import '../sass/app.scss';
 
 const router = new VueRouter({
   routes,
-  mode: 'history',
+//   mode: 'history',
   linkActiveClass: 'active',
   linkExactActiveClass: 'active',
 });
@@ -50,7 +45,7 @@ router.beforeEach( (to, form, next) => {
     }
 });
 
-Vue.use(EasyUI);
+Vue.use(iView);
 
 new Vue({
   el: '#page-wrapper',

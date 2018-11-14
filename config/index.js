@@ -10,7 +10,16 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    env: require('./dev.env'),
+    proxyTable: {
+      '/api': {                                             // 自訂 local 端的位置
+        target: 'http://demo.airdesign.com.tw/POSAPI/api',  // 遠端 URL Domain
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

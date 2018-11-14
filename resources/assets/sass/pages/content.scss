@@ -1,8 +1,35 @@
 /*section*/.content {
     margin: 0 auto;
-    max-width: 600px;
     width: 100%;
-    padding: 30px;
     box-sizing: border-box;
-    background-color: rgba(250, 250, 250, 0.92);
+    &.page {
+        .ivu-col {
+            height: calc(100vh - 76px);   // 綁定Nav
+            overflow: auto;
+            border-right: 1px $black solid;
+            background-color: $lightWhite;
+            &:last-child {
+                border-right: 0;
+            }
+            .title {
+                text-align: center;
+                font-weight: bold;
+                padding: 15px;
+                background-color: $Gray;
+                border-bottom: 1px $black solid;
+            }
+            .ivu-dropdown {
+                position: absolute;
+                right: 30px;
+            }
+            .union {           
+               h4 {
+                padding: 10px;
+               }
+               .setting {
+                   p { display: inline-block; }
+               }
+            }
+        }
+    }    
 }

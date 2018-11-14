@@ -1,5 +1,6 @@
 nav {
     background-color: $DarkGray;
+    box-shadow: 0 .1rem 1rem rgba(0,0,0,.15);
     display: flex;
     &>a {
         display: flex;
@@ -15,10 +16,9 @@ nav {
             padding-left: 30px;
             border-left: 1px solid $lineWhite;
         }
-        svg {
+        img {
             display: inline-block;
             width: 60px;
-            fill: $white;
             padding: 10px;
         }
         p {

@@ -5,8 +5,9 @@
 // Variables
 @import 'variables';
 
-// Bootstrap 把bst拔掉
-// @import '~bootstrap/scss/bootstrap';
+// iview
+// https://github.com/parcel-bundler/parcel/issues/39
+@import url('../../../node_modules/iview/dist/styles/iview.css');
 
 // Common
 @import 'common/normalize';
@@ -19,3 +20,7 @@
 @import 'pages/header';
 @import 'pages/login';
 @import 'pages/content';
+@import 'pages/card';
+
+// MOMO
+@import 'common/ivelement';
