@@ -9,7 +9,7 @@
                            :key='item.index'
                            :card-name="item[1]"
                            :class="{ active: index === 0 }"
-                           @card-change-name="onCardChangeName0($event, index)"
+                           @card-change-name="changeAName($event, item[0])"
                            @card-on-click="AClassOnClick($event, item[0])"
                            @card-delete="deleteAClass($event, item[0])"
                     >
@@ -29,7 +29,7 @@
                            :card-name="item[1]"
                            :is-class="true"
                            :class="{ lastcard: index === (currentBClass.length-1) && index > 1 }"
-                           @card-change-name="onCardChangeName($event, index)"
+                           @card-change-name="changeBName($event, item[0])"
                            @card-on-click="BClassOnClick($event, item[0])"
                            @card-delete="deleteBClass($event, item[0])"
                            class="B-class"
@@ -37,7 +37,7 @@
                     </CardB>
                     <AddNewCard  @add-card-name="addNewBClass($event, currentACardID)"
                                  class="add-new-card"
-                                 v-show="currentBItem.length >= 0"
+                                 v-show="currentBClass.length >= 0"
                     >
                     </AddNewCard>
                     </CardA>
@@ -46,7 +46,7 @@
                            :key='item.index'
                            :card-name="item[1]" 
                            :class="{ lastcard: index === (currentBItem.length-1) && index > 1 }"
-                           @card-change-name="onCardChangeName2($event, index)"
+                           @card-change-name="changeBItemName($event, item)"
                            @card-on-click="BItemOnClick($event, item)"
                            @card-delete="deleteBItem($event, item[0])"
                     >
@@ -55,7 +55,7 @@
                                  class="add-new-card"
                                  v-show="currentBItem.length >= 0"
                     >
-                    </AddNewCard>                
+                    </AddNewCard>
                 </div>
             </Col>
             <Col span="5">
@@ -66,16 +66,17 @@
                            :key='item.index'
                            :card-name="item[1]"
                            :class="{ lastcard: index === (currentCItem.length-1) && index > 1 }"
-                           @card-on-click="CItemOnClick($event, item[4])"
-                           @card-delete="deleteItemC($event, currentBClassName)"
+                           @card-change-name="changeCItemName($event, item)"
+                           @card-on-click="CItemOnClick($event, item)"
+                           @card-delete="deleteCItem($event, item[0])"                           
+                           v-show="CCardShow"
                     >
                     </CardC>
-                    <div @click="addNewItemC($event, currentBCardName, currentACardName)"                         
-                         class="add-new-card"
-                         v-show="currentCItem.length > 0"
-                         >
-                         <Icon type="ios-add-circle-outline" size="20" /></Icon>新增項目
-                    </div>
+                    <AddNewCard  @add-card-name="addNewCItem($event, currentBCardID)"
+                                 class="add-new-card"
+                                 v-show="CCardShow"
+                    >
+                    </AddNewCard>
                 </div>
             </Col>
             <Col span="9">
@@ -86,6 +87,7 @@
                         :card-name="currentDItem[1]"
                         :card-unit="currentDItem[2]"
                         :card-price="currentDItem[3]"
+                        @item-change="changeDItem($event, currentDItem)"
                     ></CardFood>                                 
                 </div>
             </Col>
@@ -122,6 +124,7 @@ import AddNewCard from '../utils/addcard.vue';
             currentCItem: [],
             currentDItemName: '尚無項目',
             currentDItem: [],
+            CCardShow: false,
             DCardShow: false,
             DataIsUpdate: false
         }
@@ -173,25 +176,29 @@ import AddNewCard from '../utils/addcard.vue';
             this.getBItem(ACategoryID);
         },
         BClassOnClick: function(BCardName, BCategoryID) {
+            this.CCardShow = true;
             this.DCardShow = false;
             // 給C區塊名字
-            this.currentBCardName = BCardName;            
+            this.currentBCardName = BCardName;
+            this.currentBCardID = BCategoryID;
             this.getCItem(BCategoryID);
         },
 
         BItemOnClick: function(BItemName, BItem) {
             // 這個直接寫在抓來的ITEM裡面了
             console.log(BItem);
+            this.CCardShow = false;
             this.DCardShow = true;
-            this.currentDItemName =  BItemName;
+            this.currentBCardName = '尚無項目';
+            this.currentDItemName = BItemName;
             this.currentDItem = BItem;
         },
-        CItemOnClick: function(CITemName, CItemID) {
+        CItemOnClick: function(CITemName, CItem) {
             console.log('C Item OnClick', CITemName);
-            this.DCardShow = true;
-            this.currentDItemName =  CITemName;
-            this.getDItem(CItemID);
-        },
+            this.DCardShow = true;            
+            this.currentDItemName = CITemName;
+            this.currentDItem = CItem;
+         },
         async getAClass() {
             this.currentAClass = await axios.get(`api/IngredientsCategory/Get`)
             .then(function (response) {
@@ -216,7 +223,6 @@ import AddNewCard from '../utils/addcard.vue';
             this.currentBItem = await axios.get(`api/Ingredients/GetByCategoryID/${ACategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
-                console.log('我要知道的BITEM', nameList);
                 return nameList;
             })
             .catch(function (error) {
@@ -234,7 +240,6 @@ import AddNewCard from '../utils/addcard.vue';
             this.currentCItem = await axios.get(`api/Ingredients/GetByCategoryID/${BCategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
-                console.log('我要知道的CCCCCC', nameList);
                 return nameList;
             })
             .catch(function (error) {
@@ -242,15 +247,16 @@ import AddNewCard from '../utils/addcard.vue';
             });
         },
         async getDItem(ItemID) {
+            // 廢氣中---------------
             this.currentDItem = await axios.get(`api/Ingredients/GetByCategoryID/${ItemID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
-                console.log('currentDItem', nameList);
-                return nameList[0];
+                return nameList;
             })
             .catch(function (error) {
                 console.log(error);
             });
+            // 廢氣中---------------
         },
         addNewAClass ($event) {
             const ClassFile = {
@@ -303,7 +309,6 @@ import AddNewCard from '../utils/addcard.vue';
                                 "Price": 0,
                                 "AccountID": 0
                               };
-            console.log('1白雲', ClassFile);
             this.addNewBItemCard(ClassFile);
         },
         async addNewBItemCard (ClassFile) {
@@ -317,6 +322,127 @@ import AddNewCard from '../utils/addcard.vue';
                 console.log('error', error);
             });
         },
+        addNewCItem($event, BCategoryID) {
+            const ClassFile = {
+                                "Name": $event,
+                                "IngredientsCategoryID": BCategoryID,
+                                "Unit": "公斤",
+                                "Price": 0,
+                                "AccountID": 0
+                              };
+            this.addNewCItemCard(ClassFile);
+        },
+        async addNewCItemCard (ClassFile) {
+            const vm = this;
+            await axios.post(`api/Ingredients/Create`, ClassFile)
+            .then(function (response) {                
+                vm.getCItem(vm.currentBCardID);
+                return true;
+            })
+            .catch(function (error) {
+                console.log('error', error);
+            });
+        },
+        changeAName(newName, ACategoryID) {
+            const ClassFile = {
+                                "ID": ACategoryID,
+                                "Name": newName,
+                                "AccountID": 0
+                              };
+            this.changeACardName(ClassFile);
+        },
+        async changeACardName(ClassFile) {
+            const vm = this;
+            await axios.post(`api/IngredientsCategory/Update`, ClassFile)
+            .then(function (response) {
+                vm.getAClass();
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        changeBName(newName, BCategoryID) {
+            const ClassFile = {
+                                "ID": BCategoryID,
+                                "Name": newName,
+                                "AccountID": 0
+                              };
+            this.changeBCardName(ClassFile);
+        },
+        async changeBCardName(ClassFile) {
+            const vm = this;
+            await axios.post(`api/IngredientsCategory/Update`, ClassFile)
+            .then(function (response) {
+                vm.getAClass();
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },   
+        changeBItemName(newName, BITem) {
+            const ClassFile = {
+                                "ID": BITem[0],
+                                "Name": newName,
+                                "Unit": BITem[2],
+                                "Price": BITem[3],
+                                "AccountID": 0
+                               };
+            this.changeBItemCardName(ClassFile);
+        },
+        async changeBItemCardName(ClassFile) {
+            const vm = this;
+            await axios.post(`api/Ingredients/Update`, ClassFile)
+            .then(function (response) {
+                vm.getBItem(vm.currentACardID);
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        changeCItemName(newName, CITem) {
+            const ClassFile = {
+                                "ID": CITem[0],
+                                "Name": newName,
+                                "Unit": CITem[2],
+                                "Price": CITem[3],
+                                "AccountID": 0
+                               };
+            this.changeCItemCardName(ClassFile);
+        },
+        async changeCItemCardName(ClassFile) {
+            const vm = this;
+            await axios.post(`api/Ingredients/Update`, ClassFile)
+            .then(function (response) {
+                vm.getCItem(vm.currentBCardID);
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        changeDItem(obj, DITem) {
+            console.log('DITem--------*******', obj);
+            console.log('DITem--------*******', DITem);
+            console.log('DITem--------*******', this.currentDItem[0]);
+            let cloneObj = obj;
+            cloneObj['ID'] = this.currentDItem[0];
+            this.changeDItemInfo(cloneObj);
+        },
+        async changeDItemInfo(cloneObj) {
+            const vm = this;
+            await axios.post(`api/Ingredients/Update`, cloneObj)
+            .then(function (response) {
+                vm.getBItem(vm.currentACardID);
+                vm.getCItem(vm.currentBCardID);
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        }, 
         deleteAClass: function($event, ACategoryID) {
             this.deleteACard(ACategoryID);
         },
@@ -356,6 +482,21 @@ import AddNewCard from '../utils/addcard.vue';
             await axios.post(`api/Ingredients/Delete`, { "ID":BItemID })
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        deleteCItem: function($event, CItemID) {
+            // Item[0] 是項目的ID
+            this.deleteCItemCard(CItemID);
+        },
+        async deleteCItemCard(CItemID) {
+            const vm = this;
+            await axios.post(`api/Ingredients/Delete`, { "ID":CItemID })
+            .then(function (response) {
+                vm.getCItem(vm.currentBCardID);
                 return;
             })
             .catch(function (error) {

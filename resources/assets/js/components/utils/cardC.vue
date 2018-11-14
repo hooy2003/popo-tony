@@ -3,8 +3,8 @@
          >
         <div class="content" @click.self="clickCard()">
             <Icon type="ios-document" size="20" color="#56baed"></Icon>
-            <h3>{{cardName}}</h3>
-            <Input v-model="cardName"
+            <h3>{{cloneCardName}}</h3>
+            <Input v-model="cloneCardName"
                    @on-click="addedName()"
                    class="hide"
                    placeholder="Something"
@@ -27,6 +27,24 @@
     export default {
         name: 'CardC',
         props: ['cardName'],
+        data() {
+            return {
+                // 無須通知父組件 madeFrom 異動資訊
+                innerCardcardName: this.cardName,
+                needSendToParent: ''
+            }
+        },
+        computed: {
+            cloneCardName : {
+                get: function() {
+                    return this.cardName;
+                },
+                set: function(newValue) {
+                    this.needSendToParent = newValue;
+                    return this.cardName;
+                }
+            },
+        },
         methods: {
             clickCard: function() {
                 this.$emit('card-on-click', this.cardName);
@@ -41,11 +59,12 @@
                     $(this.$el).find('.ivu-input-wrapper').removeClass('hide');
                 }
                 if ($event == "delete") {
-                    this.$emit('class-delete', this.cardName);   
-                    return;                
+                    this.$emit('card-delete', this.cardName);              
                 }
             },
             addedName () {
+                //把input值傳給父
+                this.$emit('card-change-name', this.needSendToParent); 
                 $(this.$el).find('.ivu-input-wrapper').addClass('hide');
                 $(this.$el).find('h3').removeClass('hide');
             }

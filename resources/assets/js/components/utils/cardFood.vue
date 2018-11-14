@@ -11,7 +11,8 @@
             <div class="left">
                 <div class="input-wrap">
                     <p>商品名稱</p>
-                    <Input v-model="cloneName" placeholder="Enter something..."></Input>
+                    <Input v-model="cloneName"                           
+                           placeholder="Enter something..."></Input>
                 </div>
                 <div class="input-wrap">
                     <p>價位</p>
@@ -26,6 +27,9 @@
                         <Option value="g">公克</Option>
                         <Option value="kg">公斤</Option>
                     </Select>
+                </div>
+                <div class="input-wrap" style="justify-content: flex-end;">
+                    <Button @click.native="changeItem()">儲存</Button>
                 </div>
             </div>      
         </div>
@@ -47,9 +51,13 @@ import ImageUploader from '../ImageUploader.vue';
         ],
         data() {
             return {
-                value2: 280,
-                value3: 8,
-                select3: 'com'
+                needSendToParent: {
+                                    "ID": '',
+                                    "Name": '',
+                                    "Unit": '',
+                                    "Price": '',
+                                    "AccountID": 0
+                               },
             }
         },
         computed: {
@@ -58,14 +66,17 @@ import ImageUploader from '../ImageUploader.vue';
             ]),
             cloneName: {
                 get: function() {
+                    this.needSendToParent["Name"] = this.cardName;
                     return this.cardName;
                 },
                 set: function(newValue) {
+                    this.needSendToParent["Name"] = newValue;
                     return this.cardName;
                 }
             },
             cloneUnit: {
                 get: function() {
+                    this.needSendToParent["Unit"] = this.cardUnit;
                     if (this.cardUnit == "條") {
                         return 'strip';
                     }
@@ -83,16 +94,31 @@ import ImageUploader from '../ImageUploader.vue';
                     }
                 },
                 set: function(newValue) {
-                    console.log('cloneUnit', newValue);
-                    this.$emit('card-change-unit', newValue);
+                    if (newValue == "strip") {
+                        this.needSendToParent["Unit"] = "條";
+                    }
+                    if (newValue == "one") {
+                        this.needSendToParent["Unit"] = "顆";
+                    }
+                    if (newValue == "box") {
+                        this.needSendToParent["Unit"] = "盒";
+                    }
+                    if (newValue == "g") {
+                        this.needSendToParent["Unit"] = "公克";
+                    }
+                    if (newValue == "kg") {
+                        this.needSendToParent["Unit"] = "公斤";
+                    }
                     return this.cardUnit;
                 }
             },
             clonePrice: {
                 get: function() {
+                    this.needSendToParent["Price"] = this.cardPrice;
                     return this.cardPrice;
                 },
-                set: function(newValue) {
+                set: function(newValue) {                    
+                    this.needSendToParent["Price"] = newValue;
                     return this.cardPrice;
                 }
             },
@@ -101,11 +127,21 @@ import ImageUploader from '../ImageUploader.vue';
             }
         },
         methods: {
+            changeItem () {
+                console.log('addedNameaddedNameaddedName');
+                //把input值傳給父
+                this.$emit('item-change', this.needSendToParent); 
+            }
         }
     }
 </script>
 <style lang="scss">
     .card-food {
+        &.active, &:hover {
+			i {
+				color: #0179fe;
+			}
+		}
         &::after {
             content: '';
             background-color: rgba(0, 0, 0, 0.1);

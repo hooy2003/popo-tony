@@ -27,15 +27,20 @@
     export default {
         name: 'CardA',
         props: ['cardName'],
+        data() {
+            return {
+                // 無須通知父組件 madeFrom 異動資訊
+                innerCardcardName: this.cardName,
+                needSendToParent: ''
+            }
+        },
         computed: {
             cloneCardName : {
                 get: function() {
                     return this.cardName;
                 },
                 set: function(newValue) {
-                    //把input值傳給父
-                    console.log('in cardB newValue', newValue);
-                    this.$emit('card-change-name', newValue);
+                    this.needSendToParent = newValue;
                     return this.cardName;
                 }
             },
@@ -59,6 +64,8 @@
                 }
             },
             addedName () {
+                //把input值傳給父
+                this.$emit('card-change-name', this.needSendToParent); 
                 $(this.$el).find('.ivu-input-wrapper').addClass('hide');
                 $(this.$el).find('h3').removeClass('hide');
             }
