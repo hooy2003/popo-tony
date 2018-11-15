@@ -84,10 +84,11 @@
                 <div class="union">
                     <CardFood
                         v-show="DCardShow"
+                        :card-id="currentDItem[0]"
                         :card-name="currentDItem[1]"
                         :card-unit="currentDItem[2]"
                         :card-price="currentDItem[3]"
-                        @item-change="changeDItem($event, currentDItem)"
+                        @item-change="changeDItem($event)"
                     ></CardFood>                                 
                 </div>
             </Col>
@@ -198,6 +199,7 @@ import AddNewCard from '../utils/addcard.vue';
             this.DCardShow = true;            
             this.currentDItemName = CITemName;
             this.currentDItem = CItem;
+            console.log('當CITEM被點了',this.currentDItem);
          },
         async getAClass() {
             this.currentAClass = await axios.get(`api/IngredientsCategory/Get`)
@@ -423,20 +425,18 @@ import AddNewCard from '../utils/addcard.vue';
                 console.log(error);
             });
         },
-        changeDItem(obj, DITem) {
+        changeDItem(obj) {
             console.log('DITem--------*******', obj);
-            console.log('DITem--------*******', DITem);
             console.log('DITem--------*******', this.currentDItem[0]);
-            let cloneObj = obj;
-            cloneObj['ID'] = this.currentDItem[0];
-            this.changeDItemInfo(cloneObj);
+            this.changeDItemInfo(obj);
         },
-        async changeDItemInfo(cloneObj) {
+        async changeDItemInfo(obj) {
             const vm = this;
-            await axios.post(`api/Ingredients/Update`, cloneObj)
+            await axios.post(`api/Ingredients/Update`, obj)
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 vm.getCItem(vm.currentBCardID);
+                console.log('changD', response);
                 return;
             })
             .catch(function (error) {

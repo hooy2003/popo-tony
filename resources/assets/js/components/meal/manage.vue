@@ -2,7 +2,7 @@
     <section class="content page">
         <Row>
             <Col span="5">
-                <div class="title">套餐</div>
+                <div class="title">餐點</div>
                 <div style="margin-bottom:40px"></div>
                 <div class="union">
                     <CardA v-for="(item, index) in currentAClass"
@@ -89,7 +89,44 @@
                         :card-unit="currentDItem[2]"
                         :card-price="currentDItem[3]"
                         @item-change="changeDItem($event)"
-                    ></CardFood>                                 
+                    ></CardFood>
+                    <h4 v-show="DCardShow">食譜</h4>
+                    <div class="meal-content" v-show="DCardShow">
+                        <div class="d1">
+                            <div class="e1">
+                                <div>銀魚/水晶魚</div>
+                                <div>4條</div>
+                            </div>
+                            <div class="e1">
+                                <div>牛奶</div>
+                                <div>5cc</div>
+                            </div>
+                        </div>
+                        <div class="d1">
+                            <div class="e1">
+                                <div>海苔</div>
+                                <div>100g</div>
+                            </div>
+                            <div class="e1">
+                                <div>雞蛋</div>
+                                <div>1顆</div>
+                            </div>
+                        </div>
+                        <div class="d1">
+                            <div class="e1">
+                                <div>醬油</div>
+                                <div>5cc</div>
+                            </div>
+                            <div class="e1">
+                                <div>玉米粉</div>
+                                <div>50g</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 v-show="DCardShow">調整口味</h4>
+                    <div class="add-new-card" v-show="DCardShow">
+                        <Icon type="ios-add-circle-outline" size="20" /></Icon>新增食材
+                    </div>
                 </div>
             </Col>
         </Row>        
@@ -202,7 +239,7 @@ import AddNewCard from '../utils/addcard.vue';
             console.log('當CITEM被點了',this.currentDItem);
          },
         async getAClass() {
-            this.currentAClass = await axios.get(`api/ComboMealsCategory/Get`)
+            this.currentAClass = await axios.get(`api/MealsCategory/Get`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -212,7 +249,7 @@ import AddNewCard from '../utils/addcard.vue';
             });
         },
         async getBClass(ACategoryID) {
-            this.currentBClass = await axios.get(`api/ComboMealsCategory/GetByCategoryID/${ACategoryID}`)
+            this.currentBClass = await axios.get(`api/MealsCategory/GetByCategoryID/${ACategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -222,7 +259,7 @@ import AddNewCard from '../utils/addcard.vue';
             });
         },
         async getBItem(ACategoryID) {
-            this.currentBItem = await axios.get(`api/ComoMeals/GetByCategoryID/${ACategoryID}`)
+            this.currentBItem = await axios.get(`api/Meals/GetByCategoryID/${ACategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -237,9 +274,9 @@ import AddNewCard from '../utils/addcard.vue';
             // "Name": "南澳小黃瓜",
             // "Unit": "公克",
             // "Price": 40,
-            // "ComboMealsCategoryID": 10,
-            // "ComboMealsCategoryName": "五穀根莖類"
-            this.currentCItem = await axios.get(`api/ComoMeals/GetByCategoryID/${BCategoryID}`)
+            // "MealsCategoryID": 10,
+            // "MealsCategoryName": "五穀根莖類"
+            this.currentCItem = await axios.get(`api/Meals/GetByCategoryID/${BCategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -250,7 +287,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async getDItem(ItemID) {
             // 廢氣中---------------
-            this.currentDItem = await axios.get(`api/ComoMeals/GetByCategoryID/${ItemID}`)
+            this.currentDItem = await axios.get(`api/Meals/GetByCategoryID/${ItemID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -271,7 +308,7 @@ import AddNewCard from '../utils/addcard.vue';
         async addNewAClassCard (ClassFile) {
             // Update Vue object with Axios response data
             const vm = this;
-            await axios.post(`api/ComboMealsCategory/Create`, ClassFile)
+            await axios.post(`api/MealsCategory/Create`, ClassFile)
             .then(function (response) {
                 vm.getAClass(vm.currentACardID);
                 return true;
@@ -283,7 +320,7 @@ import AddNewCard from '../utils/addcard.vue';
         addNewBClass($event, ACategoryID) {
             const ClassFile = {
                                 "Name": $event,
-                                "ComboMealsCategoryID": ACategoryID,
+                                "MealsCategoryID": ACategoryID,
                                 "AccountID": 0,
                                 "IsFirst": false
                               };
@@ -293,7 +330,7 @@ import AddNewCard from '../utils/addcard.vue';
         async addNewBClassCard (ClassFile) {
             // Update Vue object with Axios response data
             const vm = this;
-            await axios.post(`api/ComboMealsCategory/Create`, ClassFile)
+            await axios.post(`api/MealsCategory/Create`, ClassFile)
             .then(function (response) {
                 console.log('addNewBClassCard', response); 
                 vm.getBClass(vm.currentACardID);
@@ -306,7 +343,7 @@ import AddNewCard from '../utils/addcard.vue';
         addNewBItem($event, ACategoryID) {
             const ClassFile = {
                                 "Name": $event,
-                                "ComboMealsCategoryID": ACategoryID,
+                                "MealsCategoryID": ACategoryID,
                                 "Unit": "公斤",
                                 "Price": 0,
                                 "AccountID": 0
@@ -315,7 +352,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async addNewBItemCard (ClassFile) {
             const vm = this;
-            await axios.post(`api/ComoMeals/Create`, ClassFile)
+            await axios.post(`api/Meals/Create`, ClassFile)
             .then(function (response) {                
                 vm.getBItem(vm.currentACardID);
                 return true;
@@ -327,7 +364,7 @@ import AddNewCard from '../utils/addcard.vue';
         addNewCItem($event, BCategoryID) {
             const ClassFile = {
                                 "Name": $event,
-                                "ComboMealsCategoryID": BCategoryID,
+                                "MealsCategoryID": BCategoryID,
                                 "Unit": "公斤",
                                 "Price": 0,
                                 "AccountID": 0
@@ -336,7 +373,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async addNewCItemCard (ClassFile) {
             const vm = this;
-            await axios.post(`api/ComoMeals/Create`, ClassFile)
+            await axios.post(`api/Meals/Create`, ClassFile)
             .then(function (response) {                
                 vm.getCItem(vm.currentBCardID);
                 return true;
@@ -355,7 +392,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeACardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/ComboMealsCategory/Update`, ClassFile)
+            await axios.post(`api/MealsCategory/Update`, ClassFile)
             .then(function (response) {
                 vm.getAClass();
                 return;
@@ -374,7 +411,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeBCardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/ComboMealsCategory/Update`, ClassFile)
+            await axios.post(`api/MealsCategory/Update`, ClassFile)
             .then(function (response) {
                 vm.getAClass();
                 return;
@@ -395,7 +432,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeBItemCardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/ComoMeals/Update`, ClassFile)
+            await axios.post(`api/Meals/Update`, ClassFile)
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 return;
@@ -416,7 +453,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeCItemCardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/ComoMeals/Update`, ClassFile)
+            await axios.post(`api/Meals/Update`, ClassFile)
             .then(function (response) {
                 vm.getCItem(vm.currentBCardID);
                 return;
@@ -432,7 +469,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeDItemInfo(obj) {
             const vm = this;
-            await axios.post(`api/ComoMeals/Update`, obj)
+            await axios.post(`api/Meals/Update`, obj)
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 vm.getCItem(vm.currentBCardID);
@@ -448,7 +485,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteACard(ACategoryID) {
             const vm = this;
-            await axios.post(`api/ComboMealsCategory/Delete`, { "ID":ACategoryID })
+            await axios.post(`api/MealsCategory/Delete`, { "ID":ACategoryID })
             .then(function (response) {
                 vm.getAClass();
                 return;
@@ -462,7 +499,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteBCard(BCategoryID) {
             const vm = this;
-            await axios.post(`api/ComboMealsCategory/Delete`, { "ID":BCategoryID })
+            await axios.post(`api/MealsCategory/Delete`, { "ID":BCategoryID })
             .then(function (response) {
                 console.log(response);
                 console.log('delete success');
@@ -479,7 +516,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteBItemCard(BItemID) {
             const vm = this;
-            await axios.post(`api/ComoMeals/Delete`, { "ID":BItemID })
+            await axios.post(`api/Meals/Delete`, { "ID":BItemID })
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 return;
@@ -494,7 +531,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteCItemCard(CItemID) {
             const vm = this;
-            await axios.post(`api/ComoMeals/Delete`, { "ID":CItemID })
+            await axios.post(`api/Meals/Delete`, { "ID":CItemID })
             .then(function (response) {
                 vm.getCItem(vm.currentBCardID);
                 return;
@@ -507,5 +544,37 @@ import AddNewCard from '../utils/addcard.vue';
   }
 </script>
 
-<style lang="scss">    
+<style lang="scss">
+    .meal-content {
+        border-radius: 5px;
+        background-color: #fff;
+        margin: 10px;
+        padding: 10px;
+        .d1 {
+            display: flex;
+            width: 100%;
+            &:last-child {
+                .e1 {
+                    &::after {display: none;}
+                }
+            }
+        }
+        .e1 {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            width: 50%;            
+            padding: 15px 10px;
+            box-sizing: border-box;
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 1px;
+                width: calc(100% - 20px);
+                bottom: 0;
+                background-color: rgba(0,0,0,0.1);
+            }
+        }
+    }
 </style>

@@ -45,6 +45,7 @@ import ImageUploader from '../ImageUploader.vue';
         },
         name: 'CardFood',
         props: [
+            'cardId',
             'cardName',
             'cardUnit',
             'cardPrice',
@@ -91,7 +92,7 @@ import ImageUploader from '../ImageUploader.vue';
                     }
                     if (this.cardUnit == "公斤") {
                         return 'kg';
-                    }
+                    }                    
                 },
                 set: function(newValue) {
                     if (newValue == "strip") {
@@ -128,7 +129,8 @@ import ImageUploader from '../ImageUploader.vue';
         },
         methods: {
             changeItem () {
-                console.log('addedNameaddedNameaddedName');
+                this.needSendToParent["ID"] = this.cardId;
+                console.log('in cardFood-OBJ', this.needSendToParent);
                 //把input值傳給父
                 this.$emit('item-change', this.needSendToParent); 
             }

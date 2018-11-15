@@ -2,7 +2,7 @@
     <section class="content page">
         <Row>
             <Col span="5">
-                <div class="title">套餐</div>
+                <div class="title">食譜</div>
                 <div style="margin-bottom:40px"></div>
                 <div class="union">
                     <CardA v-for="(item, index) in currentAClass"
@@ -89,7 +89,11 @@
                         :card-unit="currentDItem[2]"
                         :card-price="currentDItem[3]"
                         @item-change="changeDItem($event)"
-                    ></CardFood>                                 
+                    ></CardFood>
+                    <h4 v-show="DCardShow">食譜</h4>
+                    <div class="add-new-card" v-show="DCardShow">
+                        <Icon type="ios-add-circle-outline" size="20" /></Icon>編輯食譜品項
+                    </div>
                 </div>
             </Col>
         </Row>        
@@ -202,7 +206,7 @@ import AddNewCard from '../utils/addcard.vue';
             console.log('當CITEM被點了',this.currentDItem);
          },
         async getAClass() {
-            this.currentAClass = await axios.get(`api/ComboMealsCategory/Get`)
+            this.currentAClass = await axios.get(`api/RecipesCategory/Get`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -212,7 +216,7 @@ import AddNewCard from '../utils/addcard.vue';
             });
         },
         async getBClass(ACategoryID) {
-            this.currentBClass = await axios.get(`api/ComboMealsCategory/GetByCategoryID/${ACategoryID}`)
+            this.currentBClass = await axios.get(`api/RecipesCategory/GetByCategoryID/${ACategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -222,7 +226,7 @@ import AddNewCard from '../utils/addcard.vue';
             });
         },
         async getBItem(ACategoryID) {
-            this.currentBItem = await axios.get(`api/ComoMeals/GetByCategoryID/${ACategoryID}`)
+            this.currentBItem = await axios.get(`api/Recipes/GetByCategoryID/${ACategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -237,9 +241,9 @@ import AddNewCard from '../utils/addcard.vue';
             // "Name": "南澳小黃瓜",
             // "Unit": "公克",
             // "Price": 40,
-            // "ComboMealsCategoryID": 10,
-            // "ComboMealsCategoryName": "五穀根莖類"
-            this.currentCItem = await axios.get(`api/ComoMeals/GetByCategoryID/${BCategoryID}`)
+            // "RecipesCategoryID": 10,
+            // "RecipesCategoryName": "五穀根莖類"
+            this.currentCItem = await axios.get(`api/Recipes/GetByCategoryID/${BCategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -250,7 +254,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async getDItem(ItemID) {
             // 廢氣中---------------
-            this.currentDItem = await axios.get(`api/ComoMeals/GetByCategoryID/${ItemID}`)
+            this.currentDItem = await axios.get(`api/Recipes/GetByCategoryID/${ItemID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -271,7 +275,7 @@ import AddNewCard from '../utils/addcard.vue';
         async addNewAClassCard (ClassFile) {
             // Update Vue object with Axios response data
             const vm = this;
-            await axios.post(`api/ComboMealsCategory/Create`, ClassFile)
+            await axios.post(`api/RecipesCategory/Create`, ClassFile)
             .then(function (response) {
                 vm.getAClass(vm.currentACardID);
                 return true;
@@ -283,7 +287,7 @@ import AddNewCard from '../utils/addcard.vue';
         addNewBClass($event, ACategoryID) {
             const ClassFile = {
                                 "Name": $event,
-                                "ComboMealsCategoryID": ACategoryID,
+                                "RecipesCategoryID": ACategoryID,
                                 "AccountID": 0,
                                 "IsFirst": false
                               };
@@ -293,7 +297,7 @@ import AddNewCard from '../utils/addcard.vue';
         async addNewBClassCard (ClassFile) {
             // Update Vue object with Axios response data
             const vm = this;
-            await axios.post(`api/ComboMealsCategory/Create`, ClassFile)
+            await axios.post(`api/RecipesCategory/Create`, ClassFile)
             .then(function (response) {
                 console.log('addNewBClassCard', response); 
                 vm.getBClass(vm.currentACardID);
@@ -306,7 +310,7 @@ import AddNewCard from '../utils/addcard.vue';
         addNewBItem($event, ACategoryID) {
             const ClassFile = {
                                 "Name": $event,
-                                "ComboMealsCategoryID": ACategoryID,
+                                "RecipesCategoryID": ACategoryID,
                                 "Unit": "公斤",
                                 "Price": 0,
                                 "AccountID": 0
@@ -315,7 +319,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async addNewBItemCard (ClassFile) {
             const vm = this;
-            await axios.post(`api/ComoMeals/Create`, ClassFile)
+            await axios.post(`api/Recipes/Create`, ClassFile)
             .then(function (response) {                
                 vm.getBItem(vm.currentACardID);
                 return true;
@@ -327,7 +331,7 @@ import AddNewCard from '../utils/addcard.vue';
         addNewCItem($event, BCategoryID) {
             const ClassFile = {
                                 "Name": $event,
-                                "ComboMealsCategoryID": BCategoryID,
+                                "RecipesCategoryID": BCategoryID,
                                 "Unit": "公斤",
                                 "Price": 0,
                                 "AccountID": 0
@@ -336,7 +340,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async addNewCItemCard (ClassFile) {
             const vm = this;
-            await axios.post(`api/ComoMeals/Create`, ClassFile)
+            await axios.post(`api/Recipes/Create`, ClassFile)
             .then(function (response) {                
                 vm.getCItem(vm.currentBCardID);
                 return true;
@@ -355,7 +359,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeACardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/ComboMealsCategory/Update`, ClassFile)
+            await axios.post(`api/RecipesCategory/Update`, ClassFile)
             .then(function (response) {
                 vm.getAClass();
                 return;
@@ -374,7 +378,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeBCardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/ComboMealsCategory/Update`, ClassFile)
+            await axios.post(`api/RecipesCategory/Update`, ClassFile)
             .then(function (response) {
                 vm.getAClass();
                 return;
@@ -395,7 +399,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeBItemCardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/ComoMeals/Update`, ClassFile)
+            await axios.post(`api/Recipes/Update`, ClassFile)
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 return;
@@ -416,7 +420,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeCItemCardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/ComoMeals/Update`, ClassFile)
+            await axios.post(`api/Recipes/Update`, ClassFile)
             .then(function (response) {
                 vm.getCItem(vm.currentBCardID);
                 return;
@@ -432,7 +436,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeDItemInfo(obj) {
             const vm = this;
-            await axios.post(`api/ComoMeals/Update`, obj)
+            await axios.post(`api/Recipes/Update`, obj)
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 vm.getCItem(vm.currentBCardID);
@@ -448,7 +452,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteACard(ACategoryID) {
             const vm = this;
-            await axios.post(`api/ComboMealsCategory/Delete`, { "ID":ACategoryID })
+            await axios.post(`api/RecipesCategory/Delete`, { "ID":ACategoryID })
             .then(function (response) {
                 vm.getAClass();
                 return;
@@ -462,7 +466,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteBCard(BCategoryID) {
             const vm = this;
-            await axios.post(`api/ComboMealsCategory/Delete`, { "ID":BCategoryID })
+            await axios.post(`api/RecipesCategory/Delete`, { "ID":BCategoryID })
             .then(function (response) {
                 console.log(response);
                 console.log('delete success');
@@ -479,7 +483,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteBItemCard(BItemID) {
             const vm = this;
-            await axios.post(`api/ComoMeals/Delete`, { "ID":BItemID })
+            await axios.post(`api/Recipes/Delete`, { "ID":BItemID })
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 return;
@@ -494,7 +498,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteCItemCard(CItemID) {
             const vm = this;
-            await axios.post(`api/ComoMeals/Delete`, { "ID":CItemID })
+            await axios.post(`api/Recipes/Delete`, { "ID":CItemID })
             .then(function (response) {
                 vm.getCItem(vm.currentBCardID);
                 return;
@@ -507,5 +511,5 @@ import AddNewCard from '../utils/addcard.vue';
   }
 </script>
 
-<style lang="scss">    
+<style lang="scss">
 </style>

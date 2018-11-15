@@ -6,8 +6,8 @@
         </router-link>
         <ul v-if="isLogin">
             <router-link to="/food" tag="li">食材管理</router-link>
-            <router-link to="/home" tag="li">食譜管理</router-link>
-            <router-link to="/home" tag="li">餐點管理</router-link>
+            <router-link to="/recipes" tag="li">食譜管理</router-link>
+            <router-link to="/meal" tag="li">餐點管理</router-link>
             <router-link to="/set" tag="li">套餐管理</router-link>
             <router-link to="/home" tag="li">店面管理</router-link>
             <router-link to="/home" tag="li">結帳管理</router-link>
