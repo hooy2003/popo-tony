@@ -206,7 +206,7 @@ import AddNewCard from '../utils/addcard.vue';
             console.log('當CITEM被點了',this.currentDItem);
          },
         async getAClass() {
-            this.currentAClass = await axios.get(`api/RecipesCategory/Get`)
+            this.currentAClass = await axios.get(process.env.API_HOST + `/RecipesCategory/Get`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -216,7 +216,7 @@ import AddNewCard from '../utils/addcard.vue';
             });
         },
         async getBClass(ACategoryID) {
-            this.currentBClass = await axios.get(`api/RecipesCategory/GetByCategoryID/${ACategoryID}`)
+            this.currentBClass = await axios.get(process.env.API_HOST + `/RecipesCategory/GetByCategoryID/${ACategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -226,7 +226,7 @@ import AddNewCard from '../utils/addcard.vue';
             });
         },
         async getBItem(ACategoryID) {
-            this.currentBItem = await axios.get(`api/Recipes/GetByCategoryID/${ACategoryID}`)
+            this.currentBItem = await axios.get(process.env.API_HOST + `/Recipes/GetByCategoryID/${ACategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -243,7 +243,7 @@ import AddNewCard from '../utils/addcard.vue';
             // "Price": 40,
             // "RecipesCategoryID": 10,
             // "RecipesCategoryName": "五穀根莖類"
-            this.currentCItem = await axios.get(`api/Recipes/GetByCategoryID/${BCategoryID}`)
+            this.currentCItem = await axios.get(process.env.API_HOST + `/Recipes/GetByCategoryID/${BCategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -254,7 +254,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async getDItem(ItemID) {
             // 廢氣中---------------
-            this.currentDItem = await axios.get(`api/Recipes/GetByCategoryID/${ItemID}`)
+            this.currentDItem = await axios.get(process.env.API_HOST + `/Recipes/GetByCategoryID/${ItemID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -275,7 +275,7 @@ import AddNewCard from '../utils/addcard.vue';
         async addNewAClassCard (ClassFile) {
             // Update Vue object with Axios response data
             const vm = this;
-            await axios.post(`api/RecipesCategory/Create`, ClassFile)
+            await axios.post(process.env.API_HOST + `/RecipesCategory/Create`, ClassFile)
             .then(function (response) {
                 vm.getAClass(vm.currentACardID);
                 return true;
@@ -297,7 +297,7 @@ import AddNewCard from '../utils/addcard.vue';
         async addNewBClassCard (ClassFile) {
             // Update Vue object with Axios response data
             const vm = this;
-            await axios.post(`api/RecipesCategory/Create`, ClassFile)
+            await axios.post(process.env.API_HOST + `/RecipesCategory/Create`, ClassFile)
             .then(function (response) {
                 console.log('addNewBClassCard', response); 
                 vm.getBClass(vm.currentACardID);
@@ -319,7 +319,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async addNewBItemCard (ClassFile) {
             const vm = this;
-            await axios.post(`api/Recipes/Create`, ClassFile)
+            await axios.post(process.env.API_HOST + `/Recipes/Create`, ClassFile)
             .then(function (response) {                
                 vm.getBItem(vm.currentACardID);
                 return true;
@@ -340,7 +340,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async addNewCItemCard (ClassFile) {
             const vm = this;
-            await axios.post(`api/Recipes/Create`, ClassFile)
+            await axios.post(process.env.API_HOST + `/Recipes/Create`, ClassFile)
             .then(function (response) {                
                 vm.getCItem(vm.currentBCardID);
                 return true;
@@ -359,7 +359,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeACardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/RecipesCategory/Update`, ClassFile)
+            await axios.post(process.env.API_HOST + `/RecipesCategory/Update`, ClassFile)
             .then(function (response) {
                 vm.getAClass();
                 return;
@@ -378,7 +378,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeBCardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/RecipesCategory/Update`, ClassFile)
+            await axios.post(process.env.API_HOST + `/RecipesCategory/Update`, ClassFile)
             .then(function (response) {
                 vm.getAClass();
                 return;
@@ -399,7 +399,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeBItemCardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/Recipes/Update`, ClassFile)
+            await axios.post(process.env.API_HOST + `/Recipes/Update`, ClassFile)
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 return;
@@ -420,7 +420,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeCItemCardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/Recipes/Update`, ClassFile)
+            await axios.post(process.env.API_HOST + `/Recipes/Update`, ClassFile)
             .then(function (response) {
                 vm.getCItem(vm.currentBCardID);
                 return;
@@ -436,7 +436,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeDItemInfo(obj) {
             const vm = this;
-            await axios.post(`api/Recipes/Update`, obj)
+            await axios.post(process.env.API_HOST + `/Recipes/Update`, obj)
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 vm.getCItem(vm.currentBCardID);
@@ -452,7 +452,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteACard(ACategoryID) {
             const vm = this;
-            await axios.post(`api/RecipesCategory/Delete`, { "ID":ACategoryID })
+            await axios.post(process.env.API_HOST + `/RecipesCategory/Delete`, { "ID":ACategoryID })
             .then(function (response) {
                 vm.getAClass();
                 return;
@@ -466,7 +466,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteBCard(BCategoryID) {
             const vm = this;
-            await axios.post(`api/RecipesCategory/Delete`, { "ID":BCategoryID })
+            await axios.post(process.env.API_HOST + `/RecipesCategory/Delete`, { "ID":BCategoryID })
             .then(function (response) {
                 console.log(response);
                 console.log('delete success');
@@ -483,7 +483,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteBItemCard(BItemID) {
             const vm = this;
-            await axios.post(`api/Recipes/Delete`, { "ID":BItemID })
+            await axios.post(process.env.API_HOST + `/Recipes/Delete`, { "ID":BItemID })
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 return;
@@ -498,7 +498,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteCItemCard(CItemID) {
             const vm = this;
-            await axios.post(`api/Recipes/Delete`, { "ID":CItemID })
+            await axios.post(process.env.API_HOST + `/Recipes/Delete`, { "ID":CItemID })
             .then(function (response) {
                 vm.getCItem(vm.currentBCardID);
                 return;

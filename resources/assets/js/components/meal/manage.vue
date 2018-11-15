@@ -239,7 +239,7 @@ import AddNewCard from '../utils/addcard.vue';
             console.log('當CITEM被點了',this.currentDItem);
          },
         async getAClass() {
-            this.currentAClass = await axios.get(`api/MealsCategory/Get`)
+            this.currentAClass = await axios.get(process.env.API_HOST + `/MealsCategory/Get`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -249,7 +249,7 @@ import AddNewCard from '../utils/addcard.vue';
             });
         },
         async getBClass(ACategoryID) {
-            this.currentBClass = await axios.get(`api/MealsCategory/GetByCategoryID/${ACategoryID}`)
+            this.currentBClass = await axios.get(process.env.API_HOST + `/MealsCategory/GetByCategoryID/${ACategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -259,7 +259,7 @@ import AddNewCard from '../utils/addcard.vue';
             });
         },
         async getBItem(ACategoryID) {
-            this.currentBItem = await axios.get(`api/Meals/GetByCategoryID/${ACategoryID}`)
+            this.currentBItem = await axios.get(process.env.API_HOST + `/Meals/GetByCategoryID/${ACategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -276,7 +276,7 @@ import AddNewCard from '../utils/addcard.vue';
             // "Price": 40,
             // "MealsCategoryID": 10,
             // "MealsCategoryName": "五穀根莖類"
-            this.currentCItem = await axios.get(`api/Meals/GetByCategoryID/${BCategoryID}`)
+            this.currentCItem = await axios.get(process.env.API_HOST + `/Meals/GetByCategoryID/${BCategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -287,7 +287,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async getDItem(ItemID) {
             // 廢氣中---------------
-            this.currentDItem = await axios.get(`api/Meals/GetByCategoryID/${ItemID}`)
+            this.currentDItem = await axios.get(process.env.API_HOST + `/Meals/GetByCategoryID/${ItemID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
                 return nameList;
@@ -308,7 +308,7 @@ import AddNewCard from '../utils/addcard.vue';
         async addNewAClassCard (ClassFile) {
             // Update Vue object with Axios response data
             const vm = this;
-            await axios.post(`api/MealsCategory/Create`, ClassFile)
+            await axios.post(process.env.API_HOST + `/MealsCategory/Create`, ClassFile)
             .then(function (response) {
                 vm.getAClass(vm.currentACardID);
                 return true;
@@ -330,7 +330,7 @@ import AddNewCard from '../utils/addcard.vue';
         async addNewBClassCard (ClassFile) {
             // Update Vue object with Axios response data
             const vm = this;
-            await axios.post(`api/MealsCategory/Create`, ClassFile)
+            await axios.post(process.env.API_HOST + `/MealsCategory/Create`, ClassFile)
             .then(function (response) {
                 console.log('addNewBClassCard', response); 
                 vm.getBClass(vm.currentACardID);
@@ -352,7 +352,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async addNewBItemCard (ClassFile) {
             const vm = this;
-            await axios.post(`api/Meals/Create`, ClassFile)
+            await axios.post(process.env.API_HOST + `/Meals/Create`, ClassFile)
             .then(function (response) {                
                 vm.getBItem(vm.currentACardID);
                 return true;
@@ -373,7 +373,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async addNewCItemCard (ClassFile) {
             const vm = this;
-            await axios.post(`api/Meals/Create`, ClassFile)
+            await axios.post(process.env.API_HOST + `/Meals/Create`, ClassFile)
             .then(function (response) {                
                 vm.getCItem(vm.currentBCardID);
                 return true;
@@ -392,7 +392,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeACardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/MealsCategory/Update`, ClassFile)
+            await axios.post(process.env.API_HOST + `/MealsCategory/Update`, ClassFile)
             .then(function (response) {
                 vm.getAClass();
                 return;
@@ -411,7 +411,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeBCardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/MealsCategory/Update`, ClassFile)
+            await axios.post(process.env.API_HOST + `/MealsCategory/Update`, ClassFile)
             .then(function (response) {
                 vm.getAClass();
                 return;
@@ -432,7 +432,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeBItemCardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/Meals/Update`, ClassFile)
+            await axios.post(process.env.API_HOST + `/Meals/Update`, ClassFile)
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 return;
@@ -453,7 +453,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeCItemCardName(ClassFile) {
             const vm = this;
-            await axios.post(`api/Meals/Update`, ClassFile)
+            await axios.post(process.env.API_HOST + `/Meals/Update`, ClassFile)
             .then(function (response) {
                 vm.getCItem(vm.currentBCardID);
                 return;
@@ -469,7 +469,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async changeDItemInfo(obj) {
             const vm = this;
-            await axios.post(`api/Meals/Update`, obj)
+            await axios.post(process.env.API_HOST + `/Meals/Update`, obj)
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 vm.getCItem(vm.currentBCardID);
@@ -485,7 +485,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteACard(ACategoryID) {
             const vm = this;
-            await axios.post(`api/MealsCategory/Delete`, { "ID":ACategoryID })
+            await axios.post(process.env.API_HOST + `/MealsCategory/Delete`, { "ID":ACategoryID })
             .then(function (response) {
                 vm.getAClass();
                 return;
@@ -499,7 +499,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteBCard(BCategoryID) {
             const vm = this;
-            await axios.post(`api/MealsCategory/Delete`, { "ID":BCategoryID })
+            await axios.post(process.env.API_HOST + `/MealsCategory/Delete`, { "ID":BCategoryID })
             .then(function (response) {
                 console.log(response);
                 console.log('delete success');
@@ -516,7 +516,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteBItemCard(BItemID) {
             const vm = this;
-            await axios.post(`api/Meals/Delete`, { "ID":BItemID })
+            await axios.post(process.env.API_HOST + `/Meals/Delete`, { "ID":BItemID })
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 return;
@@ -531,7 +531,7 @@ import AddNewCard from '../utils/addcard.vue';
         },
         async deleteCItemCard(CItemID) {
             const vm = this;
-            await axios.post(`api/Meals/Delete`, { "ID":CItemID })
+            await axios.post(process.env.API_HOST + `/Meals/Delete`, { "ID":CItemID })
             .then(function (response) {
                 vm.getCItem(vm.currentBCardID);
                 return;
