@@ -42,6 +42,13 @@ webpackJsonp([1],{
 
 /***/ }),
 
+/***/ "QjWk":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "VdhY":
 /***/ (function(module, exports) {
 
@@ -57,13 +64,6 @@ webpackJsonp([1],{
 /***/ }),
 
 /***/ "Ynfe":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "b8v1":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -3146,11 +3146,12 @@ var addcard_Component = addcard_normalizeComponent(
             }))();
         },
 
-        deleteBItem: function deleteBItem($event, BItemID) {
+        deleteBItem: function deleteBItem($event, BItem) {
             // Item[0] 是項目的ID
-            this.deleteBItemCard(BItemID);
+            // Item[4] 是項目的分類ID
+            this.deleteBItemCard(BItem[0], BItem[4]);
         },
-        deleteBItemCard: function deleteBItemCard(BItemID) {
+        deleteBItemCard: function deleteBItemCard(BItemID, BItemCID) {
             var _this17 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee17() {
@@ -3161,7 +3162,7 @@ var addcard_Component = addcard_normalizeComponent(
                             case 0:
                                 vm = _this17;
                                 _context17.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Ingredients/Delete', { "ID": BItemID }).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Ingredients/Delete', { "ID": BItemID, "ingredientsCategoryID": BItemCID }).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     return;
                                 }).catch(function (error) {
@@ -3177,11 +3178,12 @@ var addcard_Component = addcard_normalizeComponent(
             }))();
         },
 
-        deleteCItem: function deleteCItem($event, CItemID) {
+        deleteCItem: function deleteCItem($event, CItem) {
             // Item[0] 是項目的ID
-            this.deleteCItemCard(CItemID);
+            // Item[4] 是項目的分類ID
+            this.deleteCItemCard(CItem[0], CItem[4]);
         },
-        deleteCItemCard: function deleteCItemCard(CItemID) {
+        deleteCItemCard: function deleteCItemCard(CItemID, CItemCID) {
             var _this18 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee18() {
@@ -3192,7 +3194,7 @@ var addcard_Component = addcard_normalizeComponent(
                             case 0:
                                 vm = _this18;
                                 _context18.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Ingredients/Delete', { "ID": CItemID }).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Ingredients/Delete', { "ID": CItemID, "ingredientsCategoryID": CItemCID }).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     return;
                                 }).catch(function (error) {
@@ -3209,14 +3211,14 @@ var addcard_Component = addcard_normalizeComponent(
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-6380eda1","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/food/manage.vue
-var manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("食材")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},[_vm._l((_vm.currentAClass),function(item,index){return _c('CardA',{key:item.index,class:{ active: index === 0 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeAName($event, item[0])},"card-on-click":function($event){_vm.AClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteAClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewAClass($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentACardName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("類別")]),_vm._v(" "),_vm._l((_vm.currentBClass),function(item,index){return _c('CardB',{key:item.index,staticClass:"B-class",class:{ lastcard: index === (_vm.currentBClass.length-1) && index > 1 },attrs:{"card-name":item[1],"is-class":true},on:{"card-change-name":function($event){_vm.changeBName($event, item[0])},"card-on-click":function($event){_vm.BClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteBClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBClass.length >= 0),expression:"currentBClass.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBClass($event, _vm.currentACardID)}}}),_vm._v(" "),_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentBItem),function(item,index){return _c('CardB',{key:item.index,class:{ lastcard: index === (_vm.currentBItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeBItemName($event, item)},"card-on-click":function($event){_vm.BItemOnClick($event, item)},"card-delete":function($event){_vm.deleteBItem($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBItem.length >= 0),expression:"currentBItem.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBItem($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentBCardName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentCItem),function(item,index){return _c('CardC',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],key:item.index,class:{ lastcard: index === (_vm.currentCItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeCItemName($event, item)},"card-on-click":function($event){_vm.CItemOnClick($event, item)},"card-delete":function($event){_vm.deleteCItem($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewCItem($event, _vm.currentBCardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentDItemName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('CardFood',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],attrs:{"card-id":_vm.currentDItem[0],"card-name":_vm.currentDItem[1],"card-unit":_vm.currentDItem[2],"card-price":_vm.currentDItem[3]},on:{"item-change":function($event){_vm.changeDItem($event)}}})],1)])],1)],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-0c6a4634","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/food/manage.vue
+var manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("食材")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},[_vm._l((_vm.currentAClass),function(item,index){return _c('CardA',{key:item.index,class:{ active: index === 0 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeAName($event, item[0])},"card-on-click":function($event){_vm.AClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteAClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewAClass($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentACardName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("類別")]),_vm._v(" "),_vm._l((_vm.currentBClass),function(item,index){return _c('CardB',{key:item.index,staticClass:"B-class",class:{ lastcard: index === (_vm.currentBClass.length-1) && index > 1 },attrs:{"card-name":item[1],"is-class":true},on:{"card-change-name":function($event){_vm.changeBName($event, item[0])},"card-on-click":function($event){_vm.BClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteBClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBClass.length >= 0),expression:"currentBClass.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBClass($event, _vm.currentACardID)}}}),_vm._v(" "),_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentBItem),function(item,index){return _c('CardB',{key:item.index,class:{ lastcard: index === (_vm.currentBItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeBItemName($event, item)},"card-on-click":function($event){_vm.BItemOnClick($event, item)},"card-delete":function($event){_vm.deleteBItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBItem.length >= 0),expression:"currentBItem.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBItem($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentBCardName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentCItem),function(item,index){return _c('CardC',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],key:item.index,class:{ lastcard: index === (_vm.currentCItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeCItemName($event, item)},"card-on-click":function($event){_vm.CItemOnClick($event, item)},"card-delete":function($event){_vm.deleteCItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewCItem($event, _vm.currentBCardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentDItemName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('CardFood',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],attrs:{"card-id":_vm.currentDItem[0],"card-name":_vm.currentDItem[1],"card-unit":_vm.currentDItem[2],"card-price":_vm.currentDItem[3]},on:{"item-change":function($event){_vm.changeDItem($event)}}})],1)])],1)],1)}
 var manage_staticRenderFns = []
 var manage_esExports = { render: manage_render, staticRenderFns: manage_staticRenderFns }
 /* harmony default export */ var food_manage = (manage_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/food/manage.vue
 function manage_injectStyle (ssrContext) {
-  __webpack_require__("b8v1")
+  __webpack_require__("QjWk")
 }
 var manage_normalizeComponent = __webpack_require__("VU/8")
 /* script */

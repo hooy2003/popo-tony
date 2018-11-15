@@ -48,7 +48,7 @@
                            :class="{ lastcard: index === (currentBItem.length-1) && index > 1 }"
                            @card-change-name="changeBItemName($event, item)"
                            @card-on-click="BItemOnClick($event, item)"
-                           @card-delete="deleteBItem($event, item[0])"
+                           @card-delete="deleteBItem($event, item)"
                     >
                     </CardB>
                     <AddNewCard  @add-card-name="addNewBItem($event, currentACardID)"
@@ -68,7 +68,7 @@
                            :class="{ lastcard: index === (currentCItem.length-1) && index > 1 }"
                            @card-change-name="changeCItemName($event, item)"
                            @card-on-click="CItemOnClick($event, item)"
-                           @card-delete="deleteCItem($event, item[0])"                           
+                           @card-delete="deleteCItem($event, item)"                           
                            v-show="CCardShow"
                     >
                     </CardC>
@@ -475,13 +475,14 @@ import AddNewCard from '../utils/addcard.vue';
                 console.log(error);
             });
         },
-        deleteBItem: function($event, BItemID) {
+        deleteBItem: function($event, BItem) {
             // Item[0] 是項目的ID
-            this.deleteBItemCard(BItemID);
+            // Item[4] 是項目的分類ID
+            this.deleteBItemCard(BItem[0], BItem[4]);
         },
-        async deleteBItemCard(BItemID) {
+        async deleteBItemCard(BItemID, BItemCID) {
             const vm = this;
-            await axios.post(process.env.API_HOST + `/Ingredients/Delete`, { "ID":BItemID })
+            await axios.post(process.env.API_HOST + `/Ingredients/Delete`, { "ID":BItemID, "ingredientsCategoryID": BItemCID})
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 return;
@@ -490,13 +491,14 @@ import AddNewCard from '../utils/addcard.vue';
                 console.log(error);
             });
         },
-        deleteCItem: function($event, CItemID) {
+        deleteCItem: function($event, CItem) {
             // Item[0] 是項目的ID
-            this.deleteCItemCard(CItemID);
+            // Item[4] 是項目的分類ID
+            this.deleteCItemCard(CItem[0], CItem[4]);
         },
-        async deleteCItemCard(CItemID) {
+        async deleteCItemCard(CItemID, CItemCID) {
             const vm = this;
-            await axios.post(process.env.API_HOST + `/Ingredients/Delete`, { "ID":CItemID })
+            await axios.post(process.env.API_HOST + `/Ingredients/Delete`, { "ID":CItemID, "ingredientsCategoryID": CItemCID})
             .then(function (response) {
                 vm.getCItem(vm.currentBCardID);
                 return;
