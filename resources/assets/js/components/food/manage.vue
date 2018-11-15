@@ -436,7 +436,9 @@ import AddNewCard from '../utils/addcard.vue';
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 vm.getCItem(vm.currentBCardID);
-                console.log('changD', response);
+                if (!response.data.Success) {
+                    vm.$Message.error(response.data.Message);
+                }
                 return;
             })
             .catch(function (error) {

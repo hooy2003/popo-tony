@@ -473,11 +473,11 @@ import AddNewCard from '../utils/addcard.vue';
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 vm.getCItem(vm.currentBCardID);
-                console.log('changD', response);
+                console.log('changD', response);                
                 return;
             })
             .catch(function (error) {
-                console.log(error);
+                console.log(error)
             });
         }, 
         deleteAClass: function($event, ACategoryID) {

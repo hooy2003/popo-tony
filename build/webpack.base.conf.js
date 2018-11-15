@@ -20,7 +20,8 @@ const createLintingRule = () => ({
   }
 })
 const extractSass = new ExtractTextPlugin({
-  filename: 'app.css',
+  filename: utils.assetsPath('css/[name].css'),
+  allChunks: true,
 });
 
 module.exports = {
