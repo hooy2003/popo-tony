@@ -42,13 +42,6 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ "RCqu":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "VdhY":
 /***/ (function(module, exports) {
 
@@ -64,6 +57,13 @@ webpackJsonp([1],{
 /***/ }),
 
 /***/ "Ynfe":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "b8v1":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -2620,7 +2620,7 @@ var addcard_Component = addcard_normalizeComponent(
                         switch (_context.prev = _context.next) {
                             case 0:
                                 _context.next = 2;
-                                return axios.get('api/IngredientsCategory/Get').then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPI/api" + '/IngredientsCategory/Get').then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -2649,7 +2649,7 @@ var addcard_Component = addcard_normalizeComponent(
                         switch (_context2.prev = _context2.next) {
                             case 0:
                                 _context2.next = 2;
-                                return axios.get('api/IngredientsCategory/GetByCategoryID/' + ACategoryID).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPI/api" + ('/IngredientsCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -2678,7 +2678,7 @@ var addcard_Component = addcard_normalizeComponent(
                         switch (_context3.prev = _context3.next) {
                             case 0:
                                 _context3.next = 2;
-                                return axios.get('api/Ingredients/GetByCategoryID/' + ACategoryID).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPI/api" + ('/Ingredients/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -2714,7 +2714,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 // "IngredientsCategoryID": 10,
                                 // "IngredientsCategoryName": "五穀根莖類"
                                 _context4.next = 3;
-                                return axios.get('api/Ingredients/GetByCategoryID/' + BCategoryID).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPI/api" + ('/Ingredients/GetByCategoryID/' + BCategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -2743,7 +2743,7 @@ var addcard_Component = addcard_normalizeComponent(
                         switch (_context5.prev = _context5.next) {
                             case 0:
                                 _context5.next = 2;
-                                return axios.get('api/Ingredients/GetByCategoryID/' + ItemID).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPI/api" + ('/Ingredients/GetByCategoryID/' + ItemID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -2783,7 +2783,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 // Update Vue object with Axios response data
                                 vm = _this6;
                                 _context6.next = 3;
-                                return axios.post('api/IngredientsCategory/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/IngredientsCategory/Create', ClassFile).then(function (response) {
                                     vm.getAClass(vm.currentACardID);
                                     return true;
                                 }).catch(function (error) {
@@ -2820,7 +2820,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 // Update Vue object with Axios response data
                                 vm = _this7;
                                 _context7.next = 3;
-                                return axios.post('api/IngredientsCategory/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/IngredientsCategory/Create', ClassFile).then(function (response) {
                                     console.log('addNewBClassCard', response);
                                     vm.getBClass(vm.currentACardID);
                                     return true;
@@ -2857,7 +2857,7 @@ var addcard_Component = addcard_normalizeComponent(
                             case 0:
                                 vm = _this8;
                                 _context8.next = 3;
-                                return axios.post('api/Ingredients/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Ingredients/Create', ClassFile).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     return true;
                                 }).catch(function (error) {
@@ -2893,7 +2893,7 @@ var addcard_Component = addcard_normalizeComponent(
                             case 0:
                                 vm = _this9;
                                 _context9.next = 3;
-                                return axios.post('api/Ingredients/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Ingredients/Create', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     return true;
                                 }).catch(function (error) {
@@ -2927,7 +2927,7 @@ var addcard_Component = addcard_normalizeComponent(
                             case 0:
                                 vm = _this10;
                                 _context10.next = 3;
-                                return axios.post('api/IngredientsCategory/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/IngredientsCategory/Update', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -2961,7 +2961,7 @@ var addcard_Component = addcard_normalizeComponent(
                             case 0:
                                 vm = _this11;
                                 _context11.next = 3;
-                                return axios.post('api/IngredientsCategory/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/IngredientsCategory/Update', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -2997,7 +2997,7 @@ var addcard_Component = addcard_normalizeComponent(
                             case 0:
                                 vm = _this12;
                                 _context12.next = 3;
-                                return axios.post('api/Ingredients/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Ingredients/Update', ClassFile).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     return;
                                 }).catch(function (error) {
@@ -3033,7 +3033,7 @@ var addcard_Component = addcard_normalizeComponent(
                             case 0:
                                 vm = _this13;
                                 _context13.next = 3;
-                                return axios.post('api/Ingredients/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Ingredients/Update', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     return;
                                 }).catch(function (error) {
@@ -3064,7 +3064,7 @@ var addcard_Component = addcard_normalizeComponent(
                             case 0:
                                 vm = _this14;
                                 _context14.next = 3;
-                                return axios.post('api/Ingredients/Update', obj).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Ingredients/Update', obj).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     vm.getCItem(vm.currentBCardID);
                                     if (!response.data.Success) {
@@ -3098,7 +3098,7 @@ var addcard_Component = addcard_normalizeComponent(
                             case 0:
                                 vm = _this15;
                                 _context15.next = 3;
-                                return axios.post('api/IngredientsCategory/Delete', { "ID": ACategoryID }).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/IngredientsCategory/Delete', { "ID": ACategoryID }).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -3128,7 +3128,7 @@ var addcard_Component = addcard_normalizeComponent(
                             case 0:
                                 vm = _this16;
                                 _context16.next = 3;
-                                return axios.post('api/IngredientsCategory/Delete', { "ID": BCategoryID }).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/IngredientsCategory/Delete', { "ID": BCategoryID }).then(function (response) {
                                     console.log(response);
                                     console.log('delete success');
                                     vm.getBClass(vm.currentACardID);
@@ -3161,7 +3161,7 @@ var addcard_Component = addcard_normalizeComponent(
                             case 0:
                                 vm = _this17;
                                 _context17.next = 3;
-                                return axios.post('api/Ingredients/Delete', { "ID": BItemID }).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Ingredients/Delete', { "ID": BItemID }).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     return;
                                 }).catch(function (error) {
@@ -3192,7 +3192,7 @@ var addcard_Component = addcard_normalizeComponent(
                             case 0:
                                 vm = _this18;
                                 _context18.next = 3;
-                                return axios.post('api/Ingredients/Delete', { "ID": CItemID }).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Ingredients/Delete', { "ID": CItemID }).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     return;
                                 }).catch(function (error) {
@@ -3209,14 +3209,14 @@ var addcard_Component = addcard_normalizeComponent(
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-631dede1","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/food/manage.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-6380eda1","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/food/manage.vue
 var manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("食材")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},[_vm._l((_vm.currentAClass),function(item,index){return _c('CardA',{key:item.index,class:{ active: index === 0 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeAName($event, item[0])},"card-on-click":function($event){_vm.AClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteAClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewAClass($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentACardName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("類別")]),_vm._v(" "),_vm._l((_vm.currentBClass),function(item,index){return _c('CardB',{key:item.index,staticClass:"B-class",class:{ lastcard: index === (_vm.currentBClass.length-1) && index > 1 },attrs:{"card-name":item[1],"is-class":true},on:{"card-change-name":function($event){_vm.changeBName($event, item[0])},"card-on-click":function($event){_vm.BClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteBClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBClass.length >= 0),expression:"currentBClass.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBClass($event, _vm.currentACardID)}}}),_vm._v(" "),_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentBItem),function(item,index){return _c('CardB',{key:item.index,class:{ lastcard: index === (_vm.currentBItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeBItemName($event, item)},"card-on-click":function($event){_vm.BItemOnClick($event, item)},"card-delete":function($event){_vm.deleteBItem($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBItem.length >= 0),expression:"currentBItem.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBItem($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentBCardName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentCItem),function(item,index){return _c('CardC',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],key:item.index,class:{ lastcard: index === (_vm.currentCItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeCItemName($event, item)},"card-on-click":function($event){_vm.CItemOnClick($event, item)},"card-delete":function($event){_vm.deleteCItem($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewCItem($event, _vm.currentBCardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentDItemName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('CardFood',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],attrs:{"card-id":_vm.currentDItem[0],"card-name":_vm.currentDItem[1],"card-unit":_vm.currentDItem[2],"card-price":_vm.currentDItem[3]},on:{"item-change":function($event){_vm.changeDItem($event)}}})],1)])],1)],1)}
 var manage_staticRenderFns = []
 var manage_esExports = { render: manage_render, staticRenderFns: manage_staticRenderFns }
 /* harmony default export */ var food_manage = (manage_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/food/manage.vue
 function manage_injectStyle (ssrContext) {
-  __webpack_require__("RCqu")
+  __webpack_require__("b8v1")
 }
 var manage_normalizeComponent = __webpack_require__("VU/8")
 /* script */
