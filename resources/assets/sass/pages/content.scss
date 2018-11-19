@@ -5,30 +5,77 @@
     &.page {
         .ivu-col {
             height: calc(100vh - 76px);   // 綁定Nav
-            overflow: auto;
-            border-right: 1px $black solid;
-            background-color: $lightWhite;
+            overflow: auto;            
+            border-right: 0;
+            box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1);
+            background-color: $bg-color;
             &:last-child {
                 border-right: 0;
             }
             .title {
-                text-align: center;
+                text-align: left ;
                 font-weight: bold;
                 padding: 15px;
-                background-color: $Gray;
-                border-bottom: 1px $black solid;
+                background-color: rgba(255, 255, 255, 0.3);
+                border-bottom: 1px $project-title-line-color solid;
             }
             .ivu-dropdown {
                 position: absolute;
                 right: 30px;
             }
-            .union {           
-               h4 {
-                padding: 10px;
-               }
-               .setting {
-                   p { display: inline-block; }
-               }
+            .union {
+                &.union-half {
+                    height: calc(50vh - 70px);
+                    position: relative;
+                }
+                h4 {
+                    padding: 10px;
+                }
+                .setting {
+                    p { display: inline-block; }
+                }
+                .card-class {
+                    border-top: 0;
+                    i {
+                        color: #abb0b9;
+                    }
+                    &.active, &:hover {
+                        color: $links-color;
+                        i {
+                            color: $links-color;
+                        }
+                        .ivu-dropdown { opacity: 1; }
+                    }
+                    &.card-class-a {
+                        &:first-child {
+                            border-top: 1px solid $item-line-color;
+                        }
+                    }
+                    &.card-class-b,
+                    &.card-class-c {
+                        margin-left: 10px;
+                        margin-right: 10px;			
+                    }
+                    &.lastcard {
+                        border-radius: 0 0 8px 8px;
+                    }
+                }
+                h4 + .card-class-b,
+                h4 + .card-class-c, {
+                    border-top: 1px solid  $item-line-color;
+                    border-radius: 8px 8px 0 0;
+                }
+                
+                .ivu-card {
+                    border-radius: 0;
+                    border-top: 0;
+                    &:first-child {
+                        border-top: 1px solid $item-line-color;
+                    }
+                }
+                h4 + .ivu-card {
+                        border-top: 1px solid $item-line-color;
+                }
             }
         }
     }    

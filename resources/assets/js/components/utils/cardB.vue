@@ -3,8 +3,8 @@
          >
         <div class="content" @click.self="clickCard()">
 
-            <Icon v-if="isClass" type="ios-folder" size="20" color="#56baed"></Icon>
-            <Icon v-else type="ios-document" size="20" color="#56baed"></Icon>
+            <Icon v-if="isClass" type="ios-folder" size="20"></Icon>
+            <Icon v-else type="ios-document" size="20"></Icon>
             <h3>{{cloneCardName}}</h3>
             <Input v-model="cloneCardName"
                    @on-click="addedName()"
@@ -15,7 +15,7 @@
                 @on-click="handleDropDownClick($event)"
             >
                 <a href="javascript:void(0)">
-                    <Icon type="ios-create-outline" size="20" color="#56baed"></Icon>
+                    <Icon type="ios-create-outline" size="20"></Icon>
                 </a>
                 <DropdownMenu slot="list">
                     <DropdownItem name="edit"><Icon type="ios-add-circle"></Icon>編輯名稱</DropdownItem>

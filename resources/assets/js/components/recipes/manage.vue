@@ -22,7 +22,7 @@
             </Col>
             <Col span="5">
                 <div class="title">{{currentACardName}}</div>
-                <div class="union">
+                <div class="union union-half">
                     <h4>類別</h4>
                     <CardB v-for="(item, index) in currentBClass"
                            :key='item.index'
@@ -41,6 +41,8 @@
                     >
                     </AddNewCard>
                     </CardA>
+                </div>
+                <div class="union">
                     <h4>項目</h4>
                     <CardB v-for="(item, index) in currentBItem"
                            :key='item.index'

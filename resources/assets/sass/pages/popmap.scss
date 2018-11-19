@@ -1,0 +1,21 @@
+.popmap {
+    .title {
+        font-weight: bold;
+        font-size: 1.125em;
+    }    
+}
+/*ul*/.mapclass {    
+    li {
+        padding: 10px 10px 10px 0;
+        cursor: pointer;
+        i {
+            color: #abb0b9;
+        }
+        &.active, &:hover {
+            color: $links-color;
+            i {
+                color: $links-color;
+            }
+        }
+    }
+}

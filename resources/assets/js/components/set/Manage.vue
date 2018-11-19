@@ -41,6 +41,8 @@
                     >
                     </AddNewCard>
                     </CardA>
+                </div>
+                <div class="union">
                     <h4>項目</h4>
                     <CardB v-for="(item, index) in currentBItem"
                            :key='item.index'
