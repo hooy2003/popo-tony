@@ -97,36 +97,24 @@
                         <AddNewRecipes
                             @new-recipes-item="AddNewRecipes($event)"
                         ></AddNewRecipes>
-                        <div class="d1">
-                            <div class="e1">
+                        <div class="detail-recipes">
+                            <div class="item-recipes">
                                 <div>銀魚/水晶魚</div>
                                 <div>4條</div>
                             </div>
-                            <div class="e1">
+                            <div class="item-recipes">
                                 <div>牛奶</div>
                                 <div>5cc</div>
                             </div>
-                        </div>
-                        <div class="d1">
-                            <div class="e1">
+                            <div class="item-recipes">
                                 <div>海苔</div>
                                 <div>100g</div>
                             </div>
-                            <div class="e1">
+                            <div class="item-recipes">
                                 <div>雞蛋</div>
                                 <div>1顆</div>
                             </div>
-                        </div>
-                        <div class="d1">
-                            <div class="e1">
-                                <div>醬油</div>
-                                <div>5cc</div>
-                            </div>
-                            <div class="e1">
-                                <div>玉米粉</div>
-                                <div>50g</div>
-                            </div>
-                        </div>
+                        </div>                        
                     </div>
                     <h4 v-show="DCardShow">調整口味</h4>
                 </div>
@@ -562,37 +550,5 @@ import AddNewRecipes from '../utils/addrecipes.vue';
   }
 </script>
 
-<style lang="scss">
-    .meal-content {
-        border-radius: 5px;
-        background-color: #fff;
-        margin: 10px;
-        padding: 10px;
-        .d1 {
-            display: flex;
-            width: 100%;
-            &:last-child {
-                .e1 {
-                    &::after {display: none;}
-                }
-            }
-        }
-        .e1 {
-            display: flex;
-            justify-content: space-between;
-            position: relative;
-            width: 50%;            
-            padding: 15px 10px;
-            box-sizing: border-box;
-            &::after {
-                content: '';
-                position: absolute;
-                display: block;
-                height: 1px;
-                width: calc(100% - 20px);
-                bottom: 0;
-                background-color: rgba(0,0,0,0.1);
-            }
-        }        
-    }
+<style lang="scss">    
 </style>

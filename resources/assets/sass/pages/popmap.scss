@@ -8,14 +8,36 @@
     li {
         padding: 10px 10px 10px 0;
         cursor: pointer;
+        &.active, &:hover {
+            color: $white;
+            background-color: $links-color;
+        }
         i {
             color: #abb0b9;
-        }
+        }        
+    }
+    li.li-item-b,
+    li.li-item-c {
         &.active, &:hover {
-            color: $links-color;
-            i {
-                color: $links-color;
+            color: $black;
+            background-color: #eee;            
+        }
+        &.active {
+            .active-icon {
+                display: inline-block;
             }
+        }
+        .active-icon {
+            display: none;
+        }
+    }
+}
+/*ul*/.sureclass {
+    li {
+        padding: 10px 10px 10px 0;
+        cursor: pointer;
+        i {
+            color: $links-color;
         }
     }
 }

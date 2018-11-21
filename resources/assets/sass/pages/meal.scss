@@ -1,0 +1,30 @@
+.meal-content {
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px 10px;
+    .detail-recipes,
+    .detail-meals {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .item-recipes,
+    .item-meals {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        flex-basis: 50%;           
+        padding: 15px 10px;
+        box-sizing: border-box;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 1px;
+            width: calc(100% - 20px);
+            bottom: 0;
+            background-color: rgba(0,0,0,0.1);
+        }
+    }        
+}
