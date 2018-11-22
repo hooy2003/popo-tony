@@ -7,9 +7,9 @@
             v-model="modal"
             @on-ok="sendItem"
             class="popmap"
-            width="800">
+            width="720">
             <Row>
-            <Col span="6">
+            <Col span="8">
                 <div class="title">餐點</div>
                 <ul class="mapclass">
                     <li v-for="(item, index) in AClass"
@@ -23,7 +23,7 @@
                     </li>
                 </ul>
             </Col>
-            <Col span="6">
+            <Col span="8">
                 <div class="title">{{currentAClassName}}</div>
                 <ul class="mapclass">
                     <li v-for="(item, index) in BClass"
@@ -47,7 +47,7 @@
                     </li>
                 </ul>
             </Col>
-            <Col span="6">
+            <Col span="8">
                 <div class="title">{{currentBClassName}}</div>
                 <ul class="mapclass">
                     <li v-for="(item, index) in CItem"
@@ -58,18 +58,6 @@
                     <Icon type="ios-document" size="20"></Icon>
                     {{item[1]}}
                     <Icon type="ios-checkmark" size="20" class="active-icon"></Icon>
-                    </li>
-                </ul>
-            </Col>
-            <Col span="6">
-                <div class="title">已選餐點</div>
-                <ul class="sureclass">
-                    <li v-for="(item, index) in sureItem"
-                        :key='item.index'
-                    >
-                        <Icon type="ios-checkmark" size="20"></Icon>
-                        <div>{{item[2]}}</div>
-                        <div>{{item[0]}}</div>                        
                     </li>
                 </ul>
             </Col>
@@ -127,12 +115,11 @@
             },
             BItemOnClick: function($event, item) {
                 this.toggleActive($event, false);
-                // this.sureItem = item;
+                this.sureItem = item;
             },
             CItemOnClick: function($event, item) {
                 this.toggleActive($event, true);
-                // this.sureItem = item;
-                // this.sureItem.push(item);
+                this.sureItem = item;
             },
             toggleActive($event, isCItem) {
 
@@ -190,8 +177,7 @@
                 });
             },
             sendItem() {
-                // 這邊改送一組array出去，整組替換掉11/21
-                // this.$emit('new-recipes-item', );
+                this.$emit('new-recipes-item', this.sureItem);
             }
         }
     }

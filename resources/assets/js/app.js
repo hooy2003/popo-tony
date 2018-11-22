@@ -15,6 +15,32 @@ import iView from 'iview';
 // 載入 App scss
 import '../sass/app.scss';
 
+//添加请求拦截器
+axios.interceptors.request.use(config => {
+    //在发送请求之前做某事，比如说 设置loading动画显示
+
+    store.commit({
+        type: 'isLoading'
+    });
+    return config
+}, error => {
+    //请求错误时做些事
+    return Promise.reject(error)
+})
+  
+//添加响应拦截器
+axios.interceptors.response.use(response => {
+    //对响应数据做些事，比如说把loading动画关掉
+
+    store.commit({
+        type: 'isLoading'
+    });
+    return response
+}, error => {
+    //请求错误时做些事
+    return Promise.reject(error)
+})
+
 const router = new VueRouter({
   routes,
 //   mode: 'history',
