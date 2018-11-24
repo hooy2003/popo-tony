@@ -8,13 +8,13 @@ nav {
         &.logo {
             color: $white;
             padding-right: 30px;
-            border-right: 1px solid $lineWhite;
+            border-right: 1px solid $line-lightgray;
         }
         &.info {
             color: $black;
             padding-right: 30px;
             padding-left: 30px;
-            border-left: 1px solid $lineWhite;
+            border-left: 1px solid $line-lightgray;
         }
         img {
             display: inline-block;
@@ -27,7 +27,7 @@ nav {
             color: $black;
             display: inline-block;
             span {
-                color: $lightWhite;
+                color: $white;
             }
         }
     }

@@ -182,6 +182,9 @@
         }
     }
 </script>
-<style lang="scss">
-
+<style lang="scss" scoped>
+    .addclass {
+        padding: 10px;
+        color: #007aff;
+    }    
 </style>

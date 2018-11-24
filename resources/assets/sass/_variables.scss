@@ -5,28 +5,32 @@ $font-family-sans-serif: "Nunito", sans-serif;
 $line-height: 1;
 $font-size-normal: 16px;
 
-// Colors
-$blue: #56baed;
-$lightblue: #92badd; //淺藍
-$pink: #f66D9b;
-$red: #e3342f;
 
-$bg-color: #f6f6f6;
-$links-color: #0179fe;
-$project-title-line-color: #e7e7e7;
-$item-bg-color: #ffffff;
-$item-line-color: #dcdee2;
-$links-color: #0179fe;
+
 
 $Gray: #e6e6e6;
 $DarkGray: #ccc;
 $PantoneBlue: #007dff;
 
-$lightWhite: #f6f6f6; //淺白
-$lineWhite:  #dce8f1;// 分隔線的淺顏色
 
-$white: rgba(255, 255, 255, 1);
-$black: #0d0d0d;
+$white: #fff;
+$black: #000;
+// TEXT
+$text-gray: #6d6d72;
+// BG
+$bg-gray: #ccc;
+$bg-lightgray: #efeff4;
+// BUTTON
+$btn-blue: #56baed;
+// LINK
+$link-bule: #007aff;
+$link-ligntbule: #c9e3ff;
+// ICON
+$icon-gray: #555;
+// LINE
+$line-gray: #d2d2d7;
+$line-lightgray: #e4e4e6;
+
 
 // Reference: https://purecss.io/grids/
 $sm: 35.5em; // 568px

@@ -104,7 +104,7 @@ import CardB from '../utils/cardB.vue';
 import CardC from '../utils/cardC.vue';
 import CardFood from '../utils/cardFood.vue';
 import AddNewCard from '../utils/addcard.vue';
-// let WebHelper = require('../../utils/wehelper');
+// let mangerHelper = require('../../utils/mangerHelper');
 
 
   export default {
@@ -141,12 +141,16 @@ import AddNewCard from '../utils/addcard.vue';
     computed: {
       ...mapGetters([
         'User',
+        'isLoading',
         'foodAClass',
         'foodBClass',
         'foodBItem',
         'foodCItem',
         'rules'
       ]),
+      isLoadingIN: function() {
+        return this.isLoading;
+      }
     },
     watch: {
         // 處理非同步
@@ -159,7 +163,19 @@ import AddNewCard from '../utils/addcard.vue';
             this.currentACardID = BdefaultID;
             this.getBClass(BdefaultID);
             this.getBItem(BdefaultID);
-        },      
+        },
+        isLoadingIN (value) {
+            if (value) {
+                this.$Message.loading({
+                    content: 'Loading...',
+                    duration: 2
+                });
+            } else {
+                setTimeout(()=>{
+                    this.$Message.destroy();
+                }, 300);
+            }
+        }
     },
     // 改进vue的初始化数据调用时机 --
     // https://www.jianshu.com/p/2048f1a66c33

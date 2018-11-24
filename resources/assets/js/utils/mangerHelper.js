@@ -32,3 +32,7 @@ export function insertBlock (editor, template) {
     // Saving step.
     editor.undo.saveStep();
   }
+
+export function showIsLoadinf (value) {
+  
+}

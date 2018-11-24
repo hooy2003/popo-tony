@@ -20,13 +20,7 @@
                 </div>
                 <div class="input-wrap">
                     <p>單位</p>
-                    <Select v-model="cloneUnit" slot="append" style="width: 70px">
-                        <Option value="strip">條</Option>
-                        <Option value="one">顆</Option>
-                        <Option value="box">盒</Option>
-                        <Option value="g">公克</Option>
-                        <Option value="kg">公斤</Option>
-                    </Select>
+                    <Input v-model="cloneUnit" placeholder="Enter something..."></Input>
                 </div>
                 <div class="input-wrap" style="justify-content: flex-end;">
                     <Button @click.native="changeItem()">儲存</Button>
@@ -78,39 +72,11 @@ import ImageUploader from '../ImageUploader.vue';
             cloneUnit: {
                 get: function() {
                     this.needSendToParent["Unit"] = this.cardUnit;
-                    if (this.cardUnit == "條") {
-                        return 'strip';
-                    }
-                    if (this.cardUnit == "顆") {
-                        return 'one';
-                    }
-                    if (this.cardUnit == "盒") {
-                        return 'box';
-                    }
-                    if (this.cardUnit == "公克") {
-                        return 'g';
-                    }
-                    if (this.cardUnit == "公斤") {
-                        return 'kg';
-                    }                    
+                    return this.cardUnit;                    
                 },
                 set: function(newValue) {
-                    if (newValue == "strip") {
-                        this.needSendToParent["Unit"] = "條";
-                    }
-                    if (newValue == "one") {
-                        this.needSendToParent["Unit"] = "顆";
-                    }
-                    if (newValue == "box") {
-                        this.needSendToParent["Unit"] = "盒";
-                    }
-                    if (newValue == "g") {
-                        this.needSendToParent["Unit"] = "公克";
-                    }
-                    if (newValue == "kg") {
-                        this.needSendToParent["Unit"] = "公斤";
-                    }
-                    return this.cardUnit;
+                    this.needSendToParent["Unit"] = newValue;
+                    return this.cardUnit; 
                 }
             },
             clonePrice: {
@@ -141,7 +107,7 @@ import ImageUploader from '../ImageUploader.vue';
     .card-food {
         &.active, &:hover {
 			i {
-				color: #0179fe;
+				color: #007aff;
 			}
 		}
         &::after {

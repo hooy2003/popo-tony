@@ -24,22 +24,22 @@
 
 .add-new-card {
 	font-size: 12px;
-	color: $links-color;
+	color: $link-bule;
 	width: 100%;
 	text-align: left;
 	list-style: none;
 	margin-top: 25px;
 	padding: 15px 10px;
-	border-top: 1px solid $project-title-line-color;
-	border-bottom: 1px solid $project-title-line-color;
+	border-top: 1px solid $line-gray;
+	border-bottom: 1px solid $line-gray;
 	box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);
-	background-color: $item-bg-color;
+	background-color: $white;
 	cursor: pointer;
 	transition: all .2s ease;
 	position: absolute;
 	bottom: 0;
 	.ivu-icon {
-		color: $links-color;
+		color: $link-bule;
 		font-size: 22px;
 		text-align: center;
 		line-height: 20px;

@@ -30,13 +30,13 @@
   padding: 15px 80px;
   margin: 5px 20px 5px 20px;
   box-sizing: border-box;
-  background-color: $lightWhite;
+  background-color: $line-gray;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
 	color: $black;
-	border: 2px solid $lightWhite;
+	border: 2px solid $line-gray;
   border-radius: 5px 5px 5px 5px;  
   outline: none;
 	transition: all 0.3s ease-in-out;
@@ -58,7 +58,7 @@
 	padding: 15px 80px;
 	margin: 5px 20px 40px 20px;
 	box-sizing: border-box;
-	background-color: $blue;
+	background-color: $btn-blue;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -73,7 +73,7 @@
   }
   &.primary {
       color: #fff;
-      background-color: $blue;
+      background-color: $btn-blue;
   }
   &:disabled {
     background-color: $Gray;

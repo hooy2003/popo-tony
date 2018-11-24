@@ -8,7 +8,7 @@
             overflow: auto;            
             border-right: 0;
             box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1);
-            background-color: $bg-color;
+            background-color: $bg-lightgray;
             &:last-child {
                 border-right: 0;
             }
@@ -17,7 +17,7 @@
                 font-weight: bold;
                 padding: 15px;
                 background-color: rgba(255, 255, 255, 0.3);
-                border-bottom: 1px $project-title-line-color solid;
+                border-bottom: 1px $line-gray solid;
             }
             .ivu-dropdown {
                 position: absolute;
@@ -40,15 +40,15 @@
                         color: #abb0b9;
                     }
                     &.active, &:hover {
-                        color: $links-color;
+                        color: $link-bule;
                         i {
-                            color: $links-color;
+                            color: $link-bule;
                         }
                         .ivu-dropdown { opacity: 1; }
                     }
                     &.card-class-a {
                         &:first-child {
-                            border-top: 1px solid $item-line-color;
+                            border-top: 1px solid $line-lightgray;
                         }
                     }
                     &.card-class-b,
@@ -62,7 +62,7 @@
                 }
                 h4 + .card-class-b,
                 h4 + .card-class-c, {
-                    border-top: 1px solid  $item-line-color;
+                    border-top: 1px solid  $line-lightgray;
                     border-radius: 8px 8px 0 0;
                 }
                 
@@ -70,11 +70,11 @@
                     border-radius: 0;
                     border-top: 0;
                     &:first-child {
-                        border-top: 1px solid $item-line-color;
+                        border-top: 1px solid $line-lightgray;
                     }
                 }
                 h4 + .ivu-card {
-                        border-top: 1px solid $item-line-color;
+                        border-top: 1px solid $line-lightgray;
                 }
             }
         }

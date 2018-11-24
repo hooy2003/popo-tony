@@ -1,5 +1,5 @@
 <template>
-    <div class="card-food"
+    <div class="card-set"
          >
         <div class="content">
             <div class="right">
@@ -19,14 +19,12 @@
                     <Input v-model="clonePrice" placeholder="Enter something..."></Input>
                 </div>
                 <div class="input-wrap">
-                    <p>單位</p>
-                    <Select v-model="cloneUnit" slot="append" style="width: 70px">
-                        <Option value="strip">條</Option>
-                        <Option value="one">顆</Option>
-                        <Option value="box">盒</Option>
-                        <Option value="g">公克</Option>
-                        <Option value="kg">公斤</Option>
-                    </Select>
+                    <i-Switch v-model="cloneVisible"></i-Switch>
+                    <p class="line">是否上架</p>
+                </div>
+                <div class="input-wrap">
+                    <i-Switch v-model="clonePointenable"></i-Switch>
+                    <p class="line">是否算積分</p>
                 </div>
                 <div class="input-wrap" style="justify-content: flex-end;">
                     <Button @click.native="changeItem()">儲存</Button>
@@ -49,15 +47,19 @@ import ImageUploader from '../ImageUploader.vue';
             'cardName',
             'cardPrice',
             'cardImage',
+            'cardVisible',
+            'cardPointenable',
             'cardCombomealcategoryid'
         ],
         data() {
             return {
                 needSendToParent: {
-                                    "ID": '',
+                                    "Combomealid": '',
                                     "Name": '',
-                                    "Unit": '',
                                     "Price": '',
+                                    "Image": "string",
+                                    "Visible": false,
+                                    "Pointenable": false,
                                     "AccountID": 0
                                },
             }
@@ -76,44 +78,6 @@ import ImageUploader from '../ImageUploader.vue';
                     return this.cardName;
                 }
             },
-            cloneUnit: {
-                get: function() {
-                    this.needSendToParent["Unit"] = this.cardUnit;
-                    if (this.cardUnit == "條") {
-                        return 'strip';
-                    }
-                    if (this.cardUnit == "顆") {
-                        return 'one';
-                    }
-                    if (this.cardUnit == "盒") {
-                        return 'box';
-                    }
-                    if (this.cardUnit == "公克") {
-                        return 'g';
-                    }
-                    if (this.cardUnit == "公斤") {
-                        return 'kg';
-                    }                    
-                },
-                set: function(newValue) {
-                    if (newValue == "strip") {
-                        this.needSendToParent["Unit"] = "條";
-                    }
-                    if (newValue == "one") {
-                        this.needSendToParent["Unit"] = "顆";
-                    }
-                    if (newValue == "box") {
-                        this.needSendToParent["Unit"] = "盒";
-                    }
-                    if (newValue == "g") {
-                        this.needSendToParent["Unit"] = "公克";
-                    }
-                    if (newValue == "kg") {
-                        this.needSendToParent["Unit"] = "公斤";
-                    }
-                    return this.cardUnit;
-                }
-            },
             clonePrice: {
                 get: function() {
                     this.needSendToParent["Price"] = this.cardPrice;
@@ -124,25 +88,45 @@ import ImageUploader from '../ImageUploader.vue';
                     return this.cardPrice;
                 }
             },
+            cloneVisible: {
+                get: function() {
+                    this.needSendToParent["Visible"] = this.cardVisible;
+                    return this.cardVisible;
+                },
+                set: function(newValue) {                    
+                    this.needSendToParent["Visible"] = newValue;
+                    return this.cardVisible;
+                }
+            },
+            clonePointenable: {
+                get: function() {
+                    this.needSendToParent["Pointenable"] = this.cardPointenable;
+                    return this.cardPointenable;
+                },
+                set: function(newValue) {                    
+                    this.needSendToParent["Pointenable"] = newValue;
+                    return this.cardPointenable;
+                }
+            },
             imgSrc2 () {
                 return this.imgSrc;
             }
         },
         methods: {
             changeItem () {
-                this.needSendToParent["ID"] = this.cardCombomealid;
+                this.needSendToParent["Combomealid"] = this.cardCombomealid;
                 console.log('in cardFood-OBJ', this.needSendToParent);
                 //把input值傳給父
-                this.$emit('item-change', this.needSendToParent); 
+                // this.$emit('item-change', this.needSendToParent); 
             }
         }
     }
 </script>
 <style lang="scss">
-    .card-food {
+    .card-set {
         &.active, &:hover {
 			i {
-				color: #0179fe;
+				color: #007aff;
 			}
 		}
         &::after {
@@ -177,6 +161,16 @@ import ImageUploader from '../ImageUploader.vue';
                     text-align: right;
                     line-height: 32px;
                     margin-right: 8px;
+                    &.line {
+                        width: 100%;
+                        text-align: left;
+                        line-height: 22px;
+                        margin-right: 0;
+                        margin-left: 8px;
+                    }
+                }
+                .ivu-switch-checked:after {
+                    left: 18px;
                 }
             }
             .ivu-input-wrapper {

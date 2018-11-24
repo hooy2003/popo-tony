@@ -1,3 +1,6 @@
+.addclass {
+    cursor: pointer;    
+}
 .popmap {
     .title {
         font-weight: bold;
@@ -10,7 +13,7 @@
         cursor: pointer;
         &.active, &:hover {
             color: $white;
-            background-color: $links-color;
+            background-color: $link-bule;
         }
         i {
             color: #abb0b9;
@@ -37,7 +40,7 @@
         padding: 10px 10px 10px 0;
         cursor: pointer;
         i {
-            color: $links-color;
+            color: $link-bule;
         }
     }
 }

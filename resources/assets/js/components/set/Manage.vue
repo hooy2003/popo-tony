@@ -14,7 +14,7 @@
                            @card-delete="deleteAClass($event, item[0])"
                     >
                     </CardA>
-                    <AddNewCard  @add-card-name="addNewAClass($event, currentACardID)"
+                    <AddNewCard  @add-card-name="addNewAClass($event)"
                                  class="add-new-card"
                     >
                     </AddNewCard>
@@ -63,7 +63,7 @@
             <Col span="5">
                 <div class="title">{{currentBCardName}}</div>
                 <div class="union">
-                    <h4>項目</h4>                    
+                    <h4>項目</h4>
                     <CardC v-for="(item, index) in currentCItem"
                            :key='item.index'
                            :card-name="item[1]"
@@ -90,6 +90,8 @@
                         :card-name="currentDItem[1]"
                         :card-price="currentDItem[2]"
                         :card-image="currentDItem[3]"
+                        :card-visible="currentDItem[4]"
+                        :card-pointenable="currentDItem[5]"
                         :card-combomealcategoryid="currentDItem[6]"
                         @item-change="changeDItem($event)"
                     ></CardSet>
@@ -105,16 +107,13 @@
                                     <Icon type="ios-remove-circle-outline" size="20"></Icon>
                                 </div>
                                 <div>{{item[2]}}</div>
-                                <div>{{item[0]}}</div>
+                                <div>{{item[0]}}元</div>
                             </div>
                         </div>                        
                     </div>
-                    <h4 v-show="DCardShow">調整口味</h4>
+                    <!-- <h4 v-show="DCardShow">調整口味</h4> -->
                 </div>
             </Col>
-            <!-- <Alert v-show="isLoadingIN"
-                    style="position:fixed;top:100px; left:200px;"
-                   show-icon>Loading</Alert> -->
         </Row>
     </section>
 </template>
@@ -126,7 +125,6 @@ import CardC from '../utils/cardC.vue';
 import CardSet from '../utils/cardSet.vue';
 import AddNewCard from '../utils/addcard.vue';
 import AddNewMeals from '../utils/addmeals.vue';
-// let WebHelper = require('../../utils/wehelper');
 
 
   export default {
@@ -308,27 +306,26 @@ import AddNewMeals from '../utils/addmeals.vue';
             // });
             // 廢氣中---------------
         },
-        addNewAClass ($event, currentACardID) {
+        addNewAClass ($event) {
             const ClassFile = {
                                 "Name": $event,
-                                "ComboMealsCategoryID": currentACardID,
+                                "ComboMealsCategoryID": null,
                                 "AccountID": 0,
                                 "IsFirst": true
                                };
             this.addNewAClassCard(ClassFile); 
-            console.log('第一層加值', ClassFile);
         },
         async addNewAClassCard (ClassFile) {
             // Update Vue object with Axios response data
-            // const vm = this;
-            // await axios.post(process.env.API_HOST + `/ComboMealsCategory/Create`, ClassFile)
-            // .then(function (response) {
-            //     vm.getAClass(vm.currentACardID);
-            //     return true;
-            // })
-            // .catch(function (error) {
-            //     console.log('error', error);
-            // });
+            const vm = this;
+            await axios.post(process.env.API_HOST + `/ComboMealsCategory/Create`, ClassFile)
+            .then(function (response) {
+                vm.getAClass();
+                return true;
+            })
+            .catch(function (error) {
+                console.log('error', error);
+            });
         },
         addNewBClass($event, ACategoryID) {
             const ClassFile = {
