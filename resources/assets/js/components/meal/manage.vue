@@ -2,7 +2,7 @@
     <section class="content page">
         <Row>
             <Col span="5">
-                <div class="title">餐點</div>
+                <div class="title">套餐</div>
                 <div style="margin-bottom:40px"></div>
                 <div class="union">
                     <CardA v-for="(item, index) in currentAClass"
@@ -14,7 +14,7 @@
                            @card-delete="deleteAClass($event, item[0])"
                     >
                     </CardA>
-                    <AddNewCard  @add-card-name="addNewAClass($event, currentACardID)"
+                    <AddNewCard  @add-card-name="addNewAClass($event)"
                                  class="add-new-card"
                     >
                     </AddNewCard>
@@ -63,14 +63,14 @@
             <Col span="5">
                 <div class="title">{{currentBCardName}}</div>
                 <div class="union">
-                    <h4>項目</h4>                    
+                    <h4>項目</h4>
                     <CardC v-for="(item, index) in currentCItem"
                            :key='item.index'
                            :card-name="item[1]"
                            :class="{ lastcard: index === (currentCItem.length-1) && index > 1 }"
                            @card-change-name="changeCItemName($event, item)"
                            @card-on-click="CItemOnClick($event, item)"
-                           @card-delete="deleteCItem($event, item[0])"                           
+                           @card-delete="deleteCItem($event, item)"                           
                            v-show="CCardShow"
                     >
                     </CardC>
@@ -84,42 +84,37 @@
             <Col span="9">
                 <div class="title">{{currentDItemName}}</div>
                 <div class="union">
-                    <CardFood
+                    <CardMeal
                         v-show="DCardShow"
-                        :card-id="currentDItem[0]"
+                        :card-mealid="currentDItem[0]"
                         :card-name="currentDItem[1]"
-                        :card-unit="currentDItem[2]"
-                        :card-price="currentDItem[3]"
+                        :card-price="currentDItem[2]"
+                        :card-image="currentDItem[3]"
+                        :card-visible="currentDItem[4]"
+                        :card-pointenable="currentDItem[5]"
+                        :card-mealcategoryid="currentDItem[6]"
                         @item-change="changeDItem($event)"
-                    ></CardFood>
-                    <h4 v-show="DCardShow">食譜</h4>
+                    ></CardMeal>
+                    <h4 v-show="DCardShow">餐點</h4>
                     <div class="meal-content" v-show="DCardShow">
                         <AddNewRecipes
-                            @new-recipes-item="AddNewRecipes($event)"
+                            @new-recipes-item="AddNewRecipes($event, currentDItem[0])"
                         ></AddNewRecipes>
-                        <div class="detail-recipes">
-                            <div class="item-recipes">
-                                <div>銀魚/水晶魚</div>
-                                <div>4條</div>
-                            </div>
-                            <div class="item-recipes">
-                                <div>牛奶</div>
-                                <div>5cc</div>
-                            </div>
-                            <div class="item-recipes">
-                                <div>海苔</div>
-                                <div>100g</div>
-                            </div>
-                            <div class="item-recipes">
-                                <div>雞蛋</div>
-                                <div>1顆</div>
+                        <div class="detail-meals">
+                            <div v-for="(item, index) in deteailMeals"
+                                 class="item-meals">
+                                <div @click="DeleteRecipes($event, item)">
+                                    <Icon type="ios-remove-circle-outline" size="20"></Icon>
+                                </div>
+                                <div>{{item[2]}}</div>
+                                <div>{{item[0]}}元</div>
                             </div>
                         </div>                        
                     </div>
-                    <h4 v-show="DCardShow">調整口味</h4>
+                    <!-- <h4 v-show="DCardShow">調整口味</h4> -->
                 </div>
             </Col>
-        </Row>        
+        </Row>
     </section>
 </template>
 <script>
@@ -127,10 +122,9 @@ import { mapGetters } from 'vuex';
 import CardA from '../utils/card.vue';
 import CardB from '../utils/cardB.vue';
 import CardC from '../utils/cardC.vue';
-import CardFood from '../utils/cardFood.vue';
+import CardMeal from '../utils/cardMeal.vue';
 import AddNewCard from '../utils/addcard.vue';
 import AddNewRecipes from '../utils/addrecipes.vue';
-// let WebHelper = require('../../utils/wehelper');
 
 
   export default {
@@ -138,7 +132,7 @@ import AddNewRecipes from '../utils/addrecipes.vue';
         CardA, 
         CardB,
         CardC,
-        CardFood,
+        CardMeal,
         AddNewCard,
         AddNewRecipes
     },
@@ -154,6 +148,7 @@ import AddNewRecipes from '../utils/addrecipes.vue';
             currentCItem: [],
             currentDItemName: '尚無項目',
             currentDItem: [],
+            deteailMeals: [],
             CCardShow: false,
             DCardShow: false,
             DataIsUpdate: false
@@ -168,12 +163,11 @@ import AddNewRecipes from '../utils/addrecipes.vue';
     computed: {
       ...mapGetters([
         'User',
-        'foodAClass',
-        'foodBClass',
-        'foodBItem',
-        'foodCItem',
-        'rules'
+        'isLoading',
       ]),
+      isLoadingIN: function() {
+        return this.isLoading;
+      }
     },
     watch: {
         // 處理非同步
@@ -185,9 +179,20 @@ import AddNewRecipes from '../utils/addrecipes.vue';
             this.currentACardName = BdefaultName;
             this.currentACardID = BdefaultID;
             this.getBClass(BdefaultID);
-            console.log('BdefaultID', BdefaultID);
-            this.getBItem(BdefaultID);
-        },      
+            this.getBItem(BdefaultID);            
+        },     
+        isLoadingIN (value) {
+            if (value) {
+                this.$Message.loading({
+                    content: 'Loading...',
+                    duration: 2
+                });
+            } else {
+                setTimeout(()=>{
+                    this.$Message.destroy();
+                }, 300);
+            }
+        } 
     },
     // 改进vue的初始化数据调用时机 --
     // https://www.jianshu.com/p/2048f1a66c33
@@ -224,6 +229,10 @@ import AddNewRecipes from '../utils/addrecipes.vue';
             this.currentBCardName = '尚無項目';
             this.currentDItemName = BItemName;
             this.currentDItem = BItem;
+
+            const mealID = BItem[0];
+            console.log('BItem被點的時候給出的meal ID 4 ', mealID);
+            this.getDeteailMeals(mealID);
         },
         CItemOnClick: function(CITemName, CItem) {
             console.log('C Item OnClick', CITemName);
@@ -231,6 +240,10 @@ import AddNewRecipes from '../utils/addrecipes.vue';
             this.currentDItemName = CITemName;
             this.currentDItem = CItem;
             console.log('當CITEM被點了',this.currentDItem);
+
+            const mealID = CItem[0];
+            console.log('CITEM被點的時候給出的meal ID 4 ', mealID);
+            this.getDeteailMeals(mealID);
          },
         async getAClass() {
             this.currentAClass = await axios.get(process.env.API_HOST + `/MealsCategory/Get`)
@@ -256,7 +269,6 @@ import AddNewRecipes from '../utils/addrecipes.vue';
             this.currentBItem = await axios.get(process.env.API_HOST + `/Meals/GetByCategoryID/${ACategoryID}`)
             .then(function (response) {                
                 const nameList = response.data.map(item => Object.values(item));
-                console.log('nameList', nameList);
                 return nameList;
             })
             .catch(function (error) {
@@ -265,12 +277,14 @@ import AddNewRecipes from '../utils/addrecipes.vue';
         },
         async getCItem(BCategoryID) {
             console.log('currentCItem CategoryID', BCategoryID);
-            // "ID": 4,
-            // "Name": "南澳小黃瓜",
-            // "Unit": "公克",
-            // "Price": 40,
-            // "MealsCategoryID": 10,
-            // "MealsCategoryName": "五穀根莖類"
+            // "MealsID": 18,
+            // "Name": "主廚一號裡面的餐點A",
+            // "Price": 0,
+            // "Image": "string",
+            // "Visible": false,
+            // "PointEnable": false,
+            // "MealsCategoryID": 17,
+            // "MealsCategoryName": "主廚套餐一號"
             this.currentCItem = await axios.get(process.env.API_HOST + `/Meals/GetByCategoryID/${BCategoryID}`)
             .then(function (response) {
                 const nameList = response.data.map(item => Object.values(item));
@@ -282,30 +296,31 @@ import AddNewRecipes from '../utils/addrecipes.vue';
         },
         async getDItem(ItemID) {
             // 廢氣中---------------
-            this.currentDItem = await axios.get(process.env.API_HOST + `/Meals/GetByCategoryID/${ItemID}`)
-            .then(function (response) {
-                const nameList = response.data.map(item => Object.values(item));
-                return nameList;
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
+            // this.currentDItem = await axios.get(process.env.API_HOST + `/Meals/GetByCategoryID/${ItemID}`)
+            // .then(function (response) {
+            //     const nameList = response.data.map(item => Object.values(item));
+            //     return nameList;
+            // })
+            // .catch(function (error) {
+            //     console.log(error);
+            // });
             // 廢氣中---------------
         },
         addNewAClass ($event) {
             const ClassFile = {
                                 "Name": $event,
+                                "MealsCategoryID": null,
                                 "AccountID": 0,
                                 "IsFirst": true
                                };
-            this.addNewAClassCard(ClassFile);            
+            this.addNewAClassCard(ClassFile); 
         },
         async addNewAClassCard (ClassFile) {
             // Update Vue object with Axios response data
             const vm = this;
             await axios.post(process.env.API_HOST + `/MealsCategory/Create`, ClassFile)
             .then(function (response) {
-                vm.getAClass(vm.currentACardID);
+                vm.getAClass();
                 return true;
             })
             .catch(function (error) {
@@ -385,7 +400,7 @@ import AddNewRecipes from '../utils/addrecipes.vue';
         },
         changeAName(newName, ACategoryID) {
             const ClassFile = {
-                                "ID": ACategoryID,
+                                "MealsCategoryID": ACategoryID,
                                 "Name": newName,
                                 "AccountID": 0
                               };
@@ -404,7 +419,7 @@ import AddNewRecipes from '../utils/addrecipes.vue';
         },
         changeBName(newName, BCategoryID) {
             const ClassFile = {
-                                "ID": BCategoryID,
+                                "MealsCategoryID": BCategoryID,
                                 "Name": newName,
                                 "AccountID": 0
                               };
@@ -423,19 +438,25 @@ import AddNewRecipes from '../utils/addrecipes.vue';
         },   
         changeBItemName(newName, BITem) {
             const ClassFile = {
-                                "ID": BITem[0],
+                                "MealsID": BITem[0],
                                 "Name": newName,
-                                "Unit": BITem[2],
-                                "Price": BITem[3],
-                                "AccountID": 0
+                                "Price": BITem[2],
+                                "Visile": BITem[4],
+                                "Image": "string",
+                                "Video": "string",
+                                "PointEnable": BITem[5],
+                                "AccountID": 0,
+                                "MealsCategoryID": BITem[6]
                                };
-            this.changeBItemCardName(ClassFile);
+            this.changeBItemCardName(ClassFile, newName);
         },
-        async changeBItemCardName(ClassFile) {
+        async changeBItemCardName(ClassFile, newName) {
             const vm = this;
             await axios.post(process.env.API_HOST + `/Meals/Update`, ClassFile)
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
+                // 改D欄的名字
+                vm.currentDItem[1] = newName;
                 return;
             })
             .catch(function (error) {
@@ -444,19 +465,25 @@ import AddNewRecipes from '../utils/addrecipes.vue';
         },
         changeCItemName(newName, CITem) {
             const ClassFile = {
-                                "ID": CITem[0],
+                                "MealsID": CITem[0],
                                 "Name": newName,
-                                "Unit": CITem[2],
-                                "Price": CITem[3],
-                                "AccountID": 0
+                                "Price": CITem[2],
+                                "Visile": CITem[4],
+                                "Image": "string",
+                                "Video": "string",
+                                "PointEnable": CITem[5],
+                                "AccountID": 0,
+                                "MealsCategoryID": CITem[6]
                                };
-            this.changeCItemCardName(ClassFile);
+            this.changeCItemCardName(ClassFile, newName);
         },
-        async changeCItemCardName(ClassFile) {
+        async changeCItemCardName(ClassFile, newName) {
             const vm = this;
             await axios.post(process.env.API_HOST + `/Meals/Update`, ClassFile)
             .then(function (response) {
                 vm.getCItem(vm.currentBCardID);
+                // 改D欄的名字
+                vm.currentDItem[1] = newName;
                 return;
             })
             .catch(function (error) {
@@ -464,9 +491,8 @@ import AddNewRecipes from '../utils/addrecipes.vue';
             });
         },
         changeDItem(obj) {
-            console.log('DITem--------*******', obj);
-            console.log('DITem--------*******', this.currentDItem[0]);
             this.changeDItemInfo(obj);
+            console.log('D item項目的OBJ', obj);
         },
         async changeDItemInfo(obj) {
             const vm = this;
@@ -474,7 +500,7 @@ import AddNewRecipes from '../utils/addrecipes.vue';
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
                 vm.getCItem(vm.currentBCardID);
-                console.log('changD', response);                
+                console.log('changD', response);
                 return;
             })
             .catch(function (error) {
@@ -482,11 +508,15 @@ import AddNewRecipes from '../utils/addrecipes.vue';
             });
         }, 
         deleteAClass: function($event, ACategoryID) {
-            this.deleteACard(ACategoryID);
+            const ClassFile = {
+                "MealsCategoryID": ACategoryID,
+                "AccountID": 0
+            };
+            this.deleteACard(ClassFile);
         },
-        async deleteACard(ACategoryID) {
+        async deleteACard(ClassFile) {
             const vm = this;
-            await axios.post(process.env.API_HOST + `/MealsCategory/Delete`, { "ID":ACategoryID })
+            await axios.post(process.env.API_HOST + `/MealsCategory/Delete`, ClassFile)
             .then(function (response) {
                 vm.getAClass();
                 return;
@@ -496,11 +526,15 @@ import AddNewRecipes from '../utils/addrecipes.vue';
             });
         },
         deleteBClass: function($event, BCategoryID) {
-            this.deleteBCard(BCategoryID);
+            const ClassFile = {
+                "MealsCategoryID": BCategoryID,
+                "AccountID": 0
+            };
+            this.deleteBCard(ClassFile);
         },
-        async deleteBCard(BCategoryID) {
+        async deleteBCard(ClassFile) {
             const vm = this;
-            await axios.post(process.env.API_HOST + `/MealsCategory/Delete`, { "ID":BCategoryID })
+            await axios.post(process.env.API_HOST + `/MealsCategory/Delete`, ClassFile)
             .then(function (response) {
                 console.log(response);
                 console.log('delete success');
@@ -512,13 +546,33 @@ import AddNewRecipes from '../utils/addrecipes.vue';
             });
         },
         deleteBItem: function($event, BItem) {
-            // Item[0] 是項目的ID
-            // Item[4] 是項目的分類ID
-            this.deleteBItemCard(BItem[0], BItem[4]);
+            // BITem-----
+            // "MealsID": 18,
+            // "Name": "主廚一號裡面的餐點A",
+            // "Price": 0,
+            // "Image": "string",
+            // "Visible": false,
+            // "PointEnable": false,
+            // "MealsCategoryID": 17,
+            // "MealsCategoryName": "主廚套餐一號"
+            // want-----
+            // "MealsID": 0,
+            // "Name": "string",
+            // "Price": 0,
+            // "Image": "string",
+            // "Video": "string",
+            // "AccountID": 0,
+            // "MealsCategoryID": 0
+            const ClassFile = {
+                "MealsID": BItem[0],
+                "AccountID": 0,
+                "MealsCategoryID": BItem[6]
+            };
+            this.deleteBItemCard(ClassFile);
         },
-        async deleteBItemCard(BItemID, BItemCID) {
+        async deleteBItemCard(ClassFile) {
             const vm = this;
-            await axios.post(process.env.API_HOST + `/Meals/Delete`, { "ID":BItemID, "ingredientsCategoryID": BItemCID})
+            await axios.post(process.env.API_HOST + `/Meals/Delete`, ClassFile)
             .then(function (response) {
                 console.log(response);
                 vm.getBItem(vm.currentACardID);
@@ -528,13 +582,34 @@ import AddNewRecipes from '../utils/addrecipes.vue';
                 console.log(error);
             });
         },
-        deleteCItem: function($event, CItemID) {
-            // Item[0] 是項目的ID
-            this.deleteCItemCard(CItemID);
+        deleteCItem: function($event, CItem) {
+            // CITem-----
+            // "MealsID": 18,
+            // "Name": "主廚一號裡面的餐點A",
+            // "Price": 0,
+            // "Image": "string",
+            // "Visible": false,
+            // "PointEnable": false,
+            // "MealsCategoryID": 17,
+            // "MealsCategoryName": "主廚套餐一號"
+            // want-----
+            // "MealsID": 0,
+            // "Name": "string",
+            // "Price": 0,
+            // "Image": "string",
+            // "Video": "string",
+            // "AccountID": 0,
+            // "MealsCategoryID": 0
+            const ClassFile = {
+                "MealsID": CItem[0],
+                "AccountID": 0,
+                "MealsCategoryID": CItem[6]
+            };
+            this.deleteCItemCard(ClassFile);
         },
-        async deleteCItemCard(CItemID) {
+        async deleteCItemCard(ClassFile) {
             const vm = this;
-            await axios.post(process.env.API_HOST + `/Meals/Delete`, { "ID":CItemID })
+            await axios.post(process.env.API_HOST + `/Meals/Delete`, ClassFile)
             .then(function (response) {
                 vm.getCItem(vm.currentBCardID);
                 return;
@@ -543,8 +618,81 @@ import AddNewRecipes from '../utils/addrecipes.vue';
                 console.log(error);
             });
         },
-        AddNewRecipes($event) {
-            console.log('end------', $event);
+        async getDeteailMeals(mealID) {
+            this.deteailMeals = await axios.get(process.env.API_HOST + `/MealsComboMealsMap/GetByComboMealsID/${mealID}`)
+            .then(function (response) {
+                const arrayList = response.data.map(item => Object.values(item));
+                //  "MealsComboMealsMapID": 0,
+                //  "MealsID": 0,
+                //  "MealsName": "string",
+                //  "MealsID": 0,
+                //  "MealsName": "string"
+                console.log('MealsComboMealsMap/GetByComboMealsID/', arrayList);
+                return arrayList;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        AddNewRecipes($event, MealsID) {
+            // "MealsID": 21,
+            // "Name": "一號裡面的餐點",
+            // "Price": 0,
+            // "Image": null,
+            // "Visible": false,
+            // "PointEnable": false,
+            // "MealsCategoryID": 19,
+            // "MealsCategoryName": "招牌一號"
+
+            console.log('加入餐點------', $event);
+
+            const ClassFile = [{
+                "MealsID": $event[0],
+                "ComboMealsID": ComboMealsID,
+                "AccountID": 0
+            },];
+            // "MealsID": 21,
+            // "MealsID": 18,
+            // "AccountID": 0
+            console.log('ClassFile', ClassFile);
+
+            const vm = this;
+            axios.post(process.env.API_HOST + `/MealsComboMealsMap/Create`, ClassFile)
+            .then(function (response) {
+                console.log('AddNewRecipes', response)
+                vm.getDeteailMeals( ComboMealsID );
+            })
+            .catch(function (error) {
+                console.log('error', error);
+            });
+        },
+        DeleteRecipes($event, item) {
+            console.log('刪除餐點------', item);
+            // 'item' is-------
+            // "MealsComboMealsMapID": 46,
+            // "MealsID": 20,
+            // "MealsName": "test1_1",
+            // "MealsID": 18,
+            // "MealsName": "主廚一號裡面的餐點A"
+
+            const ClassFile = [
+                {
+                    "MealsComboMealsMapID": item[0],
+                    "MealsID": item[1],
+                    "MealsID": item[3],
+                    "AccountID": 0
+                }
+            ];
+            const vm = this;
+            axios.post(process.env.API_HOST + `/MealsComboMealsMap/Delete`, ClassFile)
+            .then(function (response) {
+                console.log('DeleteRecipes', response)
+                console.log(item[3]);
+                vm.getDeteailMeals( item[3] );
+            })
+            .catch(function (error) {
+                console.log('error', error);
+            });
         }
     }
   }

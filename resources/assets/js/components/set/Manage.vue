@@ -441,19 +441,22 @@ import AddNewMeals from '../utils/addmeals.vue';
                                 "ComboMealsID": BITem[0],
                                 "Name": newName,
                                 "Price": BITem[2],
+                                "Visile": BITem[4],
                                 "Image": "string",
                                 "Video": "string",
+                                "PointEnable": BITem[5],
                                 "AccountID": 0,
                                 "ComboMealsCategoryID": BITem[6]
                                };
-            console.log('B item will change4444', ClassFile);
-            this.changeBItemCardName(ClassFile);
+            this.changeBItemCardName(ClassFile, newName);
         },
-        async changeBItemCardName(ClassFile) {
+        async changeBItemCardName(ClassFile, newName) {
             const vm = this;
             await axios.post(process.env.API_HOST + `/ComboMeals/Update`, ClassFile)
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
+                // 改D欄的名字
+                vm.currentDItem[1] = newName;
                 return;
             })
             .catch(function (error) {
@@ -465,18 +468,22 @@ import AddNewMeals from '../utils/addmeals.vue';
                                 "ComboMealsID": CITem[0],
                                 "Name": newName,
                                 "Price": CITem[2],
+                                "Visile": CITem[4],
                                 "Image": "string",
                                 "Video": "string",
+                                "PointEnable": CITem[5],
                                 "AccountID": 0,
                                 "ComboMealsCategoryID": CITem[6]
                                };
-            this.changeCItemCardName(ClassFile);
+            this.changeCItemCardName(ClassFile, newName);
         },
-        async changeCItemCardName(ClassFile) {
+        async changeCItemCardName(ClassFile, newName) {
             const vm = this;
             await axios.post(process.env.API_HOST + `/ComboMeals/Update`, ClassFile)
             .then(function (response) {
                 vm.getCItem(vm.currentBCardID);
+                // 改D欄的名字
+                vm.currentDItem[1] = newName;
                 return;
             })
             .catch(function (error) {
@@ -485,6 +492,7 @@ import AddNewMeals from '../utils/addmeals.vue';
         },
         changeDItem(obj) {
             this.changeDItemInfo(obj);
+            console.log('D item項目的OBJ', obj);
         },
         async changeDItemInfo(obj) {
             const vm = this;

@@ -29,18 +29,19 @@
         props: ['cardName'],
         data() {
             return {
-                // 無須通知父組件 madeFrom 異動資訊
-                innerCardcardName: this.cardName,
-                needSendToParent: ''
+                needSendToParent: '',
             }
         },
         computed: {
             cloneCardName : {
                 get: function() {
+                    this.needSendToParent = this.cardName;
                     return this.cardName;
                 },
                 set: function(newValue) {
-                    this.needSendToParent = newValue;
+                    if (newValue.length > 0) {
+                        this.needSendToParent = newValue;
+                    }
                     return this.cardName;
                 }
             },

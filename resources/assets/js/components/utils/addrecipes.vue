@@ -1,13 +1,13 @@
 <template>
     <div>
         <div class="addclass" @click="modal = true">
-            <Icon type="ios-add-circle-outline" size="20" /></Icon>新增食譜
+            <Icon type="ios-add-circle-outline" size="20" /></Icon>新增餐點
         </div>
         <Modal
             v-model="modal"
             @on-ok="sendItem"
             class="popmap"
-            width="560">
+            width="720">
             <Row>
             <Col span="8">
                 <div class="title">餐點</div>
@@ -43,6 +43,7 @@
                     >
                     <Icon type="ios-document" size="20"></Icon>
                     {{item[1]}}
+                    <Icon type="ios-checkmark" size="20" class="active-icon"></Icon>
                     </li>
                 </ul>
             </Col>
@@ -53,7 +54,10 @@
                         :key='item.index'
                         class="li-item-c"
                         @click="CItemOnClick($event, item)"
-                    >{{item[1]}}
+                    >
+                    <Icon type="ios-document" size="20"></Icon>
+                    {{item[1]}}
+                    <Icon type="ios-checkmark" size="20" class="active-icon"></Icon>
                     </li>
                 </ul>
             </Col>
@@ -78,7 +82,7 @@
                 currentBItemName: '尚無項目',
                 CItem: [],
                 CItemName: '尚無項目',
-                currentITem: [],
+                sureItem: []
             }
         },        
         created () {
@@ -111,22 +115,28 @@
             },
             BItemOnClick: function($event, item) {
                 this.toggleActive($event, false);
-                this.currentITem = item;
+                this.sureItem = item;
             },
             CItemOnClick: function($event, item) {
                 this.toggleActive($event, true);
-                this.currentITem = item;
+                this.sureItem = item;
             },
-            toggleActive($event, isCItem) {                
-                if (!isCItem) {                    
-                   $('.li-class-b').removeClass('active');
+            toggleActive($event, isCItem) {
+
+                const eT = $($event.currentTarget);
+                if (eT.hasClass('active')) {
+                    eT.removeClass('active');
+                } else {
+                    if (!isCItem) {
+                        $('.li-class-b').removeClass('active');
+                    }
+                    $('.li-item-b').removeClass('active');
+                    $('.li-item-c').removeClass('active');
+                    eT.addClass('active');
                 }
-                $('.li-item-b').removeClass('active');
-                $('.li-item-c').removeClass('active');
-                $($event.currentTarget).addClass('active');
             },
             async getAClass() {
-                this.AClass = await axios.get(process.env.API_HOST + `/MealsCategory/Get`)
+                this.AClass = await axios.get(process.env.API_HOST + `/RecipesCategory/Get`)
                 .then(function (response) {
                     const nameList = response.data.map(item => Object.values(item));
                     return nameList;
@@ -136,7 +146,7 @@
                 });
             },
             async getBClass(ACategoryID) {
-                this.BClass = await axios.get(process.env.API_HOST + `/MealsCategory/GetByCategoryID/${ACategoryID}`)
+                this.BClass = await axios.get(process.env.API_HOST + `/RecipesCategory/GetByCategoryID/${ACategoryID}`)
                 .then(function (response) {
                     const nameList = response.data.map(item => Object.values(item));
                     return nameList;
@@ -146,7 +156,7 @@
                 });
             },
             async getBItem(ACategoryID) {
-                this.BItem = await axios.get(process.env.API_HOST + `/Meals/GetByCategoryID/${ACategoryID}`)
+                this.BItem = await axios.get(process.env.API_HOST + `/Recipes/GetByCategoryID/${ACategoryID}`)
                 .then(function (response) {
                     const nameList = response.data.map(item => Object.values(item));
                     return nameList;
@@ -157,7 +167,7 @@
             },
             async getCItem(BCategoryID) {
                 console.log('CItem CategoryID', BCategoryID);
-                this.CItem = await axios.get(process.env.API_HOST + `/Meals/GetByCategoryID/${BCategoryID}`)
+                this.CItem = await axios.get(process.env.API_HOST + `/Recipes/GetByCategoryID/${BCategoryID}`)
                 .then(function (response) {
                     const nameList = response.data.map(item => Object.values(item));
                     return nameList;
@@ -167,11 +177,15 @@
                 });
             },
             sendItem() {
-                this.$emit('new-recipes-item', this.currentITem);
+                console.log('this sureItem -==== ', this.sureItem);
+                // this.$emit('new-recipes-item', this.sureItem);
             }
         }
     }
 </script>
-<style lang="scss">
-
+<style lang="scss" scoped>
+    .addclass {
+        padding: 10px;
+        color: #007aff;
+    }    
 </style>

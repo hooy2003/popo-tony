@@ -43,18 +43,18 @@ import ImageUploader from '../ImageUploader.vue';
         },
         name: 'CardFood',
         props: [
-            'cardCombomealid',
+            'cardMealid',
             'cardName',
             'cardPrice',
             'cardImage',
             'cardVisible',
             'cardPointenable',
-            'cardCombomealcategoryid'
+            'cardMealcategoryid'
         ],
         data() {
             return {
                 needSendToParent: {
-                                    "ComboMealsID": '',
+                                    "MealsID": '',
                                     "Name": '',
                                     "Price": '',
                                     "Image": "string",
@@ -115,7 +115,7 @@ import ImageUploader from '../ImageUploader.vue';
         },
         methods: {
             changeItem () {
-                this.needSendToParent["ComboMealsID"] = this.cardCombomealid;
+                this.needSendToParent["MealsID"] = this.cardMealid;
                 console.log('in cardFood-OBJ', this.needSendToParent);
                 //把input值傳給父
                 this.$emit('item-change', this.needSendToParent); 
