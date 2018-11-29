@@ -92,22 +92,20 @@
                         :card-image="currentDItem[3]"
                         :card-visible="currentDItem[4]"
                         :card-pointenable="currentDItem[5]"
-                        :card-mealcategoryid="currentDItem[6]"
+                        :card-mealcategoryid="currentDItem[6]"                        
                         @item-change="changeDItem($event)"
                     ></CardMeal>
                     <h4 v-show="DCardShow">餐點</h4>
                     <div class="meal-content" v-show="DCardShow">
                         <AddNewRecipes
-                            @new-recipes-item="AddNewRecipes($event, currentDItem[0])"
+                            @new-recipes-item="AddNewRecipes($event, currentDItem)"                            
                         ></AddNewRecipes>
                         <div class="detail-meals">
-                            <div v-for="(item, index) in deteailMeals"
-                                 class="item-meals">
+                            <div class="item-meals">
                                 <div @click="DeleteRecipes($event, item)">
                                     <Icon type="ios-remove-circle-outline" size="20"></Icon>
                                 </div>
-                                <div>{{item[2]}}</div>
-                                <div>{{item[0]}}元</div>
+                                <div>{{deteailMeals}}</div>
                             </div>
                         </div>                        
                     </div>
@@ -230,9 +228,11 @@ import AddNewRecipes from '../utils/addrecipes.vue';
             this.currentDItemName = BItemName;
             this.currentDItem = BItem;
 
-            const mealID = BItem[0];
-            console.log('BItem被點的時候給出的meal ID 4 ', mealID);
-            this.getDeteailMeals(mealID);
+            const recipesID = BItem[7];
+            console.log('BItem被點的時候給出的recipesID', recipesID);
+            if (recipesID > 0) {
+                this.getDeteailMeals(recipesID);
+            }
         },
         CItemOnClick: function(CITemName, CItem) {
             console.log('C Item OnClick', CITemName);
@@ -241,9 +241,11 @@ import AddNewRecipes from '../utils/addrecipes.vue';
             this.currentDItem = CItem;
             console.log('當CITEM被點了',this.currentDItem);
 
-            const mealID = CItem[0];
-            console.log('CITEM被點的時候給出的meal ID 4 ', mealID);
-            this.getDeteailMeals(mealID);
+            const recipesID = CItem[7];
+            console.log('CITEM被點的時候給出的recipesID', recipesID);
+            if (recipesID > 0) {
+                this.getDeteailMeals(recipesID);
+            }
          },
         async getAClass() {
             this.currentAClass = await axios.get(process.env.API_HOST + `/MealsCategory/Get`)
@@ -445,6 +447,7 @@ import AddNewRecipes from '../utils/addrecipes.vue';
                                 "Image": "string",
                                 "Video": "string",
                                 "PointEnable": BITem[5],
+                                "RecipesID": 0,
                                 "AccountID": 0,
                                 "MealsCategoryID": BITem[6]
                                };
@@ -618,49 +621,25 @@ import AddNewRecipes from '../utils/addrecipes.vue';
                 console.log(error);
             });
         },
-        async getDeteailMeals(mealID) {
-            this.deteailMeals = await axios.get(process.env.API_HOST + `/MealsComboMealsMap/GetByComboMealsID/${mealID}`)
-            .then(function (response) {
-                const arrayList = response.data.map(item => Object.values(item));
-                //  "MealsComboMealsMapID": 0,
-                //  "MealsID": 0,
-                //  "MealsName": "string",
-                //  "MealsID": 0,
-                //  "MealsName": "string"
-                console.log('MealsComboMealsMap/GetByComboMealsID/', arrayList);
-                return arrayList;
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
+        async getDeteailMeals(recipesID, recipesName, recipesCategoryID) {            
+            this.deteailMeals = recipesName;
+            console.log('抓DMESL', this.deteailMeals);
         },
-        AddNewRecipes($event, MealsID) {
-            // "MealsID": 21,
-            // "Name": "一號裡面的餐點",
-            // "Price": 0,
-            // "Image": null,
-            // "Visible": false,
-            // "PointEnable": false,
-            // "MealsCategoryID": 19,
-            // "MealsCategoryName": "招牌一號"
-
-            console.log('加入餐點------', $event);
-
-            const ClassFile = [{
-                "MealsID": $event[0],
-                "ComboMealsID": ComboMealsID,
-                "AccountID": 0
-            },];
-            // "MealsID": 21,
-            // "MealsID": 18,
-            // "AccountID": 0
+        AddNewRecipes($event, currentDItem) {
+            const ClassFile = {
+                                "MealsID": currentDItem[0],
+                                "Name": currentDItem[1],
+                                "RecipesID": $event[0],
+                                "AccountID": 0,
+                                "MealsCategoryID": currentDItem[6]
+                               };
             console.log('ClassFile', ClassFile);
 
             const vm = this;
-            axios.post(process.env.API_HOST + `/MealsComboMealsMap/Create`, ClassFile)
+            axios.post(process.env.API_HOST + `/Meals/Update`, ClassFile)
             .then(function (response) {
-                console.log('AddNewRecipes', response)
-                vm.getDeteailMeals( ComboMealsID );
+                console.log('AddNewRecipes--====', response)
+                vm.getDeteailMeals($event[0], $event[1], $event[2]);
             })
             .catch(function (error) {
                 console.log('error', error);

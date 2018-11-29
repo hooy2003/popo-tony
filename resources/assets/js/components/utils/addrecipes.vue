@@ -177,8 +177,12 @@
                 });
             },
             sendItem() {
+                // Recipes---"ID": 1,
+                // "Name": "紅燒美國燉牛肉食譜 ",
+                // "RecipesCategoryID": 1,
+                // "RecipesCategoryName": "熟食"
                 console.log('this sureItem -==== ', this.sureItem);
-                // this.$emit('new-recipes-item', this.sureItem);
+                this.$emit('new-recipes-item', this.sureItem);
             }
         }
     }
