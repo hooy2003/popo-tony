@@ -26,11 +26,19 @@ const state = {
         "櫃檯出單機",
         "廚房出單機"
     ],
-    rules: [
-        "規則1",
-        "規則2",
-        "規則3"
-    ]
+    rules1: [
+        "結帳相關規則"
+    ],
+    rules2: [
+        "客戶聯規則1",
+        "客戶聯規則2"
+    ],
+    rules3: [
+        "麵食區",
+        "飲料區",
+        "A區",
+        "B區"
+    ],
 };
 
 
@@ -39,7 +47,9 @@ const getters = {
     errorState: state => state.errorState,
     isLoading: state => state.isLoading,
     billing: state => state.billing,
-    rules: state => state.rules
+    rules1: state => state.rules1,
+    rules2: state => state.rules2,
+    rules3: state => state.rules3
 };
 
 const mutations = {

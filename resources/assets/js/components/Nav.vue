@@ -10,6 +10,7 @@
             <router-link to="/meal" tag="li">餐點管理</router-link>
             <router-link to="/set" tag="li">套餐管理</router-link>
             <router-link to="/home" tag="li" class="disabled">店面管理</router-link>
+            <router-link to="/printer" tag="li">印表機管理</router-link>
             <router-link to="/home" tag="li" class="disabled">結帳管理</router-link>
             <router-link to="/home" tag="li" class="disabled">客戶資訊</router-link>
             <router-link to="/home" tag="li" class="disabled">系統設定</router-link>
