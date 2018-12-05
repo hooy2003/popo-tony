@@ -71,9 +71,13 @@ import { mapGetters } from 'vuex';
 			}
 		}
         .content {
+            width: auto;
             display: flex;
             flex-wrap: wrap;
-            padding: 35px 20px 20px 20px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #fff;
             box-sizing: border-box;
             .col-wrap {
                 display: flex;
@@ -89,9 +93,9 @@ import { mapGetters } from 'vuex';
                     position:absolute;
                     background-color: #d2d2d7;
                     height: 1px;
-                    width: calc(100% - 20px);
+                    width: calc(100% + 20px);
                     bottom: 0;
-                    left: 10px;
+                    left: -10px;
                 }
                 &:first-child {
                     border-top-right-radius: 10px;
@@ -104,6 +108,9 @@ import { mapGetters } from 'vuex';
                         content: '';
                         display: none;
                     }
+                }
+                .ivu-dropdown {
+                    right: 10px;
                 }
             }
         }

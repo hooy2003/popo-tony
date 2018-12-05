@@ -1,9 +1,23 @@
 webpackJsonp([1],{
 
+/***/ "17wU":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "2yGr":
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/img/ionicons.svg";
+
+/***/ }),
+
+/***/ "53xJ":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -15,6 +29,13 @@ module.exports = __webpack_require__.p + "static/img/ionicons.svg";
 /***/ }),
 
 /***/ "B56r":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "Gccn":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -71,6 +92,13 @@ module.exports = __webpack_require__.p + "static/fonts/ionicons.d535a25.ttf";
 
 /***/ }),
 
+/***/ "VYIs":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "VsIi":
 /***/ (function(module, exports) {
 
@@ -85,7 +113,7 @@ module.exports = __webpack_require__.p + "static/fonts/ionicons.99ac330.woff";
 
 /***/ }),
 
-/***/ "XiV4":
+/***/ "X069":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -105,13 +133,6 @@ exports.push([module.i, ".ivu-load-loop{-webkit-animation:ani-load-loop 1s linea
 
 // exports
 
-
-/***/ }),
-
-/***/ "ZtTk":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -136,14 +157,14 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGlu
 
 /***/ }),
 
-/***/ "hLg0":
+/***/ "exnd":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ "iElX":
+/***/ "hLg0":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -233,7 +254,14 @@ if (token) {
 
 /***/ }),
 
-/***/ "lNnX":
+/***/ "ot0K":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "p/3x":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -466,7 +494,9 @@ var state = {
     },
     isLoading: false,
     billing: ["櫃檯出單機", "廚房出單機"],
-    rules: ["規則1", "規則2", "規則3"]
+    rules1: ["結帳相關規則"],
+    rules2: ["客戶聯規則1", "客戶聯規則2"],
+    rules3: ["麵食區", "飲料區", "A區", "B區"]
 };
 
 var getters = {
@@ -482,8 +512,14 @@ var getters = {
     billing: function billing(state) {
         return state.billing;
     },
-    rules: function rules(state) {
-        return state.rules;
+    rules1: function rules1(state) {
+        return state.rules1;
+    },
+    rules2: function rules2(state) {
+        return state.rules2;
+    },
+    rules3: function rules3(state) {
+        return state.rules3;
     }
 };
 
@@ -1209,6 +1245,7 @@ var Header_Component = Header_normalizeComponent(
 //
 //
 //
+//
 
 
 /* harmony default export */ var Nav = ({
@@ -1255,14 +1292,14 @@ var Header_Component = Header_normalizeComponent(
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-1057861c","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Nav.vue
-var Nav_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{attrs:{"id":"nav"}},[_c('router-link',{staticClass:"logo",attrs:{"to":"/home"}},[_c('img',{attrs:{"src":__webpack_require__("e8Gc"),"alt":"cat"}}),_vm._v(" "),_c('p',[_vm._v("System"),_c('br'),_c('span',[_vm._v("1.00v1")])])]),_vm._v(" "),(_vm.isLogin)?_c('ul',[_c('router-link',{attrs:{"to":"/food","tag":"li"}},[_vm._v("食材管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/recipes","tag":"li"}},[_vm._v("食譜管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/meal","tag":"li"}},[_vm._v("餐點管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/set","tag":"li"}},[_vm._v("套餐管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("店面管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("結帳管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("客戶資訊")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("系統設定")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("帳號與權限")]),_vm._v(" "),_c('li',{on:{"click":_vm.logout}},[_vm._v("登出")])],1):_vm._e(),_vm._v(" "),_c('router-link',{staticClass:"info",attrs:{"to":"/home"}},[_c('p',[_vm._v(_vm._s(_vm.userName)+" 您好"),_c('br'),_c('span',[_vm._v(_vm._s(_vm.nowTime))])])])],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-44ebf3eb","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Nav.vue
+var Nav_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{attrs:{"id":"nav"}},[_c('router-link',{staticClass:"logo",attrs:{"to":"/home"}},[_c('img',{attrs:{"src":__webpack_require__("e8Gc"),"alt":"cat"}}),_vm._v(" "),_c('p',[_vm._v("System"),_c('br'),_c('span',[_vm._v("1.00v1")])])]),_vm._v(" "),(_vm.isLogin)?_c('ul',[_c('router-link',{attrs:{"to":"/food","tag":"li"}},[_vm._v("食材管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/recipes","tag":"li"}},[_vm._v("食譜管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/meal","tag":"li"}},[_vm._v("餐點管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/set","tag":"li"}},[_vm._v("套餐管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("店面管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/printer","tag":"li"}},[_vm._v("印表機管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("結帳管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("客戶資訊")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("系統設定")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("帳號與權限")]),_vm._v(" "),_c('li',{on:{"click":_vm.logout}},[_vm._v("登出")])],1):_vm._e(),_vm._v(" "),_c('router-link',{staticClass:"info",attrs:{"to":"/home"}},[_c('p',[_vm._v(_vm._s(_vm.userName)+" 您好"),_c('br'),_c('span',[_vm._v(_vm._s(_vm.nowTime))])])])],1)}
 var Nav_staticRenderFns = []
 var Nav_esExports = { render: Nav_render, staticRenderFns: Nav_staticRenderFns }
 /* harmony default export */ var components_Nav = (Nav_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/Nav.vue
 function injectStyle (ssrContext) {
-  __webpack_require__("ZtTk")
+  __webpack_require__("wuLD")
 }
 var Nav_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -3342,6 +3379,392 @@ var manage_Component = manage_normalizeComponent(
 
 /* harmony default export */ var components_food_manage = (manage_Component.exports);
 
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/utils/cardRecipes.vue
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ var cardRecipes = ({
+    components: {
+        ImageUploader: js_components_ImageUploader
+    },
+    name: 'CardFood',
+    props: ['cardRecipesid', 'cardName', 'cardRecipesgoryid'],
+    data: function data() {
+        return {
+            needSendToParent: {
+                "RecipesID": '',
+                "Name": '',
+                "AccountID": 0
+            }
+        };
+    },
+
+    computed: {
+        cloneName: {
+            get: function get() {
+                this.needSendToParent["Name"] = this.cardName;
+                return this.cardName;
+            },
+            set: function set(newValue) {
+                this.needSendToParent["Name"] = newValue;
+                return this.cardName;
+            }
+        }
+    },
+    methods: {
+        changeItem: function changeItem() {
+            this.needSendToParent["RecipesID"] = this.cardRecipesid;
+            console.log('in cardRecipes-OBJ', this.needSendToParent);
+            //把input值傳給父
+            this.$emit('item-change', this.needSendToParent);
+        }
+    }
+});
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-68ef7a44","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/utils/cardRecipes.vue
+var cardRecipes_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-set"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("商品名稱")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.cloneName),callback:function ($$v) {_vm.cloneName=$$v},expression:"cloneName"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap",staticStyle:{"justify-content":"flex-end"}},[_c('Button',{nativeOn:{"click":function($event){_vm.changeItem()}}},[_vm._v("儲存")])],1)])])}
+var cardRecipes_staticRenderFns = []
+var cardRecipes_esExports = { render: cardRecipes_render, staticRenderFns: cardRecipes_staticRenderFns }
+/* harmony default export */ var utils_cardRecipes = (cardRecipes_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/utils/cardRecipes.vue
+function cardRecipes_injectStyle (ssrContext) {
+  __webpack_require__("VYIs")
+}
+var cardRecipes_normalizeComponent = __webpack_require__("VU/8")
+/* script */
+
+
+/* template */
+
+/* template functional */
+var cardRecipes___vue_template_functional__ = false
+/* styles */
+var cardRecipes___vue_styles__ = cardRecipes_injectStyle
+/* scopeId */
+var cardRecipes___vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var cardRecipes___vue_module_identifier__ = null
+var cardRecipes_Component = cardRecipes_normalizeComponent(
+  cardRecipes,
+  utils_cardRecipes,
+  cardRecipes___vue_template_functional__,
+  cardRecipes___vue_styles__,
+  cardRecipes___vue_scopeId__,
+  cardRecipes___vue_module_identifier__
+)
+
+/* harmony default export */ var components_utils_cardRecipes = (cardRecipes_Component.exports);
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/utils/addingredients.vue
+
+
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var addingredients = ({
+    name: 'addCard',
+    props: [''],
+    data: function data() {
+        return {
+            modal: false,
+            AClass: [],
+            currentAClassName: '無',
+            BClass: [],
+            currentBClassName: '尚無類別',
+            BItem: [],
+            currentBItemName: '尚無項目',
+            CItem: [],
+            CItemName: '尚無項目',
+            sureItem: []
+        };
+    },
+    created: function created() {
+        this.getAClass();
+    },
+
+    computed: {},
+    watch: {
+        AClass: function AClass(value) {
+            var BdefaultID = this.AClass[0][0];
+            var BdefaultName = this.AClass[0][1];
+            this.currentAClassName = BdefaultName;
+            this.getBClass(BdefaultID);
+            this.getBItem(BdefaultID);
+        }
+    },
+    methods: {
+        AClassOnClick: function AClassOnClick(AClassName, ACategoryID) {
+            // 給B區塊標題名字
+            this.currentAClassName = AClassName;
+            // 清空C區塊
+            this.CItem = '';
+            this.getBClass(ACategoryID);
+            this.getBItem(ACategoryID);
+        },
+        BClassOnClick: function BClassOnClick($event, BClassName, BCategoryID) {
+            this.toggleActive($event, false);
+            this.currentBClassName = BClassName;
+            this.getCItem(BCategoryID);
+        },
+        BItemOnClick: function BItemOnClick($event, item) {
+            this.toggleActive($event, false);
+            this.sureItem = item;
+        },
+        CItemOnClick: function CItemOnClick($event, item) {
+            this.toggleActive($event, true);
+            this.sureItem = item;
+        },
+        toggleActive: function toggleActive($event, isCItem) {
+
+            var eT = $($event.currentTarget);
+            if (eT.hasClass('active')) {
+                eT.removeClass('active');
+            } else {
+                if (!isCItem) {
+                    $('.li-class-b').removeClass('active');
+                }
+                $('.li-item-b').removeClass('active');
+                $('.li-item-c').removeClass('active');
+                eT.addClass('active');
+            }
+        },
+        getAClass: function getAClass() {
+            var _this = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee() {
+                return regenerator_default.a.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                _context.next = 2;
+                                return axios.get("http://demo.airdesign.com.tw/POSAPI/api" + '/IngredientsCategory/Get').then(function (response) {
+                                    var nameList = response.data.map(function (item) {
+                                        return values_default()(item);
+                                    });
+                                    return nameList;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 2:
+                                _this.AClass = _context.sent;
+
+                            case 3:
+                            case 'end':
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, _this);
+            }))();
+        },
+        getBClass: function getBClass(ACategoryID) {
+            var _this2 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2() {
+                return regenerator_default.a.wrap(function _callee2$(_context2) {
+                    while (1) {
+                        switch (_context2.prev = _context2.next) {
+                            case 0:
+                                _context2.next = 2;
+                                return axios.get("http://demo.airdesign.com.tw/POSAPI/api" + ('/IngredientsCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                    var nameList = response.data.map(function (item) {
+                                        return values_default()(item);
+                                    });
+                                    return nameList;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 2:
+                                _this2.BClass = _context2.sent;
+
+                            case 3:
+                            case 'end':
+                                return _context2.stop();
+                        }
+                    }
+                }, _callee2, _this2);
+            }))();
+        },
+        getBItem: function getBItem(ACategoryID) {
+            var _this3 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee3() {
+                return regenerator_default.a.wrap(function _callee3$(_context3) {
+                    while (1) {
+                        switch (_context3.prev = _context3.next) {
+                            case 0:
+                                _context3.next = 2;
+                                return axios.get("http://demo.airdesign.com.tw/POSAPI/api" + ('/Ingredients/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                    var nameList = response.data.map(function (item) {
+                                        return values_default()(item);
+                                    });
+                                    return nameList;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 2:
+                                _this3.BItem = _context3.sent;
+
+                            case 3:
+                            case 'end':
+                                return _context3.stop();
+                        }
+                    }
+                }, _callee3, _this3);
+            }))();
+        },
+        getCItem: function getCItem(BCategoryID) {
+            var _this4 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee4() {
+                return regenerator_default.a.wrap(function _callee4$(_context4) {
+                    while (1) {
+                        switch (_context4.prev = _context4.next) {
+                            case 0:
+                                console.log('CItem CategoryID', BCategoryID);
+                                _context4.next = 3;
+                                return axios.get("http://demo.airdesign.com.tw/POSAPI/api" + ('/Ingredients/GetByCategoryID/' + BCategoryID)).then(function (response) {
+                                    var nameList = response.data.map(function (item) {
+                                        return values_default()(item);
+                                    });
+                                    return nameList;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 3:
+                                _this4.CItem = _context4.sent;
+
+                            case 4:
+                            case 'end':
+                                return _context4.stop();
+                        }
+                    }
+                }, _callee4, _this4);
+            }))();
+        },
+        sendItem: function sendItem() {
+            this.$emit('new-recipes-item', this.sureItem);
+        }
+    }
+});
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-4b61332b","hasScoped":true,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/utils/addingredients.vue
+var addingredients_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"addclass",on:{"click":function($event){_vm.modal = true}}},[_c('Icon',{attrs:{"type":"ios-add-circle-outline","size":"20"}}),_vm._v("新增食材\n    ")],1),_vm._v(" "),_c('Modal',{staticClass:"popmap",attrs:{"width":"720"},on:{"on-ok":_vm.sendItem},model:{value:(_vm.modal),callback:function ($$v) {_vm.modal=$$v},expression:"modal"}},[_c('Row',[_c('Col',{attrs:{"span":"8"}},[_c('div',{staticClass:"title"},[_vm._v("食材")]),_vm._v(" "),_c('ul',{staticClass:"mapclass"},_vm._l((_vm.AClass),function(item,index){return _c('li',{key:item.index,staticClass:"li-class-a",class:{ active: index === 0 },on:{"click":function($event){_vm.AClassOnClick(item[1], item[0])}}},[_c('Icon',{attrs:{"type":"ios-folder-open-outline","size":"20"}}),_vm._v("\n                "+_vm._s(item[1])+"\n                ")],1)}))]),_vm._v(" "),_c('Col',{attrs:{"span":"8"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentAClassName))]),_vm._v(" "),_c('ul',{staticClass:"mapclass"},_vm._l((_vm.BClass),function(item,index){return _c('li',{key:item.index,staticClass:"li-class-b",on:{"click":function($event){_vm.BClassOnClick($event, item[1], item[0])}}},[_c('Icon',{attrs:{"type":"ios-folder-open-outline","size":"20"}}),_vm._v("\n                "+_vm._s(item[1])+"\n                ")],1)})),_vm._v(" "),_c('ul',{staticClass:"mapclass"},_vm._l((_vm.BItem),function(item,index){return _c('li',{key:item.index,staticClass:"li-item-b",on:{"click":function($event){_vm.BItemOnClick($event, item)}}},[_c('Icon',{attrs:{"type":"ios-document","size":"20"}}),_vm._v("\n                "+_vm._s(item[1])+"\n                "),_c('Icon',{staticClass:"active-icon",attrs:{"type":"ios-checkmark","size":"20"}})],1)}))]),_vm._v(" "),_c('Col',{attrs:{"span":"8"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentBClassName))]),_vm._v(" "),_c('ul',{staticClass:"mapclass"},_vm._l((_vm.CItem),function(item,index){return _c('li',{key:item.index,staticClass:"li-item-c",on:{"click":function($event){_vm.CItemOnClick($event, item)}}},[_c('Icon',{attrs:{"type":"ios-document","size":"20"}}),_vm._v("\n                "+_vm._s(item[1])+"\n                "),_c('Icon',{staticClass:"active-icon",attrs:{"type":"ios-checkmark","size":"20"}})],1)}))])],1)],1)],1)}
+var addingredients_staticRenderFns = []
+var addingredients_esExports = { render: addingredients_render, staticRenderFns: addingredients_staticRenderFns }
+/* harmony default export */ var utils_addingredients = (addingredients_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/utils/addingredients.vue
+function addingredients_injectStyle (ssrContext) {
+  __webpack_require__("17wU")
+}
+var addingredients_normalizeComponent = __webpack_require__("VU/8")
+/* script */
+
+
+/* template */
+
+/* template functional */
+var addingredients___vue_template_functional__ = false
+/* styles */
+var addingredients___vue_styles__ = addingredients_injectStyle
+/* scopeId */
+var addingredients___vue_scopeId__ = "data-v-4b61332b"
+/* moduleIdentifier (server only) */
+var addingredients___vue_module_identifier__ = null
+var addingredients_Component = addingredients_normalizeComponent(
+  addingredients,
+  utils_addingredients,
+  addingredients___vue_template_functional__,
+  addingredients___vue_styles__,
+  addingredients___vue_scopeId__,
+  addingredients___vue_module_identifier__
+)
+
+/* harmony default export */ var components_utils_addingredients = (addingredients_Component.exports);
+
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/recipes/manage.vue
 
 
@@ -3450,6 +3873,17 @@ var manage_Component = manage_normalizeComponent(
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -3457,7 +3891,6 @@ var manage_Component = manage_normalizeComponent(
 
 
 
-// let WebHelper = require('../../utils/wehelper');
 
 
 /* harmony default export */ var recipes_manage = ({
@@ -3465,8 +3898,9 @@ var manage_Component = manage_normalizeComponent(
         CardA: components_utils_card,
         CardB: components_utils_cardB,
         CardC: components_utils_cardC,
-        CardFood: components_utils_cardFood,
-        AddNewCard: components_utils_addcard
+        CardRecipes: components_utils_cardRecipes,
+        AddNewCard: components_utils_addcard,
+        AddNewIngredients: components_utils_addingredients
     },
     data: function data() {
         return {
@@ -3480,6 +3914,7 @@ var manage_Component = manage_normalizeComponent(
             currentCItem: [],
             currentDItemName: '尚無項目',
             currentDItem: [],
+            deteailMeals: [],
             CCardShow: false,
             DCardShow: false,
             DataIsUpdate: false
@@ -3491,7 +3926,11 @@ var manage_Component = manage_normalizeComponent(
         this.getAClass();
     },
 
-    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['User', 'foodAClass', 'foodBClass', 'foodBItem', 'foodCItem', 'rules'])),
+    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['User', 'isLoading']), {
+        isLoadingIN: function isLoadingIN() {
+            return this.isLoading;
+        }
+    }),
     watch: {
         // 處理非同步
         currentAClass: function currentAClass(value) {
@@ -3503,6 +3942,20 @@ var manage_Component = manage_normalizeComponent(
             this.currentACardID = BdefaultID;
             this.getBClass(BdefaultID);
             this.getBItem(BdefaultID);
+        },
+        isLoadingIN: function isLoadingIN(value) {
+            var _this = this;
+
+            if (value) {
+                this.$Message.loading({
+                    content: 'Loading...',
+                    duration: 2
+                });
+            } else {
+                setTimeout(function () {
+                    _this.$Message.destroy();
+                }, 300);
+            }
         }
     },
     // 改进vue的初始化数据调用时机 --
@@ -3528,6 +3981,7 @@ var manage_Component = manage_normalizeComponent(
             // 給C區塊名字
             this.currentBCardName = BCardName;
             this.currentBCardID = BCategoryID;
+            console.log('BCategoryID', BCategoryID);
             this.getCItem(BCategoryID);
         },
 
@@ -3539,6 +3993,10 @@ var manage_Component = manage_normalizeComponent(
             this.currentBCardName = '尚無項目';
             this.currentDItemName = BItemName;
             this.currentDItem = BItem;
+
+            // const comboMealID = BItem[0];
+            // console.log('BItem被點的時候給出的combomeal ID 4 ', comboMealID);
+            // this.getDeteailMeals(comboMealID);
         },
         CItemOnClick: function CItemOnClick(CITemName, CItem) {
             console.log('C Item OnClick', CITemName);
@@ -3546,9 +4004,13 @@ var manage_Component = manage_normalizeComponent(
             this.currentDItemName = CITemName;
             this.currentDItem = CItem;
             console.log('當CITEM被點了', this.currentDItem);
+
+            // const comboMealID = CItem[0];
+            // console.log('CITEM被點的時候給出的combomeal ID 4 ', comboMealID);
+            // this.getDeteailMeals(comboMealID);
         },
         getAClass: function getAClass() {
-            var _this = this;
+            var _this2 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee() {
                 return regenerator_default.a.wrap(function _callee$(_context) {
@@ -3566,18 +4028,18 @@ var manage_Component = manage_normalizeComponent(
                                 });
 
                             case 2:
-                                _this.currentAClass = _context.sent;
+                                _this2.currentAClass = _context.sent;
 
                             case 3:
                             case 'end':
                                 return _context.stop();
                         }
                     }
-                }, _callee, _this);
+                }, _callee, _this2);
             }))();
         },
         getBClass: function getBClass(ACategoryID) {
-            var _this2 = this;
+            var _this3 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2() {
                 return regenerator_default.a.wrap(function _callee2$(_context2) {
@@ -3595,18 +4057,18 @@ var manage_Component = manage_normalizeComponent(
                                 });
 
                             case 2:
-                                _this2.currentBClass = _context2.sent;
+                                _this3.currentBClass = _context2.sent;
 
                             case 3:
                             case 'end':
                                 return _context2.stop();
                         }
                     }
-                }, _callee2, _this2);
+                }, _callee2, _this3);
             }))();
         },
         getBItem: function getBItem(ACategoryID) {
-            var _this3 = this;
+            var _this4 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee3() {
                 return regenerator_default.a.wrap(function _callee3$(_context3) {
@@ -3624,18 +4086,18 @@ var manage_Component = manage_normalizeComponent(
                                 });
 
                             case 2:
-                                _this3.currentBItem = _context3.sent;
+                                _this4.currentBItem = _context3.sent;
 
                             case 3:
                             case 'end':
                                 return _context3.stop();
                         }
                     }
-                }, _callee3, _this3);
+                }, _callee3, _this4);
             }))();
         },
         getCItem: function getCItem(BCategoryID) {
-            var _this4 = this;
+            var _this5 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee4() {
                 return regenerator_default.a.wrap(function _callee4$(_context4) {
@@ -3643,12 +4105,14 @@ var manage_Component = manage_normalizeComponent(
                         switch (_context4.prev = _context4.next) {
                             case 0:
                                 console.log('currentCItem CategoryID', BCategoryID);
-                                // "ID": 4,
-                                // "Name": "南澳小黃瓜",
-                                // "Unit": "公克",
-                                // "Price": 40,
-                                // "RecipesCategoryID": 10,
-                                // "RecipesCategoryName": "五穀根莖類"
+                                // "ComboMealsID": 18,
+                                // "Name": "主廚一號裡面的餐點A",
+                                // "Price": 0,
+                                // "Image": "string",
+                                // "Visible": false,
+                                // "PointEnable": false,
+                                // "ComboMealsCategoryID": 17,
+                                // "ComboMealsCategoryName": "主廚套餐一號"
                                 _context4.next = 3;
                                 return axios.get("http://demo.airdesign.com.tw/POSAPI/api" + ('/Recipes/GetByCategoryID/' + BCategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
@@ -3660,55 +4124,44 @@ var manage_Component = manage_normalizeComponent(
                                 });
 
                             case 3:
-                                _this4.currentCItem = _context4.sent;
+                                _this5.currentCItem = _context4.sent;
 
                             case 4:
                             case 'end':
                                 return _context4.stop();
                         }
                     }
-                }, _callee4, _this4);
+                }, _callee4, _this5);
             }))();
         },
         getDItem: function getDItem(ItemID) {
-            var _this5 = this;
+            // 廢氣中---------------
+
+            var _this6 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee5() {
                 return regenerator_default.a.wrap(function _callee5$(_context5) {
                     while (1) {
                         switch (_context5.prev = _context5.next) {
                             case 0:
-                                _context5.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI/api" + ('/Recipes/GetByCategoryID/' + ItemID)).then(function (response) {
-                                    var nameList = response.data.map(function (item) {
-                                        return values_default()(item);
-                                    });
-                                    return nameList;
-                                }).catch(function (error) {
-                                    console.log(error);
-                                });
-
-                            case 2:
-                                _this5.currentDItem = _context5.sent;
-
-                            case 3:
                             case 'end':
                                 return _context5.stop();
                         }
                     }
-                }, _callee5, _this5);
+                }, _callee5, _this6);
             }))();
         },
         addNewAClass: function addNewAClass($event) {
             var ClassFile = {
                 "Name": $event,
+                "RecipesCategoryID": null,
                 "AccountID": 0,
                 "IsFirst": true
             };
             this.addNewAClassCard(ClassFile);
         },
         addNewAClassCard: function addNewAClassCard(ClassFile) {
-            var _this6 = this;
+            var _this7 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee6() {
                 var vm;
@@ -3717,10 +4170,10 @@ var manage_Component = manage_normalizeComponent(
                         switch (_context6.prev = _context6.next) {
                             case 0:
                                 // Update Vue object with Axios response data
-                                vm = _this6;
+                                vm = _this7;
                                 _context6.next = 3;
                                 return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/RecipesCategory/Create', ClassFile).then(function (response) {
-                                    vm.getAClass(vm.currentACardID);
+                                    vm.getAClass();
                                     return true;
                                 }).catch(function (error) {
                                     console.log('error', error);
@@ -3731,7 +4184,7 @@ var manage_Component = manage_normalizeComponent(
                                 return _context6.stop();
                         }
                     }
-                }, _callee6, _this6);
+                }, _callee6, _this7);
             }))();
         },
         addNewBClass: function addNewBClass($event, ACategoryID) {
@@ -3745,7 +4198,7 @@ var manage_Component = manage_normalizeComponent(
             this.addNewBClassCard(ClassFile);
         },
         addNewBClassCard: function addNewBClassCard(ClassFile) {
-            var _this7 = this;
+            var _this8 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee7() {
                 var vm;
@@ -3754,7 +4207,7 @@ var manage_Component = manage_normalizeComponent(
                         switch (_context7.prev = _context7.next) {
                             case 0:
                                 // Update Vue object with Axios response data
-                                vm = _this7;
+                                vm = _this8;
                                 _context7.next = 3;
                                 return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/RecipesCategory/Create', ClassFile).then(function (response) {
                                     console.log('addNewBClassCard', response);
@@ -3769,21 +4222,19 @@ var manage_Component = manage_normalizeComponent(
                                 return _context7.stop();
                         }
                     }
-                }, _callee7, _this7);
+                }, _callee7, _this8);
             }))();
         },
         addNewBItem: function addNewBItem($event, ACategoryID) {
             var ClassFile = {
                 "Name": $event,
                 "RecipesCategoryID": ACategoryID,
-                "Unit": "公斤",
-                "Price": 0,
                 "AccountID": 0
             };
             this.addNewBItemCard(ClassFile);
         },
         addNewBItemCard: function addNewBItemCard(ClassFile) {
-            var _this8 = this;
+            var _this9 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee8() {
                 var vm;
@@ -3791,7 +4242,7 @@ var manage_Component = manage_normalizeComponent(
                     while (1) {
                         switch (_context8.prev = _context8.next) {
                             case 0:
-                                vm = _this8;
+                                vm = _this9;
                                 _context8.next = 3;
                                 return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Recipes/Create', ClassFile).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
@@ -3805,21 +4256,19 @@ var manage_Component = manage_normalizeComponent(
                                 return _context8.stop();
                         }
                     }
-                }, _callee8, _this8);
+                }, _callee8, _this9);
             }))();
         },
         addNewCItem: function addNewCItem($event, BCategoryID) {
             var ClassFile = {
                 "Name": $event,
                 "RecipesCategoryID": BCategoryID,
-                "Unit": "公斤",
-                "Price": 0,
                 "AccountID": 0
             };
             this.addNewCItemCard(ClassFile);
         },
         addNewCItemCard: function addNewCItemCard(ClassFile) {
-            var _this9 = this;
+            var _this10 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee9() {
                 var vm;
@@ -3827,7 +4276,7 @@ var manage_Component = manage_normalizeComponent(
                     while (1) {
                         switch (_context9.prev = _context9.next) {
                             case 0:
-                                vm = _this9;
+                                vm = _this10;
                                 _context9.next = 3;
                                 return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Recipes/Create', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
@@ -3841,7 +4290,7 @@ var manage_Component = manage_normalizeComponent(
                                 return _context9.stop();
                         }
                     }
-                }, _callee9, _this9);
+                }, _callee9, _this10);
             }))();
         },
         changeAName: function changeAName(newName, ACategoryID) {
@@ -3853,7 +4302,7 @@ var manage_Component = manage_normalizeComponent(
             this.changeACardName(ClassFile);
         },
         changeACardName: function changeACardName(ClassFile) {
-            var _this10 = this;
+            var _this11 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee10() {
                 var vm;
@@ -3861,7 +4310,7 @@ var manage_Component = manage_normalizeComponent(
                     while (1) {
                         switch (_context10.prev = _context10.next) {
                             case 0:
-                                vm = _this10;
+                                vm = _this11;
                                 _context10.next = 3;
                                 return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/RecipesCategory/Update', ClassFile).then(function (response) {
                                     vm.getAClass();
@@ -3875,7 +4324,7 @@ var manage_Component = manage_normalizeComponent(
                                 return _context10.stop();
                         }
                     }
-                }, _callee10, _this10);
+                }, _callee10, _this11);
             }))();
         },
         changeBName: function changeBName(newName, BCategoryID) {
@@ -3887,7 +4336,7 @@ var manage_Component = manage_normalizeComponent(
             this.changeBCardName(ClassFile);
         },
         changeBCardName: function changeBCardName(ClassFile) {
-            var _this11 = this;
+            var _this12 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee11() {
                 var vm;
@@ -3895,7 +4344,7 @@ var manage_Component = manage_normalizeComponent(
                     while (1) {
                         switch (_context11.prev = _context11.next) {
                             case 0:
-                                vm = _this11;
+                                vm = _this12;
                                 _context11.next = 3;
                                 return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/RecipesCategory/Update', ClassFile).then(function (response) {
                                     vm.getAClass();
@@ -3909,21 +4358,20 @@ var manage_Component = manage_normalizeComponent(
                                 return _context11.stop();
                         }
                     }
-                }, _callee11, _this11);
+                }, _callee11, _this12);
             }))();
         },
         changeBItemName: function changeBItemName(newName, BITem) {
             var ClassFile = {
-                "ID": BITem[0],
+                "RecipesID": BITem[0],
                 "Name": newName,
-                "Unit": BITem[2],
-                "Price": BITem[3],
-                "AccountID": 0
+                "AccountID": 0,
+                "RecipesCategoryID": BITem[2]
             };
-            this.changeBItemCardName(ClassFile);
+            this.changeBItemCardName(ClassFile, newName);
         },
-        changeBItemCardName: function changeBItemCardName(ClassFile) {
-            var _this12 = this;
+        changeBItemCardName: function changeBItemCardName(ClassFile, newName) {
+            var _this13 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee12() {
                 var vm;
@@ -3931,10 +4379,12 @@ var manage_Component = manage_normalizeComponent(
                     while (1) {
                         switch (_context12.prev = _context12.next) {
                             case 0:
-                                vm = _this12;
+                                vm = _this13;
                                 _context12.next = 3;
                                 return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Recipes/Update', ClassFile).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
+                                    // 改D欄的名字
+                                    vm.currentDItem[1] = newName;
                                     return;
                                 }).catch(function (error) {
                                     console.log(error);
@@ -3945,21 +4395,20 @@ var manage_Component = manage_normalizeComponent(
                                 return _context12.stop();
                         }
                     }
-                }, _callee12, _this12);
+                }, _callee12, _this13);
             }))();
         },
         changeCItemName: function changeCItemName(newName, CITem) {
             var ClassFile = {
-                "ID": CITem[0],
+                "RecipesID": CITem[0],
                 "Name": newName,
-                "Unit": CITem[2],
-                "Price": CITem[3],
-                "AccountID": 0
+                "AccountID": 0,
+                "RecipesCategoryID": CITem[2]
             };
-            this.changeCItemCardName(ClassFile);
+            this.changeCItemCardName(ClassFile, newName);
         },
-        changeCItemCardName: function changeCItemCardName(ClassFile) {
-            var _this13 = this;
+        changeCItemCardName: function changeCItemCardName(ClassFile, newName) {
+            var _this14 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee13() {
                 var vm;
@@ -3967,10 +4416,12 @@ var manage_Component = manage_normalizeComponent(
                     while (1) {
                         switch (_context13.prev = _context13.next) {
                             case 0:
-                                vm = _this13;
+                                vm = _this14;
                                 _context13.next = 3;
                                 return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Recipes/Update', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
+                                    // 改D欄的名字
+                                    vm.currentDItem[1] = newName;
                                     return;
                                 }).catch(function (error) {
                                     console.log(error);
@@ -3981,16 +4432,15 @@ var manage_Component = manage_normalizeComponent(
                                 return _context13.stop();
                         }
                     }
-                }, _callee13, _this13);
+                }, _callee13, _this14);
             }))();
         },
         changeDItem: function changeDItem(obj) {
-            console.log('DITem--------*******', obj);
-            console.log('DITem--------*******', this.currentDItem[0]);
             this.changeDItemInfo(obj);
+            console.log('D item項目的OBJ', obj);
         },
         changeDItemInfo: function changeDItemInfo(obj) {
-            var _this14 = this;
+            var _this15 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee14() {
                 var vm;
@@ -3998,7 +4448,7 @@ var manage_Component = manage_normalizeComponent(
                     while (1) {
                         switch (_context14.prev = _context14.next) {
                             case 0:
-                                vm = _this14;
+                                vm = _this15;
                                 _context14.next = 3;
                                 return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Recipes/Update', obj).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
@@ -4014,15 +4464,19 @@ var manage_Component = manage_normalizeComponent(
                                 return _context14.stop();
                         }
                     }
-                }, _callee14, _this14);
+                }, _callee14, _this15);
             }))();
         },
 
         deleteAClass: function deleteAClass($event, ACategoryID) {
-            this.deleteACard(ACategoryID);
+            var ClassFile = {
+                "ID": ACategoryID,
+                "AccountID": 0
+            };
+            this.deleteACard(ClassFile);
         },
-        deleteACard: function deleteACard(ACategoryID) {
-            var _this15 = this;
+        deleteACard: function deleteACard(ClassFile) {
+            var _this16 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee15() {
                 var vm;
@@ -4030,9 +4484,9 @@ var manage_Component = manage_normalizeComponent(
                     while (1) {
                         switch (_context15.prev = _context15.next) {
                             case 0:
-                                vm = _this15;
+                                vm = _this16;
                                 _context15.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/RecipesCategory/Delete', { "ID": ACategoryID }).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/RecipesCategory/Delete', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -4044,15 +4498,19 @@ var manage_Component = manage_normalizeComponent(
                                 return _context15.stop();
                         }
                     }
-                }, _callee15, _this15);
+                }, _callee15, _this16);
             }))();
         },
 
         deleteBClass: function deleteBClass($event, BCategoryID) {
-            this.deleteBCard(BCategoryID);
+            var ClassFile = {
+                "ID": BCategoryID,
+                "AccountID": 0
+            };
+            this.deleteBCard(ClassFile);
         },
-        deleteBCard: function deleteBCard(BCategoryID) {
-            var _this16 = this;
+        deleteBCard: function deleteBCard(ClassFile) {
+            var _this17 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee16() {
                 var vm;
@@ -4060,9 +4518,9 @@ var manage_Component = manage_normalizeComponent(
                     while (1) {
                         switch (_context16.prev = _context16.next) {
                             case 0:
-                                vm = _this16;
+                                vm = _this17;
                                 _context16.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/RecipesCategory/Delete', { "ID": BCategoryID }).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/RecipesCategory/Delete', ClassFile).then(function (response) {
                                     console.log(response);
                                     console.log('delete success');
                                     vm.getBClass(vm.currentACardID);
@@ -4076,16 +4534,30 @@ var manage_Component = manage_normalizeComponent(
                                 return _context16.stop();
                         }
                     }
-                }, _callee16, _this16);
+                }, _callee16, _this17);
             }))();
         },
 
-        deleteBItem: function deleteBItem($event, BItemID) {
-            // Item[0] 是項目的ID
-            this.deleteBItemCard(BItemID);
+        deleteBItem: function deleteBItem($event, BItem) {
+            // BITem-----
+            // "ComboMealsID": 18,
+            // "Name": "主廚一號裡面的餐點A",
+            // "ComboMealsCategoryID": 17,
+            // "ComboMealsCategoryName": "主廚套餐一號"
+            // want-----
+            // "ComboMealsID": 0,
+            // "Name": "string",
+            // "AccountID": 0,
+            // "ComboMealsCategoryID": 0
+            var ClassFile = {
+                "RecipesID": BItem[0],
+                "AccountID": 0,
+                "RecipesCategoryID": BItem[2]
+            };
+            this.deleteBItemCard(ClassFile);
         },
-        deleteBItemCard: function deleteBItemCard(BItemID) {
-            var _this17 = this;
+        deleteBItemCard: function deleteBItemCard(ClassFile) {
+            var _this18 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee17() {
                 var vm;
@@ -4093,9 +4565,10 @@ var manage_Component = manage_normalizeComponent(
                     while (1) {
                         switch (_context17.prev = _context17.next) {
                             case 0:
-                                vm = _this17;
+                                vm = _this18;
                                 _context17.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Recipes/Delete', { "ID": BItemID }).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Recipes/Delete', ClassFile).then(function (response) {
+                                    console.log(response);
                                     vm.getBItem(vm.currentACardID);
                                     return;
                                 }).catch(function (error) {
@@ -4107,16 +4580,20 @@ var manage_Component = manage_normalizeComponent(
                                 return _context17.stop();
                         }
                     }
-                }, _callee17, _this17);
+                }, _callee17, _this18);
             }))();
         },
 
-        deleteCItem: function deleteCItem($event, CItemID) {
-            // Item[0] 是項目的ID
-            this.deleteCItemCard(CItemID);
+        deleteCItem: function deleteCItem($event, CItem) {
+            var ClassFile = {
+                "RecipesID": CItem[0],
+                "AccountID": 0,
+                "RecipesCategoryID": CItem[2]
+            };
+            this.deleteCItemCard(ClassFile);
         },
-        deleteCItemCard: function deleteCItemCard(CItemID) {
-            var _this18 = this;
+        deleteCItemCard: function deleteCItemCard(ClassFile) {
+            var _this19 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee18() {
                 var vm;
@@ -4124,9 +4601,9 @@ var manage_Component = manage_normalizeComponent(
                     while (1) {
                         switch (_context18.prev = _context18.next) {
                             case 0:
-                                vm = _this18;
+                                vm = _this19;
                                 _context18.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Recipes/Delete', { "ID": CItemID }).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Recipes/Delete', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     return;
                                 }).catch(function (error) {
@@ -4138,19 +4615,95 @@ var manage_Component = manage_normalizeComponent(
                                 return _context18.stop();
                         }
                     }
-                }, _callee18, _this18);
+                }, _callee18, _this19);
             }))();
+        },
+        getDeteailMeals: function getDeteailMeals(comboMealID) {
+            // this.deteailMeals = await axios.get(process.env.API_HOST + `/MealsComboMealsMap/GetByComboMealsID/${comboMealID}`)
+            // .then(function (response) {
+            //     const arrayList = response.data.map(item => Object.values(item));
+            //     //  "MealsComboMealsMapID": 0,
+            //     //  "MealsID": 0,
+            //     //  "MealsName": "string",
+            //     //  "ComboMealsID": 0,
+            //     //  "ComboMealsName": "string"
+            //     console.log('IngredientsRecipesMap/GetByComboMealsID/', arrayList);
+            //     return arrayList;
+            // })
+            // .catch(function (error) {
+            //     console.log(error);
+            // });
+
+            var _this20 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee19() {
+                return regenerator_default.a.wrap(function _callee19$(_context19) {
+                    while (1) {
+                        switch (_context19.prev = _context19.next) {
+                            case 0:
+                            case 'end':
+                                return _context19.stop();
+                        }
+                    }
+                }, _callee19, _this20);
+            }))();
+        },
+        AddNewIngredients: function AddNewIngredients($event, ComboMealsID) {
+            // "MealsID": 21,
+            // "Name": "一號裡面的餐點",
+            // "MealsCategoryID": 19,
+            // "MealsCategoryName": "招牌一號"
+
+            console.log('加入餐點------', $event);
+            var ClassFile = [{
+                "IngredientsID": $event[0],
+                "RecipesID": ComboMealsID,
+                "Amount": 0,
+                "AccountID": 0
+            }];
+            console.log('ClassFile', ClassFile);
+            var vm = this;
+            axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/IngredientsRecipesMap/Create', ClassFile).then(function (response) {
+                console.log('AddNewIngredients', response);
+                vm.getDeteailMeals(ComboMealsID);
+            }).catch(function (error) {
+                console.log('error', error);
+            });
+        },
+        DeleteRecipes: function DeleteRecipes($event, item) {
+            console.log('刪除餐點------', item);
+            // 'item' is-------
+            // "MealsComboMealsMapID": 46,
+            // "MealsID": 20,
+            // "MealsName": "test1_1",
+            // "ComboMealsID": 18,
+            // "ComboMealsName": "主廚一號裡面的餐點A"
+
+            var ClassFile = [{
+                "MealsComboMealsMapID": item[0],
+                "MealsID": item[1],
+                "ComboMealsID": item[3],
+                "AccountID": 0
+            }];
+            var vm = this;
+            axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/MealsComboMealsMap/Delete', ClassFile).then(function (response) {
+                console.log('DeleteRecipes', response);
+                console.log(item[3]);
+                vm.getDeteailMeals(item[3]);
+            }).catch(function (error) {
+                console.log('error', error);
+            });
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-bf8342d4","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/recipes/manage.vue
-var recipes_manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("食譜")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},[_vm._l((_vm.currentAClass),function(item,index){return _c('CardA',{key:item.index,class:{ active: index === 0 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeAName($event, item[0])},"card-on-click":function($event){_vm.AClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteAClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewAClass($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentACardName))]),_vm._v(" "),_c('div',{staticClass:"union union-half"},[_c('h4',[_vm._v("類別")]),_vm._v(" "),_vm._l((_vm.currentBClass),function(item,index){return _c('CardB',{key:item.index,staticClass:"B-class",class:{ lastcard: index === (_vm.currentBClass.length-1) && index > 1 },attrs:{"card-name":item[1],"is-class":true},on:{"card-change-name":function($event){_vm.changeBName($event, item[0])},"card-on-click":function($event){_vm.BClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteBClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBClass.length >= 0),expression:"currentBClass.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBClass($event, _vm.currentACardID)}}})],2),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentBItem),function(item,index){return _c('CardB',{key:item.index,class:{ lastcard: index === (_vm.currentBItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeBItemName($event, item)},"card-on-click":function($event){_vm.BItemOnClick($event, item)},"card-delete":function($event){_vm.deleteBItem($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBItem.length >= 0),expression:"currentBItem.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBItem($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentBCardName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentCItem),function(item,index){return _c('CardC',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],key:item.index,class:{ lastcard: index === (_vm.currentCItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeCItemName($event, item)},"card-on-click":function($event){_vm.CItemOnClick($event, item)},"card-delete":function($event){_vm.deleteCItem($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewCItem($event, _vm.currentBCardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentDItemName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('CardFood',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],attrs:{"card-id":_vm.currentDItem[0],"card-name":_vm.currentDItem[1],"card-unit":_vm.currentDItem[2],"card-price":_vm.currentDItem[3]},on:{"item-change":function($event){_vm.changeDItem($event)}}}),_vm._v(" "),_c('h4',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}]},[_vm._v("食譜")]),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],staticClass:"add-new-card"},[_c('Icon',{attrs:{"type":"ios-add-circle-outline","size":"20"}}),_vm._v("編輯食譜品項\n                ")],1)],1)])],1)],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-79e1cb71","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/recipes/manage.vue
+var recipes_manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("食譜")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},[_vm._l((_vm.currentAClass),function(item,index){return _c('CardA',{key:item.index,class:{ active: index === 0 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeAName($event, item[0])},"card-on-click":function($event){_vm.AClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteAClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewAClass($event)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentACardName))]),_vm._v(" "),_c('div',{staticClass:"union union-half"},[_c('h4',[_vm._v("類別")]),_vm._v(" "),_vm._l((_vm.currentBClass),function(item,index){return _c('CardB',{key:item.index,staticClass:"B-class",class:{ lastcard: index === (_vm.currentBClass.length-1) && index > 1 },attrs:{"card-name":item[1],"is-class":true},on:{"card-change-name":function($event){_vm.changeBName($event, item[0])},"card-on-click":function($event){_vm.BClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteBClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBClass.length >= 0),expression:"currentBClass.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBClass($event, _vm.currentACardID)}}})],2),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentBItem),function(item,index){return _c('CardB',{key:item.index,class:{ lastcard: index === (_vm.currentBItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeBItemName($event, item)},"card-on-click":function($event){_vm.BItemOnClick($event, item)},"card-delete":function($event){_vm.deleteBItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBItem.length >= 0),expression:"currentBItem.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBItem($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentBCardName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentCItem),function(item,index){return _c('CardC',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],key:item.index,class:{ lastcard: index === (_vm.currentCItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeCItemName($event, item)},"card-on-click":function($event){_vm.CItemOnClick($event, item)},"card-delete":function($event){_vm.deleteCItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewCItem($event, _vm.currentBCardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentDItemName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('CardRecipes',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],attrs:{"card-recipesid":_vm.currentDItem[0],"card-name":_vm.currentDItem[1],"card-recipescategoryid":_vm.currentDItem[2]},on:{"item-change":function($event){_vm.changeDItem($event)}}}),_vm._v(" "),_c('h4',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}]},[_vm._v("食譜")]),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],staticClass:"meal-content"},[_c('AddNewIngredients',{on:{"new-recipes-item":function($event){_vm.AddNewIngredients($event, _vm.currentDItem[0])}}}),_vm._v(" "),_c('div',{staticClass:"detail-meals"},_vm._l((_vm.deteailMeals),function(item,index){return _c('div',{staticClass:"item-meals"},[_c('div',{on:{"click":function($event){_vm.DeleteRecipes($event, item)}}},[_c('Icon',{attrs:{"type":"ios-remove-circle-outline","size":"20"}})],1),_vm._v(" "),_c('div',[_vm._v(_vm._s(item[2]))]),_vm._v(" "),_c('div',[_vm._v(_vm._s(item[0]))])])}))],1)],1)])],1)],1)}
 var recipes_manage_staticRenderFns = []
 var recipes_manage_esExports = { render: recipes_manage_render, staticRenderFns: recipes_manage_staticRenderFns }
 /* harmony default export */ var components_recipes_manage = (recipes_manage_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/recipes/manage.vue
 function recipes_manage_injectStyle (ssrContext) {
-  __webpack_require__("lNnX")
+  __webpack_require__("ot0K")
 }
 var recipes_manage_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -4588,19 +5141,23 @@ var cardMeal_Component = cardMeal_normalizeComponent(
             }))();
         },
         sendItem: function sendItem() {
+            // Recipes---"ID": 1,
+            // "Name": "紅燒美國燉牛肉食譜 ",
+            // "RecipesCategoryID": 1,
+            // "RecipesCategoryName": "熟食"
             console.log('this sureItem -==== ', this.sureItem);
-            // this.$emit('new-recipes-item', this.sureItem);
+            this.$emit('new-recipes-item', this.sureItem);
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-fdad4274","hasScoped":true,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/utils/addrecipes.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-0b6741e0","hasScoped":true,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/utils/addrecipes.vue
 var addrecipes_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"addclass",on:{"click":function($event){_vm.modal = true}}},[_c('Icon',{attrs:{"type":"ios-add-circle-outline","size":"20"}}),_vm._v("新增餐點\n    ")],1),_vm._v(" "),_c('Modal',{staticClass:"popmap",attrs:{"width":"720"},on:{"on-ok":_vm.sendItem},model:{value:(_vm.modal),callback:function ($$v) {_vm.modal=$$v},expression:"modal"}},[_c('Row',[_c('Col',{attrs:{"span":"8"}},[_c('div',{staticClass:"title"},[_vm._v("餐點")]),_vm._v(" "),_c('ul',{staticClass:"mapclass"},_vm._l((_vm.AClass),function(item,index){return _c('li',{key:item.index,staticClass:"li-class-a",class:{ active: index === 0 },on:{"click":function($event){_vm.AClassOnClick(item[1], item[0])}}},[_c('Icon',{attrs:{"type":"ios-folder-open-outline","size":"20"}}),_vm._v("\n                "+_vm._s(item[1])+"\n                ")],1)}))]),_vm._v(" "),_c('Col',{attrs:{"span":"8"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentAClassName))]),_vm._v(" "),_c('ul',{staticClass:"mapclass"},_vm._l((_vm.BClass),function(item,index){return _c('li',{key:item.index,staticClass:"li-class-b",on:{"click":function($event){_vm.BClassOnClick($event, item[1], item[0])}}},[_c('Icon',{attrs:{"type":"ios-folder-open-outline","size":"20"}}),_vm._v("\n                "+_vm._s(item[1])+"\n                ")],1)})),_vm._v(" "),_c('ul',{staticClass:"mapclass"},_vm._l((_vm.BItem),function(item,index){return _c('li',{key:item.index,staticClass:"li-item-b",on:{"click":function($event){_vm.BItemOnClick($event, item)}}},[_c('Icon',{attrs:{"type":"ios-document","size":"20"}}),_vm._v("\n                "+_vm._s(item[1])+"\n                "),_c('Icon',{staticClass:"active-icon",attrs:{"type":"ios-checkmark","size":"20"}})],1)}))]),_vm._v(" "),_c('Col',{attrs:{"span":"8"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentBClassName))]),_vm._v(" "),_c('ul',{staticClass:"mapclass"},_vm._l((_vm.CItem),function(item,index){return _c('li',{key:item.index,staticClass:"li-item-c",on:{"click":function($event){_vm.CItemOnClick($event, item)}}},[_c('Icon',{attrs:{"type":"ios-document","size":"20"}}),_vm._v("\n                "+_vm._s(item[1])+"\n                "),_c('Icon',{staticClass:"active-icon",attrs:{"type":"ios-checkmark","size":"20"}})],1)}))])],1)],1)],1)}
 var addrecipes_staticRenderFns = []
 var addrecipes_esExports = { render: addrecipes_render, staticRenderFns: addrecipes_staticRenderFns }
 /* harmony default export */ var utils_addrecipes = (addrecipes_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/utils/addrecipes.vue
 function addrecipes_injectStyle (ssrContext) {
-  __webpack_require__("XiV4")
+  __webpack_require__("exnd")
 }
 var addrecipes_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -4613,7 +5170,7 @@ var addrecipes___vue_template_functional__ = false
 /* styles */
 var addrecipes___vue_styles__ = addrecipes_injectStyle
 /* scopeId */
-var addrecipes___vue_scopeId__ = "data-v-fdad4274"
+var addrecipes___vue_scopeId__ = "data-v-0b6741e0"
 /* moduleIdentifier (server only) */
 var addrecipes___vue_module_identifier__ = null
 var addrecipes_Component = addrecipes_normalizeComponent(
@@ -4633,8 +5190,6 @@ var addrecipes_Component = addrecipes_normalizeComponent(
 
 
 
-//
-//
 //
 //
 //
@@ -4862,9 +5417,11 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.currentDItemName = BItemName;
             this.currentDItem = BItem;
 
-            var mealID = BItem[0];
-            console.log('BItem被點的時候給出的meal ID 4 ', mealID);
-            this.getDeteailMeals(mealID);
+            var recipesID = BItem[7];
+            console.log('BItem被點的時候給出的recipesID', recipesID);
+            if (recipesID > 0) {
+                this.getDeteailMeals(recipesID);
+            }
         },
         CItemOnClick: function CItemOnClick(CITemName, CItem) {
             console.log('C Item OnClick', CITemName);
@@ -4873,9 +5430,11 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.currentDItem = CItem;
             console.log('當CITEM被點了', this.currentDItem);
 
-            var mealID = CItem[0];
-            console.log('CITEM被點的時候給出的meal ID 4 ', mealID);
-            this.getDeteailMeals(mealID);
+            var recipesID = CItem[7];
+            console.log('CITEM被點的時候給出的recipesID', recipesID);
+            if (recipesID > 0) {
+                this.getDeteailMeals(recipesID);
+            }
         },
         getAClass: function getAClass() {
             var _this2 = this;
@@ -5257,6 +5816,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                 "Image": "string",
                 "Video": "string",
                 "PointEnable": BITem[5],
+                "RecipesID": 0,
                 "AccountID": 0,
                 "MealsCategoryID": BITem[6]
             };
@@ -5539,7 +6099,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                 }, _callee18, _this19);
             }))();
         },
-        getDeteailMeals: function getDeteailMeals(mealID) {
+        getDeteailMeals: function getDeteailMeals(recipesID, recipesName, recipesCategoryID) {
             var _this20 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee19() {
@@ -5547,26 +6107,10 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                     while (1) {
                         switch (_context19.prev = _context19.next) {
                             case 0:
-                                _context19.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI/api" + ('/MealsComboMealsMap/GetByComboMealsID/' + mealID)).then(function (response) {
-                                    var arrayList = response.data.map(function (item) {
-                                        return values_default()(item);
-                                    });
-                                    //  "MealsComboMealsMapID": 0,
-                                    //  "MealsID": 0,
-                                    //  "MealsName": "string",
-                                    //  "MealsID": 0,
-                                    //  "MealsName": "string"
-                                    console.log('MealsComboMealsMap/GetByComboMealsID/', arrayList);
-                                    return arrayList;
-                                }).catch(function (error) {
-                                    console.log(error);
-                                });
+                                _this20.deteailMeals = recipesName;
+                                console.log('抓DMESL', _this20.deteailMeals);
 
                             case 2:
-                                _this20.deteailMeals = _context19.sent;
-
-                            case 3:
                             case 'end':
                                 return _context19.stop();
                         }
@@ -5574,32 +6118,20 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                 }, _callee19, _this20);
             }))();
         },
-        AddNewRecipes: function AddNewRecipes($event, MealsID) {
-            // "MealsID": 21,
-            // "Name": "一號裡面的餐點",
-            // "Price": 0,
-            // "Image": null,
-            // "Visible": false,
-            // "PointEnable": false,
-            // "MealsCategoryID": 19,
-            // "MealsCategoryName": "招牌一號"
-
-            console.log('加入餐點------', $event);
-
-            var ClassFile = [{
-                "MealsID": $event[0],
-                "ComboMealsID": ComboMealsID,
-                "AccountID": 0
-            }];
-            // "MealsID": 21,
-            // "MealsID": 18,
-            // "AccountID": 0
+        AddNewRecipes: function AddNewRecipes($event, currentDItem) {
+            var ClassFile = {
+                "MealsID": currentDItem[0],
+                "Name": currentDItem[1],
+                "RecipesID": $event[0],
+                "AccountID": 0,
+                "MealsCategoryID": currentDItem[6]
+            };
             console.log('ClassFile', ClassFile);
 
             var vm = this;
-            axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/MealsComboMealsMap/Create', ClassFile).then(function (response) {
-                console.log('AddNewRecipes', response);
-                vm.getDeteailMeals(ComboMealsID);
+            axios.post("http://demo.airdesign.com.tw/POSAPI/api" + '/Meals/Update', ClassFile).then(function (response) {
+                console.log('AddNewRecipes--====', response);
+                vm.getDeteailMeals($event[0], $event[1], $event[2]);
             }).catch(function (error) {
                 console.log('error', error);
             });
@@ -5630,14 +6162,14 @@ var addrecipes_Component = addrecipes_normalizeComponent(
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-3cee9f34","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/meal/manage.vue
-var meal_manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("套餐")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},[_vm._l((_vm.currentAClass),function(item,index){return _c('CardA',{key:item.index,class:{ active: index === 0 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeAName($event, item[0])},"card-on-click":function($event){_vm.AClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteAClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewAClass($event)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentACardName))]),_vm._v(" "),_c('div',{staticClass:"union union-half"},[_c('h4',[_vm._v("類別")]),_vm._v(" "),_vm._l((_vm.currentBClass),function(item,index){return _c('CardB',{key:item.index,staticClass:"B-class",class:{ lastcard: index === (_vm.currentBClass.length-1) && index > 1 },attrs:{"card-name":item[1],"is-class":true},on:{"card-change-name":function($event){_vm.changeBName($event, item[0])},"card-on-click":function($event){_vm.BClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteBClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBClass.length >= 0),expression:"currentBClass.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBClass($event, _vm.currentACardID)}}})],2),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentBItem),function(item,index){return _c('CardB',{key:item.index,class:{ lastcard: index === (_vm.currentBItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeBItemName($event, item)},"card-on-click":function($event){_vm.BItemOnClick($event, item)},"card-delete":function($event){_vm.deleteBItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBItem.length >= 0),expression:"currentBItem.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBItem($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentBCardName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentCItem),function(item,index){return _c('CardC',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],key:item.index,class:{ lastcard: index === (_vm.currentCItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeCItemName($event, item)},"card-on-click":function($event){_vm.CItemOnClick($event, item)},"card-delete":function($event){_vm.deleteCItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewCItem($event, _vm.currentBCardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentDItemName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('CardMeal',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],attrs:{"card-mealid":_vm.currentDItem[0],"card-name":_vm.currentDItem[1],"card-price":_vm.currentDItem[2],"card-image":_vm.currentDItem[3],"card-visible":_vm.currentDItem[4],"card-pointenable":_vm.currentDItem[5],"card-mealcategoryid":_vm.currentDItem[6]},on:{"item-change":function($event){_vm.changeDItem($event)}}}),_vm._v(" "),_c('h4',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}]},[_vm._v("餐點")]),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],staticClass:"meal-content"},[_c('AddNewRecipes',{on:{"new-recipes-item":function($event){_vm.AddNewRecipes($event, _vm.currentDItem[0])}}}),_vm._v(" "),_c('div',{staticClass:"detail-meals"},_vm._l((_vm.deteailMeals),function(item,index){return _c('div',{staticClass:"item-meals"},[_c('div',{on:{"click":function($event){_vm.DeleteRecipes($event, item)}}},[_c('Icon',{attrs:{"type":"ios-remove-circle-outline","size":"20"}})],1),_vm._v(" "),_c('div',[_vm._v(_vm._s(item[2]))]),_vm._v(" "),_c('div',[_vm._v(_vm._s(item[0])+"元")])])}))],1)],1)])],1)],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-15cd3c92","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/meal/manage.vue
+var meal_manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("套餐")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},[_vm._l((_vm.currentAClass),function(item,index){return _c('CardA',{key:item.index,class:{ active: index === 0 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeAName($event, item[0])},"card-on-click":function($event){_vm.AClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteAClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewAClass($event)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentACardName))]),_vm._v(" "),_c('div',{staticClass:"union union-half"},[_c('h4',[_vm._v("類別")]),_vm._v(" "),_vm._l((_vm.currentBClass),function(item,index){return _c('CardB',{key:item.index,staticClass:"B-class",class:{ lastcard: index === (_vm.currentBClass.length-1) && index > 1 },attrs:{"card-name":item[1],"is-class":true},on:{"card-change-name":function($event){_vm.changeBName($event, item[0])},"card-on-click":function($event){_vm.BClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteBClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBClass.length >= 0),expression:"currentBClass.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBClass($event, _vm.currentACardID)}}})],2),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentBItem),function(item,index){return _c('CardB',{key:item.index,class:{ lastcard: index === (_vm.currentBItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeBItemName($event, item)},"card-on-click":function($event){_vm.BItemOnClick($event, item)},"card-delete":function($event){_vm.deleteBItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBItem.length >= 0),expression:"currentBItem.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBItem($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentBCardName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentCItem),function(item,index){return _c('CardC',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],key:item.index,class:{ lastcard: index === (_vm.currentCItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeCItemName($event, item)},"card-on-click":function($event){_vm.CItemOnClick($event, item)},"card-delete":function($event){_vm.deleteCItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewCItem($event, _vm.currentBCardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentDItemName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('CardMeal',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],attrs:{"card-mealid":_vm.currentDItem[0],"card-name":_vm.currentDItem[1],"card-price":_vm.currentDItem[2],"card-image":_vm.currentDItem[3],"card-visible":_vm.currentDItem[4],"card-pointenable":_vm.currentDItem[5],"card-mealcategoryid":_vm.currentDItem[6]},on:{"item-change":function($event){_vm.changeDItem($event)}}}),_vm._v(" "),_c('h4',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}]},[_vm._v("餐點")]),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],staticClass:"meal-content"},[_c('AddNewRecipes',{on:{"new-recipes-item":function($event){_vm.AddNewRecipes($event, _vm.currentDItem)}}}),_vm._v(" "),_c('div',{staticClass:"detail-meals"},[_c('div',{staticClass:"item-meals"},[_c('div',{on:{"click":function($event){_vm.DeleteRecipes($event, _vm.item)}}},[_c('Icon',{attrs:{"type":"ios-remove-circle-outline","size":"20"}})],1),_vm._v(" "),_c('div',[_vm._v(_vm._s(_vm.deteailMeals))])])])],1)],1)])],1)],1)}
 var meal_manage_staticRenderFns = []
 var meal_manage_esExports = { render: meal_manage_render, staticRenderFns: meal_manage_staticRenderFns }
 /* harmony default export */ var components_meal_manage = (meal_manage_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/meal/manage.vue
 function meal_manage_injectStyle (ssrContext) {
-  __webpack_require__("iElX")
+  __webpack_require__("53xJ")
 }
 var meal_manage_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -7413,6 +7945,396 @@ var Manage_Component = Manage_normalizeComponent(
 
 /* harmony default export */ var components_store_Manage = (Manage_Component.exports);
 
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/card.vue
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var printer_card = ({
+    name: 'CardP',
+    props: ['billingName', 'isClass'],
+    data: function data() {
+        return {
+            needSendToParent: ''
+        };
+    },
+
+    computed: {
+        cloneBillingName: {
+            get: function get() {
+                this.needSendToParent = this.billingName;
+                return this.billingName;
+            },
+            set: function set(newValue) {
+                if (newValue.length > 0) {
+                    this.needSendToParent = newValue;
+                }
+                return this.billingName;
+            }
+        }
+    },
+    methods: {
+        clickCard: function clickCard() {
+            this.$emit('card-on-click', this.cardName);
+            $('.js-card-class').removeClass('active');
+            $(this.$el).addClass('active');
+        },
+        handleDropDownClick: function handleDropDownClick(name) {
+            // https://github.com/iview/iview/issues/493
+            if (name == "edit") {
+                $(this.$el).find('h3').addClass('hide');
+                $(this.$el).find('.ivu-input-wrapper').removeClass('hide');
+            }
+            if (name == "delete") {
+                this.$emit('card-delete', this.cardName);
+            }
+        },
+        addedName: function addedName() {
+            //把input值傳給父
+            // this.$emit('card-change-name', this.needSendToParent); 
+            // $(this.$el).find('.ivu-input-wrapper').addClass('hide');
+            // $(this.$el).find('h3').removeClass('hide');
+        }
+    }
+});
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-1e3fdfe5","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/card.vue
+var printer_card_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-class js-card-class"},[_c('div',{staticClass:"content",on:{"click":function($event){if($event.target !== $event.currentTarget){ return null; }_vm.clickCard()}}},[(_vm.isClass)?_c('Icon',{attrs:{"type":"ios-folder","size":"20"}}):_c('Icon',{attrs:{"type":"ios-document","size":"20"}}),_vm._v(" "),_c('h3',[_vm._v(_vm._s(_vm.cloneBillingName))]),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"Something","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.cloneBillingName),callback:function ($$v) {_vm.cloneBillingName=$$v},expression:"cloneBillingName"}}),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click"},on:{"on-click":function($event){_vm.handleDropDownClick($event)}}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_c('Icon',{attrs:{"type":"ios-create-outline","size":"20"}})],1),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":"edit"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("編輯名稱")],1),_vm._v(" "),_c('DropdownItem',{attrs:{"name":"delete"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("刪除項目")],1)],1)],1)],1)])}
+var printer_card_staticRenderFns = []
+var printer_card_esExports = { render: printer_card_render, staticRenderFns: printer_card_staticRenderFns }
+/* harmony default export */ var components_printer_card = (printer_card_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/printer/card.vue
+function printer_card_injectStyle (ssrContext) {
+  __webpack_require__("p/3x")
+}
+var printer_card_normalizeComponent = __webpack_require__("VU/8")
+/* script */
+
+
+/* template */
+
+/* template functional */
+var printer_card___vue_template_functional__ = false
+/* styles */
+var printer_card___vue_styles__ = printer_card_injectStyle
+/* scopeId */
+var printer_card___vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var printer_card___vue_module_identifier__ = null
+var printer_card_Component = printer_card_normalizeComponent(
+  printer_card,
+  components_printer_card,
+  printer_card___vue_template_functional__,
+  printer_card___vue_styles__,
+  printer_card___vue_scopeId__,
+  printer_card___vue_module_identifier__
+)
+
+/* harmony default export */ var js_components_printer_card = (printer_card_Component.exports);
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/cardDetail.vue
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ var cardDetail = ({
+    name: 'CardDetail',
+    props: [],
+    data: function data() {
+        return {
+            cloneName: '飲料區',
+            cloneTime: '重印、刪除、出單',
+            cloneType: '全部'
+        };
+    },
+
+    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['imgSrc'])),
+    methods: {
+        changeItem: function changeItem() {}
+    }
+});
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-13b9b04c","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/cardDetail.vue
+var cardDetail_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-detail"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"col-wrap"},[_c('p',[_vm._v("規格名稱")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.cloneName),callback:function ($$v) {_vm.cloneName=$$v},expression:"cloneName"}})],1),_vm._v(" "),_c('div',{staticClass:"col-wrap"},[_c('p',[_vm._v("印單時機")]),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click"}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_vm._v("\n                    重印、刪除、出單 >\n                ")]),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":""}},[_vm._v("重印、出單")]),_vm._v(" "),_c('DropdownItem',{attrs:{"name":""}},[_vm._v("刪除、出單")]),_vm._v(" "),_c('DropdownItem',{attrs:{"name":""}},[_vm._v("重印、刪除、出單")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"col-wrap"},[_c('p',[_vm._v("內用/外帶")]),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click"}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_vm._v("\n                    全部 >\n                ")]),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":""}},[_vm._v("外帶")]),_vm._v(" "),_c('DropdownItem',{attrs:{"name":""}},[_vm._v("內用")]),_vm._v(" "),_c('DropdownItem',{attrs:{"name":""}},[_vm._v("全部")])],1)],1)],1)])])}
+var cardDetail_staticRenderFns = []
+var cardDetail_esExports = { render: cardDetail_render, staticRenderFns: cardDetail_staticRenderFns }
+/* harmony default export */ var printer_cardDetail = (cardDetail_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/printer/cardDetail.vue
+function cardDetail_injectStyle (ssrContext) {
+  __webpack_require__("X069")
+}
+var cardDetail_normalizeComponent = __webpack_require__("VU/8")
+/* script */
+
+
+/* template */
+
+/* template functional */
+var cardDetail___vue_template_functional__ = false
+/* styles */
+var cardDetail___vue_styles__ = cardDetail_injectStyle
+/* scopeId */
+var cardDetail___vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var cardDetail___vue_module_identifier__ = null
+var cardDetail_Component = cardDetail_normalizeComponent(
+  cardDetail,
+  printer_cardDetail,
+  cardDetail___vue_template_functional__,
+  cardDetail___vue_styles__,
+  cardDetail___vue_scopeId__,
+  cardDetail___vue_module_identifier__
+)
+
+/* harmony default export */ var components_printer_cardDetail = (cardDetail_Component.exports);
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/cardCheckout.vue
+
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ var cardCheckout = ({
+    name: 'CardDetail',
+    props: [],
+    data: function data() {
+        return {
+            cloneName: '飲料區',
+            cloneTime: '重印、刪除、出單',
+            cloneType: '全部'
+        };
+    },
+
+    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['imgSrc'])),
+    methods: {
+        changeItem: function changeItem() {}
+    }
+});
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-5560fd87","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/cardCheckout.vue
+var cardCheckout_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
+var cardCheckout_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-detail"},[_c('div',{staticClass:"content"},[_c('p',[_vm._v("選擇新圖片")])])])}]
+var cardCheckout_esExports = { render: cardCheckout_render, staticRenderFns: cardCheckout_staticRenderFns }
+/* harmony default export */ var printer_cardCheckout = (cardCheckout_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/printer/cardCheckout.vue
+function cardCheckout_injectStyle (ssrContext) {
+  __webpack_require__("Gccn")
+}
+var cardCheckout_normalizeComponent = __webpack_require__("VU/8")
+/* script */
+
+
+/* template */
+
+/* template functional */
+var cardCheckout___vue_template_functional__ = false
+/* styles */
+var cardCheckout___vue_styles__ = cardCheckout_injectStyle
+/* scopeId */
+var cardCheckout___vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var cardCheckout___vue_module_identifier__ = null
+var cardCheckout_Component = cardCheckout_normalizeComponent(
+  cardCheckout,
+  printer_cardCheckout,
+  cardCheckout___vue_template_functional__,
+  cardCheckout___vue_styles__,
+  cardCheckout___vue_scopeId__,
+  cardCheckout___vue_module_identifier__
+)
+
+/* harmony default export */ var components_printer_cardCheckout = (cardCheckout_Component.exports);
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/Manage.vue
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+/* harmony default export */ var printer_Manage = ({
+    components: {
+        CardP: js_components_printer_card,
+        CardDetail: components_printer_cardDetail,
+        CardCheckout: components_printer_cardCheckout
+    },
+    data: function data() {
+        return {
+            isbilling: true
+        };
+    },
+
+    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['User', 'billing', 'rules1', 'rules2', 'rules3'])),
+    methods: {
+        CardOnClick: function CardOnClick($e, value) {
+            if (value === 1) {
+                console.log('dfdfdf');
+                this.isbilling = true;
+            } else {
+                console.log('99999');
+                this.isbilling = false;
+            }
+        }
+    }
+});
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-c38e42cc","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/Manage.vue
+var printer_Manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("出機單設定")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},_vm._l((_vm.billing),function(item,index){return _c('CardP',{key:item.index,attrs:{"billing-name":item}})}))]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("櫃檯出單機")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("結帳相關聯")]),_vm._v(" "),_vm._l((_vm.rules1),function(item,index){return _c('CardP',{key:item.index,attrs:{"billing-name":item},on:{"card-on-click":function($event){_vm.CardOnClick($event, 1)}}})}),_vm._v(" "),_c('h4',[_vm._v("顧客聯")]),_vm._v(" "),_vm._l((_vm.rules2),function(item,index){return _c('CardP',{key:item.index,attrs:{"billing-name":item},on:{"card-on-click":function($event){_vm.CardOnClick($event, 2)}}})}),_vm._v(" "),_c('h4',[_vm._v("廚房聯")]),_vm._v(" "),_vm._l((_vm.rules3),function(item,index){return _c('CardP',{key:item.index,attrs:{"billing-name":item},on:{"card-on-click":function($event){_vm.CardOnClick($event, 3)}}})})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v("和牛區")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("基本設定")]),_vm._v(" "),(_vm.isbilling)?_c('CardCheckout'):_vm._e(),_vm._v(" "),(!_vm.isbilling)?_c('CardDetail'):_vm._e()],1)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}})],1)],1)}
+var printer_Manage_staticRenderFns = []
+var printer_Manage_esExports = { render: printer_Manage_render, staticRenderFns: printer_Manage_staticRenderFns }
+/* harmony default export */ var components_printer_Manage = (printer_Manage_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/printer/Manage.vue
+var printer_Manage_normalizeComponent = __webpack_require__("VU/8")
+/* script */
+
+
+/* template */
+
+/* template functional */
+var printer_Manage___vue_template_functional__ = false
+/* styles */
+var printer_Manage___vue_styles__ = null
+/* scopeId */
+var printer_Manage___vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var printer_Manage___vue_module_identifier__ = null
+var printer_Manage_Component = printer_Manage_normalizeComponent(
+  printer_Manage,
+  components_printer_Manage,
+  printer_Manage___vue_template_functional__,
+  printer_Manage___vue_styles__,
+  printer_Manage___vue_scopeId__,
+  printer_Manage___vue_module_identifier__
+)
+
+/* harmony default export */ var js_components_printer_Manage = (printer_Manage_Component.exports);
+
 // CONCATENATED MODULE: ./resources/assets/js/routes.js
 
 
@@ -7429,6 +8351,7 @@ var Manage_Component = Manage_normalizeComponent(
 
 
 // Other
+
 
 
 
@@ -7493,6 +8416,12 @@ var routes = [{
   path: '/store',
   components: {
     default: components_store_Manage,
+    header: js_components_Nav
+  }
+}, {
+  path: '/printer',
+  components: {
+    default: js_components_printer_Manage,
     header: js_components_Nav
   }
 }, {
@@ -7595,6 +8524,13 @@ new vue_esm["default"]({
 /***/ }),
 
 /***/ "sgF6":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "wuLD":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

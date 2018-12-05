@@ -13,6 +13,7 @@
                    icon="ios-checkmark-circle"></Input>
             <Dropdown trigger="click"
                 @on-click="handleDropDownClick($event)"
+                placement="bottom-end"
             >
                 <a href="javascript:void(0)">
                     <Icon type="ios-create-outline" size="20"></Icon>
@@ -53,8 +54,7 @@
         },
         methods: {
             clickCard: function() {
-                this.$emit('card-on-click', this.cardName);
-                $('.js-card-class').removeClass('active');
+                this.$emit('card-on-click', this.cardName);                
                 $(this.$el).addClass('active');
             },
             handleDropDownClick: function (name) {

@@ -7,7 +7,10 @@
                 <div class="union">
                     <CardP v-for="(item, index) in billing"
                            :key='item.index'  
-                           :billing-name="item" 
+                           :billing-name="item"
+                           :class="{ active: index === 0 }"
+                           class="card-class"                           
+                           @card-on-click="ClassOnClick($event)"
                     >
                     </CardP>
                 </div>
@@ -19,6 +22,7 @@
                     <CardP v-for="(item, index) in rules1"
                            :key='item.index'
                            :billing-name="item" 
+                           class="card-item"
                            @card-on-click="CardOnClick($event, 1)"
                     >
                     </CardP>
@@ -26,6 +30,7 @@
                     <CardP v-for="(item, index) in rules2"
                            :key='item.index'
                            :billing-name="item"
+                           class="card-item"
                            @card-on-click="CardOnClick($event, 2)"
                     >
                     </CardP>
@@ -33,6 +38,7 @@
                     <CardP v-for="(item, index) in rules3"
                            :key='item.index'
                            :billing-name="item"
+                           class="card-item"
                            @card-on-click="CardOnClick($event, 3)"
                     >
                     </CardP>
@@ -70,8 +76,12 @@ import CardCheckout from './cardCheckout.vue';
     },
     data() {
         return {
-            isbilling: true
+            isbilling: true,
+            currentCard: []
         }
+    },
+    created () {
+        
     },
     computed: {
       ...mapGetters([
@@ -83,12 +93,14 @@ import CardCheckout from './cardCheckout.vue';
       ]),      
     },
     methods: {
+        ClassOnClick ($e) {
+            $('.card-class').removeClass('active');
+        },
         CardOnClick ($e, value) {
+            $('.card-item').removeClass('active');
             if (value === 1) {
-                console.log('dfdfdf');
                 this.isbilling = true;
             }else {
-                console.log('99999');
                 this.isbilling = false;
             }
         }
