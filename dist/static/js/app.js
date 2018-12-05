@@ -35,13 +35,6 @@ module.exports = __webpack_require__.p + "static/img/ionicons.svg";
 
 /***/ }),
 
-/***/ "Gccn":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "IoVO":
 /***/ (function(module, exports) {
 
@@ -113,7 +106,7 @@ module.exports = __webpack_require__.p + "static/fonts/ionicons.99ac330.woff";
 
 /***/ }),
 
-/***/ "X069":
+/***/ "XDk3":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -165,6 +158,13 @@ module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGlu
 /***/ }),
 
 /***/ "hLg0":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "i/Qi":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -254,14 +254,14 @@ if (token) {
 
 /***/ }),
 
-/***/ "ot0K":
-/***/ (function(module, exports) {
+/***/ "jrnT":
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "static/img/invoice.jpg";
 
 /***/ }),
 
-/***/ "p/3x":
+/***/ "ot0K":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -7973,6 +7973,7 @@ var Manage_Component = Manage_normalizeComponent(
 //
 //
 //
+//
 
 /* harmony default export */ var printer_card = ({
     name: 'CardP',
@@ -8000,7 +8001,6 @@ var Manage_Component = Manage_normalizeComponent(
     methods: {
         clickCard: function clickCard() {
             this.$emit('card-on-click', this.cardName);
-            $('.js-card-class').removeClass('active');
             $(this.$el).addClass('active');
         },
         handleDropDownClick: function handleDropDownClick(name) {
@@ -8021,14 +8021,14 @@ var Manage_Component = Manage_normalizeComponent(
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-1e3fdfe5","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/card.vue
-var printer_card_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-class js-card-class"},[_c('div',{staticClass:"content",on:{"click":function($event){if($event.target !== $event.currentTarget){ return null; }_vm.clickCard()}}},[(_vm.isClass)?_c('Icon',{attrs:{"type":"ios-folder","size":"20"}}):_c('Icon',{attrs:{"type":"ios-document","size":"20"}}),_vm._v(" "),_c('h3',[_vm._v(_vm._s(_vm.cloneBillingName))]),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"Something","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.cloneBillingName),callback:function ($$v) {_vm.cloneBillingName=$$v},expression:"cloneBillingName"}}),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click"},on:{"on-click":function($event){_vm.handleDropDownClick($event)}}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_c('Icon',{attrs:{"type":"ios-create-outline","size":"20"}})],1),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":"edit"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("編輯名稱")],1),_vm._v(" "),_c('DropdownItem',{attrs:{"name":"delete"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("刪除項目")],1)],1)],1)],1)])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-663b6654","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/card.vue
+var printer_card_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-class js-card-class"},[_c('div',{staticClass:"content",on:{"click":function($event){if($event.target !== $event.currentTarget){ return null; }_vm.clickCard()}}},[(_vm.isClass)?_c('Icon',{attrs:{"type":"ios-folder","size":"20"}}):_c('Icon',{attrs:{"type":"ios-document","size":"20"}}),_vm._v(" "),_c('h3',[_vm._v(_vm._s(_vm.cloneBillingName))]),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"Something","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.cloneBillingName),callback:function ($$v) {_vm.cloneBillingName=$$v},expression:"cloneBillingName"}}),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click","placement":"bottom-end"},on:{"on-click":function($event){_vm.handleDropDownClick($event)}}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_c('Icon',{attrs:{"type":"ios-create-outline","size":"20"}})],1),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":"edit"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("編輯名稱")],1),_vm._v(" "),_c('DropdownItem',{attrs:{"name":"delete"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("刪除項目")],1)],1)],1)],1)])}
 var printer_card_staticRenderFns = []
 var printer_card_esExports = { render: printer_card_render, staticRenderFns: printer_card_staticRenderFns }
 /* harmony default export */ var components_printer_card = (printer_card_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/printer/card.vue
 function printer_card_injectStyle (ssrContext) {
-  __webpack_require__("p/3x")
+  __webpack_require__("i/Qi")
 }
 var printer_card_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -8116,14 +8116,14 @@ var printer_card_Component = printer_card_normalizeComponent(
         changeItem: function changeItem() {}
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-13b9b04c","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/cardDetail.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-bd084488","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/cardDetail.vue
 var cardDetail_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-detail"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"col-wrap"},[_c('p',[_vm._v("規格名稱")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.cloneName),callback:function ($$v) {_vm.cloneName=$$v},expression:"cloneName"}})],1),_vm._v(" "),_c('div',{staticClass:"col-wrap"},[_c('p',[_vm._v("印單時機")]),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click"}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_vm._v("\n                    重印、刪除、出單 >\n                ")]),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":""}},[_vm._v("重印、出單")]),_vm._v(" "),_c('DropdownItem',{attrs:{"name":""}},[_vm._v("刪除、出單")]),_vm._v(" "),_c('DropdownItem',{attrs:{"name":""}},[_vm._v("重印、刪除、出單")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"col-wrap"},[_c('p',[_vm._v("內用/外帶")]),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click"}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_vm._v("\n                    全部 >\n                ")]),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":""}},[_vm._v("外帶")]),_vm._v(" "),_c('DropdownItem',{attrs:{"name":""}},[_vm._v("內用")]),_vm._v(" "),_c('DropdownItem',{attrs:{"name":""}},[_vm._v("全部")])],1)],1)],1)])])}
 var cardDetail_staticRenderFns = []
 var cardDetail_esExports = { render: cardDetail_render, staticRenderFns: cardDetail_staticRenderFns }
 /* harmony default export */ var printer_cardDetail = (cardDetail_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/printer/cardDetail.vue
 function cardDetail_injectStyle (ssrContext) {
-  __webpack_require__("X069")
+  __webpack_require__("XDk3")
 }
 var cardDetail_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -8160,6 +8160,8 @@ var cardDetail_Component = cardDetail_normalizeComponent(
 //
 //
 //
+//
+//
 
 
 
@@ -8179,14 +8181,14 @@ var cardDetail_Component = cardDetail_normalizeComponent(
         changeItem: function changeItem() {}
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-5560fd87","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/cardCheckout.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-2374c7da","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/cardCheckout.vue
 var cardCheckout_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
-var cardCheckout_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-detail"},[_c('div',{staticClass:"content"},[_c('p',[_vm._v("選擇新圖片")])])])}]
+var cardCheckout_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-checkout"},[_c('div',{staticClass:"content"},[_c('p',[_vm._v("選擇新圖片")]),_vm._v(" "),_c('div',{staticClass:"img-wrap"},[_c('img',{attrs:{"src":__webpack_require__("jrnT"),"alt":"invoice"}})])])])}]
 var cardCheckout_esExports = { render: cardCheckout_render, staticRenderFns: cardCheckout_staticRenderFns }
 /* harmony default export */ var printer_cardCheckout = (cardCheckout_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/printer/cardCheckout.vue
 function cardCheckout_injectStyle (ssrContext) {
-  __webpack_require__("Gccn")
+  __webpack_require__("zBOZ")
 }
 var cardCheckout_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -8273,6 +8275,12 @@ var cardCheckout_Component = cardCheckout_normalizeComponent(
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 
@@ -8287,25 +8295,29 @@ var cardCheckout_Component = cardCheckout_normalizeComponent(
     },
     data: function data() {
         return {
-            isbilling: true
+            isbilling: true,
+            currentCard: []
         };
     },
+    created: function created() {},
 
     computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['User', 'billing', 'rules1', 'rules2', 'rules3'])),
     methods: {
+        ClassOnClick: function ClassOnClick($e) {
+            $('.card-class').removeClass('active');
+        },
         CardOnClick: function CardOnClick($e, value) {
+            $('.card-item').removeClass('active');
             if (value === 1) {
-                console.log('dfdfdf');
                 this.isbilling = true;
             } else {
-                console.log('99999');
                 this.isbilling = false;
             }
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-c38e42cc","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/Manage.vue
-var printer_Manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("出機單設定")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},_vm._l((_vm.billing),function(item,index){return _c('CardP',{key:item.index,attrs:{"billing-name":item}})}))]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("櫃檯出單機")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("結帳相關聯")]),_vm._v(" "),_vm._l((_vm.rules1),function(item,index){return _c('CardP',{key:item.index,attrs:{"billing-name":item},on:{"card-on-click":function($event){_vm.CardOnClick($event, 1)}}})}),_vm._v(" "),_c('h4',[_vm._v("顧客聯")]),_vm._v(" "),_vm._l((_vm.rules2),function(item,index){return _c('CardP',{key:item.index,attrs:{"billing-name":item},on:{"card-on-click":function($event){_vm.CardOnClick($event, 2)}}})}),_vm._v(" "),_c('h4',[_vm._v("廚房聯")]),_vm._v(" "),_vm._l((_vm.rules3),function(item,index){return _c('CardP',{key:item.index,attrs:{"billing-name":item},on:{"card-on-click":function($event){_vm.CardOnClick($event, 3)}}})})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v("和牛區")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("基本設定")]),_vm._v(" "),(_vm.isbilling)?_c('CardCheckout'):_vm._e(),_vm._v(" "),(!_vm.isbilling)?_c('CardDetail'):_vm._e()],1)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}})],1)],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-a2bd5f40","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/Manage.vue
+var printer_Manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("出機單設定")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},_vm._l((_vm.billing),function(item,index){return _c('CardP',{key:item.index,staticClass:"card-class",class:{ active: index === 0 },attrs:{"billing-name":item},on:{"card-on-click":function($event){_vm.ClassOnClick($event)}}})}))]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("櫃檯出單機")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("結帳相關聯")]),_vm._v(" "),_vm._l((_vm.rules1),function(item,index){return _c('CardP',{key:item.index,staticClass:"card-item",attrs:{"billing-name":item},on:{"card-on-click":function($event){_vm.CardOnClick($event, 1)}}})}),_vm._v(" "),_c('h4',[_vm._v("顧客聯")]),_vm._v(" "),_vm._l((_vm.rules2),function(item,index){return _c('CardP',{key:item.index,staticClass:"card-item",attrs:{"billing-name":item},on:{"card-on-click":function($event){_vm.CardOnClick($event, 2)}}})}),_vm._v(" "),_c('h4',[_vm._v("廚房聯")]),_vm._v(" "),_vm._l((_vm.rules3),function(item,index){return _c('CardP',{key:item.index,staticClass:"card-item",attrs:{"billing-name":item},on:{"card-on-click":function($event){_vm.CardOnClick($event, 3)}}})})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v("和牛區")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("基本設定")]),_vm._v(" "),(_vm.isbilling)?_c('CardCheckout'):_vm._e(),_vm._v(" "),(!_vm.isbilling)?_c('CardDetail'):_vm._e()],1)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}})],1)],1)}
 var printer_Manage_staticRenderFns = []
 var printer_Manage_esExports = { render: printer_Manage_render, staticRenderFns: printer_Manage_staticRenderFns }
 /* harmony default export */ var components_printer_Manage = (printer_Manage_esExports);
@@ -8552,6 +8564,13 @@ var update = __webpack_require__("rjj0")("42898d5c", content, true, {});
 /***/ }),
 
 /***/ "z+DR":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "zBOZ":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
