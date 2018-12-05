@@ -1,8 +1,8 @@
 <template>
     <nav id="nav">
         <router-link to="/home" class="logo">
-            <img src="../../img/cat.svg" alt="cat">
-            <p>System<br /><span>1.00v1</span></p>
+            <img src="../../img/logo.png" alt="logo">
+            <p><br /><span>1.00v1</span></p>
         </router-link>
         <ul v-if="isLogin">
             <router-link to="/food" tag="li">食材管理</router-link>

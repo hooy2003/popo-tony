@@ -21,17 +21,17 @@ module.exports = __webpack_require__.p + "static/img/ionicons.svg";
 
 /***/ }),
 
-/***/ "8f4D":
+/***/ "B56r":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ "B56r":
-/***/ (function(module, exports) {
+/***/ "COl+":
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "static/img/logo.png";
 
 /***/ }),
 
@@ -42,7 +42,7 @@ module.exports = __webpack_require__.p + "static/img/ionicons.svg";
 
 /***/ }),
 
-/***/ "JrQe":
+/***/ "KitV":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -50,6 +50,13 @@ module.exports = __webpack_require__.p + "static/img/ionicons.svg";
 /***/ }),
 
 /***/ "Lv1u":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "NaSR":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -99,6 +106,13 @@ module.exports = __webpack_require__.p + "static/fonts/ionicons.d535a25.ttf";
 
 /***/ }),
 
+/***/ "Wj/z":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "WpM7":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -129,24 +143,10 @@ exports.push([module.i, ".ivu-load-loop{-webkit-animation:ani-load-loop 1s linea
 
 /***/ }),
 
-/***/ "a04V":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "cAdy":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "e8Gc":
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjIzNi42MnB4IiBoZWlnaHQ9IjIzNi42MnB4IiB2aWV3Qm94PSIwIDAgMjM2LjYyIDIzNi42MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjM2LjYyIDIzNi42MjsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0xOTcuMDIzLDIyNS41NDVjLTEuMTQ1LTkuNTMzLTExLjY4LTEwLjYxNC0xNy44MDUtOS45NThjLTYuNTIxLTI0LjU1NCwxNi4yMjUtNjEuMTUxLDE3LjU2My02OS44Mg0KCQkJYzEuNDM4LTkuMzEyLTYuNjU4LTYzLjUtNy41MTMtOTAuOTM4QzE4OC4zODksMjYuNjYyLDE0Ny40OC00LjQzMywxNDAuNjUsMC41MjRjLTYuNzY4LDcuNDg0LDkuNzQ4LDE3LjU4NSwxLjA1NCwyNi4yNDUNCgkJCWMtOC4zOTgsOC4zNjctMTAuNTg4LDEzLjk5LTE2LjgyNCwyMy40NmMtMTUuOTc2LDI0LjI1NSwyNy4zMTgsMjQuNTU4LDI3LjMxOCwyNC41NThzLTMzLjg4MiwyNS4xMTItNDEuNDIxLDM3Ljc2OA0KCQkJYy02Ljk0MywxMS42NTYtOS44NTQsMjQuNjk2LTE4LjIzMiwzNS42ODhjLTE5LjA5NCwyNS4wNTEtMTQuNzkxLDY4LjcyOS0xNC43OTEsNjguNzI5cy0zNi4xNy0xMS44MzktMTYuMjY0LTUzLjEzMw0KCQkJQzc2LjY0MywxMzIuNDA2LDg0LjEwNyw4Ni4wMiw1MC4wMTYsOTcuOTVjLTEzLjE4OSw0LjYxNiwyLjk0OSwxNC4zMjUsNS43MzQsMTcuNDM1YzkuMzE4LDEwLjQsMS40NDEsMjcuODk2LTQuMTc0LDM4LjAxMg0KCQkJYy0xNS4wMzcsMjcuMDkxLTIwLjQ5Niw1NS40NzUsMTEuMTU0LDcyLjk3OGMxNC4wNjMsNy43NzYsMzMuMDU1LDkuNyw1Mi4xNyw5Ljk4Mmw0OC42NCwwLjE0DQoJCQlDMTc5LjU2NCwyMzcuMjk0LDE5Ny42ODksMjM0LjI5OCwxOTcuMDIzLDIyNS41NDV6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo="
 
 /***/ }),
 
@@ -258,6 +258,13 @@ if (token) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/img/invoice.jpg";
+
+/***/ }),
+
+/***/ "m07t":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -1292,14 +1299,14 @@ var Header_Component = Header_normalizeComponent(
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-44ebf3eb","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Nav.vue
-var Nav_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{attrs:{"id":"nav"}},[_c('router-link',{staticClass:"logo",attrs:{"to":"/home"}},[_c('img',{attrs:{"src":__webpack_require__("e8Gc"),"alt":"cat"}}),_vm._v(" "),_c('p',[_vm._v("System"),_c('br'),_c('span',[_vm._v("1.00v1")])])]),_vm._v(" "),(_vm.isLogin)?_c('ul',[_c('router-link',{attrs:{"to":"/food","tag":"li"}},[_vm._v("食材管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/recipes","tag":"li"}},[_vm._v("食譜管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/meal","tag":"li"}},[_vm._v("餐點管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/set","tag":"li"}},[_vm._v("套餐管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("店面管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/printer","tag":"li"}},[_vm._v("印表機管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("結帳管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("客戶資訊")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("系統設定")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("帳號與權限")]),_vm._v(" "),_c('li',{on:{"click":_vm.logout}},[_vm._v("登出")])],1):_vm._e(),_vm._v(" "),_c('router-link',{staticClass:"info",attrs:{"to":"/home"}},[_c('p',[_vm._v(_vm._s(_vm.userName)+" 您好"),_c('br'),_c('span',[_vm._v(_vm._s(_vm.nowTime))])])])],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-72fe20b9","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Nav.vue
+var Nav_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{attrs:{"id":"nav"}},[_c('router-link',{staticClass:"logo",attrs:{"to":"/home"}},[_c('img',{attrs:{"src":__webpack_require__("COl+"),"alt":"logo"}}),_vm._v(" "),_c('p',[_c('br'),_c('span',[_vm._v("1.00v1")])])]),_vm._v(" "),(_vm.isLogin)?_c('ul',[_c('router-link',{attrs:{"to":"/food","tag":"li"}},[_vm._v("食材管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/recipes","tag":"li"}},[_vm._v("食譜管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/meal","tag":"li"}},[_vm._v("餐點管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/set","tag":"li"}},[_vm._v("套餐管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("店面管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/printer","tag":"li"}},[_vm._v("印表機管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("結帳管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("客戶資訊")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("系統設定")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("帳號與權限")]),_vm._v(" "),_c('li',{on:{"click":_vm.logout}},[_vm._v("登出")])],1):_vm._e(),_vm._v(" "),_c('router-link',{staticClass:"info",attrs:{"to":"/home"}},[_c('p',[_vm._v(_vm._s(_vm.userName)+" 您好"),_c('br'),_c('span',[_vm._v(_vm._s(_vm.nowTime))])])])],1)}
 var Nav_staticRenderFns = []
 var Nav_esExports = { render: Nav_render, staticRenderFns: Nav_staticRenderFns }
 /* harmony default export */ var components_Nav = (Nav_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/Nav.vue
 function injectStyle (ssrContext) {
-  __webpack_require__("wuLD")
+  __webpack_require__("Wj/z")
 }
 var Nav_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -2355,6 +2362,7 @@ var ImageUploader_Component = ImageUploader_normalizeComponent(
 //
 //
 //
+//
 
 
 
@@ -2408,8 +2416,9 @@ var ImageUploader_Component = ImageUploader_normalizeComponent(
                 return this.cardPrice;
             }
         },
-        imgSrc2: function imgSrc2() {
-            return this.imgSrc;
+        imgSrc: function imgSrc() {
+            console.log('imgSrcimgSrcimgSrc', this.cardImage);
+            return 'http://demo.airdesign.com.tw/aPosWeb/upload/' + this.cardImage;
         }
     }),
     methods: {
@@ -2421,14 +2430,14 @@ var ImageUploader_Component = ImageUploader_normalizeComponent(
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-bcb47122","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/utils/cardFood.vue
-var cardFood_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-food"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"right"},[_c('image-uploader',{attrs:{"src":_vm.imgSrc2,"maxSize":10}})],1),_vm._v(" "),_c('div',{staticClass:"left"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("商品名稱")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.cloneName),callback:function ($$v) {_vm.cloneName=$$v},expression:"cloneName"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("價位")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.clonePrice),callback:function ($$v) {_vm.clonePrice=$$v},expression:"clonePrice"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("單位")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.cloneUnit),callback:function ($$v) {_vm.cloneUnit=$$v},expression:"cloneUnit"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap",staticStyle:{"justify-content":"flex-end"}},[_c('Button',{nativeOn:{"click":function($event){_vm.changeItem()}}},[_vm._v("儲存")])],1)])])])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-2b8bac89","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/utils/cardFood.vue
+var cardFood_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-food"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"right"},[_c('img',{attrs:{"src":_vm.imgSrc}})]),_vm._v(" "),_c('div',{staticClass:"left"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("商品名稱")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.cloneName),callback:function ($$v) {_vm.cloneName=$$v},expression:"cloneName"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("價位")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.clonePrice),callback:function ($$v) {_vm.clonePrice=$$v},expression:"clonePrice"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("單位")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.cloneUnit),callback:function ($$v) {_vm.cloneUnit=$$v},expression:"cloneUnit"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap",staticStyle:{"justify-content":"flex-end"}},[_c('Button',{nativeOn:{"click":function($event){_vm.changeItem()}}},[_vm._v("儲存")])],1)])])])}
 var cardFood_staticRenderFns = []
 var cardFood_esExports = { render: cardFood_render, staticRenderFns: cardFood_staticRenderFns }
 /* harmony default export */ var utils_cardFood = (cardFood_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/utils/cardFood.vue
 function cardFood_injectStyle (ssrContext) {
-  __webpack_require__("JrQe")
+  __webpack_require__("KitV")
 }
 var cardFood_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -4735,7 +4744,7 @@ var defineProperty = __webpack_require__("bOdI");
 var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/utils/cardMeal.vue
-
+//
 //
 //
 //
@@ -4796,7 +4805,7 @@ var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
         };
     },
 
-    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['imgSrc']), {
+    computed: {
         cloneName: {
             get: function get() {
                 this.needSendToParent["Name"] = this.cardName;
@@ -4837,10 +4846,11 @@ var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
                 return this.cardPointenable;
             }
         },
-        imgSrc2: function imgSrc2() {
-            return this.imgSrc;
+        imgSrc: function imgSrc() {
+            console.log('imgSrcimgSrcimgSrc', this.cardImage);
+            return 'http://demo.airdesign.com.tw/aPosWeb/upload/' + this.cardImage;
         }
-    }),
+    },
     methods: {
         changeItem: function changeItem() {
             this.needSendToParent["MealsID"] = this.cardMealid;
@@ -4850,14 +4860,14 @@ var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty);
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-442bec61","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/utils/cardMeal.vue
-var cardMeal_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-set"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"right"},[_c('image-uploader',{attrs:{"src":_vm.imgSrc2,"maxSize":10}})],1),_vm._v(" "),_c('div',{staticClass:"left"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("商品名稱")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.cloneName),callback:function ($$v) {_vm.cloneName=$$v},expression:"cloneName"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("價位")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.clonePrice),callback:function ($$v) {_vm.clonePrice=$$v},expression:"clonePrice"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('i-Switch',{model:{value:(_vm.cloneVisible),callback:function ($$v) {_vm.cloneVisible=$$v},expression:"cloneVisible"}}),_vm._v(" "),_c('p',{staticClass:"line"},[_vm._v("是否上架")])],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('i-Switch',{model:{value:(_vm.clonePointenable),callback:function ($$v) {_vm.clonePointenable=$$v},expression:"clonePointenable"}}),_vm._v(" "),_c('p',{staticClass:"line"},[_vm._v("是否算積分")])],1),_vm._v(" "),_c('div',{staticClass:"input-wrap",staticStyle:{"justify-content":"flex-end"}},[_c('Button',{nativeOn:{"click":function($event){_vm.changeItem()}}},[_vm._v("儲存")])],1)])])])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-5ae4c432","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/utils/cardMeal.vue
+var cardMeal_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-set"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"right"},[_c('img',{attrs:{"src":_vm.imgSrc}})]),_vm._v(" "),_c('div',{staticClass:"left"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("商品名稱")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.cloneName),callback:function ($$v) {_vm.cloneName=$$v},expression:"cloneName"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("價位")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.clonePrice),callback:function ($$v) {_vm.clonePrice=$$v},expression:"clonePrice"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('i-Switch',{model:{value:(_vm.cloneVisible),callback:function ($$v) {_vm.cloneVisible=$$v},expression:"cloneVisible"}}),_vm._v(" "),_c('p',{staticClass:"line"},[_vm._v("是否上架")])],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('i-Switch',{model:{value:(_vm.clonePointenable),callback:function ($$v) {_vm.clonePointenable=$$v},expression:"clonePointenable"}}),_vm._v(" "),_c('p',{staticClass:"line"},[_vm._v("是否算積分")])],1),_vm._v(" "),_c('div',{staticClass:"input-wrap",staticStyle:{"justify-content":"flex-end"}},[_c('Button',{nativeOn:{"click":function($event){_vm.changeItem()}}},[_vm._v("儲存")])],1)])])])}
 var cardMeal_staticRenderFns = []
 var cardMeal_esExports = { render: cardMeal_render, staticRenderFns: cardMeal_staticRenderFns }
 /* harmony default export */ var utils_cardMeal = (cardMeal_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/utils/cardMeal.vue
 function cardMeal_injectStyle (ssrContext) {
-  __webpack_require__("a04V")
+  __webpack_require__("NaSR")
 }
 var cardMeal_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -6197,7 +6207,7 @@ var meal_manage_Component = meal_manage_normalizeComponent(
 /* harmony default export */ var js_components_meal_manage = (meal_manage_Component.exports);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/utils/cardSet.vue
-
+//
 //
 //
 //
@@ -6258,7 +6268,7 @@ var meal_manage_Component = meal_manage_normalizeComponent(
         };
     },
 
-    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['imgSrc']), {
+    computed: {
         cloneName: {
             get: function get() {
                 this.needSendToParent["Name"] = this.cardName;
@@ -6299,10 +6309,11 @@ var meal_manage_Component = meal_manage_normalizeComponent(
                 return this.cardPointenable;
             }
         },
-        imgSrc2: function imgSrc2() {
-            return this.imgSrc;
+        imgSrc: function imgSrc() {
+            console.log('imgSrcimgSrcimgSrc', this.cardImage);
+            return 'http://demo.airdesign.com.tw/aPosWeb/upload/' + this.cardImage;
         }
-    }),
+    },
     methods: {
         changeItem: function changeItem() {
             this.needSendToParent["ComboMealsID"] = this.cardCombomealid;
@@ -6312,14 +6323,14 @@ var meal_manage_Component = meal_manage_normalizeComponent(
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-1e03cf06","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/utils/cardSet.vue
-var cardSet_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-set"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"right"},[_c('image-uploader',{attrs:{"src":_vm.imgSrc2,"maxSize":10}})],1),_vm._v(" "),_c('div',{staticClass:"left"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("商品名稱")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.cloneName),callback:function ($$v) {_vm.cloneName=$$v},expression:"cloneName"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("價位")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.clonePrice),callback:function ($$v) {_vm.clonePrice=$$v},expression:"clonePrice"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('i-Switch',{model:{value:(_vm.cloneVisible),callback:function ($$v) {_vm.cloneVisible=$$v},expression:"cloneVisible"}}),_vm._v(" "),_c('p',{staticClass:"line"},[_vm._v("是否上架")])],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('i-Switch',{model:{value:(_vm.clonePointenable),callback:function ($$v) {_vm.clonePointenable=$$v},expression:"clonePointenable"}}),_vm._v(" "),_c('p',{staticClass:"line"},[_vm._v("是否算積分")])],1),_vm._v(" "),_c('div',{staticClass:"input-wrap",staticStyle:{"justify-content":"flex-end"}},[_c('Button',{nativeOn:{"click":function($event){_vm.changeItem()}}},[_vm._v("儲存")])],1)])])])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-1dcb994a","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/utils/cardSet.vue
+var cardSet_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-set"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"right"},[_c('img',{attrs:{"src":_vm.imgSrc}})]),_vm._v(" "),_c('div',{staticClass:"left"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("商品名稱")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.cloneName),callback:function ($$v) {_vm.cloneName=$$v},expression:"cloneName"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("價位")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.clonePrice),callback:function ($$v) {_vm.clonePrice=$$v},expression:"clonePrice"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('i-Switch',{model:{value:(_vm.cloneVisible),callback:function ($$v) {_vm.cloneVisible=$$v},expression:"cloneVisible"}}),_vm._v(" "),_c('p',{staticClass:"line"},[_vm._v("是否上架")])],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('i-Switch',{model:{value:(_vm.clonePointenable),callback:function ($$v) {_vm.clonePointenable=$$v},expression:"clonePointenable"}}),_vm._v(" "),_c('p',{staticClass:"line"},[_vm._v("是否算積分")])],1),_vm._v(" "),_c('div',{staticClass:"input-wrap",staticStyle:{"justify-content":"flex-end"}},[_c('Button',{nativeOn:{"click":function($event){_vm.changeItem()}}},[_vm._v("儲存")])],1)])])])}
 var cardSet_staticRenderFns = []
 var cardSet_esExports = { render: cardSet_render, staticRenderFns: cardSet_staticRenderFns }
 /* harmony default export */ var utils_cardSet = (cardSet_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/utils/cardSet.vue
 function cardSet_injectStyle (ssrContext) {
-  __webpack_require__("8f4D")
+  __webpack_require__("m07t")
 }
 var cardSet_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -8536,13 +8547,6 @@ new vue_esm["default"]({
 /***/ }),
 
 /***/ "sgF6":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "wuLD":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

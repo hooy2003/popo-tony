@@ -3,10 +3,11 @@
          >
         <div class="content">
             <div class="right">
-               <image-uploader
+               <!-- <image-uploader
                   :src="imgSrc2"
                   :maxSize="10"
-                ></image-uploader>
+                ></image-uploader> -->
+                <img :src="imgSrc"></img>
             </div>
             <div class="left">
                 <div class="input-wrap">
@@ -89,8 +90,9 @@ import ImageUploader from '../ImageUploader.vue';
                     return this.cardPrice;
                 }
             },
-            imgSrc2 () {
-                return this.imgSrc;
+            imgSrc () {
+                console.log('imgSrcimgSrcimgSrc', this.cardImage);
+                return 'http://demo.airdesign.com.tw/aPosWeb/upload/' + this.cardImage;
             }
         },
         methods: {
