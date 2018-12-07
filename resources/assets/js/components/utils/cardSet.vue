@@ -1,6 +1,5 @@
 <template>
-    <div class="card-set"
-         >
+    <div class="card-set">
         <div class="content">
             <div class="right">
                <!-- <image-uploader

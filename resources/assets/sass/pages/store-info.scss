@@ -1,0 +1,25 @@
+/*section*/.store-info {
+    max-width: 800px;
+    margin-top: 20px;
+    h2 {
+        margin: 15px 10px;
+    }
+    .content-wrap {
+        background-color: $white;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        .input-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $line-gray;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

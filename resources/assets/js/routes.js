@@ -15,6 +15,7 @@ import SetManage from './components/set/manage.vue';
 // Other
 import StoreManage from './components/store/Manage.vue';
 import PrinterManage from './components/printer/Manage.vue';
+import StoreInfoManage from './components/storeinfo/Manage.vue';
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -88,6 +89,13 @@ export const routes = [
     path: '/store',
     components: {
       default: StoreManage,
+      header: Navbar
+    }
+  },
+  {
+    path: '/storeinfo',
+    components: {
+      default: StoreInfoManage,
       header: Navbar
     }
   },
