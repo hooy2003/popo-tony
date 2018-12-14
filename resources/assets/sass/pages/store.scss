@@ -1,0 +1,50 @@
+/*section*/.store {
+    display: flex;
+    .left {
+        width: 200px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .right {
+
+    }
+    canvas {
+        border: 1px solid #000;
+    }
+    input[type="file"] {
+        display: none;
+    }
+    img {
+        display: inline-block;
+        border: 1px solid #eaeaea;
+        height: 100px;
+        width: 100px;
+    }
+    [draggable] {
+        user-select: none;
+        cursor: move;
+    }
+    .imgset-wrap {
+        position: relative;
+        width: 100px;  
+        .overtext {
+            position: absolute;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: $white;
+            margin: auto;
+            top: 40px;
+            left: 0;
+            right: 0;
+            pointer-events: none;
+        }
+        input[type="text"]  {
+            width: 100%;
+        }        
+    }
+    p {
+        margin-top: 7px;
+        line-height: 1em;
+    }
+}

@@ -72,7 +72,6 @@ router.beforeEach( (to, form, next) => {
 });
 
 Vue.use(iView);
-
 new Vue({
   el: '#page-wrapper',
   store,

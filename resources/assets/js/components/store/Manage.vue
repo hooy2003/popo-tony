@@ -1,197 +1,146 @@
 <template>
-    <section class="content">
-        <Row>
-            <Col span="8">
-                <div class="title">出機單設定
-                    <Dropdown trigger="click">
-                        <a href="javascript:void(0)">
-                            <Icon type="md-create"></Icon>
-                        </a>
-                        <DropdownMenu slot="list">
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增廚房聯規則</DropdownItem>
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增標籤貼紙規則</DropdownItem>
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增客戶聯規則</DropdownItem>
-                            <DropdownItem><Icon type="md-create"></Icon>編輯出單名稱</DropdownItem>
-                            <DropdownItem><Icon type="md-copy"></Icon>複製此出單機</DropdownItem>
-                        </DropdownMenu>
-                    </Dropdown>
-                </div>
-                <div style="margin-bottom:40px"></div>
-                <div class="union">
-                    <CardA v-for="(item, index) in billing"
-                           :key='item.index'  
-                           :billing-name="item" 
+    <section class="content store">
+        <div class="left">
+            <div class="imgset-wrap">
+                <div v-show="tableName"
+                        class="overtext">{{tableName}}</div>
+                <div class="imgset">
+                    <img src="https://www.pakutaso.com/shared/img/thumb/neko1869IMG_9074_TP_V.jpg"
+                        alt=""
+                        draggable
                     >
-                    </CardA>
                 </div>
-            </Col>
-            <Col span="8">
-                <div class="title">櫃檯出單機
-                    <Dropdown trigger="click">
-                        <a href="javascript:void(0)">
-                            <Icon type="md-create"></Icon>
-                        </a>
-                        <DropdownMenu slot="list">
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增廚房聯規則</DropdownItem>
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增標籤貼紙規則</DropdownItem>
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增客戶聯規則</DropdownItem>
-                            <DropdownItem><Icon type="md-create"></Icon>編輯出單名稱</DropdownItem>
-                            <DropdownItem><Icon type="md-copy"></Icon>複製此出單機</DropdownItem>
-                        </DropdownMenu>
-                    </Dropdown>
-                </div>
-                <div class="union">
-                    <h4>結帳相關聯</h4>
-                    <CardA v-for="(item, index) in rules"
-                           :key='item.index'
-                           :billing-name="item" 
-                    >
-                    </CardA>
-                    <h4>顧客相關聯</h4>
-                    <CardA v-for="(item, index) in rules"
-                           :key='item.index'
-                           :billing-name="item" 
-                    >
-                    </CardA>
-                    <h4>廚房相關聯</h4>
-                    <CardA v-for="(item, index) in rules"
-                           :key='item.index'
-                           :billing-name="item" 
-                    >
-                    </CardA>
-                </div>
-            </Col>
-            <Col span="8">
-                <div class="title">和牛區
-                    <Dropdown trigger="click">
-                        <a href="javascript:void(0)">
-                            <Icon type="md-create"></Icon>
-                        </a>
-                        <DropdownMenu slot="list">
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增廚房聯規則</DropdownItem>
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增標籤貼紙規則</DropdownItem>
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增客戶聯規則</DropdownItem>
-                            <DropdownItem><Icon type="md-create"></Icon>編輯出單名稱</DropdownItem>
-                            <DropdownItem><Icon type="md-copy"></Icon>複製此出單機</DropdownItem>
-                        </DropdownMenu>
-                    </Dropdown>
-                </div>
-                <div class="union">
-                    <h4>基本設定</h4>
-                    <Card>
-                        <div class="setting">
-                            <h3>列印名稱</h3>
-                            <p>和牛區</p>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div class="setting">
-                            <h3>列印名稱</h3>
-                            <p>印單時機</p>
-                        </div>
-                    </Card>
-                    <h4>排列與切單</h4>
-                    <Card>
-                        <div class="setting">
-                            <h3>套餐排列</h3>
-                            <p>套餐內品項</p>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div class="setting">
-                            <h3>相同品項顯示</h3>
-                            <p>同一行</p>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div class="setting">
-                            <h3>切單方式</h3>
-                            <p>不切單</p>
-                        </div>
-                    </Card>
-                    <h4>編輯列印品項</h4>
-                    <Card>
-                        <div>
-                            <h3>編輯列印品項</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>和牛上選牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                </div>
-            </Col>
-        </Row>        
+                <input v-model="tableName"
+                    placeholder="輸入桌號"
+                    type="text"
+                >
+            </div>
+        </div>
+        <div class="right">
+            <canvas id="canvas"></canvas>
+            <Button id="saveBtn">儲存</Button>
+            <Button id="cleanBtn">清除</Button>
+            <Button id="reloadBtn">讀檔</Button>            
+        </div>
+        <div class="iii">                
+                <p>1.右邊大圖可替換(背景圖，到時候直接換店家的圖)</p>
+                <p>2.輸入完桌號，把小圖拖曳到右邊大圖中</p>
+                <p>3.讀檔必須要先儲存才有東西讀</p>
+                <p>4.之後會做上一步與下一步的按鈕</p>
+            </div>
     </section>
 </template>
 <script>
 import { mapGetters } from 'vuex';
-import CardA from './card.vue';
+import { CanvasN } from '../../fabric/CanvasN'
 
+// https://ithelp.ithome.com.tw/articles/10207087?sc=iThelpR
+// https://stackoverflow.com/questions/42344356/how-can-i-set-up-fabric-js-in-vue
+// https://stackoverflow.com/questions/45647084/fabric-js-editing-text-via-inputs
+// 上一步 + 下一步
   export default {
     components: {
-        CardA,  
+    },
+    mounted() {
+        // CanvasN();
+        this.canvas = new fabric.Canvas('canvas', {
+            width: 500,
+            height: 500
+        });
+        console.log(JSON.stringify(this.canvas));
+
+         fabric.Image.fromURL('https://www.pakutaso.com/shared/img/thumb/AMEMAN17826009_TP_V.jpg', (img) => {
+            const oImg = img.set({
+                width: 500,
+                height: 500
+            })
+            this.canvas.setBackgroundImage(oImg).renderAll()
+        })
+        this.canvas.on('drop', this.dropImg);
+
+        $('.imgset').on('mousedown', this.saveImg);
+        $('#saveBtn').on('click', this.saveCanvas);
+        $('#cleanBtn').on('click', this.cleanCanvas);
+        $('#reloadBtn').on('click', this.reloadCanvas);
+    },
+    data() {
+        return {
+            canvas: '',
+            tableName: '',            
+            movingImage: '',
+            imgDragOffset: {
+                offsetX: 0,
+                offsetY: 0
+            },
+            saveDate: '',
+        }
     },
     computed: {
       ...mapGetters([
-        'User',
-        'billing',
-        'rules'
       ]),
-    //   billings () {
-    //       return Object.keys(this.billing);
-    //   }
+    },
+    methods: {
+        uploadFile() {
+            file.click();
+        },
+        saveImg (e) {
+            if( e.target.tagName.toLowerCase() === 'img' ){
+                this.imgDragOffset.offsetX = e.offsetX;
+                this.imgDragOffset.offsetY = e.offsetY;
+                this.movingImage = e.target;
+            }
+        },
+        handleFile () {
+            const fileReader = new FileReader();
+            fileReader.readAsDataURL(this.files[0]);
+            fileReader.onload = (e) => {
+                // 圖片 base64
+                const dataURL = e.target.result
+                const img = document.createElement('img')
+                img.draggable = true
+                img.src = dataURL
+                img.click = saveImg
+                imgset.appendChild(img)
+            };
+        },
+        dropImg (e) {
+            const {offsetX, offsetY} = e.e;
+            const image = new fabric.Image(this.movingImage, {
+                width: this.movingImage.naturalWidth,
+                height: this.movingImage.naturalHeight,
+                scaleX: 100 / this.movingImage.naturalWidth,
+                scaleY: 100 / this.movingImage.naturalHeight,
+                originX: 'center',
+                originY: 'center',
+            });
+            console.log('this.tableName', this.tableName);
+            const text = new fabric.Text(this.tableName, {
+                originX: 'center',
+                originY: 'center',
+                fontSize: 20,
+                fontFamily: 'Verdana',
+                fontWeight: 'bold',
+                fill: 'white'
+            });
+            const group = new fabric.Group([image, text], {
+                top: offsetY - this.imgDragOffset.offsetY,
+                left: offsetX - this.imgDragOffset.offsetX
+            });
+            this.canvas.add(group);
+        },
+        saveCanvas (e) {
+            console.log(this.canvas.toJSON());
+            this.saveDate = this.canvas.toJSON();
+        },
+        cleanCanvas (e) {
+            this.canvas.clear();
+        },
+        reloadCanvas (e) {
+            this.canvas.loadFromJSON(this.saveDate);
+        }
     }
+
   }
 </script>
+<style lang="scss">
+</style>

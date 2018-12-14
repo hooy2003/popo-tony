@@ -68,3 +68,4 @@ if (token) {
 
 // Load custom libraries.
 // require('./module.js');
+// require('./fabric/fabric.js');
