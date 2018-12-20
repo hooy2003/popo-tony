@@ -6381,6 +6381,16 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 /***/ }),
 
+/***/ "5zde":
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__("zQR9");
+__webpack_require__("qyJz");
+module.exports = __webpack_require__("FeBl").Array.from;
+
+
+/***/ }),
+
 /***/ "7+uW":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -69821,6 +69831,34 @@ module.exports = (
 
 /***/ }),
 
+/***/ "Gu7T":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+
+var _from = __webpack_require__("c/Tr");
+
+var _from2 = _interopRequireDefault(_from);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+
+    return arr2;
+  } else {
+    return (0, _from2.default)(arr);
+  }
+};
+
+/***/ }),
+
 /***/ "Ibhu":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -92312,6 +92350,13 @@ module.exports = function (KEY) {
 
 /***/ }),
 
+/***/ "c/Tr":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__("5zde"), __esModule: true };
+
+/***/ }),
+
 /***/ "cGG2":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -92896,6 +92941,22 @@ exports.default = function (fn) {
     });
   };
 };
+
+/***/ }),
+
+/***/ "fBQ2":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $defineProperty = __webpack_require__("evD5");
+var createDesc = __webpack_require__("X8DO");
+
+module.exports = function (object, index, value) {
+  if (index in object) $defineProperty.f(object, index, createDesc(0, value));
+  else object[index] = value;
+};
+
 
 /***/ }),
 
@@ -93579,6 +93640,51 @@ var $JSON = core.JSON || (core.JSON = { stringify: JSON.stringify });
 module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
   return $JSON.stringify.apply($JSON, arguments);
 };
+
+
+/***/ }),
+
+/***/ "qyJz":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var ctx = __webpack_require__("+ZMJ");
+var $export = __webpack_require__("kM2E");
+var toObject = __webpack_require__("sB3e");
+var call = __webpack_require__("msXi");
+var isArrayIter = __webpack_require__("Mhyx");
+var toLength = __webpack_require__("QRG4");
+var createProperty = __webpack_require__("fBQ2");
+var getIterFn = __webpack_require__("3fs2");
+
+$export($export.S + $export.F * !__webpack_require__("dY0y")(function (iter) { Array.from(iter); }), 'Array', {
+  // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
+  from: function from(arrayLike /* , mapfn = undefined, thisArg = undefined */) {
+    var O = toObject(arrayLike);
+    var C = typeof this == 'function' ? this : Array;
+    var aLen = arguments.length;
+    var mapfn = aLen > 1 ? arguments[1] : undefined;
+    var mapping = mapfn !== undefined;
+    var index = 0;
+    var iterFn = getIterFn(O);
+    var length, result, step, iterator;
+    if (mapping) mapfn = ctx(mapfn, aLen > 2 ? arguments[2] : undefined, 2);
+    // if object isn't iterable or it's array with default iterator - use simple case
+    if (iterFn != undefined && !(C == Array && isArrayIter(iterFn))) {
+      for (iterator = iterFn.call(O), result = new C(); !(step = iterator.next()).done; index++) {
+        createProperty(result, index, mapping ? call(iterator, mapfn, [step.value, index], true) : step.value);
+      }
+    } else {
+      length = toLength(O.length);
+      for (result = new C(length); length > index; index++) {
+        createProperty(result, index, mapping ? mapfn(O[index], index) : O[index]);
+      }
+    }
+    result.length = index;
+    return result;
+  }
+});
 
 
 /***/ }),
