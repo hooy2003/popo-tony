@@ -180,12 +180,8 @@ import AddNewIngredients from '../utils/addingredients.vue';
             if (value) {
                 this.$Message.loading({
                     content: 'Loading...',
-                    duration: 2
+                    duration: 1
                 });
-            } else {
-                setTimeout(()=>{
-                    this.$Message.destroy();
-                }, 300);
             }
         } 
     },

@@ -183,14 +183,10 @@ import AddNewRecipes from '../utils/addrecipes.vue';
             if (value) {
                 this.$Message.loading({
                     content: 'Loading...',
-                    duration: 2
+                    duration: 1
                 });
-            } else {
-                setTimeout(()=>{
-                    this.$Message.destroy();
-                }, 300);
             }
-        } 
+        }
     },
     // 改进vue的初始化数据调用时机 --
     // https://www.jianshu.com/p/2048f1a66c33

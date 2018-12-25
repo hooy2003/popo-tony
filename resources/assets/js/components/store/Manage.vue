@@ -1,197 +1,179 @@
 <template>
-    <section class="content">
+    <section class="content page">
         <Row>
-            <Col span="8">
-                <div class="title">出機單設定
-                    <Dropdown trigger="click">
-                        <a href="javascript:void(0)">
-                            <Icon type="md-create"></Icon>
-                        </a>
-                        <DropdownMenu slot="list">
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增廚房聯規則</DropdownItem>
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增標籤貼紙規則</DropdownItem>
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增客戶聯規則</DropdownItem>
-                            <DropdownItem><Icon type="md-create"></Icon>編輯出單名稱</DropdownItem>
-                            <DropdownItem><Icon type="md-copy"></Icon>複製此出單機</DropdownItem>
-                        </DropdownMenu>
-                    </Dropdown>
-                </div>
+            <Col span="5">
+                <div class="title">樓層/區域</div>
                 <div style="margin-bottom:40px"></div>
                 <div class="union">
-                    <CardA v-for="(item, index) in billing"
-                           :key='item.index'  
-                           :billing-name="item" 
+                    <Floor v-for="(item, index) in currentFloor"
+                           :key='item.index'
+                           :floor-name="item[1]"
+                           :class="{ active: index === 0 }"
+                           @floor-on-click="FloorOnClick($event, item[0])"
                     >
-                    </CardA>
+                    </Floor>
+                    <AddNewfloor  
+                                  class="add-new-card"
+                    >
+                    </AddNewfloor>
                 </div>
             </Col>
-            <Col span="8">
-                <div class="title">櫃檯出單機
-                    <Dropdown trigger="click">
-                        <a href="javascript:void(0)">
-                            <Icon type="md-create"></Icon>
-                        </a>
-                        <DropdownMenu slot="list">
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增廚房聯規則</DropdownItem>
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增標籤貼紙規則</DropdownItem>
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增客戶聯規則</DropdownItem>
-                            <DropdownItem><Icon type="md-create"></Icon>編輯出單名稱</DropdownItem>
-                            <DropdownItem><Icon type="md-copy"></Icon>複製此出單機</DropdownItem>
-                        </DropdownMenu>
-                    </Dropdown>
-                </div>
+            <Col span="5">
+                <div class="title">餐桌清單</div>
                 <div class="union">
-                    <h4>結帳相關聯</h4>
-                    <CardA v-for="(item, index) in rules"
+                    <h4>類別</h4>
+                    <Table v-for="(item, index) in currentTable"
                            :key='item.index'
-                           :billing-name="item" 
+                           :table-name="item[1]"
+                           :is-class="true"
+                           :class="{ lastcard: index === (currentTable.length-1) && index > 1 }"
+                           @table-on-click="TableOnClick($event, item)"
                     >
-                    </CardA>
-                    <h4>顧客相關聯</h4>
-                    <CardA v-for="(item, index) in rules"
-                           :key='item.index'
-                           :billing-name="item" 
+                    </Table>
+                     <AddNewTable 
+                            class="add-new-card"
+                            @add-table-name="addNewTable($event, FloorID)"
                     >
-                    </CardA>
-                    <h4>廚房相關聯</h4>
-                    <CardA v-for="(item, index) in rules"
-                           :key='item.index'
-                           :billing-name="item" 
-                    >
-                    </CardA>
+                    </AddNewTable>
                 </div>
             </Col>
-            <Col span="8">
-                <div class="title">和牛區
-                    <Dropdown trigger="click">
-                        <a href="javascript:void(0)">
-                            <Icon type="md-create"></Icon>
-                        </a>
-                        <DropdownMenu slot="list">
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增廚房聯規則</DropdownItem>
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增標籤貼紙規則</DropdownItem>
-                            <DropdownItem><Icon type="ios-add-circle"></Icon>新增客戶聯規則</DropdownItem>
-                            <DropdownItem><Icon type="md-create"></Icon>編輯出單名稱</DropdownItem>
-                            <DropdownItem><Icon type="md-copy"></Icon>複製此出單機</DropdownItem>
-                        </DropdownMenu>
-                    </Dropdown>
-                </div>
+            <Col span="9">
+                <div class="title">桌面設定</div>
                 <div class="union">
-                    <h4>基本設定</h4>
-                    <Card>
-                        <div class="setting">
-                            <h3>列印名稱</h3>
-                            <p>和牛區</p>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div class="setting">
-                            <h3>列印名稱</h3>
-                            <p>印單時機</p>
-                        </div>
-                    </Card>
-                    <h4>排列與切單</h4>
-                    <Card>
-                        <div class="setting">
-                            <h3>套餐排列</h3>
-                            <p>套餐內品項</p>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div class="setting">
-                            <h3>相同品項顯示</h3>
-                            <p>同一行</p>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div class="setting">
-                            <h3>切單方式</h3>
-                            <p>不切單</p>
-                        </div>
-                    </Card>
-                    <h4>編輯列印品項</h4>
-                    <Card>
-                        <div>
-                            <h3>編輯列印品項</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>和牛上選牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
-                    <Card>
-                        <div>
-                            <h3>特選厚切牛舌</h3>
-                        </div>
-                    </Card>
+                    <h4>項目</h4>
+                    <TableInfo
+                        v-show="TableInfoShow"
+                        :table-id="currentTableInfo[0]"
+                        :table-name="currentTableInfo[1]"
+                        :table-amount="currentTableInfo[12]"
+                        @table-info-change="changeTableInfo($event)"
+                    >
+                    </TableInfo>
                 </div>
+            </Col>
+            <Col span="5">
             </Col>
         </Row>        
     </section>
 </template>
 <script>
 import { mapGetters } from 'vuex';
-import CardA from './card.vue';
+import Floor from './floor.vue';
+import Table from './table.vue';
+import TableInfo from './tableInfo.vue';
+import AddNewfloor from './addNewfloor.vue';
+import AddNewTable from './addNewTable.vue';
 
   export default {
     components: {
-        CardA,  
+        Floor,
+        Table,
+        TableInfo,
+        AddNewfloor,
+        AddNewTable
+    },
+    data() {
+        return {
+            currentFloor: [],
+            FloorID: '',
+            currentTable: '',
+            currentTableInfo: '',
+            TableInfoShow: false,
+        }
+    },
+    created () {
+        this.getFloor();
+        this.FloorID = 1;
     },
     computed: {
       ...mapGetters([
-        'User',
-        'billing',
-        'rules'
       ]),
-    //   billings () {
-    //       return Object.keys(this.billing);
-    //   }
+    },
+    watch: {
+        currentFloor: function(value) {
+            const BdefaultID = this.currentFloor[0][0];
+            const BdefaultName = this.currentFloor[0][1];
+
+            this.getTable(BdefaultID);  
+        },
+    },
+    methods: {
+        FloorOnClick: function(FloorName, FloorID) {
+            this.FloorID = FloorID;
+            this.getTable(FloorID);
+        },
+        TableOnClick: function(tableName, table) {
+    // "TableCategoryID": 0,
+    // "TableCategoryName": "string",
+    // "Image": "string",
+    // "TableAreaID": 0,
+    // "TableAreaName": "string",
+    // "Sort": 0,
+    // "TableID": 0,
+    // "TableName": "string",
+    // "X": 0,
+    // "Y": 0,
+    // "Width": 0,
+    // "Height": 0,
+    // "Amount": 0 
+            console.log('TableOnClick', table );
+            this.currentTableInfo = table;
+            this.TableInfoShow = true;
+        },
+        async getFloor() {
+            this.currentFloor = await axios.get(process.env.API_HOST + `/TableArea/GetAreas`)
+            .then(function (response) {
+                const nameList = response.data.map(item => Object.values(item));
+                return nameList;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        async getTable(FloorID) {
+            this.currentTable = await axios.get(process.env.API_HOST + `/Table/GetTablesByTableAreaID?TableAreaID=${FloorID}`)
+            .then(function (response) {
+                const nameList = response.data.map(item => Object.values(item));
+                return nameList;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        async addNewTable ($event, FloorID) {
+            const ClassFile = {
+                                "Name": $event,
+                                "TableCategoryID": 0,
+                                "TableAreaID": FloorID,
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 0,
+                                "Height": 0,
+                                "Amount": 0,
+                                "AccountID": 0
+                              };
+            console.log('addNewTable', ClassFile);
+            const vm = this;
+            await axios.post(process.env.API_HOST + `/Table/Create`, ClassFile)
+            .then(function (response) {
+                vm.getTable(vm.FloorID);
+                return true;
+            })
+            .catch(function (error) {
+                console.log('error', error);
+            });
+        },
+        async changeTableInfo(obj) {
+            const vm = this;
+            await axios.post(process.env.API_HOST + `/Table/Update`, obj)
+            .then(function (response) {
+                vm.getTable(vm.FloorID);
+                return;
+            })
+            .catch(function (error) {
+                console.log(error)
+            });
+        }
     }
   }
 </script>

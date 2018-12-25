@@ -16,10 +16,11 @@ import iView from 'iview';
 import '../sass/app.scss';
 
 //添加请求拦截器
+
 axios.interceptors.request.use(config => {
     //在发送请求之前做某事，比如说 设置loading动画显示
 
-    store.commit({
+    store.dispatch({
         type: 'isLoading'
     });
     return config
@@ -32,8 +33,8 @@ axios.interceptors.request.use(config => {
 axios.interceptors.response.use(response => {
     //对响应数据做些事，比如说把loading动画关掉
 
-    store.commit({
-        type: 'isLoading'
+    store.dispatch({
+        type: 'hasLoaded'
     });
     return response
 }, error => {

@@ -22,6 +22,7 @@ const state = {
         "strange" : "不得包括特殊符號"
     },
     isLoading: false,
+    isLoadingTimer: null,
     billing: [
         "櫃檯出單機",
         "廚房出單機"
@@ -52,7 +53,35 @@ const getters = {
     rules3: state => state.rules3
 };
 
+const actions = {
+    isLoading ({state, commit, getters}) {
+        if(state.isLoadingTimer){
+            setTimeout(function(){
+                commit('clearIsLoadingTimer');
+            }, 1000);
+        }
+        else {
+            commit('setIsLoadingTimer');
+            commit('isLoadingM');
+        }
+    },
+    hasLoaded ({state, commit, getters}) {
+        if(!state.isLoadingTimer){
+            return;
+        }
+        else {
+            commit('hasLoadedM');
+        }
+    },
+};
+
 const mutations = {
+    setIsLoadingTimer(state) {
+        state.isLoadingTimer   = 1;
+    },
+    clearIsLoadingTimer(state) {
+        state.isLoadingTimer   = null;
+    },
     setUserData(state, { userData }) {        
         state.User.account  = userData.email;
         state.User.name     = userData.name;
@@ -70,18 +99,19 @@ const mutations = {
         state.User.name  = value.name;
         state.User.phone = value.phone;
     },
-    isLoading (state) {
-        state.isLoading = !state.isLoading
+    isLoadingM (state) {
+        state.isLoading = true;
     },
-};
-
-const actions = {
+    hasLoadedM (state) {
+        state.isLoading = false;
+    }
 };
 
 export default {
     state,
     getters,
-    mutations
+    mutations,
+    actions
 }
   
   
