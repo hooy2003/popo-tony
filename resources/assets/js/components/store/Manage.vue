@@ -91,10 +91,10 @@ import AddNewTable from './addNewTable.vue';
     },
     watch: {
         currentFloor: function(value) {
-            const BdefaultID = this.currentFloor[0][0];
-            const BdefaultName = this.currentFloor[0][1];
+            const defaultID = this.currentFloor[0][0];
+            const defaultName = this.currentFloor[0][1];
 
-            this.getTable(BdefaultID);  
+            this.getTable(defaultID);  
         },
     },
     methods: {

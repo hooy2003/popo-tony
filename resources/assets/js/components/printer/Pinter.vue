@@ -1,12 +1,12 @@
 <template>
     <div class="card-class js-card-class"
          >
-        <div class="content" @click.self="clickCard()">
+        <div class="content" @click.self="clickPinter()">
 
             <Icon v-if="isClass" type="ios-folder" size="20"></Icon>
             <Icon v-else type="ios-document" size="20"></Icon>
-            <h3>{{cloneBillingName}}</h3>
-            <Input v-model="cloneBillingName"
+            <h3>{{clonePinterName}}</h3>
+            <Input v-model="clonePinterName"
                    @on-click="addedName()"
                    class="hide"
                    placeholder="Something"
@@ -28,9 +28,9 @@
 </template>
 <script>
     export default {
-        name: 'CardP',
+        name: 'Pinter',
         props: [
-            'billingName',
+            'pinterName',
             'isClass'
         ],
         data() {
@@ -39,22 +39,22 @@
             }
         },
         computed: {
-            cloneBillingName : {
+            clonePinterName : {
                 get: function() {
-                    this.needSendToParent = this.billingName;
-                    return this.billingName;
+                    this.needSendToParent = this.pinterName;
+                    return this.pinterName;
                 },
                 set: function(newValue) {
                     if (newValue.length > 0) {
                         this.needSendToParent = newValue;
                     }
-                    return this.billingName;
+                    return this.pinterName;
                 }
             },
         },
         methods: {
-            clickCard: function() {
-                this.$emit('card-on-click', this.cardName);                
+            clickPinter: function() {
+                this.$emit('pinter-on-click', this.pinterName);                
                 $(this.$el).addClass('active');
             },
             handleDropDownClick: function (name) {
@@ -64,7 +64,7 @@
                     $(this.$el).find('.ivu-input-wrapper').removeClass('hide');
                 }
                 if (name == "delete") {
-                    this.$emit('card-delete', this.cardName);
+                    this.$emit('pinter-delete', this.pinterName);
                 }
             },
             addedName () {

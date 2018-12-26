@@ -5,55 +5,33 @@
                 <div class="title">出機單設定</div>
                 <div style="margin-bottom:40px"></div>
                 <div class="union">
-                    <CardP v-for="(item, index) in billing"
+                    <Area v-for="(item, index) in currentArea"
                            :key='item.index'  
-                           :billing-name="item"
+                           :area-name="item['PrinterAreaName']"
                            :class="{ active: index === 0 }"
                            class="card-class"                           
-                           @card-on-click="ClassOnClick($event)"
+                           @area-on-click="AreaOnClick($event, item['PrinterAreaID'])"
                     >
-                    </CardP>
+                    </Area>
                 </div>
             </Col>
             <Col span="5">
                 <div class="title">櫃檯出單機</div>
                 <div class="union">
-                    <h4>結帳相關聯</h4>
-                    <CardP v-for="(item, index) in rules1"
+                    <h4>出單機名稱</h4>
+                    <Pinter v-for="(item, index) in currentPinter"
                            :key='item.index'
-                           :billing-name="item" 
+                           :pinter-name="item['PrinterName']" 
                            class="card-item"
-                           @card-on-click="CardOnClick($event, 1)"
+                           @pinter-on-click="PinterOnClick($event, 1)"
                     >
-                    </CardP>
-                    <h4>顧客聯</h4>
-                    <CardP v-for="(item, index) in rules2"
-                           :key='item.index'
-                           :billing-name="item"
-                           class="card-item"
-                           @card-on-click="CardOnClick($event, 2)"
-                    >
-                    </CardP>
-                    <h4>廚房聯</h4>
-                    <CardP v-for="(item, index) in rules3"
-                           :key='item.index'
-                           :billing-name="item"
-                           class="card-item"
-                           @card-on-click="CardOnClick($event, 3)"
-                    >
-                    </CardP>
+                    </Pinter>
                 </div>
             </Col>
             <Col span="9">
                 <div class="title">和牛區</div>
                 <div class="union">
                     <h4>基本設定</h4>
-                    <CardCheckout v-if="isbilling"
-                    >
-                    </CardCheckout>
-                    <CardDetail v-if="!isbilling"
-                    >
-                    </CardDetail>
                 </div>
             </Col>
             <Col span="5">
@@ -64,37 +42,40 @@
 </template>
 <script>
 import { mapGetters } from 'vuex';
-import CardP from './card.vue';
-import CardDetail from './cardDetail.vue';
-import CardCheckout from './cardCheckout.vue';
+import Area from './Area.vue';
+import Pinter from './Pinter.vue';
 
   export default {
     components: {
-        CardP,
-        CardDetail,
-        CardCheckout
+        Area,
+        Pinter
     },
     data() {
         return {
-            isbilling: true,
-            currentCard: []
+            currentArea: [],
+            AreaId: '',
+            currentPinter: []
         }
     },
     created () {
-        
+        this.getPrinterArea();
+        this.AreaId = 1;
     },
     computed: {
       ...mapGetters([
-        'User',
-        'billing',
-        'rules1',
-        'rules2',
-        'rules3'
       ]),      
     },
+    watch: {
+        currentArea: function(value) {
+            const PrinterAreaID = this.currentArea[0]['PrinterAreaID'];
+
+            this.getPrinter(PrinterAreaID); 
+        }
+    },
     methods: {
-        ClassOnClick ($e) {
-            $('.card-class').removeClass('active');
+        AreaOnClick (AreaName, AreaId) {
+            this.AreaId = AreaId;
+            this.getPrinter(AreaId);
         },
         CardOnClick ($e, value) {
             $('.card-item').removeClass('active');
@@ -103,7 +84,26 @@ import CardCheckout from './cardCheckout.vue';
             }else {
                 this.isbilling = false;
             }
-        }
+        },
+        async getPrinterArea() {
+            this.currentArea = await axios.get(process.env.API_HOST + `/PrinterArea/GetAreas`)
+            .then(function (response) {
+                return response.data;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        async getPrinter(PrinterAreaID) {
+            this.currentPinter = await axios.get(process.env.API_HOST + `/Printer/GetPrintersByPrinterAreaID?PrinterAreaID=${PrinterAreaID}`)
+            .then(function (response) {
+                return response.data;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },       
+        
     }
   }
 </script>
