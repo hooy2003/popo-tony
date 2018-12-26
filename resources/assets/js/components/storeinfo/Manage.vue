@@ -68,28 +68,6 @@ import { mapGetters } from 'vuex';
     },
     methods: {
         async getStoreInfo() {
-            // const data = {
-            //     "client_id" : "AirdesignPOS",
-            //     "client_secret": "777ABHJV777",
-            //     "grant_type": "password",
-            //     "username": "vincent@airdesign.com.tw",
-            //     "password": "abc@123"
-            // };
-            await axios.post(process.env.TOKEN_HOST + `/token`, {"data": {
-                    "client_id" : "AirdesignPOS",
-                    "client_secret": "777ABHJV777",
-                    "grant_type": "password",
-                    "username": "vincent@airdesign.com.tw",
-                    "password": "abc@123"
-            }})
-            .then(function (response) {
-                console.log(response);
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-
-
             this.currentInfo = await axios.get(process.env.API_HOST + `/Store/GetStore`)
             .then(function (response) {
                 console.log(response);

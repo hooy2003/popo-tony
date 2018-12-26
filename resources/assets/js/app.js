@@ -23,7 +23,7 @@ axios.interceptors.request.use(config => {
     store.dispatch({
         type: 'isLoading'
     });
-    return config
+    return config;
 }, error => {
     //请求错误时做些事
     return Promise.reject(error)
@@ -31,12 +31,18 @@ axios.interceptors.request.use(config => {
   
 //添加响应拦截器
 axios.interceptors.response.use(response => {
+    // 檢查token 是否過期?12/26
+    // if (response.data.errno === 999) {
+    //     router.replace('/');
+    //     console.log("token过期");
+    // }
     //对响应数据做些事，比如说把loading动画关掉
 
     store.dispatch({
         type: 'hasLoaded'
     });
-    return response
+    console.log('响应拦截器', response);
+    return response;
 }, error => {
     //请求错误时做些事
     return Promise.reject(error)
@@ -52,11 +58,7 @@ const router = new VueRouter({
 router.beforeEach( (to, form, next) => {
     const loginUserData = JSON.parse(localStorage.getItem('token'));
 
-    // if (!isLogin) {
-    // }
-    if(loginUserData) {
-        // 如在登入狀態下重整，應該把存在localStorage的資料再送給state一次
-        // 如串後端，API應該再傳給state
+    if(loginUserData) { //判断token是否存在
         store.commit({
             type: 'setUserData',
             userData: loginUserData,
@@ -73,24 +75,6 @@ router.beforeEach( (to, form, next) => {
 });
 
 Vue.use(iView);
-
-
-// API token 設計
-// https://forum.vuejs.org/t/axios-token/33528
-
-// axios.post(process.env.TOKEN_HOST + `/token`, {
-//     "client_id" : "AirdesignPOS",
-//     "client_secret": "777ABHJV777",
-//     "grant_type": "password",
-//     "username": "vincent@airdesign.com.tw",
-//     "password": "abc@123"
-// })
-// .then(function (response) {
-//     console.log(response);
-// })
-// .catch(function (error) {
-//     console.log(error);
-// });
 
 
 new Vue({
