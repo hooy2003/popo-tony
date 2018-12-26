@@ -74,6 +74,25 @@ router.beforeEach( (to, form, next) => {
 
 Vue.use(iView);
 
+
+// API token 設計
+// https://forum.vuejs.org/t/axios-token/33528
+
+// axios.post(process.env.TOKEN_HOST + `/token`, {
+//     "client_id" : "AirdesignPOS",
+//     "client_secret": "777ABHJV777",
+//     "grant_type": "password",
+//     "username": "vincent@airdesign.com.tw",
+//     "password": "abc@123"
+// })
+// .then(function (response) {
+//     console.log(response);
+// })
+// .catch(function (error) {
+//     console.log(error);
+// });
+
+
 new Vue({
   el: '#page-wrapper',
   store,

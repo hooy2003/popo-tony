@@ -18,6 +18,13 @@ module.exports = {
         pathRewrite: {
           '^/api': ''
         }
+      },
+      '/connect': {
+        target: 'http://is.airdesign.com.tw/connect/',  // 遠端 URL Domain
+        changeOrigin: true,
+        pathRewrite: {
+          '^/connect': ''
+        }
       }
     },
 

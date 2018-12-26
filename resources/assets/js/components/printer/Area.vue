@@ -1,5 +1,5 @@
 <template>
-    <div class="card-class js-card-class-a"
+    <div class="card-class js-card-class-area"
          >
         <div class="content" @click.self="clickArea()">
 
@@ -55,9 +55,8 @@
         methods: {
             clickArea: function() {
                 this.$emit('area-on-click', this.areaName);
-                $('.js-card-class-a').removeClass('active');
-                $('.js-card-class-b').removeClass('active');
-                $('.js-card-class-c').removeClass('active');
+                $('.js-card-class-area').removeClass('active');
+                $('.js-card-class-printer').removeClass('active');
                 $(this.$el).addClass('active');
             },
             handleDropDownClick: function (name) {

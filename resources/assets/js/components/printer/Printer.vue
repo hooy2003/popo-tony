@@ -1,12 +1,12 @@
 <template>
-    <div class="card-class js-card-class"
+    <div class="card-class js-card-class-printer"
          >
-        <div class="content" @click.self="clickPinter()">
+        <div class="content" @click.self="clickPrinter()">
 
             <Icon v-if="isClass" type="ios-folder" size="20"></Icon>
             <Icon v-else type="ios-document" size="20"></Icon>
-            <h3>{{clonePinterName}}</h3>
-            <Input v-model="clonePinterName"
+            <h3>{{clonePrinterName}}</h3>
+            <Input v-model="clonePrinterName"
                    @on-click="addedName()"
                    class="hide"
                    placeholder="Something"
@@ -28,9 +28,9 @@
 </template>
 <script>
     export default {
-        name: 'Pinter',
+        name: 'Printer',
         props: [
-            'pinterName',
+            'printerName',
             'isClass'
         ],
         data() {
@@ -39,22 +39,23 @@
             }
         },
         computed: {
-            clonePinterName : {
+            clonePrinterName : {
                 get: function() {
-                    this.needSendToParent = this.pinterName;
-                    return this.pinterName;
+                    this.needSendToParent = this.printerName;
+                    return this.printerName;
                 },
                 set: function(newValue) {
                     if (newValue.length > 0) {
                         this.needSendToParent = newValue;
                     }
-                    return this.pinterName;
+                    return this.printerName;
                 }
             },
         },
         methods: {
-            clickPinter: function() {
-                this.$emit('pinter-on-click', this.pinterName);                
+            clickPrinter: function() {
+                this.$emit('printer-on-click', this.printerName);
+                $('.js-card-class-printer').removeClass('active');   
                 $(this.$el).addClass('active');
             },
             handleDropDownClick: function (name) {
@@ -64,7 +65,7 @@
                     $(this.$el).find('.ivu-input-wrapper').removeClass('hide');
                 }
                 if (name == "delete") {
-                    this.$emit('pinter-delete', this.pinterName);
+                    this.$emit('printer-delete', this.printerName);
                 }
             },
             addedName () {

@@ -19,19 +19,28 @@
                 <div class="title">櫃檯出單機</div>
                 <div class="union">
                     <h4>出單機名稱</h4>
-                    <Pinter v-for="(item, index) in currentPinter"
+                    <Printer v-for="(item, index) in currentPrinter"
                            :key='item.index'
-                           :pinter-name="item['PrinterName']" 
+                           :printer-name="item['PrinterName']" 
                            class="card-item"
-                           @pinter-on-click="PinterOnClick($event, 1)"
+                           @printer-on-click="PrinterOnClick($event, item)"
                     >
-                    </Pinter>
+                    </Printer>
                 </div>
             </Col>
             <Col span="9">
                 <div class="title">和牛區</div>
                 <div class="union">
                     <h4>基本設定</h4>
+                    <PrinterInfo
+                        v-show="PrinterInfoShow"
+                        :printer-id="currentPrinterInfo['PrinterID']"
+                        :printer-name="currentPrinterInfo['PrinterName']"
+                        :printer-ip="currentPrinterInfo['IP']"
+                        :printer-emulation="currentPrinterInfo['Emulation']"
+                        @printer-info-change="changePrinterInfo($event)"
+                    >
+                    </PrinterInfo>
                 </div>
             </Col>
             <Col span="5">
@@ -43,18 +52,22 @@
 <script>
 import { mapGetters } from 'vuex';
 import Area from './Area.vue';
-import Pinter from './Pinter.vue';
+import Printer from './Printer.vue';
+import PrinterInfo from './PrinterInfo.vue'
 
   export default {
     components: {
         Area,
-        Pinter
+        Printer,
+        PrinterInfo
     },
     data() {
         return {
             currentArea: [],
             AreaId: '',
-            currentPinter: []
+            currentPrinter: [],
+            currentPrinterInfo: [],
+            PrinterInfoShow: false
         }
     },
     created () {
@@ -77,13 +90,9 @@ import Pinter from './Pinter.vue';
             this.AreaId = AreaId;
             this.getPrinter(AreaId);
         },
-        CardOnClick ($e, value) {
-            $('.card-item').removeClass('active');
-            if (value === 1) {
-                this.isbilling = true;
-            }else {
-                this.isbilling = false;
-            }
+        PrinterOnClick (printerName, printer) {
+            this.currentPrinterInfo = printer;
+            this.PrinterInfoShow = true;
         },
         async getPrinterArea() {
             this.currentArea = await axios.get(process.env.API_HOST + `/PrinterArea/GetAreas`)
@@ -95,7 +104,7 @@ import Pinter from './Pinter.vue';
             });
         },
         async getPrinter(PrinterAreaID) {
-            this.currentPinter = await axios.get(process.env.API_HOST + `/Printer/GetPrintersByPrinterAreaID?PrinterAreaID=${PrinterAreaID}`)
+            this.currentPrinter = await axios.get(process.env.API_HOST + `/Printer/GetPrintersByPrinterAreaID?PrinterAreaID=${PrinterAreaID}`)
             .then(function (response) {
                 return response.data;
             })
