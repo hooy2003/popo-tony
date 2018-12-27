@@ -7,6 +7,20 @@ webpackJsonp([1],{
 
 /***/ }),
 
+/***/ "200S":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "2Fh/":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "2yGr":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14,7 +28,7 @@ module.exports = __webpack_require__.p + "static/img/ionicons.svg";
 
 /***/ }),
 
-/***/ "53xJ":
+/***/ "6DH+":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -71,7 +85,7 @@ exports = module.exports = __webpack_require__("FZ+f")(true);
 exports.i(__webpack_require__("ZC/F"), "");
 
 // module
-exports.push([module.i, "@charset \"UTF-8\";\n/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */\nhtml {\n  -ms-text-size-adjust: 100%;\n  -webkit-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1;\n  margin: 0;\n  background-color: #efeff4; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\na {\n  text-decoration: none; }\n\n.color-white {\n  color: #fff; }\n\n.color-black {\n  color: #000; }\n\n/**\r\n * 先把 body 放在這\r\n *\r\n * 如果之後太多就拆出去做\r\n *\r\n * 我們可以在註解中嵌入 HTML 標記，而且也建議這麼做：\r\n *\r\n    <div class=foo>\r\n        <p>Lorem</p>\r\n    </div>\r\n *\r\n * 如果是註解內嵌標籤的話，我選擇不在它前面加上星號，否則要複製貼上時還挺麻煩的。\r\n */\nbody {\n  margin: 0;\n  font-family: \"Nunito\", sans-serif;\n  font-size: 16px;\n  line-height: 1;\n  letter-spacing: 1px;\n  text-align: justify;\n  overflow-x: hidden; }\n  body.noscroll {\n    overflow: hidden; }\n\n.fadeInDown {\n  animation-name: fadeInDown;\n  animation-duration: 1s;\n  animation-fill-mode: both; }\n\n@-webkit-keyframes fadeInDown {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0); }\n  100% {\n    opacity: 1;\n    transform: none; } }\n\n@keyframes fadeInDown {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0); }\n  100% {\n    opacity: 1;\n    transform: none; } }\n\n/* Simple CSS3 Fade-in Animation */\n@keyframes fadeIn {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n.fadeIn {\n  opacity: 0;\n  animation: fadeIn ease-in 1;\n  animation-fill-mode: forwards;\n  animation-duration: 1s; }\n\n.fadeIn.first {\n  animation-delay: 0.4s; }\n\n.fadeIn.second {\n  animation-delay: 0.6s; }\n\n.fadeIn.third {\n  animation-delay: 0.8s; }\n\n.fadeIn.fourth {\n  animation-delay: 1s; }\n\nnav {\n  background-color: #ccc;\n  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.15);\n  display: flex; }\n  nav > a {\n    display: flex;\n    align-items: center; }\n    nav > a.logo {\n      color: #fff;\n      padding-right: 30px;\n      border-right: 1px solid #e4e4e6; }\n    nav > a.info {\n      color: #000;\n      padding-right: 30px;\n      padding-left: 30px;\n      border-left: 1px solid #e4e4e6; }\n    nav > a img {\n      display: inline-block;\n      width: 60px;\n      padding: 10px; }\n    nav > a p {\n      font-weight: bold;\n      line-height: 1.25em;\n      color: #000;\n      display: inline-block; }\n      nav > a p span {\n        color: #fff; }\n  nav ul {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: flex;\n    align-items: center;\n    flex: 1; }\n    nav ul li {\n      display: inline-block;\n      padding: 10px 15px; }\n    nav ul li {\n      cursor: pointer;\n      position: relative;\n      padding: 30px 15px;\n      color: #000; }\n      nav ul li.active::after {\n        content: '';\n        position: absolute;\n        bottom: 10px;\n        left: 0;\n        right: 0;\n        margin: auto;\n        display: inline-block;\n        width: calc(100% - 30px);\n        height: 1px;\n        background-color: #000; }\n\n/*section*/\n.header {\n  margin: 0 auto;\n  text-align: center;\n  padding: 30px 0;\n  font-size: 1.25em; }\n  .header a {\n    margin-right: 30px;\n    position: relative;\n    color: blue; }\n    .header a.active {\n      color: #000; }\n    .header a::after {\n      content: '';\n      display: block;\n      height: 30px;\n      width: 2px;\n      background-color: #000;\n      position: absolute;\n      right: -15px;\n      top: 0; }\n    .header a:last-child {\n      margin-right: 0; }\n      .header a:last-child::after {\n        display: none; }\n\n/**\r\n * ^nav ^lists\r\n */\n.header .statusbar ul.social li .member__dropdown {\n  display: none;\n  height: auto;\n  padding: 20px;\n  text-align: center;\n  position: absolute;\n  top: 45px;\n  right: 142px;\n  z-index: 5;\n  color: #ccc;\n  background-color: #e6e6e6;\n  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);\n  box-sizing: border-box; }\n  .header .statusbar ul.social li .member__dropdown::after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -10px;\n    right: 10px;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 0 10px 10px 10px;\n    border-color: transparent transparent #e6e6e6 transparent; }\n  .header .statusbar ul.social li .member__dropdown.mobile {\n    width: 100%;\n    right: 0;\n    top: 56px; }\n    .header .statusbar ul.social li .member__dropdown.mobile::after {\n      right: 70px; }\n    .header .statusbar ul.social li .member__dropdown.mobile .member__msglist li::after {\n      display: none; }\n  .header .statusbar ul.social li .member__dropdown .member__info img {\n    width: 80px;\n    height: 80px;\n    border-radius: 50%;\n    margin-bottom: 20px; }\n  .header .statusbar ul.social li .member__dropdown .member__info p {\n    margin-bottom: 5px; }\n    .header .statusbar ul.social li .member__dropdown .member__info p:last-child {\n      margin-bottom: 0;\n      font-weight: normal; }\n  .header .statusbar ul.social li .member__dropdown hr {\n    display: block;\n    height: 1px;\n    border: 0;\n    border-top: 1px solid #fff;\n    margin: 20px 0;\n    padding: 0; }\n  .header .statusbar ul.social li .member__dropdown .member__msglist a {\n    width: auto;\n    height: auto;\n    border-radius: 0;\n    display: block;\n    border: none; }\n  .header .statusbar ul.social li .member__dropdown .member__msglist li {\n    margin: 10px 0;\n    float: none; }\n  .header .statusbar ul.social li .member__dropdown p.member__btn {\n    margin-top: 30px;\n    text-align: right; }\n    .header .statusbar ul.social li .member__dropdown p.member__btn a {\n      width: 64px;\n      height: 32px;\n      line-height: 32px;\n      text-align: center;\n      border-radius: 0;\n      display: inline-block;\n      border: none;\n      background-color: #ccc;\n      color: #fff; }\n\n.header nav .navGroup .navWrap ul.icon li.memberIcon {\n  display: block; }\n  @media screen and (min-width: 64em) {\n    .header nav .navGroup .navWrap ul.icon li.memberIcon {\n      display: none; } }\n\n.header nav .navGroup .navWrap ul.icon .member__dropdown_btn {\n  width: 50px; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown_btn svg {\n    width: 26px;\n    height: 26px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown_btn svg .cls-1 {\n      fill: #f0f0f0; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown_btn svg .cls-2 {\n      fill: #969696; }\n  @media screen and (min-width: 35.5em) {\n    .header nav .navGroup .navWrap ul.icon .member__dropdown_btn {\n      display: none !important; } }\n\n.header nav .navGroup .navWrap ul.icon .member__dropdown {\n  display: none;\n  height: auto;\n  padding: 20px;\n  text-align: center;\n  position: absolute;\n  top: 45px;\n  right: 142px;\n  z-index: 5;\n  color: #ccc;\n  background-color: #e6e6e6;\n  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);\n  box-sizing: border-box; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown::after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -10px;\n    right: 10px;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 0 10px 10px 10px;\n    border-color: transparent transparent #e6e6e6 transparent; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown.mobile {\n    width: 100%;\n    right: 0;\n    top: 56px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown.mobile::after {\n      right: 70px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown.mobile .member__msglist li::after {\n      display: none; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__info img {\n    width: 80px;\n    height: 80px;\n    border-radius: 50%;\n    margin-bottom: 20px; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__info p {\n    margin-bottom: 5px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown .member__info p:last-child {\n      margin-bottom: 0;\n      font-weight: normal; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown hr {\n    display: block;\n    height: 1px;\n    border: 0;\n    border-top: 1px solid #fff;\n    margin: 20px 0;\n    padding: 0; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__msglist a {\n    width: auto;\n    height: auto;\n    border-radius: 0;\n    display: block;\n    border: none; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__msglist li {\n    margin: 10px 0;\n    float: none; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown p.member__btn {\n    margin-top: 30px;\n    text-align: right; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown p.member__btn a {\n      width: 64px;\n      height: 32px;\n      line-height: 32px;\n      text-align: center;\n      border-radius: 0;\n      display: inline-block;\n      border: none;\n      background-color: #ccc;\n      color: #fff; }\n\n/**\r\n * ^wrapper\r\n */\n.login-wrapper {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  justify-content: center;\n  width: 100%;\n  height: 100vh;\n  background-color: #56baed;\n  min-height: 100%;\n  padding: 20px; }\n\n/**\r\n * ^member ^login\r\n */\n/*section*/\n.login {\n  align-items: center;\n  background-color: #fff;\n  color: #000;\n  width: 100%;\n  max-width: 450px;\n  padding: 30px 0 0 0;\n  border-radius: 10px 10px 10px 10px;\n  box-sizing: border-box;\n  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);\n  text-align: center;\n  margin: 0 auto;\n  z-index: 3; }\n  .login.display {\n    display: flex; }\n  .login a.blue {\n    text-decoration: underline; }\n  .login > div img {\n    width: 60%; }\n  .login h1 {\n    text-align: center;\n    font-weight: 300;\n    font-size: 30px;\n    margin-bottom: 20px;\n    line-height: 30px;\n    letter-spacing: .1em; }\n  .login ul.list {\n    list-style: none;\n    display: flex;\n    margin: 25px 0 30px 0; }\n    .login ul.list li {\n      flex: 1;\n      font-weight: 900;\n      text-align: center; }\n      .login ul.list li:first-child {\n        border-right: 1px #fff solid; }\n    .login ul.list .bule {\n      color: #007dff;\n      font-weight: bold;\n      position: relative; }\n      .login ul.list .bule::after {\n        content: \"\";\n        position: absolute;\n        display: inline-block;\n        width: 100%;\n        height: 1px;\n        background-color: #007dff;\n        bottom: -5px;\n        left: 0; }\n  .login p.hr {\n    position: relative;\n    margin: 13px 0;\n    border: none;\n    color: #ccc; }\n  .login p.singup_error {\n    color: #ff3964;\n    text-align: left;\n    display: none; }\n    .login p.singup_error.red {\n      display: block; }\n  .login .input__status--error {\n    position: absolute;\n    bottom: 0;\n    text-align: left;\n    color: #ff3964; }\n    .login .input__status--error.error__show {\n      display: block; }\n  .login .input__wrap {\n    display: flex;\n    flex-wrap: wrap;\n    margin: 10px 0 0 0;\n    position: relative;\n    overflow: hidden; }\n    .login .input__wrap label {\n      position: absolute;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      background-color: #fff;\n      border-radius: 0;\n      width: 40px;\n      height: 40px;\n      opacity: 0;\n      top: 1px;\n      right: 1px;\n      transform: translateX(40px);\n      transition: opacity 0.2s ease-out, transform 0.2s ease-out; }\n      .login .input__wrap label i {\n        display: inline-block;\n        font-size: 0;\n        width: 20px;\n        height: 15px;\n        vertical-align: middle;\n        background-size: contain; }\n      .login .input__wrap label:after {\n        content: \"\";\n        position: absolute;\n        display: inline-block;\n        background-color: #ccc;\n        height: 50%;\n        width: 1px;\n        top: 25%;\n        left: 0; }\n      .login .input__wrap label.labelshow {\n        opacity: 1;\n        transform: translateX(0px); }\n    .login .input__wrap input[type=\"password\"].eye ~ label i {\n      width: 20px;\n      height: 13px;\n      background-size: contain; }\n  .login input[type=\"text\"],\n  .login input[type=\"email\"],\n  .login input[type=\"password\"] {\n    display: inline-block;\n    width: 100%;\n    padding: 15px 80px;\n    margin: 5px 20px 5px 20px;\n    box-sizing: border-box;\n    background-color: #d2d2d7;\n    text-align: center;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-size: 16px;\n    color: #000;\n    border: 2px solid #d2d2d7;\n    border-radius: 5px 5px 5px 5px;\n    outline: none;\n    transition: all 0.3s ease-in-out; }\n    .login input[type=\"text\"].active,\n    .login input[type=\"email\"].active,\n    .login input[type=\"password\"].active {\n      transform: scale(0.95); }\n    .login input[type=\"text\"]:focus,\n    .login input[type=\"email\"]:focus,\n    .login input[type=\"password\"]:focus {\n      background-color: #fff;\n      border-bottom: 2px solid #5fbae9; }\n    .login input[type=\"text\"]:placeholder,\n    .login input[type=\"email\"]:placeholder,\n    .login input[type=\"password\"]:placeholder {\n      color: #cccccc; }\n  .login .form_buttonbar {\n    display: flex;\n    justify-items: center;\n    align-items: center;\n    margin-top: 30px; }\n    .login .form_buttonbar p {\n      flex: 1;\n      color: #ccc;\n      font-weight: 900; }\n      .login .form_buttonbar p:nth-of-type(1) {\n        text-align: left; }\n      .login .form_buttonbar p:nth-of-type(2) {\n        text-align: right; }\n    .login .form_buttonbar button {\n      display: inline-block;\n      width: 100%;\n      padding: 15px 80px;\n      margin: 5px 20px 40px 20px;\n      box-sizing: border-box;\n      background-color: #56baed;\n      text-align: center;\n      text-decoration: none;\n      text-transform: uppercase;\n      font-size: 16px;\n      color: #fff;\n      border-radius: 5px 5px 5px 5px;\n      border: 0;\n      box-shadow: 0 6px 20px 0 rgba(95, 186, 233, 0.4);\n      outline: none;\n      transition: all 0.3s ease-in-out; }\n      .login .form_buttonbar button.primary {\n        color: #fff;\n        background-color: #56baed; }\n      .login .form_buttonbar button:disabled {\n        background-color: #e6e6e6; }\n  .login .formFooter {\n    background-color: #d2d2d7;\n    border-top: 1px solid #e4e4e6;\n    padding: 25px;\n    text-align: center;\n    border-radius: 0 0 10px 10px; }\n    .login .formFooter a {\n      color: #92badd;\n      display: inline-block;\n      text-decoration: none;\n      font-weight: bold; }\n\nmain.mamager {\n  background-color: #f0f0f0;\n  padding: 30px 20px; }\n  @media screen and (min-width: 35.5em) {\n    main.mamager {\n      padding: 100px 0; } }\n\n.profile_wrap {\n  width: 100%;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 50px 0;\n  border-radius: 50px;\n  box-sizing: border-box;\n  background-color: #e6e6e6;\n  display: flex;\n  flex-wrap: wrap; }\n  .profile_wrap h3 {\n    font-size: 20px;\n    color: #ccc;\n    text-align: center;\n    flex-basis: 100%;\n    margin-bottom: 40px; }\n  .profile_wrap .form_wrap {\n    position: relative;\n    text-align: center;\n    width: 100%;\n    flex-basis: 100%;\n    height: auto;\n    margin: 0 auto 40px auto;\n    color: #ccc; }\n    @media screen and (min-width: 35.5em) {\n      .profile_wrap .form_wrap {\n        flex-basis: 0;\n        flex: 5;\n        margin: 0 auto; } }\n    .profile_wrap .form_wrap .form-group {\n      margin-bottom: 10px; }\n    .profile_wrap .form_wrap .input__wrap {\n      width: 82%;\n      margin: 0 auto;\n      text-align: left; }\n      @media screen and (min-width: 35.5em) {\n        .profile_wrap .form_wrap .input__wrap {\n          width: 60%; } }\n    .profile_wrap .form_wrap::after {\n      content: \"\";\n      position: absolute;\n      right: 0;\n      top: 0;\n      display: block;\n      width: 1px;\n      height: 100%;\n      background-color: #fff; }\n    .profile_wrap .form_wrap label {\n      font-weight: bold;\n      padding-bottom: 5px;\n      padding-left: 5px;\n      display: block; }\n    .profile_wrap .form_wrap input {\n      display: block;\n      width: 100%;\n      padding: 11px 10px;\n      margin-bottom: 15px;\n      box-sizing: border-box;\n      font-size: 16px;\n      color: #ccc;\n      border: none;\n      outline: none; }\n    .profile_wrap .form_wrap .input__wrap:last-child input {\n      margin-bottom: 0; }\n    .profile_wrap .form_wrap button {\n      display: inline-block;\n      width: 100%;\n      padding: 15px 80px;\n      margin: 5px 20px 40px 20px;\n      box-sizing: border-box;\n      background-color: #56baed;\n      text-align: center;\n      text-decoration: none;\n      text-transform: uppercase;\n      font-size: 16px;\n      color: #fff;\n      border-radius: 5px 5px 5px 5px;\n      border: 0;\n      box-shadow: 0 6px 20px 0 rgba(95, 186, 233, 0.4);\n      outline: none;\n      transition: all 0.3s ease-in-out;\n      margin: 5px 0 0 0; }\n      .profile_wrap .form_wrap button.primary {\n        color: #fff;\n        background-color: #56baed; }\n      .profile_wrap .form_wrap button:disabled {\n        background-color: #e6e6e6; }\n  .profile_wrap .profile_picture {\n    width: 100%;\n    text-align: center;\n    flex-basis: 100%; }\n    @media screen and (min-width: 35.5em) {\n      .profile_wrap .profile_picture {\n        flex-basis: 0;\n        flex: 3; } }\n    .profile_wrap .profile_picture img {\n      width: 120px;\n      height: 120px;\n      display: block;\n      margin: 0 auto 30px auto;\n      border-radius: 50%; }\n    .profile_wrap .profile_picture .button_wrap {\n      background-color: #f0f0f0;\n      width: 180px;\n      height: 180px;\n      border-radius: 30px;\n      margin: 0 auto; }\n      .profile_wrap .profile_picture .button_wrap svg {\n        fill: #ccc;\n        width: 30px;\n        height: 30px;\n        margin-top: 50px; }\n      .profile_wrap .profile_picture .button_wrap button {\n        display: inline-block;\n        width: 100%;\n        padding: 15px 80px;\n        margin: 5px 20px 40px 20px;\n        box-sizing: border-box;\n        background-color: #56baed;\n        text-align: center;\n        text-decoration: none;\n        text-transform: uppercase;\n        font-size: 16px;\n        color: #fff;\n        border-radius: 5px 5px 5px 5px;\n        border: 0;\n        box-shadow: 0 6px 20px 0 rgba(95, 186, 233, 0.4);\n        outline: none;\n        transition: all 0.3s ease-in-out;\n        display: block;\n        height: 30px;\n        width: 100px;\n        border-radius: 20px;\n        margin: 0 auto; }\n        .profile_wrap .profile_picture .button_wrap button.primary {\n          color: #fff;\n          background-color: #56baed; }\n        .profile_wrap .profile_picture .button_wrap button:disabled {\n          background-color: #e6e6e6; }\n\n/*section*/\n.content {\n  margin: 0 auto;\n  width: 100%;\n  box-sizing: border-box; }\n  .content.page .ivu-col {\n    height: calc(100vh - 76px);\n    overflow: auto;\n    border-right: 0;\n    box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);\n    background-color: #efeff4; }\n    .content.page .ivu-col:last-child {\n      border-right: 0; }\n    .content.page .ivu-col .title {\n      text-align: left;\n      font-weight: bold;\n      padding: 15px;\n      background-color: rgba(255, 255, 255, 0.3);\n      border-bottom: 1px #d2d2d7 solid; }\n    .content.page .ivu-col .ivu-dropdown {\n      position: absolute;\n      right: 30px; }\n    .content.page .ivu-col .union.union-half {\n      height: calc(50vh - 70px);\n      position: relative; }\n    .content.page .ivu-col .union h4 {\n      padding: 10px; }\n    .content.page .ivu-col .union .setting p {\n      display: inline-block; }\n    .content.page .ivu-col .union .card-class {\n      border-top: 0; }\n      .content.page .ivu-col .union .card-class i {\n        color: #abb0b9; }\n      .content.page .ivu-col .union .card-class.active, .content.page .ivu-col .union .card-class:hover {\n        color: #007aff; }\n        .content.page .ivu-col .union .card-class.active i, .content.page .ivu-col .union .card-class:hover i {\n          color: #007aff; }\n        .content.page .ivu-col .union .card-class.active .ivu-dropdown, .content.page .ivu-col .union .card-class:hover .ivu-dropdown {\n          opacity: 1; }\n      .content.page .ivu-col .union .card-class.card-class-a:first-child {\n        border-top: 1px solid #e4e4e6; }\n      .content.page .ivu-col .union .card-class.card-class-b, .content.page .ivu-col .union .card-class.card-class-c {\n        margin-left: 10px;\n        margin-right: 10px; }\n      .content.page .ivu-col .union .card-class.lastcard {\n        border-radius: 0 0 8px 8px; }\n    .content.page .ivu-col .union h4 + .card-class-b,\n    .content.page .ivu-col .union h4 + .card-class-c {\n      border-top: 1px solid #e4e4e6;\n      border-radius: 8px 8px 0 0; }\n    .content.page .ivu-col .union .ivu-card {\n      border-radius: 0;\n      border-top: 0; }\n      .content.page .ivu-col .union .ivu-card:first-child {\n        border-top: 1px solid #e4e4e6; }\n    .content.page .ivu-col .union h4 + .ivu-card {\n      border-top: 1px solid #e4e4e6; }\n\n.card-class {\n  border: 1px solid #dcdee2;\n  border-color: #e8eaec;\n  background: #fff;\n  font-size: 14px;\n  position: relative;\n  cursor: pointer;\n  transition: all .2s ease-in-out; }\n  .card-class .content {\n    padding: 16px; }\n  .card-class h3 {\n    display: inline-block; }\n  .card-class::after {\n    content: '>';\n    display: block;\n    position: absolute;\n    font-weight: bold;\n    right: 10px;\n    top: 20px; }\n\n.add-new-card {\n  font-size: 12px;\n  color: #007aff;\n  width: 100%;\n  text-align: left;\n  list-style: none;\n  margin-top: 25px;\n  padding: 15px 10px;\n  border-top: 1px solid #d2d2d7;\n  border-bottom: 1px solid #d2d2d7;\n  box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);\n  background-color: #fff;\n  cursor: pointer;\n  transition: all .2s ease;\n  position: absolute;\n  bottom: 0; }\n  .add-new-card .ivu-icon {\n    color: #007aff;\n    font-size: 22px;\n    text-align: center;\n    line-height: 20px;\n    width: 20px;\n    height: 20px;\n    margin-right: 5px;\n    top: 6px; }\n\n.meal-content {\n  border-radius: 5px;\n  background-color: #fff;\n  margin: 10px;\n  padding: 10px; }\n  .meal-content .detail-recipes,\n  .meal-content .detail-meals {\n    display: flex;\n    width: 100%;\n    flex-wrap: wrap; }\n  .meal-content .item-recipes,\n  .meal-content .item-meals {\n    display: flex;\n    justify-content: space-between;\n    position: relative;\n    flex-basis: 50%;\n    padding: 15px 10px;\n    box-sizing: border-box; }\n    .meal-content .item-recipes::after,\n    .meal-content .item-meals::after {\n      content: '';\n      position: absolute;\n      display: block;\n      height: 1px;\n      width: calc(100% - 20px);\n      bottom: 0;\n      background-color: rgba(0, 0, 0, 0.1); }\n\n.addclass {\n  cursor: pointer; }\n\n.popmap .title {\n  font-weight: bold;\n  font-size: 1.125em; }\n\n/*ul*/\n.mapclass li {\n  padding: 10px 10px 10px 0;\n  cursor: pointer; }\n  .mapclass li.active, .mapclass li:hover {\n    color: #fff;\n    background-color: #007aff; }\n  .mapclass li i {\n    color: #abb0b9; }\n\n.mapclass li.li-item-b.active, .mapclass li.li-item-b:hover,\n.mapclass li.li-item-c.active,\n.mapclass li.li-item-c:hover {\n  color: #000;\n  background-color: #eee; }\n\n.mapclass li.li-item-b.active .active-icon,\n.mapclass li.li-item-c.active .active-icon {\n  display: inline-block; }\n\n.mapclass li.li-item-b .active-icon,\n.mapclass li.li-item-c .active-icon {\n  display: none; }\n\n/*ul*/\n.sureclass li {\n  padding: 10px 10px 10px 0;\n  cursor: pointer; }\n  .sureclass li i {\n    color: #007aff; }\n\n/*section*/\n.store-info {\n  max-width: 800px;\n  margin-top: 20px; }\n  .store-info h2 {\n    margin: 15px 10px; }\n  .store-info .content-wrap {\n    background-color: #fff;\n    padding: 20px;\n    box-sizing: border-box;\n    border-radius: 10px;\n    margin-bottom: 30px; }\n    .store-info .content-wrap .input-wrap {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      margin-bottom: 10px;\n      padding-bottom: 10px;\n      border-bottom: 1px solid #d2d2d7; }\n      .store-info .content-wrap .input-wrap:last-child {\n        border-bottom: none; }\n\n.ivu-input-wrapper {\n  width: 75%; }\n\n.union .hide {\n  display: none; }\n", "", {"version":3,"sources":["C:/Users/Tony/Desktop/po-w/resources/assets/sass/app.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/common/normalize.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/_variables.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/common/utilities.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/common/mixin.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/common/animations.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/nav.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/header.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/login.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/content.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/card.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/meal.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/popmap.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/store-info.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/common/ivelement.scss"],"names":[],"mappings":"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","file":"app.scss","sourcesContent":["@charset \"UTF-8\";\n@import url(\"../../../node_modules/iview/dist/styles/iview.css\");\n/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */\nhtml {\n  -ms-text-size-adjust: 100%;\n  -webkit-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1;\n  margin: 0;\n  background-color: #efeff4; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\na {\n  text-decoration: none; }\n\n.color-white {\n  color: #fff; }\n\n.color-black {\n  color: #000; }\n\n/**\r\n * 先把 body 放在這\r\n *\r\n * 如果之後太多就拆出去做\r\n *\r\n * 我們可以在註解中嵌入 HTML 標記，而且也建議這麼做：\r\n *\r\n    <div class=foo>\r\n        <p>Lorem</p>\r\n    </div>\r\n *\r\n * 如果是註解內嵌標籤的話，我選擇不在它前面加上星號，否則要複製貼上時還挺麻煩的。\r\n */\nbody {\n  margin: 0;\n  font-family: \"Nunito\", sans-serif;\n  font-size: 16px;\n  line-height: 1;\n  letter-spacing: 1px;\n  text-align: justify;\n  overflow-x: hidden; }\n  body.noscroll {\n    overflow: hidden; }\n\n.fadeInDown {\n  animation-name: fadeInDown;\n  animation-duration: 1s;\n  animation-fill-mode: both; }\n\n@-webkit-keyframes fadeInDown {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0); }\n  100% {\n    opacity: 1;\n    transform: none; } }\n\n@keyframes fadeInDown {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0); }\n  100% {\n    opacity: 1;\n    transform: none; } }\n\n/* Simple CSS3 Fade-in Animation */\n@keyframes fadeIn {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n.fadeIn {\n  opacity: 0;\n  animation: fadeIn ease-in 1;\n  animation-fill-mode: forwards;\n  animation-duration: 1s; }\n\n.fadeIn.first {\n  animation-delay: 0.4s; }\n\n.fadeIn.second {\n  animation-delay: 0.6s; }\n\n.fadeIn.third {\n  animation-delay: 0.8s; }\n\n.fadeIn.fourth {\n  animation-delay: 1s; }\n\nnav {\n  background-color: #ccc;\n  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.15);\n  display: flex; }\n  nav > a {\n    display: flex;\n    align-items: center; }\n    nav > a.logo {\n      color: #fff;\n      padding-right: 30px;\n      border-right: 1px solid #e4e4e6; }\n    nav > a.info {\n      color: #000;\n      padding-right: 30px;\n      padding-left: 30px;\n      border-left: 1px solid #e4e4e6; }\n    nav > a img {\n      display: inline-block;\n      width: 60px;\n      padding: 10px; }\n    nav > a p {\n      font-weight: bold;\n      line-height: 1.25em;\n      color: #000;\n      display: inline-block; }\n      nav > a p span {\n        color: #fff; }\n  nav ul {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: flex;\n    align-items: center;\n    flex: 1; }\n    nav ul li {\n      display: inline-block;\n      padding: 10px 15px; }\n    nav ul li {\n      cursor: pointer;\n      position: relative;\n      padding: 30px 15px;\n      color: #000; }\n      nav ul li.active::after {\n        content: '';\n        position: absolute;\n        bottom: 10px;\n        left: 0;\n        right: 0;\n        margin: auto;\n        display: inline-block;\n        width: calc(100% - 30px);\n        height: 1px;\n        background-color: #000; }\n\n/*section*/\n.header {\n  margin: 0 auto;\n  text-align: center;\n  padding: 30px 0;\n  font-size: 1.25em; }\n  .header a {\n    margin-right: 30px;\n    position: relative;\n    color: blue; }\n    .header a.active {\n      color: #000; }\n    .header a::after {\n      content: '';\n      display: block;\n      height: 30px;\n      width: 2px;\n      background-color: #000;\n      position: absolute;\n      right: -15px;\n      top: 0; }\n    .header a:last-child {\n      margin-right: 0; }\n      .header a:last-child::after {\n        display: none; }\n\n/**\r\n * ^nav ^lists\r\n */\n.header .statusbar ul.social li .member__dropdown {\n  display: none;\n  height: auto;\n  padding: 20px;\n  text-align: center;\n  position: absolute;\n  top: 45px;\n  right: 142px;\n  z-index: 5;\n  color: #ccc;\n  background-color: #e6e6e6;\n  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);\n  box-sizing: border-box; }\n  .header .statusbar ul.social li .member__dropdown::after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -10px;\n    right: 10px;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 0 10px 10px 10px;\n    border-color: transparent transparent #e6e6e6 transparent; }\n  .header .statusbar ul.social li .member__dropdown.mobile {\n    width: 100%;\n    right: 0;\n    top: 56px; }\n    .header .statusbar ul.social li .member__dropdown.mobile::after {\n      right: 70px; }\n    .header .statusbar ul.social li .member__dropdown.mobile .member__msglist li::after {\n      display: none; }\n  .header .statusbar ul.social li .member__dropdown .member__info img {\n    width: 80px;\n    height: 80px;\n    border-radius: 50%;\n    margin-bottom: 20px; }\n  .header .statusbar ul.social li .member__dropdown .member__info p {\n    margin-bottom: 5px; }\n    .header .statusbar ul.social li .member__dropdown .member__info p:last-child {\n      margin-bottom: 0;\n      font-weight: normal; }\n  .header .statusbar ul.social li .member__dropdown hr {\n    display: block;\n    height: 1px;\n    border: 0;\n    border-top: 1px solid #fff;\n    margin: 20px 0;\n    padding: 0; }\n  .header .statusbar ul.social li .member__dropdown .member__msglist a {\n    width: auto;\n    height: auto;\n    border-radius: 0;\n    display: block;\n    border: none; }\n  .header .statusbar ul.social li .member__dropdown .member__msglist li {\n    margin: 10px 0;\n    float: none; }\n  .header .statusbar ul.social li .member__dropdown p.member__btn {\n    margin-top: 30px;\n    text-align: right; }\n    .header .statusbar ul.social li .member__dropdown p.member__btn a {\n      width: 64px;\n      height: 32px;\n      line-height: 32px;\n      text-align: center;\n      border-radius: 0;\n      display: inline-block;\n      border: none;\n      background-color: #ccc;\n      color: #fff; }\n\n.header nav .navGroup .navWrap ul.icon li.memberIcon {\n  display: block; }\n  @media screen and (min-width: 64em) {\n    .header nav .navGroup .navWrap ul.icon li.memberIcon {\n      display: none; } }\n\n.header nav .navGroup .navWrap ul.icon .member__dropdown_btn {\n  width: 50px; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown_btn svg {\n    width: 26px;\n    height: 26px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown_btn svg .cls-1 {\n      fill: #f0f0f0; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown_btn svg .cls-2 {\n      fill: #969696; }\n  @media screen and (min-width: 35.5em) {\n    .header nav .navGroup .navWrap ul.icon .member__dropdown_btn {\n      display: none !important; } }\n\n.header nav .navGroup .navWrap ul.icon .member__dropdown {\n  display: none;\n  height: auto;\n  padding: 20px;\n  text-align: center;\n  position: absolute;\n  top: 45px;\n  right: 142px;\n  z-index: 5;\n  color: #ccc;\n  background-color: #e6e6e6;\n  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);\n  box-sizing: border-box; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown::after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -10px;\n    right: 10px;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 0 10px 10px 10px;\n    border-color: transparent transparent #e6e6e6 transparent; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown.mobile {\n    width: 100%;\n    right: 0;\n    top: 56px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown.mobile::after {\n      right: 70px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown.mobile .member__msglist li::after {\n      display: none; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__info img {\n    width: 80px;\n    height: 80px;\n    border-radius: 50%;\n    margin-bottom: 20px; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__info p {\n    margin-bottom: 5px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown .member__info p:last-child {\n      margin-bottom: 0;\n      font-weight: normal; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown hr {\n    display: block;\n    height: 1px;\n    border: 0;\n    border-top: 1px solid #fff;\n    margin: 20px 0;\n    padding: 0; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__msglist a {\n    width: auto;\n    height: auto;\n    border-radius: 0;\n    display: block;\n    border: none; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__msglist li {\n    margin: 10px 0;\n    float: none; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown p.member__btn {\n    margin-top: 30px;\n    text-align: right; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown p.member__btn a {\n      width: 64px;\n      height: 32px;\n      line-height: 32px;\n      text-align: center;\n      border-radius: 0;\n      display: inline-block;\n      border: none;\n      background-color: #ccc;\n      color: #fff; }\n\n/**\r\n * ^wrapper\r\n */\n.login-wrapper {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  justify-content: center;\n  width: 100%;\n  height: 100vh;\n  background-color: #56baed;\n  min-height: 100%;\n  padding: 20px; }\n\n/**\r\n * ^member ^login\r\n */\n/*section*/\n.login {\n  align-items: center;\n  background-color: #fff;\n  color: #000;\n  width: 100%;\n  max-width: 450px;\n  padding: 30px 0 0 0;\n  border-radius: 10px 10px 10px 10px;\n  box-sizing: border-box;\n  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);\n  text-align: center;\n  margin: 0 auto;\n  z-index: 3; }\n  .login.display {\n    display: flex; }\n  .login a.blue {\n    text-decoration: underline; }\n  .login > div img {\n    width: 60%; }\n  .login h1 {\n    text-align: center;\n    font-weight: 300;\n    font-size: 30px;\n    margin-bottom: 20px;\n    line-height: 30px;\n    letter-spacing: .1em; }\n  .login ul.list {\n    list-style: none;\n    display: flex;\n    margin: 25px 0 30px 0; }\n    .login ul.list li {\n      flex: 1;\n      font-weight: 900;\n      text-align: center; }\n      .login ul.list li:first-child {\n        border-right: 1px #fff solid; }\n    .login ul.list .bule {\n      color: #007dff;\n      font-weight: bold;\n      position: relative; }\n      .login ul.list .bule::after {\n        content: \"\";\n        position: absolute;\n        display: inline-block;\n        width: 100%;\n        height: 1px;\n        background-color: #007dff;\n        bottom: -5px;\n        left: 0; }\n  .login p.hr {\n    position: relative;\n    margin: 13px 0;\n    border: none;\n    color: #ccc; }\n  .login p.singup_error {\n    color: #ff3964;\n    text-align: left;\n    display: none; }\n    .login p.singup_error.red {\n      display: block; }\n  .login .input__status--error {\n    position: absolute;\n    bottom: 0;\n    text-align: left;\n    color: #ff3964; }\n    .login .input__status--error.error__show {\n      display: block; }\n  .login .input__wrap {\n    display: flex;\n    flex-wrap: wrap;\n    margin: 10px 0 0 0;\n    position: relative;\n    overflow: hidden; }\n    .login .input__wrap label {\n      position: absolute;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      background-color: #fff;\n      border-radius: 0;\n      width: 40px;\n      height: 40px;\n      opacity: 0;\n      top: 1px;\n      right: 1px;\n      transform: translateX(40px);\n      transition: opacity 0.2s ease-out, transform 0.2s ease-out; }\n      .login .input__wrap label i {\n        display: inline-block;\n        font-size: 0;\n        width: 20px;\n        height: 15px;\n        vertical-align: middle;\n        background-size: contain; }\n      .login .input__wrap label:after {\n        content: \"\";\n        position: absolute;\n        display: inline-block;\n        background-color: #ccc;\n        height: 50%;\n        width: 1px;\n        top: 25%;\n        left: 0; }\n      .login .input__wrap label.labelshow {\n        opacity: 1;\n        transform: translateX(0px); }\n    .login .input__wrap input[type=\"password\"].eye ~ label i {\n      width: 20px;\n      height: 13px;\n      background-size: contain; }\n  .login input[type=\"text\"],\n  .login input[type=\"email\"],\n  .login input[type=\"password\"] {\n    display: inline-block;\n    width: 100%;\n    padding: 15px 80px;\n    margin: 5px 20px 5px 20px;\n    box-sizing: border-box;\n    background-color: #d2d2d7;\n    text-align: center;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-size: 16px;\n    color: #000;\n    border: 2px solid #d2d2d7;\n    border-radius: 5px 5px 5px 5px;\n    outline: none;\n    transition: all 0.3s ease-in-out; }\n    .login input[type=\"text\"].active,\n    .login input[type=\"email\"].active,\n    .login input[type=\"password\"].active {\n      transform: scale(0.95); }\n    .login input[type=\"text\"]:focus,\n    .login input[type=\"email\"]:focus,\n    .login input[type=\"password\"]:focus {\n      background-color: #fff;\n      border-bottom: 2px solid #5fbae9; }\n    .login input[type=\"text\"]:placeholder,\n    .login input[type=\"email\"]:placeholder,\n    .login input[type=\"password\"]:placeholder {\n      color: #cccccc; }\n  .login .form_buttonbar {\n    display: flex;\n    justify-items: center;\n    align-items: center;\n    margin-top: 30px; }\n    .login .form_buttonbar p {\n      flex: 1;\n      color: #ccc;\n      font-weight: 900; }\n      .login .form_buttonbar p:nth-of-type(1) {\n        text-align: left; }\n      .login .form_buttonbar p:nth-of-type(2) {\n        text-align: right; }\n    .login .form_buttonbar button {\n      display: inline-block;\n      width: 100%;\n      padding: 15px 80px;\n      margin: 5px 20px 40px 20px;\n      box-sizing: border-box;\n      background-color: #56baed;\n      text-align: center;\n      text-decoration: none;\n      text-transform: uppercase;\n      font-size: 16px;\n      color: #fff;\n      border-radius: 5px 5px 5px 5px;\n      border: 0;\n      box-shadow: 0 6px 20px 0 rgba(95, 186, 233, 0.4);\n      outline: none;\n      transition: all 0.3s ease-in-out; }\n      .login .form_buttonbar button.primary {\n        color: #fff;\n        background-color: #56baed; }\n      .login .form_buttonbar button:disabled {\n        background-color: #e6e6e6; }\n  .login .formFooter {\n    background-color: #d2d2d7;\n    border-top: 1px solid #e4e4e6;\n    padding: 25px;\n    text-align: center;\n    border-radius: 0 0 10px 10px; }\n    .login .formFooter a {\n      color: #92badd;\n      display: inline-block;\n      text-decoration: none;\n      font-weight: bold; }\n\nmain.mamager {\n  background-color: #f0f0f0;\n  padding: 30px 20px; }\n  @media screen and (min-width: 35.5em) {\n    main.mamager {\n      padding: 100px 0; } }\n\n.profile_wrap {\n  width: 100%;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 50px 0;\n  border-radius: 50px;\n  box-sizing: border-box;\n  background-color: #e6e6e6;\n  display: flex;\n  flex-wrap: wrap; }\n  .profile_wrap h3 {\n    font-size: 20px;\n    color: #ccc;\n    text-align: center;\n    flex-basis: 100%;\n    margin-bottom: 40px; }\n  .profile_wrap .form_wrap {\n    position: relative;\n    text-align: center;\n    width: 100%;\n    flex-basis: 100%;\n    height: auto;\n    margin: 0 auto 40px auto;\n    color: #ccc; }\n    @media screen and (min-width: 35.5em) {\n      .profile_wrap .form_wrap {\n        flex-basis: 0;\n        flex: 5;\n        margin: 0 auto; } }\n    .profile_wrap .form_wrap .form-group {\n      margin-bottom: 10px; }\n    .profile_wrap .form_wrap .input__wrap {\n      width: 82%;\n      margin: 0 auto;\n      text-align: left; }\n      @media screen and (min-width: 35.5em) {\n        .profile_wrap .form_wrap .input__wrap {\n          width: 60%; } }\n    .profile_wrap .form_wrap::after {\n      content: \"\";\n      position: absolute;\n      right: 0;\n      top: 0;\n      display: block;\n      width: 1px;\n      height: 100%;\n      background-color: #fff; }\n    .profile_wrap .form_wrap label {\n      font-weight: bold;\n      padding-bottom: 5px;\n      padding-left: 5px;\n      display: block; }\n    .profile_wrap .form_wrap input {\n      display: block;\n      width: 100%;\n      padding: 11px 10px;\n      margin-bottom: 15px;\n      box-sizing: border-box;\n      font-size: 16px;\n      color: #ccc;\n      border: none;\n      outline: none; }\n    .profile_wrap .form_wrap .input__wrap:last-child input {\n      margin-bottom: 0; }\n    .profile_wrap .form_wrap button {\n      display: inline-block;\n      width: 100%;\n      padding: 15px 80px;\n      margin: 5px 20px 40px 20px;\n      box-sizing: border-box;\n      background-color: #56baed;\n      text-align: center;\n      text-decoration: none;\n      text-transform: uppercase;\n      font-size: 16px;\n      color: #fff;\n      border-radius: 5px 5px 5px 5px;\n      border: 0;\n      box-shadow: 0 6px 20px 0 rgba(95, 186, 233, 0.4);\n      outline: none;\n      transition: all 0.3s ease-in-out;\n      margin: 5px 0 0 0; }\n      .profile_wrap .form_wrap button.primary {\n        color: #fff;\n        background-color: #56baed; }\n      .profile_wrap .form_wrap button:disabled {\n        background-color: #e6e6e6; }\n  .profile_wrap .profile_picture {\n    width: 100%;\n    text-align: center;\n    flex-basis: 100%; }\n    @media screen and (min-width: 35.5em) {\n      .profile_wrap .profile_picture {\n        flex-basis: 0;\n        flex: 3; } }\n    .profile_wrap .profile_picture img {\n      width: 120px;\n      height: 120px;\n      display: block;\n      margin: 0 auto 30px auto;\n      border-radius: 50%; }\n    .profile_wrap .profile_picture .button_wrap {\n      background-color: #f0f0f0;\n      width: 180px;\n      height: 180px;\n      border-radius: 30px;\n      margin: 0 auto; }\n      .profile_wrap .profile_picture .button_wrap svg {\n        fill: #ccc;\n        width: 30px;\n        height: 30px;\n        margin-top: 50px; }\n      .profile_wrap .profile_picture .button_wrap button {\n        display: inline-block;\n        width: 100%;\n        padding: 15px 80px;\n        margin: 5px 20px 40px 20px;\n        box-sizing: border-box;\n        background-color: #56baed;\n        text-align: center;\n        text-decoration: none;\n        text-transform: uppercase;\n        font-size: 16px;\n        color: #fff;\n        border-radius: 5px 5px 5px 5px;\n        border: 0;\n        box-shadow: 0 6px 20px 0 rgba(95, 186, 233, 0.4);\n        outline: none;\n        transition: all 0.3s ease-in-out;\n        display: block;\n        height: 30px;\n        width: 100px;\n        border-radius: 20px;\n        margin: 0 auto; }\n        .profile_wrap .profile_picture .button_wrap button.primary {\n          color: #fff;\n          background-color: #56baed; }\n        .profile_wrap .profile_picture .button_wrap button:disabled {\n          background-color: #e6e6e6; }\n\n/*section*/\n.content {\n  margin: 0 auto;\n  width: 100%;\n  box-sizing: border-box; }\n  .content.page .ivu-col {\n    height: calc(100vh - 76px);\n    overflow: auto;\n    border-right: 0;\n    box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);\n    background-color: #efeff4; }\n    .content.page .ivu-col:last-child {\n      border-right: 0; }\n    .content.page .ivu-col .title {\n      text-align: left;\n      font-weight: bold;\n      padding: 15px;\n      background-color: rgba(255, 255, 255, 0.3);\n      border-bottom: 1px #d2d2d7 solid; }\n    .content.page .ivu-col .ivu-dropdown {\n      position: absolute;\n      right: 30px; }\n    .content.page .ivu-col .union.union-half {\n      height: calc(50vh - 70px);\n      position: relative; }\n    .content.page .ivu-col .union h4 {\n      padding: 10px; }\n    .content.page .ivu-col .union .setting p {\n      display: inline-block; }\n    .content.page .ivu-col .union .card-class {\n      border-top: 0; }\n      .content.page .ivu-col .union .card-class i {\n        color: #abb0b9; }\n      .content.page .ivu-col .union .card-class.active, .content.page .ivu-col .union .card-class:hover {\n        color: #007aff; }\n        .content.page .ivu-col .union .card-class.active i, .content.page .ivu-col .union .card-class:hover i {\n          color: #007aff; }\n        .content.page .ivu-col .union .card-class.active .ivu-dropdown, .content.page .ivu-col .union .card-class:hover .ivu-dropdown {\n          opacity: 1; }\n      .content.page .ivu-col .union .card-class.card-class-a:first-child {\n        border-top: 1px solid #e4e4e6; }\n      .content.page .ivu-col .union .card-class.card-class-b, .content.page .ivu-col .union .card-class.card-class-c {\n        margin-left: 10px;\n        margin-right: 10px; }\n      .content.page .ivu-col .union .card-class.lastcard {\n        border-radius: 0 0 8px 8px; }\n    .content.page .ivu-col .union h4 + .card-class-b,\n    .content.page .ivu-col .union h4 + .card-class-c {\n      border-top: 1px solid #e4e4e6;\n      border-radius: 8px 8px 0 0; }\n    .content.page .ivu-col .union .ivu-card {\n      border-radius: 0;\n      border-top: 0; }\n      .content.page .ivu-col .union .ivu-card:first-child {\n        border-top: 1px solid #e4e4e6; }\n    .content.page .ivu-col .union h4 + .ivu-card {\n      border-top: 1px solid #e4e4e6; }\n\n.card-class {\n  border: 1px solid #dcdee2;\n  border-color: #e8eaec;\n  background: #fff;\n  font-size: 14px;\n  position: relative;\n  cursor: pointer;\n  transition: all .2s ease-in-out; }\n  .card-class .content {\n    padding: 16px; }\n  .card-class h3 {\n    display: inline-block; }\n  .card-class::after {\n    content: '>';\n    display: block;\n    position: absolute;\n    font-weight: bold;\n    right: 10px;\n    top: 20px; }\n\n.add-new-card {\n  font-size: 12px;\n  color: #007aff;\n  width: 100%;\n  text-align: left;\n  list-style: none;\n  margin-top: 25px;\n  padding: 15px 10px;\n  border-top: 1px solid #d2d2d7;\n  border-bottom: 1px solid #d2d2d7;\n  box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);\n  background-color: #fff;\n  cursor: pointer;\n  transition: all .2s ease;\n  position: absolute;\n  bottom: 0; }\n  .add-new-card .ivu-icon {\n    color: #007aff;\n    font-size: 22px;\n    text-align: center;\n    line-height: 20px;\n    width: 20px;\n    height: 20px;\n    margin-right: 5px;\n    top: 6px; }\n\n.meal-content {\n  border-radius: 5px;\n  background-color: #fff;\n  margin: 10px;\n  padding: 10px; }\n  .meal-content .detail-recipes,\n  .meal-content .detail-meals {\n    display: flex;\n    width: 100%;\n    flex-wrap: wrap; }\n  .meal-content .item-recipes,\n  .meal-content .item-meals {\n    display: flex;\n    justify-content: space-between;\n    position: relative;\n    flex-basis: 50%;\n    padding: 15px 10px;\n    box-sizing: border-box; }\n    .meal-content .item-recipes::after,\n    .meal-content .item-meals::after {\n      content: '';\n      position: absolute;\n      display: block;\n      height: 1px;\n      width: calc(100% - 20px);\n      bottom: 0;\n      background-color: rgba(0, 0, 0, 0.1); }\n\n.addclass {\n  cursor: pointer; }\n\n.popmap .title {\n  font-weight: bold;\n  font-size: 1.125em; }\n\n/*ul*/\n.mapclass li {\n  padding: 10px 10px 10px 0;\n  cursor: pointer; }\n  .mapclass li.active, .mapclass li:hover {\n    color: #fff;\n    background-color: #007aff; }\n  .mapclass li i {\n    color: #abb0b9; }\n\n.mapclass li.li-item-b.active, .mapclass li.li-item-b:hover,\n.mapclass li.li-item-c.active,\n.mapclass li.li-item-c:hover {\n  color: #000;\n  background-color: #eee; }\n\n.mapclass li.li-item-b.active .active-icon,\n.mapclass li.li-item-c.active .active-icon {\n  display: inline-block; }\n\n.mapclass li.li-item-b .active-icon,\n.mapclass li.li-item-c .active-icon {\n  display: none; }\n\n/*ul*/\n.sureclass li {\n  padding: 10px 10px 10px 0;\n  cursor: pointer; }\n  .sureclass li i {\n    color: #007aff; }\n\n/*section*/\n.store-info {\n  max-width: 800px;\n  margin-top: 20px; }\n  .store-info h2 {\n    margin: 15px 10px; }\n  .store-info .content-wrap {\n    background-color: #fff;\n    padding: 20px;\n    box-sizing: border-box;\n    border-radius: 10px;\n    margin-bottom: 30px; }\n    .store-info .content-wrap .input-wrap {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      margin-bottom: 10px;\n      padding-bottom: 10px;\n      border-bottom: 1px solid #d2d2d7; }\n      .store-info .content-wrap .input-wrap:last-child {\n        border-bottom: none; }\n\n.ivu-input-wrapper {\n  width: 75%; }\n\n.union .hide {\n  display: none; }\n","/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */\r\n\r\nhtml {\r\n\t-ms-text-size-adjust: 100%;\r\n\t-webkit-text-size-adjust: 100%; /* 2 */\r\n\t-webkit-font-smoothing: antialiased;\r\n\t-moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\nhtml, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td,\r\narticle, aside, canvas, details, embed, \r\nfigure, figcaption, footer, header, hgroup, \r\nmenu, nav, output, ruby, section, summary,\r\ntime, mark, audio, video {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tborder: 0;\r\n\tfont-size: 100%;\r\n\tfont: inherit;\r\n\tvertical-align: baseline;\r\n}\r\n/* HTML5 display-role reset for older browsers */\r\narticle, aside, details, figcaption, figure, \r\nfooter, header, hgroup, menu, nav, section {\r\n\tdisplay: block;\r\n}\r\nbody {\r\n  line-height: 1;\r\n  margin: 0;\r\n  background-color: $bg-lightgray;\r\n}\r\nol, ul {\r\n\tlist-style: none;\r\n}\r\nblockquote, q {\r\n\tquotes: none;\r\n}\r\nblockquote:before, blockquote:after,\r\nq:before, q:after {\r\n\tcontent: '';\r\n\tcontent: none;\r\n}\r\ntable {\r\n\tborder-collapse: collapse;\r\n\tborder-spacing: 0;\r\n}\r\n\r\na {\r\n\ttext-decoration: none;\r\n}","\r\n\r\n// Typography\r\n$font-family-sans-serif: \"Nunito\", sans-serif;\r\n$line-height: 1;\r\n$font-size-normal: 16px;\r\n\r\n\r\n\r\n\r\n$Gray: #e6e6e6;\r\n$DarkGray: #ccc;\r\n$PantoneBlue: #007dff;\r\n\r\n\r\n$white: #fff;\r\n$black: #000;\r\n// TEXT\r\n$text-gray: #6d6d72;\r\n// BG\r\n$bg-gray: #ccc;\r\n$bg-lightgray: #efeff4;\r\n// BUTTON\r\n$btn-blue: #56baed;\r\n// LINK\r\n$link-bule: #007aff;\r\n$link-ligntbule: #c9e3ff;\r\n// ICON\r\n$icon-gray: #555;\r\n// LINE\r\n$line-gray: #d2d2d7;\r\n$line-lightgray: #e4e4e6;\r\n\r\n\r\n// Reference: https://purecss.io/grids/\r\n$sm: 35.5em; // 568px\r\n$sm_unless: 567px; \r\n$md: 48em; // 768px\r\n$md_unless: 767px; \r\n$lg: 64em; // 1024px\r\n$lg_unless: 1023px; \r\n$xl: 80em; // 1280px\r\n$xl_unless: 1279px;",".color-white {\r\n    color: $white;\r\n}\r\n\r\n.color-black {\r\n    color: $black;\r\n}","// Media Queries mixin\r\n@mixin screen($point) {\r\n  @if $point == sm { // ≥ 568px\r\n    @media screen and (min-width: $sm) { @content; }\r\n  }\r\n  @else if $point == md { // ≥ 768px\r\n    @media screen and (min-width: $md) { @content; }\r\n  }\r\n  @else if $point == lg { // ≥ 1024px\r\n    @media screen and (min-width: $lg) { @content; }\r\n  }\r\n  @else if $point == xl { // ≥ 1280px\r\n    @media screen and (min-width: $xl) { @content; }\r\n  }\r\n}\r\n\r\n@mixin ul--style {\r\n  padding: 0;\r\n  margin: 0;\r\n  list-style: none;\r\n  li {\r\n    display: inline-block;\r\n    padding: 10px 15px;\r\n  }\r\n}\r\n\r\n@mixin member__input {\r\n  display: inline-block;\r\n  width: 100%;\r\n  padding: 15px 80px;\r\n  margin: 5px 20px 5px 20px;\r\n  box-sizing: border-box;\r\n  background-color: $line-gray;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  text-transform: uppercase;\r\n  font-size: 16px;\r\n\tcolor: $black;\r\n\tborder: 2px solid $line-gray;\r\n  border-radius: 5px 5px 5px 5px;  \r\n  outline: none;\r\n\ttransition: all 0.3s ease-in-out;\r\n\t&.active {\r\n\t\ttransform: scale(0.95);\r\n\t}\r\n  &:focus {\r\n    background-color: #fff;\r\n    border-bottom: 2px solid #5fbae9;\r\n\t}\r\n\t&:placeholder {\r\n\t\tcolor: #cccccc;\r\n\t}\r\n}\r\n\r\n@mixin member__button {\r\n\tdisplay: inline-block;\r\n\twidth: 100%;\r\n\tpadding: 15px 80px;\r\n\tmargin: 5px 20px 40px 20px;\r\n\tbox-sizing: border-box;\r\n\tbackground-color: $btn-blue;\r\n\ttext-align: center;\r\n\ttext-decoration: none;\r\n\ttext-transform: uppercase;\r\n\tfont-size: 16px;\r\n\tcolor: $white;\r\n    border-radius: 5px 5px 5px 5px;\r\n    border: 0;\r\n\tbox-shadow: 0 6px 20px 0 rgba(95,186,233,0.4);\r\n\toutline: none;\r\n\ttransition: all 0.3s ease-in-out;\r\n  &:hover {\r\n  }\r\n  &.primary {\r\n      color: #fff;\r\n      background-color: $btn-blue;\r\n  }\r\n  &:disabled {\r\n    background-color: $Gray;\r\n    &:hover {\r\n    }\r\n  }\r\n}\r\n\r\n@mixin input__wrap {\r\n  .input__status--error {\r\n      position: absolute;\r\n      bottom: 0;\r\n      text-align: left;\r\n      color:#ff3964;\r\n      &.error__show {\r\n          display: block;\r\n      }\r\n  }\r\n  .input__wrap {\r\n      display: flex;\r\n      flex-wrap: wrap;\r\n      margin: 10px 0 0 0;\r\n      \r\n      position: relative;\r\n      overflow: hidden;\r\n      label {\r\n          position: absolute;\r\n          display: flex;\r\n          align-items: center;\r\n          justify-content: center;\r\n          background-color: #fff;\r\n          border-radius: 0;\r\n          width: 40px;\r\n          height: 40px;\r\n          opacity: 0;\r\n          top: 1px;\r\n          right: 1px;\r\n          transform: translateX(40px);\r\n          transition:opacity 0.2s ease-out, transform 0.2s ease-out;\r\n          i {\r\n              display: inline-block;\r\n              font-size: 0;\r\n              width: 20px;\r\n              height: 15px;\r\n              vertical-align: middle;\r\n              background-size: contain;\r\n          }\r\n          &:after {\r\n              content: \"\";\r\n              position: absolute;\r\n              display: inline-block;\r\n              background-color: $DarkGray;\r\n              height: 50%;\r\n              width: 1px;\r\n              top: 25%;\r\n              left: 0;\r\n          }\r\n          &.labelshow {\r\n              opacity: 1;\r\n              transform: translateX(0px);\r\n          }       \r\n      }\r\n      input[type=\"password\"] {\r\n          &.eye ~ label i {\r\n              width: 20px;\r\n              height: 13px;\r\n              background-size: contain;\r\n          }\r\n      }          \r\n  }\r\n}\r\n\r\n@mixin member__dropdown {\r\n  .member__dropdown {\r\n      display: none;\r\n      height: auto;\r\n      padding: 20px;\r\n      text-align: center;\r\n      position: absolute;\r\n      top: 45px;\r\n      right: 142px;\r\n      z-index: 5;\r\n      color: $DarkGray;\r\n      background-color: $Gray;\r\n      box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.2);\r\n      box-sizing: border-box;\r\n      &::after {\r\n          content: \"\";\r\n          display: block;\r\n          position: absolute;\r\n          top: -10px;\r\n          right: 10px;\r\n          width: 0;\r\n          height: 0;\r\n          border-style: solid;\r\n          border-width: 0 10px 10px 10px;\r\n          border-color: transparent transparent $Gray transparent;\r\n      }\r\n      &.mobile {\r\n          width: 100%;\r\n          right: 0;\r\n          top: 56px;\r\n          &::after {\r\n              right: 70px;\r\n          }\r\n          .member__msglist {\r\n              li::after { display: none; }\r\n          }\r\n      }\r\n      .member__info {\r\n          img {\r\n              width: 80px;\r\n              height: 80px;\r\n              border-radius: 50%;\r\n              margin-bottom: 20px;\r\n          }\r\n          p {\r\n              margin-bottom: 5px;\r\n              &:last-child {margin-bottom: 0; font-weight: normal;}\r\n          }\r\n      }\r\n      hr {\r\n          display: block;\r\n          height: 1px;\r\n          border: 0;\r\n          border-top: 1px solid #fff;\r\n          margin: 20px 0;\r\n          padding: 0;\r\n      }\r\n      .member__msglist {\r\n          a {\r\n              width: auto;\r\n              height: auto;\r\n              border-radius: 0;\r\n              display: block;\r\n              border: none;                \r\n          }\r\n          li {\r\n              margin: 10px 0;\r\n              float: none;\r\n          }\r\n      }\r\n      p.member__btn {\r\n          margin-top: 30px;\r\n          text-align: right;\r\n          a {\r\n              width: 64px;\r\n              height: 32px;\r\n              line-height: 32px;\r\n              text-align: center;\r\n              border-radius: 0;         \r\n              display: inline-block;\r\n              border: none;\r\n              background-color: $DarkGray;\r\n              color: #fff;\r\n          }\r\n      }\r\n  }\r\n}\r\n\r\n\r\n/**\r\n * 先把 body 放在這\r\n *\r\n * 如果之後太多就拆出去做\r\n *\r\n * 我們可以在註解中嵌入 HTML 標記，而且也建議這麼做：\r\n *\r\n    <div class=foo>\r\n        <p>Lorem</p>\r\n    </div>\r\n *\r\n * 如果是註解內嵌標籤的話，我選擇不在它前面加上星號，否則要複製貼上時還挺麻煩的。\r\n */\r\nbody {\r\n\tmargin: 0;\r\n\tfont-family: $font-family-sans-serif;\r\n\tfont-size: $font-size-normal;\r\n\tline-height: $line-height;\r\n\tletter-spacing: 1px;\r\n\ttext-align: justify;\r\n\toverflow-x: hidden;\r\n    @include screen(tb) {\r\n\t\t  font-size: $font-size-normal;\r\n\t  }\r\n\t  @include screen(pcSmall) {\r\n\t\t  font-size: $font-size-normal;\r\n\t  }\r\n\t&.noscroll {\r\n\t\toverflow: hidden;\r\n\t}\r\n}",".fadeInDown {\r\n    animation-name: fadeInDown;\r\n    animation-duration: 1s;\r\n    animation-fill-mode: both;\r\n}\r\n\r\n@-webkit-keyframes fadeInDown {\r\n    0% {\r\n        opacity: 0;\r\n        transform: translate3d(0, -100%, 0);\r\n    }\r\n    100% {\r\n        opacity: 1;\r\n        transform: none;\r\n    }\r\n}\r\n\r\n@keyframes fadeInDown {\r\n    0% {\r\n        opacity: 0;\r\n        transform: translate3d(0, -100%, 0);\r\n    }\r\n    100% {\r\n        opacity: 1;\r\n        transform: none;\r\n    }\r\n}\r\n\r\n/* Simple CSS3 Fade-in Animation */\r\n@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }\r\n\r\n.fadeIn {\r\n    opacity:0;\r\n    animation:fadeIn ease-in 1;\r\n    animation-fill-mode:forwards;\r\n    animation-duration:1s;\r\n}\r\n\r\n.fadeIn.first {\r\n    animation-delay: 0.4s;\r\n}\r\n\r\n.fadeIn.second {\r\n    animation-delay: 0.6s;\r\n}\r\n\r\n.fadeIn.third {\r\n    animation-delay: 0.8s;\r\n}\r\n\r\n.fadeIn.fourth {\r\n    animation-delay: 1s;\r\n}\r\n","nav {\r\n    background-color: $DarkGray;\r\n    box-shadow: 0 .1rem 1rem rgba(0,0,0,.15);\r\n    display: flex;\r\n    &>a {\r\n        display: flex;\r\n        align-items: center;\r\n        &.logo {\r\n            color: $white;\r\n            padding-right: 30px;\r\n            border-right: 1px solid $line-lightgray;\r\n        }\r\n        &.info {\r\n            color: $black;\r\n            padding-right: 30px;\r\n            padding-left: 30px;\r\n            border-left: 1px solid $line-lightgray;\r\n        }\r\n        img {\r\n            display: inline-block;\r\n            width: 60px;\r\n            padding: 10px;\r\n        }\r\n        p {\r\n            font-weight: bold;\r\n            line-height: 1.25em;\r\n            color: $black;\r\n            display: inline-block;\r\n            span {\r\n                color: $white;\r\n            }\r\n        }\r\n    }\r\n    ul {\r\n        @include ul--style;\r\n        display: flex;\r\n        align-items: center;\r\n        flex: 1;\r\n        li {\r\n            cursor: pointer;\r\n            position: relative;\r\n            padding: 30px 15px;\r\n            color: $black;\r\n            &.active {\r\n                &::after {\r\n                    content: '';\r\n                    position: absolute;\r\n                    bottom: 10px;\r\n                    left: 0;\r\n                    right: 0;\r\n                    margin: auto;\r\n                    display:inline-block;\r\n                    width: calc(100% - 30px);\r\n                    height: 1px;\r\n                    background-color: $black;\r\n                }\r\n            }\r\n        }\r\n    }    \r\n}","/*section*/.header {\r\n    margin: 0 auto;    \r\n    text-align: center;\r\n    padding: 30px 0;\r\n    font-size: 1.25em;\r\n    a {\r\n        margin-right: 30px;\r\n        position: relative;\r\n        color: blue;\r\n        &.active {\r\n            color: $black;\r\n        }\r\n        &::after {\r\n            content: '';\r\n            display: block;\r\n            height: 30px;\r\n            width: 2px;\r\n            background-color: $black;\r\n            position: absolute;\r\n            right: -15px;\r\n            top: 0;\r\n        }\r\n        &:last-child {\r\n            margin-right: 0;\r\n            &::after {\r\n                display: none;\r\n            }\r\n        }\r\n    }\r\n}","/**\r\n * ^nav ^lists\r\n */\r\n.header {\r\n    // Desktop\r\n    .statusbar {\r\n        ul.social li {\r\n            @include member__dropdown;\r\n        }\r\n    }\r\n    // Mobile\r\n    nav {\r\n        .navGroup .navWrap ul.icon {\r\n            li.memberIcon {\r\n                display: block;\r\n                @include screen(lg) {\r\n                    display: none;\r\n                }\r\n            }            \r\n            .member__dropdown_btn {\r\n                width: 50px;\r\n                svg {\r\n                    width: 26px;\r\n                    height: 26px;\r\n                    .cls-1 {fill:#f0f0f0;}\r\n                    .cls-2 {fill:#969696;}\r\n                }\r\n                @include screen(sm) {\r\n                    display: none !important;\r\n                }\r\n            }\r\n            @include member__dropdown;\r\n\r\n        }\r\n    }\r\n}\r\n\r\n/**\r\n * ^wrapper\r\n */\r\n.login-wrapper {\r\n    display: flex;\r\n    align-items: center;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    width: 100%;\r\n    height: 100vh;\r\n    background-color: $btn-blue;\r\n    min-height: 100%;\r\n    padding: 20px;\r\n}\r\n\r\n/**\r\n * ^member ^login\r\n */\r\n/*section*/.login {\r\n    align-items: center;\r\n    background-color: $white;\r\n    color: $black; \r\n    width: 100%;\r\n    max-width: 450px;\r\n    padding: 30px 0 0 0;\r\n    border-radius: 10px 10px 10px 10px;\r\n    box-sizing: border-box;\r\n    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);\r\n    text-align: center;\r\n    margin: 0 auto;\r\n    z-index: 3;\r\n    &.display {\r\n        display: flex;\r\n    }\r\n    a.blue {\r\n      text-decoration: underline;\r\n    }\r\n    >div img {\r\n        width: 60%;\r\n    }\r\n    h1 {\r\n        text-align: center;\r\n        font-weight: 300;\r\n        font-size: 30px;\r\n        margin-bottom: 20px;\r\n        line-height: 30px;\r\n        letter-spacing: .1em;\r\n    }\r\n    ul.list {\r\n        list-style: none;\r\n        display: flex;\r\n        margin: 25px 0 30px 0;\r\n        li {\r\n            flex: 1;\r\n            font-weight: 900;\r\n            text-align: center;\r\n            &:first-child {\r\n                border-right: 1px #fff solid;\r\n            }\r\n        }\r\n        .bule {\r\n            color: $PantoneBlue;\r\n            font-weight: bold;\r\n            position: relative;\r\n            &::after {\r\n                content: \"\";\r\n                position: absolute;\r\n                display: inline-block;\r\n                width: 100%;\r\n                height: 1px;\r\n                background-color: $PantoneBlue;\r\n                bottom: -5px;\r\n                left: 0;\r\n            }\r\n        }\r\n    }\r\n    p.hr {\r\n        position: relative;\r\n        margin: 13px 0;\r\n        border: none;\r\n        color: $DarkGray;\r\n    }\r\n    p.singup_error {\r\n        color: #ff3964;\r\n        text-align: left;\r\n        display: none;\r\n        &.red {\r\n            display: block;\r\n        }\r\n    }\r\n    @include input__wrap;\r\n\r\n    input[type=\"text\"],\r\n    input[type=\"email\"],\r\n    input[type=\"password\"] {\r\n        @include member__input;\r\n    }\r\n\r\n    .form_buttonbar {\r\n        display: flex;\r\n        justify-items: center;\r\n        align-items: center;\r\n        margin-top: 30px;\r\n        p { \r\n            flex: 1; color: $DarkGray; font-weight: 900;\r\n            &:nth-of-type(1) {\r\n                text-align: left;\r\n            }\r\n            &:nth-of-type(2) {\r\n                text-align: right;\r\n            }\r\n        }\r\n        button {\r\n            @include member__button;\r\n        }\r\n    }    \r\n    .formFooter {\r\n        background-color: $line-gray;\r\n        border-top: 1px solid $line-lightgray;\r\n        padding: 25px;\r\n        text-align: center;\r\n        border-radius: 0 0 10px 10px;\r\n        a {\r\n            color: #92badd;\r\n            display: inline-block;\r\n            text-decoration: none;\r\n            font-weight: bold;\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n\r\n// reset and manger page\r\nmain.mamager {\r\n    background-color: #f0f0f0;\r\n    padding: 30px 20px;\r\n    @include screen(sm) {\r\n        padding: 100px 0;\r\n    }\r\n}\r\n.profile_wrap {\r\n    width: 100%;\r\n    max-width: 800px;\r\n    margin: 0 auto;\r\n    padding: 50px 0;\r\n    border-radius: 50px;\r\n    box-sizing: border-box;\r\n    background-color: $Gray;\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    h3 {\r\n        font-size: 20px;\r\n        color: $DarkGray; \r\n        text-align: center;\r\n        flex-basis: 100%;\r\n        margin-bottom: 40px;\r\n    }\r\n    .form_wrap {\r\n        position: relative;\r\n        text-align: center;\r\n        width: 100%;\r\n        flex-basis: 100%;\r\n        height: auto;\r\n        margin: 0 auto 40px auto;\r\n        color: $DarkGray;\r\n        @include screen(sm) {\r\n            flex-basis: 0;\r\n            flex:5;\r\n            margin: 0 auto;\r\n        }\r\n        .form-group {\r\n            margin-bottom: 10px;\r\n        }\r\n        .input__wrap {\r\n            width: 82%;\r\n            margin: 0 auto;            \r\n            text-align: left;\r\n            @include screen(sm) {\r\n                width: 60%;\r\n            }\r\n        }\r\n        &::after {\r\n            content: \"\";\r\n            position: absolute;\r\n            right: 0;\r\n            top: 0;\r\n            display: block;\r\n            width: 1px;\r\n            height: 100%;\r\n            background-color: #fff;\r\n        }\r\n        label {\r\n            font-weight: bold;\r\n            padding-bottom: 5px;\r\n            padding-left: 5px;\r\n            display: block;\r\n        }\r\n        input {\r\n            display: block;\r\n            width: 100%;\r\n            padding: 11px 10px;\r\n            margin-bottom: 15px;\r\n            box-sizing: border-box;\r\n            font-size: 16px;\r\n            color: $DarkGray;\r\n            border: none;\r\n            outline: none;\r\n        }\r\n        .input__wrap:last-child input {\r\n            margin-bottom: 0;\r\n        }\r\n        button {\r\n            @include member__button;\r\n            margin: 5px 0 0 0;\r\n        }\r\n    }\r\n    .profile_picture {\r\n        width: 100%;\r\n        text-align: center;\r\n        flex-basis: 100%;\r\n\r\n        @include screen(sm) {\r\n            flex-basis: 0;\r\n            flex:3;\r\n        }\r\n        img {\r\n            width: 120px;\r\n            height: 120px;\r\n            display: block;\r\n            margin: 0 auto 30px auto;\r\n            border-radius: 50%;\r\n        }\r\n        .button_wrap {\r\n            background-color: #f0f0f0;\r\n            width: 180px;            \r\n            height: 180px;\r\n            border-radius: 30px;\r\n            margin: 0 auto;\r\n            svg {\r\n                fill: $DarkGray;\r\n                width: 30px;\r\n                height: 30px;\r\n                margin-top: 50px;\r\n            }\r\n            button {\r\n                @include member__button;\r\n                display: block;\r\n                height: 30px;\r\n                width: 100px;\r\n                border-radius: 20px;\r\n                margin: 0 auto;\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n","/*section*/.content {\r\n    margin: 0 auto;\r\n    width: 100%;\r\n    box-sizing: border-box;\r\n    &.page {\r\n        .ivu-col {\r\n            height: calc(100vh - 76px);   // 綁定Nav\r\n            overflow: auto;            \r\n            border-right: 0;\r\n            box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1);\r\n            background-color: $bg-lightgray;\r\n            &:last-child {\r\n                border-right: 0;\r\n            }\r\n            .title {\r\n                text-align: left ;\r\n                font-weight: bold;\r\n                padding: 15px;\r\n                background-color: rgba(255, 255, 255, 0.3);\r\n                border-bottom: 1px $line-gray solid;\r\n            }\r\n            .ivu-dropdown {\r\n                position: absolute;\r\n                right: 30px;\r\n            }\r\n            .union {\r\n                &.union-half {\r\n                    height: calc(50vh - 70px);\r\n                    position: relative;\r\n                }\r\n                h4 {\r\n                    padding: 10px;\r\n                }\r\n                .setting {\r\n                    p { display: inline-block; }\r\n                }\r\n                .card-class {\r\n                    border-top: 0;\r\n                    i {\r\n                        color: #abb0b9;\r\n                    }\r\n                    &.active, &:hover {\r\n                        color: $link-bule;\r\n                        i {\r\n                            color: $link-bule;\r\n                        }\r\n                        .ivu-dropdown { opacity: 1; }\r\n                    }\r\n                    &.card-class-a {\r\n                        &:first-child {\r\n                            border-top: 1px solid $line-lightgray;\r\n                        }\r\n                    }\r\n                    &.card-class-b,\r\n                    &.card-class-c {\r\n                        margin-left: 10px;\r\n                        margin-right: 10px;\t\t\t\r\n                    }\r\n                    &.lastcard {\r\n                        border-radius: 0 0 8px 8px;\r\n                    }\r\n                }\r\n                h4 + .card-class-b,\r\n                h4 + .card-class-c, {\r\n                    border-top: 1px solid  $line-lightgray;\r\n                    border-radius: 8px 8px 0 0;\r\n                }\r\n                \r\n                .ivu-card {\r\n                    border-radius: 0;\r\n                    border-top: 0;\r\n                    &:first-child {\r\n                        border-top: 1px solid $line-lightgray;\r\n                    }\r\n                }\r\n                h4 + .ivu-card {\r\n                        border-top: 1px solid $line-lightgray;\r\n                }\r\n            }\r\n        }\r\n    }    \r\n}",".card-class {\r\n    border: 1px solid #dcdee2;\r\n    border-color: #e8eaec;\r\n    background: #fff;\r\n    font-size: 14px;\r\n    position: relative;\r\n    cursor: pointer;\r\n    transition: all .2s ease-in-out;\r\n    .content {\r\n        padding: 16px;\r\n    }\r\n    h3 {\r\n        display: inline-block;\r\n    }\r\n    &::after {\r\n        content: '>';\r\n        display: block;\r\n        position:absolute;\r\n        font-weight: bold;\r\n        right: 10px;\r\n        top: 20px;\r\n    }\r\n}\r\n\r\n.add-new-card {\r\n\tfont-size: 12px;\r\n\tcolor: $link-bule;\r\n\twidth: 100%;\r\n\ttext-align: left;\r\n\tlist-style: none;\r\n\tmargin-top: 25px;\r\n\tpadding: 15px 10px;\r\n\tborder-top: 1px solid $line-gray;\r\n\tborder-bottom: 1px solid $line-gray;\r\n\tbox-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);\r\n\tbackground-color: $white;\r\n\tcursor: pointer;\r\n\ttransition: all .2s ease;\r\n\tposition: absolute;\r\n\tbottom: 0;\r\n\t.ivu-icon {\r\n\t\tcolor: $link-bule;\r\n\t\tfont-size: 22px;\r\n\t\ttext-align: center;\r\n\t\tline-height: 20px;\r\n\t\twidth: 20px; height: 20px;\r\n\t\tmargin-right: 5px;\r\n\t\ttop: 6px;\r\n\t}\r\n}\r\n",".meal-content {\r\n    border-radius: 5px;\r\n    background-color: #fff;\r\n    margin: 10px;\r\n    padding: 10px;\r\n    .detail-recipes,\r\n    .detail-meals {\r\n        display: flex;\r\n        width: 100%;\r\n        flex-wrap: wrap;\r\n    }\r\n    .item-recipes,\r\n    .item-meals {\r\n        display: flex;\r\n        justify-content: space-between;\r\n        position: relative;\r\n        flex-basis: 50%;           \r\n        padding: 15px 10px;\r\n        box-sizing: border-box;\r\n        &::after {\r\n            content: '';\r\n            position: absolute;\r\n            display: block;\r\n            height: 1px;\r\n            width: calc(100% - 20px);\r\n            bottom: 0;\r\n            background-color: rgba(0,0,0,0.1);\r\n        }\r\n    }        \r\n}",".addclass {\r\n    cursor: pointer;    \r\n}\r\n.popmap {\r\n    .title {\r\n        font-weight: bold;\r\n        font-size: 1.125em;\r\n    }    \r\n}\r\n/*ul*/.mapclass {    \r\n    li {\r\n        padding: 10px 10px 10px 0;\r\n        cursor: pointer;\r\n        &.active, &:hover {\r\n            color: $white;\r\n            background-color: $link-bule;\r\n        }\r\n        i {\r\n            color: #abb0b9;\r\n        }        \r\n    }\r\n    li.li-item-b,\r\n    li.li-item-c {\r\n        &.active, &:hover {\r\n            color: $black;\r\n            background-color: #eee;            \r\n        }\r\n        &.active {\r\n            .active-icon {\r\n                display: inline-block;\r\n            }\r\n        }\r\n        .active-icon {\r\n            display: none;\r\n        }\r\n    }\r\n}\r\n/*ul*/.sureclass {\r\n    li {\r\n        padding: 10px 10px 10px 0;\r\n        cursor: pointer;\r\n        i {\r\n            color: $link-bule;\r\n        }\r\n    }\r\n}","/*section*/.store-info {\r\n    max-width: 800px;\r\n    margin-top: 20px;\r\n    h2 {\r\n        margin: 15px 10px;\r\n    }\r\n    .content-wrap {\r\n        background-color: $white;\r\n        padding: 20px;\r\n        box-sizing: border-box;\r\n        border-radius: 10px;\r\n        margin-bottom: 30px;\r\n        .input-wrap {\r\n            display: flex;\r\n            justify-content: space-between;\r\n            align-items: center;\r\n            margin-bottom: 10px;\r\n            padding-bottom: 10px;\r\n            border-bottom: 1px solid $line-gray;\r\n            &:last-child {\r\n                border-bottom: none;\r\n            }\r\n        }\r\n    }\r\n}","\r\n.ivu-input-wrapper {\r\n\twidth: 75%;\r\n}\r\n.union .hide {\r\n\tdisplay: none;\r\n}\r\n"],"sourceRoot":""}]);
+exports.push([module.i, "@charset \"UTF-8\";\n/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */\nhtml {\n  -ms-text-size-adjust: 100%;\n  -webkit-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1;\n  margin: 0;\n  background-color: #efeff4; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\na {\n  text-decoration: none; }\n\n.color-white {\n  color: #fff; }\n\n.color-black {\n  color: #000; }\n\n/**\r\n * 先把 body 放在這\r\n *\r\n * 如果之後太多就拆出去做\r\n *\r\n * 我們可以在註解中嵌入 HTML 標記，而且也建議這麼做：\r\n *\r\n    <div class=foo>\r\n        <p>Lorem</p>\r\n    </div>\r\n *\r\n * 如果是註解內嵌標籤的話，我選擇不在它前面加上星號，否則要複製貼上時還挺麻煩的。\r\n */\nbody {\n  margin: 0;\n  font-family: \"Nunito\", sans-serif;\n  font-size: 16px;\n  line-height: 1;\n  letter-spacing: 1px;\n  text-align: justify;\n  overflow-x: hidden; }\n  body.noscroll {\n    overflow: hidden; }\n\n.fadeInDown {\n  animation-name: fadeInDown;\n  animation-duration: 1s;\n  animation-fill-mode: both; }\n\n@-webkit-keyframes fadeInDown {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0); }\n  100% {\n    opacity: 1;\n    transform: none; } }\n\n@keyframes fadeInDown {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0); }\n  100% {\n    opacity: 1;\n    transform: none; } }\n\n/* Simple CSS3 Fade-in Animation */\n@keyframes fadeIn {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n.fadeIn {\n  opacity: 0;\n  animation: fadeIn ease-in 1;\n  animation-fill-mode: forwards;\n  animation-duration: 1s; }\n\n.fadeIn.first {\n  animation-delay: 0.4s; }\n\n.fadeIn.second {\n  animation-delay: 0.6s; }\n\n.fadeIn.third {\n  animation-delay: 0.8s; }\n\n.fadeIn.fourth {\n  animation-delay: 1s; }\n\nnav {\n  background-color: #ccc;\n  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.15);\n  display: flex; }\n  nav > a {\n    display: flex;\n    align-items: center; }\n    nav > a.logo {\n      color: #fff;\n      padding-right: 30px;\n      border-right: 1px solid #e4e4e6; }\n    nav > a.info {\n      color: #000;\n      padding-right: 30px;\n      padding-left: 30px;\n      border-left: 1px solid #e4e4e6; }\n    nav > a img {\n      display: inline-block;\n      width: 60px;\n      padding: 10px; }\n    nav > a p {\n      font-weight: bold;\n      line-height: 1.25em;\n      color: #000;\n      display: inline-block; }\n      nav > a p span {\n        color: #fff; }\n  nav ul {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: flex;\n    align-items: center;\n    flex: 1; }\n    nav ul li {\n      display: inline-block;\n      padding: 10px 15px; }\n    nav ul li {\n      cursor: pointer;\n      position: relative;\n      padding: 30px 15px;\n      color: #000; }\n      nav ul li.active::after {\n        content: '';\n        position: absolute;\n        bottom: 10px;\n        left: 0;\n        right: 0;\n        margin: auto;\n        display: inline-block;\n        width: calc(100% - 30px);\n        height: 1px;\n        background-color: #000; }\n\n/*section*/\n.header {\n  margin: 0 auto;\n  text-align: center;\n  padding: 30px 0;\n  font-size: 1.25em; }\n  .header a {\n    margin-right: 30px;\n    position: relative;\n    color: blue; }\n    .header a.active {\n      color: #000; }\n    .header a::after {\n      content: '';\n      display: block;\n      height: 30px;\n      width: 2px;\n      background-color: #000;\n      position: absolute;\n      right: -15px;\n      top: 0; }\n    .header a:last-child {\n      margin-right: 0; }\n      .header a:last-child::after {\n        display: none; }\n\n/**\r\n * ^nav ^lists\r\n */\n.header .statusbar ul.social li .member__dropdown {\n  display: none;\n  height: auto;\n  padding: 20px;\n  text-align: center;\n  position: absolute;\n  top: 45px;\n  right: 142px;\n  z-index: 5;\n  color: #ccc;\n  background-color: #e6e6e6;\n  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);\n  box-sizing: border-box; }\n  .header .statusbar ul.social li .member__dropdown::after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -10px;\n    right: 10px;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 0 10px 10px 10px;\n    border-color: transparent transparent #e6e6e6 transparent; }\n  .header .statusbar ul.social li .member__dropdown.mobile {\n    width: 100%;\n    right: 0;\n    top: 56px; }\n    .header .statusbar ul.social li .member__dropdown.mobile::after {\n      right: 70px; }\n    .header .statusbar ul.social li .member__dropdown.mobile .member__msglist li::after {\n      display: none; }\n  .header .statusbar ul.social li .member__dropdown .member__info img {\n    width: 80px;\n    height: 80px;\n    border-radius: 50%;\n    margin-bottom: 20px; }\n  .header .statusbar ul.social li .member__dropdown .member__info p {\n    margin-bottom: 5px; }\n    .header .statusbar ul.social li .member__dropdown .member__info p:last-child {\n      margin-bottom: 0;\n      font-weight: normal; }\n  .header .statusbar ul.social li .member__dropdown hr {\n    display: block;\n    height: 1px;\n    border: 0;\n    border-top: 1px solid #fff;\n    margin: 20px 0;\n    padding: 0; }\n  .header .statusbar ul.social li .member__dropdown .member__msglist a {\n    width: auto;\n    height: auto;\n    border-radius: 0;\n    display: block;\n    border: none; }\n  .header .statusbar ul.social li .member__dropdown .member__msglist li {\n    margin: 10px 0;\n    float: none; }\n  .header .statusbar ul.social li .member__dropdown p.member__btn {\n    margin-top: 30px;\n    text-align: right; }\n    .header .statusbar ul.social li .member__dropdown p.member__btn a {\n      width: 64px;\n      height: 32px;\n      line-height: 32px;\n      text-align: center;\n      border-radius: 0;\n      display: inline-block;\n      border: none;\n      background-color: #ccc;\n      color: #fff; }\n\n.header nav .navGroup .navWrap ul.icon li.memberIcon {\n  display: block; }\n  @media screen and (min-width: 64em) {\n    .header nav .navGroup .navWrap ul.icon li.memberIcon {\n      display: none; } }\n\n.header nav .navGroup .navWrap ul.icon .member__dropdown_btn {\n  width: 50px; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown_btn svg {\n    width: 26px;\n    height: 26px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown_btn svg .cls-1 {\n      fill: #f0f0f0; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown_btn svg .cls-2 {\n      fill: #969696; }\n  @media screen and (min-width: 35.5em) {\n    .header nav .navGroup .navWrap ul.icon .member__dropdown_btn {\n      display: none !important; } }\n\n.header nav .navGroup .navWrap ul.icon .member__dropdown {\n  display: none;\n  height: auto;\n  padding: 20px;\n  text-align: center;\n  position: absolute;\n  top: 45px;\n  right: 142px;\n  z-index: 5;\n  color: #ccc;\n  background-color: #e6e6e6;\n  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);\n  box-sizing: border-box; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown::after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -10px;\n    right: 10px;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 0 10px 10px 10px;\n    border-color: transparent transparent #e6e6e6 transparent; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown.mobile {\n    width: 100%;\n    right: 0;\n    top: 56px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown.mobile::after {\n      right: 70px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown.mobile .member__msglist li::after {\n      display: none; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__info img {\n    width: 80px;\n    height: 80px;\n    border-radius: 50%;\n    margin-bottom: 20px; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__info p {\n    margin-bottom: 5px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown .member__info p:last-child {\n      margin-bottom: 0;\n      font-weight: normal; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown hr {\n    display: block;\n    height: 1px;\n    border: 0;\n    border-top: 1px solid #fff;\n    margin: 20px 0;\n    padding: 0; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__msglist a {\n    width: auto;\n    height: auto;\n    border-radius: 0;\n    display: block;\n    border: none; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__msglist li {\n    margin: 10px 0;\n    float: none; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown p.member__btn {\n    margin-top: 30px;\n    text-align: right; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown p.member__btn a {\n      width: 64px;\n      height: 32px;\n      line-height: 32px;\n      text-align: center;\n      border-radius: 0;\n      display: inline-block;\n      border: none;\n      background-color: #ccc;\n      color: #fff; }\n\n/**\r\n * ^wrapper\r\n */\n.login-wrapper {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  justify-content: center;\n  width: 100%;\n  height: 100vh;\n  background-color: #56baed;\n  min-height: 100%;\n  padding: 20px; }\n\n/**\r\n * ^member ^login\r\n */\n/*section*/\n.login {\n  align-items: center;\n  background-color: #fff;\n  color: #000;\n  width: 100%;\n  max-width: 450px;\n  padding: 30px 0 0 0;\n  border-radius: 10px 10px 10px 10px;\n  box-sizing: border-box;\n  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);\n  text-align: center;\n  margin: 0 auto;\n  z-index: 3; }\n  .login.display {\n    display: flex; }\n  .login a.blue {\n    text-decoration: underline; }\n  .login > div img {\n    width: 60%; }\n  .login h1 {\n    text-align: center;\n    font-weight: 300;\n    font-size: 30px;\n    margin-bottom: 20px;\n    line-height: 30px;\n    letter-spacing: .1em; }\n  .login ul.list {\n    list-style: none;\n    display: flex;\n    margin: 25px 0 30px 0; }\n    .login ul.list li {\n      flex: 1;\n      font-weight: 900;\n      text-align: center; }\n      .login ul.list li:first-child {\n        border-right: 1px #fff solid; }\n    .login ul.list .bule {\n      color: #007dff;\n      font-weight: bold;\n      position: relative; }\n      .login ul.list .bule::after {\n        content: \"\";\n        position: absolute;\n        display: inline-block;\n        width: 100%;\n        height: 1px;\n        background-color: #007dff;\n        bottom: -5px;\n        left: 0; }\n  .login p.hr {\n    position: relative;\n    margin: 13px 0;\n    border: none;\n    color: #ccc; }\n  .login p.singup_error {\n    color: #ff3964;\n    text-align: left;\n    display: none; }\n    .login p.singup_error.red {\n      display: block; }\n  .login .input__status--error {\n    position: absolute;\n    bottom: 0;\n    text-align: left;\n    color: #ff3964; }\n    .login .input__status--error.error__show {\n      display: block; }\n  .login .input__wrap {\n    display: flex;\n    flex-wrap: wrap;\n    margin: 10px 0 0 0;\n    position: relative;\n    overflow: hidden; }\n    .login .input__wrap label {\n      position: absolute;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      background-color: #fff;\n      border-radius: 0;\n      width: 40px;\n      height: 40px;\n      opacity: 0;\n      top: 1px;\n      right: 1px;\n      transform: translateX(40px);\n      transition: opacity 0.2s ease-out, transform 0.2s ease-out; }\n      .login .input__wrap label i {\n        display: inline-block;\n        font-size: 0;\n        width: 20px;\n        height: 15px;\n        vertical-align: middle;\n        background-size: contain; }\n      .login .input__wrap label:after {\n        content: \"\";\n        position: absolute;\n        display: inline-block;\n        background-color: #ccc;\n        height: 50%;\n        width: 1px;\n        top: 25%;\n        left: 0; }\n      .login .input__wrap label.labelshow {\n        opacity: 1;\n        transform: translateX(0px); }\n    .login .input__wrap input[type=\"password\"].eye ~ label i {\n      width: 20px;\n      height: 13px;\n      background-size: contain; }\n  .login input[type=\"text\"],\n  .login input[type=\"email\"],\n  .login input[type=\"password\"] {\n    display: inline-block;\n    width: 100%;\n    padding: 15px 80px;\n    margin: 5px 20px 5px 20px;\n    box-sizing: border-box;\n    background-color: #d2d2d7;\n    text-align: center;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-size: 16px;\n    color: #000;\n    border: 2px solid #d2d2d7;\n    border-radius: 5px 5px 5px 5px;\n    outline: none;\n    transition: all 0.3s ease-in-out; }\n    .login input[type=\"text\"].active,\n    .login input[type=\"email\"].active,\n    .login input[type=\"password\"].active {\n      transform: scale(0.95); }\n    .login input[type=\"text\"]:focus,\n    .login input[type=\"email\"]:focus,\n    .login input[type=\"password\"]:focus {\n      background-color: #fff;\n      border-bottom: 2px solid #5fbae9; }\n    .login input[type=\"text\"]:placeholder,\n    .login input[type=\"email\"]:placeholder,\n    .login input[type=\"password\"]:placeholder {\n      color: #cccccc; }\n  .login .form_buttonbar {\n    display: flex;\n    justify-items: center;\n    align-items: center;\n    margin-top: 30px; }\n    .login .form_buttonbar p {\n      flex: 1;\n      color: #ccc;\n      font-weight: 900; }\n      .login .form_buttonbar p:nth-of-type(1) {\n        text-align: left; }\n      .login .form_buttonbar p:nth-of-type(2) {\n        text-align: right; }\n    .login .form_buttonbar button {\n      display: inline-block;\n      width: 100%;\n      padding: 15px 80px;\n      margin: 5px 20px 40px 20px;\n      box-sizing: border-box;\n      background-color: #56baed;\n      text-align: center;\n      text-decoration: none;\n      text-transform: uppercase;\n      font-size: 16px;\n      color: #fff;\n      border-radius: 5px 5px 5px 5px;\n      border: 0;\n      box-shadow: 0 6px 20px 0 rgba(95, 186, 233, 0.4);\n      outline: none;\n      transition: all 0.3s ease-in-out; }\n      .login .form_buttonbar button.primary {\n        color: #fff;\n        background-color: #56baed; }\n      .login .form_buttonbar button:disabled {\n        background-color: #e6e6e6; }\n  .login .formFooter {\n    background-color: #d2d2d7;\n    border-top: 1px solid #e4e4e6;\n    padding: 25px;\n    text-align: center;\n    border-radius: 0 0 10px 10px; }\n    .login .formFooter a {\n      color: #92badd;\n      display: inline-block;\n      text-decoration: none;\n      font-weight: bold; }\n\nmain.mamager {\n  background-color: #f0f0f0;\n  padding: 30px 20px; }\n  @media screen and (min-width: 35.5em) {\n    main.mamager {\n      padding: 100px 0; } }\n\n.profile_wrap {\n  width: 100%;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 50px 0;\n  border-radius: 50px;\n  box-sizing: border-box;\n  background-color: #e6e6e6;\n  display: flex;\n  flex-wrap: wrap; }\n  .profile_wrap h3 {\n    font-size: 20px;\n    color: #ccc;\n    text-align: center;\n    flex-basis: 100%;\n    margin-bottom: 40px; }\n  .profile_wrap .form_wrap {\n    position: relative;\n    text-align: center;\n    width: 100%;\n    flex-basis: 100%;\n    height: auto;\n    margin: 0 auto 40px auto;\n    color: #ccc; }\n    @media screen and (min-width: 35.5em) {\n      .profile_wrap .form_wrap {\n        flex-basis: 0;\n        flex: 5;\n        margin: 0 auto; } }\n    .profile_wrap .form_wrap .form-group {\n      margin-bottom: 10px; }\n    .profile_wrap .form_wrap .input__wrap {\n      width: 82%;\n      margin: 0 auto;\n      text-align: left; }\n      @media screen and (min-width: 35.5em) {\n        .profile_wrap .form_wrap .input__wrap {\n          width: 60%; } }\n    .profile_wrap .form_wrap::after {\n      content: \"\";\n      position: absolute;\n      right: 0;\n      top: 0;\n      display: block;\n      width: 1px;\n      height: 100%;\n      background-color: #fff; }\n    .profile_wrap .form_wrap label {\n      font-weight: bold;\n      padding-bottom: 5px;\n      padding-left: 5px;\n      display: block; }\n    .profile_wrap .form_wrap input {\n      display: block;\n      width: 100%;\n      padding: 11px 10px;\n      margin-bottom: 15px;\n      box-sizing: border-box;\n      font-size: 16px;\n      color: #ccc;\n      border: none;\n      outline: none; }\n    .profile_wrap .form_wrap .input__wrap:last-child input {\n      margin-bottom: 0; }\n    .profile_wrap .form_wrap button {\n      display: inline-block;\n      width: 100%;\n      padding: 15px 80px;\n      margin: 5px 20px 40px 20px;\n      box-sizing: border-box;\n      background-color: #56baed;\n      text-align: center;\n      text-decoration: none;\n      text-transform: uppercase;\n      font-size: 16px;\n      color: #fff;\n      border-radius: 5px 5px 5px 5px;\n      border: 0;\n      box-shadow: 0 6px 20px 0 rgba(95, 186, 233, 0.4);\n      outline: none;\n      transition: all 0.3s ease-in-out;\n      margin: 5px 0 0 0; }\n      .profile_wrap .form_wrap button.primary {\n        color: #fff;\n        background-color: #56baed; }\n      .profile_wrap .form_wrap button:disabled {\n        background-color: #e6e6e6; }\n  .profile_wrap .profile_picture {\n    width: 100%;\n    text-align: center;\n    flex-basis: 100%; }\n    @media screen and (min-width: 35.5em) {\n      .profile_wrap .profile_picture {\n        flex-basis: 0;\n        flex: 3; } }\n    .profile_wrap .profile_picture img {\n      width: 120px;\n      height: 120px;\n      display: block;\n      margin: 0 auto 30px auto;\n      border-radius: 50%; }\n    .profile_wrap .profile_picture .button_wrap {\n      background-color: #f0f0f0;\n      width: 180px;\n      height: 180px;\n      border-radius: 30px;\n      margin: 0 auto; }\n      .profile_wrap .profile_picture .button_wrap svg {\n        fill: #ccc;\n        width: 30px;\n        height: 30px;\n        margin-top: 50px; }\n      .profile_wrap .profile_picture .button_wrap button {\n        display: inline-block;\n        width: 100%;\n        padding: 15px 80px;\n        margin: 5px 20px 40px 20px;\n        box-sizing: border-box;\n        background-color: #56baed;\n        text-align: center;\n        text-decoration: none;\n        text-transform: uppercase;\n        font-size: 16px;\n        color: #fff;\n        border-radius: 5px 5px 5px 5px;\n        border: 0;\n        box-shadow: 0 6px 20px 0 rgba(95, 186, 233, 0.4);\n        outline: none;\n        transition: all 0.3s ease-in-out;\n        display: block;\n        height: 30px;\n        width: 100px;\n        border-radius: 20px;\n        margin: 0 auto; }\n        .profile_wrap .profile_picture .button_wrap button.primary {\n          color: #fff;\n          background-color: #56baed; }\n        .profile_wrap .profile_picture .button_wrap button:disabled {\n          background-color: #e6e6e6; }\n\n/*section*/\n.content {\n  margin: 0 auto;\n  width: 100%;\n  box-sizing: border-box; }\n  .content.page .ivu-col {\n    height: calc(100vh - 76px);\n    overflow: auto;\n    border-right: 0;\n    box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);\n    background-color: #efeff4; }\n    .content.page .ivu-col:last-child {\n      border-right: 0; }\n    .content.page .ivu-col .title {\n      text-align: left;\n      font-weight: bold;\n      padding: 15px;\n      background-color: rgba(255, 255, 255, 0.3);\n      border-bottom: 1px #d2d2d7 solid; }\n    .content.page .ivu-col .ivu-dropdown {\n      position: absolute;\n      right: 30px; }\n    .content.page .ivu-col .union.union-half {\n      height: calc(50vh - 70px);\n      position: relative; }\n    .content.page .ivu-col .union h4 {\n      padding: 10px; }\n    .content.page .ivu-col .union .setting p {\n      display: inline-block; }\n    .content.page .ivu-col .union .card-class {\n      border-top: 0; }\n      .content.page .ivu-col .union .card-class i {\n        color: #abb0b9; }\n      .content.page .ivu-col .union .card-class.active, .content.page .ivu-col .union .card-class:hover {\n        color: #007aff; }\n        .content.page .ivu-col .union .card-class.active i, .content.page .ivu-col .union .card-class:hover i {\n          color: #007aff; }\n        .content.page .ivu-col .union .card-class.active .ivu-dropdown, .content.page .ivu-col .union .card-class:hover .ivu-dropdown {\n          opacity: 1; }\n      .content.page .ivu-col .union .card-class.card-class-a:first-child {\n        border-top: 1px solid #e4e4e6; }\n      .content.page .ivu-col .union .card-class.card-class-b, .content.page .ivu-col .union .card-class.card-class-c {\n        margin-left: 10px;\n        margin-right: 10px; }\n      .content.page .ivu-col .union .card-class.lastcard {\n        border-radius: 0 0 8px 8px; }\n    .content.page .ivu-col .union h4 + .card-class-b,\n    .content.page .ivu-col .union h4 + .card-class-c {\n      border-top: 1px solid #e4e4e6;\n      border-radius: 8px 8px 0 0; }\n    .content.page .ivu-col .union .ivu-card {\n      border-radius: 0;\n      border-top: 0; }\n      .content.page .ivu-col .union .ivu-card:first-child {\n        border-top: 1px solid #e4e4e6; }\n    .content.page .ivu-col .union h4 + .ivu-card {\n      border-top: 1px solid #e4e4e6; }\n\n.card-class {\n  border: 1px solid #dcdee2;\n  border-color: #e8eaec;\n  background: #fff;\n  font-size: 14px;\n  position: relative;\n  cursor: pointer;\n  transition: all .2s ease-in-out; }\n  .card-class .content {\n    padding: 16px; }\n  .card-class h3 {\n    display: inline-block; }\n  .card-class::after {\n    content: '>';\n    display: block;\n    position: absolute;\n    font-weight: bold;\n    right: 10px;\n    top: 20px; }\n\n.add-new-card {\n  font-size: 12px;\n  color: #007aff;\n  width: 100%;\n  text-align: left;\n  list-style: none;\n  margin-top: 25px;\n  padding: 15px 10px;\n  border-top: 1px solid #d2d2d7;\n  border-bottom: 1px solid #d2d2d7;\n  box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);\n  background-color: #fff;\n  cursor: pointer;\n  transition: all .2s ease;\n  position: absolute;\n  bottom: 0; }\n  .add-new-card .ivu-icon {\n    color: #007aff;\n    font-size: 22px;\n    text-align: center;\n    line-height: 20px;\n    width: 20px;\n    height: 20px;\n    margin-right: 5px;\n    top: 6px; }\n\n.meal-content {\n  border-radius: 5px;\n  background-color: #fff;\n  margin: 10px;\n  padding: 10px; }\n  .meal-content .detail-recipes,\n  .meal-content .detail-meals {\n    display: flex;\n    width: 100%;\n    flex-wrap: wrap; }\n  .meal-content .item-recipes,\n  .meal-content .item-meals {\n    display: flex;\n    justify-content: space-between;\n    position: relative;\n    flex-basis: 50%;\n    padding: 15px 10px;\n    box-sizing: border-box; }\n    .meal-content .item-recipes::after,\n    .meal-content .item-meals::after {\n      content: '';\n      position: absolute;\n      display: block;\n      height: 1px;\n      width: calc(100% - 20px);\n      bottom: 0;\n      background-color: rgba(0, 0, 0, 0.1); }\n\n.addclass {\n  cursor: pointer; }\n\n.popmap .title {\n  font-weight: bold;\n  font-size: 1.125em; }\n\n/*ul*/\n.mapclass li {\n  padding: 10px 10px 10px 0;\n  cursor: pointer; }\n  .mapclass li.active, .mapclass li:hover {\n    color: #fff;\n    background-color: #007aff; }\n  .mapclass li i {\n    color: #abb0b9; }\n\n.mapclass li.li-item-b.active, .mapclass li.li-item-b:hover,\n.mapclass li.li-item-c.active,\n.mapclass li.li-item-c:hover {\n  color: #000;\n  background-color: #eee; }\n\n.mapclass li.li-item-b.active .active-icon,\n.mapclass li.li-item-c.active .active-icon {\n  display: inline-block; }\n\n.mapclass li.li-item-b .active-icon,\n.mapclass li.li-item-c .active-icon {\n  display: none; }\n\n/*ul*/\n.sureclass li {\n  padding: 10px 10px 10px 0;\n  cursor: pointer; }\n  .sureclass li i {\n    color: #007aff; }\n\n/*section*/\n.store-info {\n  max-width: 800px;\n  margin-top: 20px; }\n  .store-info h2 {\n    margin: 15px 10px; }\n  .store-info .content-wrap {\n    background-color: #fff;\n    padding: 20px;\n    box-sizing: border-box;\n    border-radius: 10px;\n    margin-bottom: 30px; }\n    .store-info .content-wrap .input-wrap {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      margin-bottom: 10px;\n      padding-bottom: 10px;\n      border-bottom: 1px solid #d2d2d7; }\n      .store-info .content-wrap .input-wrap:last-child {\n        border-bottom: none; }\n\n.ivu-input-wrapper,\n.ivu-select {\n  width: 75%; }\n\n.union .hide {\n  display: none; }\n", "", {"version":3,"sources":["C:/Users/Tony/Desktop/po-w/resources/assets/sass/app.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/common/normalize.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/_variables.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/common/utilities.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/common/mixin.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/common/animations.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/nav.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/header.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/login.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/content.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/card.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/meal.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/popmap.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/pages/store-info.scss","C:/Users/Tony/Desktop/po-w/resources/assets/sass/resources/assets/sass/common/ivelement.scss"],"names":[],"mappings":"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","file":"app.scss","sourcesContent":["@charset \"UTF-8\";\n@import url(\"../../../node_modules/iview/dist/styles/iview.css\");\n/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */\nhtml {\n  -ms-text-size-adjust: 100%;\n  -webkit-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1;\n  margin: 0;\n  background-color: #efeff4; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\na {\n  text-decoration: none; }\n\n.color-white {\n  color: #fff; }\n\n.color-black {\n  color: #000; }\n\n/**\r\n * 先把 body 放在這\r\n *\r\n * 如果之後太多就拆出去做\r\n *\r\n * 我們可以在註解中嵌入 HTML 標記，而且也建議這麼做：\r\n *\r\n    <div class=foo>\r\n        <p>Lorem</p>\r\n    </div>\r\n *\r\n * 如果是註解內嵌標籤的話，我選擇不在它前面加上星號，否則要複製貼上時還挺麻煩的。\r\n */\nbody {\n  margin: 0;\n  font-family: \"Nunito\", sans-serif;\n  font-size: 16px;\n  line-height: 1;\n  letter-spacing: 1px;\n  text-align: justify;\n  overflow-x: hidden; }\n  body.noscroll {\n    overflow: hidden; }\n\n.fadeInDown {\n  animation-name: fadeInDown;\n  animation-duration: 1s;\n  animation-fill-mode: both; }\n\n@-webkit-keyframes fadeInDown {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0); }\n  100% {\n    opacity: 1;\n    transform: none; } }\n\n@keyframes fadeInDown {\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -100%, 0); }\n  100% {\n    opacity: 1;\n    transform: none; } }\n\n/* Simple CSS3 Fade-in Animation */\n@keyframes fadeIn {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n.fadeIn {\n  opacity: 0;\n  animation: fadeIn ease-in 1;\n  animation-fill-mode: forwards;\n  animation-duration: 1s; }\n\n.fadeIn.first {\n  animation-delay: 0.4s; }\n\n.fadeIn.second {\n  animation-delay: 0.6s; }\n\n.fadeIn.third {\n  animation-delay: 0.8s; }\n\n.fadeIn.fourth {\n  animation-delay: 1s; }\n\nnav {\n  background-color: #ccc;\n  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.15);\n  display: flex; }\n  nav > a {\n    display: flex;\n    align-items: center; }\n    nav > a.logo {\n      color: #fff;\n      padding-right: 30px;\n      border-right: 1px solid #e4e4e6; }\n    nav > a.info {\n      color: #000;\n      padding-right: 30px;\n      padding-left: 30px;\n      border-left: 1px solid #e4e4e6; }\n    nav > a img {\n      display: inline-block;\n      width: 60px;\n      padding: 10px; }\n    nav > a p {\n      font-weight: bold;\n      line-height: 1.25em;\n      color: #000;\n      display: inline-block; }\n      nav > a p span {\n        color: #fff; }\n  nav ul {\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: flex;\n    align-items: center;\n    flex: 1; }\n    nav ul li {\n      display: inline-block;\n      padding: 10px 15px; }\n    nav ul li {\n      cursor: pointer;\n      position: relative;\n      padding: 30px 15px;\n      color: #000; }\n      nav ul li.active::after {\n        content: '';\n        position: absolute;\n        bottom: 10px;\n        left: 0;\n        right: 0;\n        margin: auto;\n        display: inline-block;\n        width: calc(100% - 30px);\n        height: 1px;\n        background-color: #000; }\n\n/*section*/\n.header {\n  margin: 0 auto;\n  text-align: center;\n  padding: 30px 0;\n  font-size: 1.25em; }\n  .header a {\n    margin-right: 30px;\n    position: relative;\n    color: blue; }\n    .header a.active {\n      color: #000; }\n    .header a::after {\n      content: '';\n      display: block;\n      height: 30px;\n      width: 2px;\n      background-color: #000;\n      position: absolute;\n      right: -15px;\n      top: 0; }\n    .header a:last-child {\n      margin-right: 0; }\n      .header a:last-child::after {\n        display: none; }\n\n/**\r\n * ^nav ^lists\r\n */\n.header .statusbar ul.social li .member__dropdown {\n  display: none;\n  height: auto;\n  padding: 20px;\n  text-align: center;\n  position: absolute;\n  top: 45px;\n  right: 142px;\n  z-index: 5;\n  color: #ccc;\n  background-color: #e6e6e6;\n  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);\n  box-sizing: border-box; }\n  .header .statusbar ul.social li .member__dropdown::after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -10px;\n    right: 10px;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 0 10px 10px 10px;\n    border-color: transparent transparent #e6e6e6 transparent; }\n  .header .statusbar ul.social li .member__dropdown.mobile {\n    width: 100%;\n    right: 0;\n    top: 56px; }\n    .header .statusbar ul.social li .member__dropdown.mobile::after {\n      right: 70px; }\n    .header .statusbar ul.social li .member__dropdown.mobile .member__msglist li::after {\n      display: none; }\n  .header .statusbar ul.social li .member__dropdown .member__info img {\n    width: 80px;\n    height: 80px;\n    border-radius: 50%;\n    margin-bottom: 20px; }\n  .header .statusbar ul.social li .member__dropdown .member__info p {\n    margin-bottom: 5px; }\n    .header .statusbar ul.social li .member__dropdown .member__info p:last-child {\n      margin-bottom: 0;\n      font-weight: normal; }\n  .header .statusbar ul.social li .member__dropdown hr {\n    display: block;\n    height: 1px;\n    border: 0;\n    border-top: 1px solid #fff;\n    margin: 20px 0;\n    padding: 0; }\n  .header .statusbar ul.social li .member__dropdown .member__msglist a {\n    width: auto;\n    height: auto;\n    border-radius: 0;\n    display: block;\n    border: none; }\n  .header .statusbar ul.social li .member__dropdown .member__msglist li {\n    margin: 10px 0;\n    float: none; }\n  .header .statusbar ul.social li .member__dropdown p.member__btn {\n    margin-top: 30px;\n    text-align: right; }\n    .header .statusbar ul.social li .member__dropdown p.member__btn a {\n      width: 64px;\n      height: 32px;\n      line-height: 32px;\n      text-align: center;\n      border-radius: 0;\n      display: inline-block;\n      border: none;\n      background-color: #ccc;\n      color: #fff; }\n\n.header nav .navGroup .navWrap ul.icon li.memberIcon {\n  display: block; }\n  @media screen and (min-width: 64em) {\n    .header nav .navGroup .navWrap ul.icon li.memberIcon {\n      display: none; } }\n\n.header nav .navGroup .navWrap ul.icon .member__dropdown_btn {\n  width: 50px; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown_btn svg {\n    width: 26px;\n    height: 26px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown_btn svg .cls-1 {\n      fill: #f0f0f0; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown_btn svg .cls-2 {\n      fill: #969696; }\n  @media screen and (min-width: 35.5em) {\n    .header nav .navGroup .navWrap ul.icon .member__dropdown_btn {\n      display: none !important; } }\n\n.header nav .navGroup .navWrap ul.icon .member__dropdown {\n  display: none;\n  height: auto;\n  padding: 20px;\n  text-align: center;\n  position: absolute;\n  top: 45px;\n  right: 142px;\n  z-index: 5;\n  color: #ccc;\n  background-color: #e6e6e6;\n  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);\n  box-sizing: border-box; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown::after {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -10px;\n    right: 10px;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 0 10px 10px 10px;\n    border-color: transparent transparent #e6e6e6 transparent; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown.mobile {\n    width: 100%;\n    right: 0;\n    top: 56px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown.mobile::after {\n      right: 70px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown.mobile .member__msglist li::after {\n      display: none; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__info img {\n    width: 80px;\n    height: 80px;\n    border-radius: 50%;\n    margin-bottom: 20px; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__info p {\n    margin-bottom: 5px; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown .member__info p:last-child {\n      margin-bottom: 0;\n      font-weight: normal; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown hr {\n    display: block;\n    height: 1px;\n    border: 0;\n    border-top: 1px solid #fff;\n    margin: 20px 0;\n    padding: 0; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__msglist a {\n    width: auto;\n    height: auto;\n    border-radius: 0;\n    display: block;\n    border: none; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown .member__msglist li {\n    margin: 10px 0;\n    float: none; }\n  .header nav .navGroup .navWrap ul.icon .member__dropdown p.member__btn {\n    margin-top: 30px;\n    text-align: right; }\n    .header nav .navGroup .navWrap ul.icon .member__dropdown p.member__btn a {\n      width: 64px;\n      height: 32px;\n      line-height: 32px;\n      text-align: center;\n      border-radius: 0;\n      display: inline-block;\n      border: none;\n      background-color: #ccc;\n      color: #fff; }\n\n/**\r\n * ^wrapper\r\n */\n.login-wrapper {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  justify-content: center;\n  width: 100%;\n  height: 100vh;\n  background-color: #56baed;\n  min-height: 100%;\n  padding: 20px; }\n\n/**\r\n * ^member ^login\r\n */\n/*section*/\n.login {\n  align-items: center;\n  background-color: #fff;\n  color: #000;\n  width: 100%;\n  max-width: 450px;\n  padding: 30px 0 0 0;\n  border-radius: 10px 10px 10px 10px;\n  box-sizing: border-box;\n  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);\n  text-align: center;\n  margin: 0 auto;\n  z-index: 3; }\n  .login.display {\n    display: flex; }\n  .login a.blue {\n    text-decoration: underline; }\n  .login > div img {\n    width: 60%; }\n  .login h1 {\n    text-align: center;\n    font-weight: 300;\n    font-size: 30px;\n    margin-bottom: 20px;\n    line-height: 30px;\n    letter-spacing: .1em; }\n  .login ul.list {\n    list-style: none;\n    display: flex;\n    margin: 25px 0 30px 0; }\n    .login ul.list li {\n      flex: 1;\n      font-weight: 900;\n      text-align: center; }\n      .login ul.list li:first-child {\n        border-right: 1px #fff solid; }\n    .login ul.list .bule {\n      color: #007dff;\n      font-weight: bold;\n      position: relative; }\n      .login ul.list .bule::after {\n        content: \"\";\n        position: absolute;\n        display: inline-block;\n        width: 100%;\n        height: 1px;\n        background-color: #007dff;\n        bottom: -5px;\n        left: 0; }\n  .login p.hr {\n    position: relative;\n    margin: 13px 0;\n    border: none;\n    color: #ccc; }\n  .login p.singup_error {\n    color: #ff3964;\n    text-align: left;\n    display: none; }\n    .login p.singup_error.red {\n      display: block; }\n  .login .input__status--error {\n    position: absolute;\n    bottom: 0;\n    text-align: left;\n    color: #ff3964; }\n    .login .input__status--error.error__show {\n      display: block; }\n  .login .input__wrap {\n    display: flex;\n    flex-wrap: wrap;\n    margin: 10px 0 0 0;\n    position: relative;\n    overflow: hidden; }\n    .login .input__wrap label {\n      position: absolute;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      background-color: #fff;\n      border-radius: 0;\n      width: 40px;\n      height: 40px;\n      opacity: 0;\n      top: 1px;\n      right: 1px;\n      transform: translateX(40px);\n      transition: opacity 0.2s ease-out, transform 0.2s ease-out; }\n      .login .input__wrap label i {\n        display: inline-block;\n        font-size: 0;\n        width: 20px;\n        height: 15px;\n        vertical-align: middle;\n        background-size: contain; }\n      .login .input__wrap label:after {\n        content: \"\";\n        position: absolute;\n        display: inline-block;\n        background-color: #ccc;\n        height: 50%;\n        width: 1px;\n        top: 25%;\n        left: 0; }\n      .login .input__wrap label.labelshow {\n        opacity: 1;\n        transform: translateX(0px); }\n    .login .input__wrap input[type=\"password\"].eye ~ label i {\n      width: 20px;\n      height: 13px;\n      background-size: contain; }\n  .login input[type=\"text\"],\n  .login input[type=\"email\"],\n  .login input[type=\"password\"] {\n    display: inline-block;\n    width: 100%;\n    padding: 15px 80px;\n    margin: 5px 20px 5px 20px;\n    box-sizing: border-box;\n    background-color: #d2d2d7;\n    text-align: center;\n    text-decoration: none;\n    text-transform: uppercase;\n    font-size: 16px;\n    color: #000;\n    border: 2px solid #d2d2d7;\n    border-radius: 5px 5px 5px 5px;\n    outline: none;\n    transition: all 0.3s ease-in-out; }\n    .login input[type=\"text\"].active,\n    .login input[type=\"email\"].active,\n    .login input[type=\"password\"].active {\n      transform: scale(0.95); }\n    .login input[type=\"text\"]:focus,\n    .login input[type=\"email\"]:focus,\n    .login input[type=\"password\"]:focus {\n      background-color: #fff;\n      border-bottom: 2px solid #5fbae9; }\n    .login input[type=\"text\"]:placeholder,\n    .login input[type=\"email\"]:placeholder,\n    .login input[type=\"password\"]:placeholder {\n      color: #cccccc; }\n  .login .form_buttonbar {\n    display: flex;\n    justify-items: center;\n    align-items: center;\n    margin-top: 30px; }\n    .login .form_buttonbar p {\n      flex: 1;\n      color: #ccc;\n      font-weight: 900; }\n      .login .form_buttonbar p:nth-of-type(1) {\n        text-align: left; }\n      .login .form_buttonbar p:nth-of-type(2) {\n        text-align: right; }\n    .login .form_buttonbar button {\n      display: inline-block;\n      width: 100%;\n      padding: 15px 80px;\n      margin: 5px 20px 40px 20px;\n      box-sizing: border-box;\n      background-color: #56baed;\n      text-align: center;\n      text-decoration: none;\n      text-transform: uppercase;\n      font-size: 16px;\n      color: #fff;\n      border-radius: 5px 5px 5px 5px;\n      border: 0;\n      box-shadow: 0 6px 20px 0 rgba(95, 186, 233, 0.4);\n      outline: none;\n      transition: all 0.3s ease-in-out; }\n      .login .form_buttonbar button.primary {\n        color: #fff;\n        background-color: #56baed; }\n      .login .form_buttonbar button:disabled {\n        background-color: #e6e6e6; }\n  .login .formFooter {\n    background-color: #d2d2d7;\n    border-top: 1px solid #e4e4e6;\n    padding: 25px;\n    text-align: center;\n    border-radius: 0 0 10px 10px; }\n    .login .formFooter a {\n      color: #92badd;\n      display: inline-block;\n      text-decoration: none;\n      font-weight: bold; }\n\nmain.mamager {\n  background-color: #f0f0f0;\n  padding: 30px 20px; }\n  @media screen and (min-width: 35.5em) {\n    main.mamager {\n      padding: 100px 0; } }\n\n.profile_wrap {\n  width: 100%;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 50px 0;\n  border-radius: 50px;\n  box-sizing: border-box;\n  background-color: #e6e6e6;\n  display: flex;\n  flex-wrap: wrap; }\n  .profile_wrap h3 {\n    font-size: 20px;\n    color: #ccc;\n    text-align: center;\n    flex-basis: 100%;\n    margin-bottom: 40px; }\n  .profile_wrap .form_wrap {\n    position: relative;\n    text-align: center;\n    width: 100%;\n    flex-basis: 100%;\n    height: auto;\n    margin: 0 auto 40px auto;\n    color: #ccc; }\n    @media screen and (min-width: 35.5em) {\n      .profile_wrap .form_wrap {\n        flex-basis: 0;\n        flex: 5;\n        margin: 0 auto; } }\n    .profile_wrap .form_wrap .form-group {\n      margin-bottom: 10px; }\n    .profile_wrap .form_wrap .input__wrap {\n      width: 82%;\n      margin: 0 auto;\n      text-align: left; }\n      @media screen and (min-width: 35.5em) {\n        .profile_wrap .form_wrap .input__wrap {\n          width: 60%; } }\n    .profile_wrap .form_wrap::after {\n      content: \"\";\n      position: absolute;\n      right: 0;\n      top: 0;\n      display: block;\n      width: 1px;\n      height: 100%;\n      background-color: #fff; }\n    .profile_wrap .form_wrap label {\n      font-weight: bold;\n      padding-bottom: 5px;\n      padding-left: 5px;\n      display: block; }\n    .profile_wrap .form_wrap input {\n      display: block;\n      width: 100%;\n      padding: 11px 10px;\n      margin-bottom: 15px;\n      box-sizing: border-box;\n      font-size: 16px;\n      color: #ccc;\n      border: none;\n      outline: none; }\n    .profile_wrap .form_wrap .input__wrap:last-child input {\n      margin-bottom: 0; }\n    .profile_wrap .form_wrap button {\n      display: inline-block;\n      width: 100%;\n      padding: 15px 80px;\n      margin: 5px 20px 40px 20px;\n      box-sizing: border-box;\n      background-color: #56baed;\n      text-align: center;\n      text-decoration: none;\n      text-transform: uppercase;\n      font-size: 16px;\n      color: #fff;\n      border-radius: 5px 5px 5px 5px;\n      border: 0;\n      box-shadow: 0 6px 20px 0 rgba(95, 186, 233, 0.4);\n      outline: none;\n      transition: all 0.3s ease-in-out;\n      margin: 5px 0 0 0; }\n      .profile_wrap .form_wrap button.primary {\n        color: #fff;\n        background-color: #56baed; }\n      .profile_wrap .form_wrap button:disabled {\n        background-color: #e6e6e6; }\n  .profile_wrap .profile_picture {\n    width: 100%;\n    text-align: center;\n    flex-basis: 100%; }\n    @media screen and (min-width: 35.5em) {\n      .profile_wrap .profile_picture {\n        flex-basis: 0;\n        flex: 3; } }\n    .profile_wrap .profile_picture img {\n      width: 120px;\n      height: 120px;\n      display: block;\n      margin: 0 auto 30px auto;\n      border-radius: 50%; }\n    .profile_wrap .profile_picture .button_wrap {\n      background-color: #f0f0f0;\n      width: 180px;\n      height: 180px;\n      border-radius: 30px;\n      margin: 0 auto; }\n      .profile_wrap .profile_picture .button_wrap svg {\n        fill: #ccc;\n        width: 30px;\n        height: 30px;\n        margin-top: 50px; }\n      .profile_wrap .profile_picture .button_wrap button {\n        display: inline-block;\n        width: 100%;\n        padding: 15px 80px;\n        margin: 5px 20px 40px 20px;\n        box-sizing: border-box;\n        background-color: #56baed;\n        text-align: center;\n        text-decoration: none;\n        text-transform: uppercase;\n        font-size: 16px;\n        color: #fff;\n        border-radius: 5px 5px 5px 5px;\n        border: 0;\n        box-shadow: 0 6px 20px 0 rgba(95, 186, 233, 0.4);\n        outline: none;\n        transition: all 0.3s ease-in-out;\n        display: block;\n        height: 30px;\n        width: 100px;\n        border-radius: 20px;\n        margin: 0 auto; }\n        .profile_wrap .profile_picture .button_wrap button.primary {\n          color: #fff;\n          background-color: #56baed; }\n        .profile_wrap .profile_picture .button_wrap button:disabled {\n          background-color: #e6e6e6; }\n\n/*section*/\n.content {\n  margin: 0 auto;\n  width: 100%;\n  box-sizing: border-box; }\n  .content.page .ivu-col {\n    height: calc(100vh - 76px);\n    overflow: auto;\n    border-right: 0;\n    box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);\n    background-color: #efeff4; }\n    .content.page .ivu-col:last-child {\n      border-right: 0; }\n    .content.page .ivu-col .title {\n      text-align: left;\n      font-weight: bold;\n      padding: 15px;\n      background-color: rgba(255, 255, 255, 0.3);\n      border-bottom: 1px #d2d2d7 solid; }\n    .content.page .ivu-col .ivu-dropdown {\n      position: absolute;\n      right: 30px; }\n    .content.page .ivu-col .union.union-half {\n      height: calc(50vh - 70px);\n      position: relative; }\n    .content.page .ivu-col .union h4 {\n      padding: 10px; }\n    .content.page .ivu-col .union .setting p {\n      display: inline-block; }\n    .content.page .ivu-col .union .card-class {\n      border-top: 0; }\n      .content.page .ivu-col .union .card-class i {\n        color: #abb0b9; }\n      .content.page .ivu-col .union .card-class.active, .content.page .ivu-col .union .card-class:hover {\n        color: #007aff; }\n        .content.page .ivu-col .union .card-class.active i, .content.page .ivu-col .union .card-class:hover i {\n          color: #007aff; }\n        .content.page .ivu-col .union .card-class.active .ivu-dropdown, .content.page .ivu-col .union .card-class:hover .ivu-dropdown {\n          opacity: 1; }\n      .content.page .ivu-col .union .card-class.card-class-a:first-child {\n        border-top: 1px solid #e4e4e6; }\n      .content.page .ivu-col .union .card-class.card-class-b, .content.page .ivu-col .union .card-class.card-class-c {\n        margin-left: 10px;\n        margin-right: 10px; }\n      .content.page .ivu-col .union .card-class.lastcard {\n        border-radius: 0 0 8px 8px; }\n    .content.page .ivu-col .union h4 + .card-class-b,\n    .content.page .ivu-col .union h4 + .card-class-c {\n      border-top: 1px solid #e4e4e6;\n      border-radius: 8px 8px 0 0; }\n    .content.page .ivu-col .union .ivu-card {\n      border-radius: 0;\n      border-top: 0; }\n      .content.page .ivu-col .union .ivu-card:first-child {\n        border-top: 1px solid #e4e4e6; }\n    .content.page .ivu-col .union h4 + .ivu-card {\n      border-top: 1px solid #e4e4e6; }\n\n.card-class {\n  border: 1px solid #dcdee2;\n  border-color: #e8eaec;\n  background: #fff;\n  font-size: 14px;\n  position: relative;\n  cursor: pointer;\n  transition: all .2s ease-in-out; }\n  .card-class .content {\n    padding: 16px; }\n  .card-class h3 {\n    display: inline-block; }\n  .card-class::after {\n    content: '>';\n    display: block;\n    position: absolute;\n    font-weight: bold;\n    right: 10px;\n    top: 20px; }\n\n.add-new-card {\n  font-size: 12px;\n  color: #007aff;\n  width: 100%;\n  text-align: left;\n  list-style: none;\n  margin-top: 25px;\n  padding: 15px 10px;\n  border-top: 1px solid #d2d2d7;\n  border-bottom: 1px solid #d2d2d7;\n  box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);\n  background-color: #fff;\n  cursor: pointer;\n  transition: all .2s ease;\n  position: absolute;\n  bottom: 0; }\n  .add-new-card .ivu-icon {\n    color: #007aff;\n    font-size: 22px;\n    text-align: center;\n    line-height: 20px;\n    width: 20px;\n    height: 20px;\n    margin-right: 5px;\n    top: 6px; }\n\n.meal-content {\n  border-radius: 5px;\n  background-color: #fff;\n  margin: 10px;\n  padding: 10px; }\n  .meal-content .detail-recipes,\n  .meal-content .detail-meals {\n    display: flex;\n    width: 100%;\n    flex-wrap: wrap; }\n  .meal-content .item-recipes,\n  .meal-content .item-meals {\n    display: flex;\n    justify-content: space-between;\n    position: relative;\n    flex-basis: 50%;\n    padding: 15px 10px;\n    box-sizing: border-box; }\n    .meal-content .item-recipes::after,\n    .meal-content .item-meals::after {\n      content: '';\n      position: absolute;\n      display: block;\n      height: 1px;\n      width: calc(100% - 20px);\n      bottom: 0;\n      background-color: rgba(0, 0, 0, 0.1); }\n\n.addclass {\n  cursor: pointer; }\n\n.popmap .title {\n  font-weight: bold;\n  font-size: 1.125em; }\n\n/*ul*/\n.mapclass li {\n  padding: 10px 10px 10px 0;\n  cursor: pointer; }\n  .mapclass li.active, .mapclass li:hover {\n    color: #fff;\n    background-color: #007aff; }\n  .mapclass li i {\n    color: #abb0b9; }\n\n.mapclass li.li-item-b.active, .mapclass li.li-item-b:hover,\n.mapclass li.li-item-c.active,\n.mapclass li.li-item-c:hover {\n  color: #000;\n  background-color: #eee; }\n\n.mapclass li.li-item-b.active .active-icon,\n.mapclass li.li-item-c.active .active-icon {\n  display: inline-block; }\n\n.mapclass li.li-item-b .active-icon,\n.mapclass li.li-item-c .active-icon {\n  display: none; }\n\n/*ul*/\n.sureclass li {\n  padding: 10px 10px 10px 0;\n  cursor: pointer; }\n  .sureclass li i {\n    color: #007aff; }\n\n/*section*/\n.store-info {\n  max-width: 800px;\n  margin-top: 20px; }\n  .store-info h2 {\n    margin: 15px 10px; }\n  .store-info .content-wrap {\n    background-color: #fff;\n    padding: 20px;\n    box-sizing: border-box;\n    border-radius: 10px;\n    margin-bottom: 30px; }\n    .store-info .content-wrap .input-wrap {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      margin-bottom: 10px;\n      padding-bottom: 10px;\n      border-bottom: 1px solid #d2d2d7; }\n      .store-info .content-wrap .input-wrap:last-child {\n        border-bottom: none; }\n\n.ivu-input-wrapper,\n.ivu-select {\n  width: 75%; }\n\n.union .hide {\n  display: none; }\n","/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */\r\n\r\nhtml {\r\n\t-ms-text-size-adjust: 100%;\r\n\t-webkit-text-size-adjust: 100%; /* 2 */\r\n\t-webkit-font-smoothing: antialiased;\r\n\t-moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\nhtml, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td,\r\narticle, aside, canvas, details, embed, \r\nfigure, figcaption, footer, header, hgroup, \r\nmenu, nav, output, ruby, section, summary,\r\ntime, mark, audio, video {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tborder: 0;\r\n\tfont-size: 100%;\r\n\tfont: inherit;\r\n\tvertical-align: baseline;\r\n}\r\n/* HTML5 display-role reset for older browsers */\r\narticle, aside, details, figcaption, figure, \r\nfooter, header, hgroup, menu, nav, section {\r\n\tdisplay: block;\r\n}\r\nbody {\r\n  line-height: 1;\r\n  margin: 0;\r\n  background-color: $bg-lightgray;\r\n}\r\nol, ul {\r\n\tlist-style: none;\r\n}\r\nblockquote, q {\r\n\tquotes: none;\r\n}\r\nblockquote:before, blockquote:after,\r\nq:before, q:after {\r\n\tcontent: '';\r\n\tcontent: none;\r\n}\r\ntable {\r\n\tborder-collapse: collapse;\r\n\tborder-spacing: 0;\r\n}\r\n\r\na {\r\n\ttext-decoration: none;\r\n}","\r\n\r\n// Typography\r\n$font-family-sans-serif: \"Nunito\", sans-serif;\r\n$line-height: 1;\r\n$font-size-normal: 16px;\r\n\r\n\r\n\r\n\r\n$Gray: #e6e6e6;\r\n$DarkGray: #ccc;\r\n$PantoneBlue: #007dff;\r\n\r\n\r\n$white: #fff;\r\n$black: #000;\r\n// TEXT\r\n$text-gray: #6d6d72;\r\n// BG\r\n$bg-gray: #ccc;\r\n$bg-lightgray: #efeff4;\r\n// BUTTON\r\n$btn-blue: #56baed;\r\n// LINK\r\n$link-bule: #007aff;\r\n$link-ligntbule: #c9e3ff;\r\n// ICON\r\n$icon-gray: #555;\r\n// LINE\r\n$line-gray: #d2d2d7;\r\n$line-lightgray: #e4e4e6;\r\n\r\n\r\n// Reference: https://purecss.io/grids/\r\n$sm: 35.5em; // 568px\r\n$sm_unless: 567px; \r\n$md: 48em; // 768px\r\n$md_unless: 767px; \r\n$lg: 64em; // 1024px\r\n$lg_unless: 1023px; \r\n$xl: 80em; // 1280px\r\n$xl_unless: 1279px;",".color-white {\r\n    color: $white;\r\n}\r\n\r\n.color-black {\r\n    color: $black;\r\n}","// Media Queries mixin\r\n@mixin screen($point) {\r\n  @if $point == sm { // ≥ 568px\r\n    @media screen and (min-width: $sm) { @content; }\r\n  }\r\n  @else if $point == md { // ≥ 768px\r\n    @media screen and (min-width: $md) { @content; }\r\n  }\r\n  @else if $point == lg { // ≥ 1024px\r\n    @media screen and (min-width: $lg) { @content; }\r\n  }\r\n  @else if $point == xl { // ≥ 1280px\r\n    @media screen and (min-width: $xl) { @content; }\r\n  }\r\n}\r\n\r\n@mixin ul--style {\r\n  padding: 0;\r\n  margin: 0;\r\n  list-style: none;\r\n  li {\r\n    display: inline-block;\r\n    padding: 10px 15px;\r\n  }\r\n}\r\n\r\n@mixin member__input {\r\n  display: inline-block;\r\n  width: 100%;\r\n  padding: 15px 80px;\r\n  margin: 5px 20px 5px 20px;\r\n  box-sizing: border-box;\r\n  background-color: $line-gray;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  text-transform: uppercase;\r\n  font-size: 16px;\r\n\tcolor: $black;\r\n\tborder: 2px solid $line-gray;\r\n  border-radius: 5px 5px 5px 5px;  \r\n  outline: none;\r\n\ttransition: all 0.3s ease-in-out;\r\n\t&.active {\r\n\t\ttransform: scale(0.95);\r\n\t}\r\n  &:focus {\r\n    background-color: #fff;\r\n    border-bottom: 2px solid #5fbae9;\r\n\t}\r\n\t&:placeholder {\r\n\t\tcolor: #cccccc;\r\n\t}\r\n}\r\n\r\n@mixin member__button {\r\n\tdisplay: inline-block;\r\n\twidth: 100%;\r\n\tpadding: 15px 80px;\r\n\tmargin: 5px 20px 40px 20px;\r\n\tbox-sizing: border-box;\r\n\tbackground-color: $btn-blue;\r\n\ttext-align: center;\r\n\ttext-decoration: none;\r\n\ttext-transform: uppercase;\r\n\tfont-size: 16px;\r\n\tcolor: $white;\r\n    border-radius: 5px 5px 5px 5px;\r\n    border: 0;\r\n\tbox-shadow: 0 6px 20px 0 rgba(95,186,233,0.4);\r\n\toutline: none;\r\n\ttransition: all 0.3s ease-in-out;\r\n  &:hover {\r\n  }\r\n  &.primary {\r\n      color: #fff;\r\n      background-color: $btn-blue;\r\n  }\r\n  &:disabled {\r\n    background-color: $Gray;\r\n    &:hover {\r\n    }\r\n  }\r\n}\r\n\r\n@mixin input__wrap {\r\n  .input__status--error {\r\n      position: absolute;\r\n      bottom: 0;\r\n      text-align: left;\r\n      color:#ff3964;\r\n      &.error__show {\r\n          display: block;\r\n      }\r\n  }\r\n  .input__wrap {\r\n      display: flex;\r\n      flex-wrap: wrap;\r\n      margin: 10px 0 0 0;\r\n      \r\n      position: relative;\r\n      overflow: hidden;\r\n      label {\r\n          position: absolute;\r\n          display: flex;\r\n          align-items: center;\r\n          justify-content: center;\r\n          background-color: #fff;\r\n          border-radius: 0;\r\n          width: 40px;\r\n          height: 40px;\r\n          opacity: 0;\r\n          top: 1px;\r\n          right: 1px;\r\n          transform: translateX(40px);\r\n          transition:opacity 0.2s ease-out, transform 0.2s ease-out;\r\n          i {\r\n              display: inline-block;\r\n              font-size: 0;\r\n              width: 20px;\r\n              height: 15px;\r\n              vertical-align: middle;\r\n              background-size: contain;\r\n          }\r\n          &:after {\r\n              content: \"\";\r\n              position: absolute;\r\n              display: inline-block;\r\n              background-color: $DarkGray;\r\n              height: 50%;\r\n              width: 1px;\r\n              top: 25%;\r\n              left: 0;\r\n          }\r\n          &.labelshow {\r\n              opacity: 1;\r\n              transform: translateX(0px);\r\n          }       \r\n      }\r\n      input[type=\"password\"] {\r\n          &.eye ~ label i {\r\n              width: 20px;\r\n              height: 13px;\r\n              background-size: contain;\r\n          }\r\n      }          \r\n  }\r\n}\r\n\r\n@mixin member__dropdown {\r\n  .member__dropdown {\r\n      display: none;\r\n      height: auto;\r\n      padding: 20px;\r\n      text-align: center;\r\n      position: absolute;\r\n      top: 45px;\r\n      right: 142px;\r\n      z-index: 5;\r\n      color: $DarkGray;\r\n      background-color: $Gray;\r\n      box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.2);\r\n      box-sizing: border-box;\r\n      &::after {\r\n          content: \"\";\r\n          display: block;\r\n          position: absolute;\r\n          top: -10px;\r\n          right: 10px;\r\n          width: 0;\r\n          height: 0;\r\n          border-style: solid;\r\n          border-width: 0 10px 10px 10px;\r\n          border-color: transparent transparent $Gray transparent;\r\n      }\r\n      &.mobile {\r\n          width: 100%;\r\n          right: 0;\r\n          top: 56px;\r\n          &::after {\r\n              right: 70px;\r\n          }\r\n          .member__msglist {\r\n              li::after { display: none; }\r\n          }\r\n      }\r\n      .member__info {\r\n          img {\r\n              width: 80px;\r\n              height: 80px;\r\n              border-radius: 50%;\r\n              margin-bottom: 20px;\r\n          }\r\n          p {\r\n              margin-bottom: 5px;\r\n              &:last-child {margin-bottom: 0; font-weight: normal;}\r\n          }\r\n      }\r\n      hr {\r\n          display: block;\r\n          height: 1px;\r\n          border: 0;\r\n          border-top: 1px solid #fff;\r\n          margin: 20px 0;\r\n          padding: 0;\r\n      }\r\n      .member__msglist {\r\n          a {\r\n              width: auto;\r\n              height: auto;\r\n              border-radius: 0;\r\n              display: block;\r\n              border: none;                \r\n          }\r\n          li {\r\n              margin: 10px 0;\r\n              float: none;\r\n          }\r\n      }\r\n      p.member__btn {\r\n          margin-top: 30px;\r\n          text-align: right;\r\n          a {\r\n              width: 64px;\r\n              height: 32px;\r\n              line-height: 32px;\r\n              text-align: center;\r\n              border-radius: 0;         \r\n              display: inline-block;\r\n              border: none;\r\n              background-color: $DarkGray;\r\n              color: #fff;\r\n          }\r\n      }\r\n  }\r\n}\r\n\r\n\r\n/**\r\n * 先把 body 放在這\r\n *\r\n * 如果之後太多就拆出去做\r\n *\r\n * 我們可以在註解中嵌入 HTML 標記，而且也建議這麼做：\r\n *\r\n    <div class=foo>\r\n        <p>Lorem</p>\r\n    </div>\r\n *\r\n * 如果是註解內嵌標籤的話，我選擇不在它前面加上星號，否則要複製貼上時還挺麻煩的。\r\n */\r\nbody {\r\n\tmargin: 0;\r\n\tfont-family: $font-family-sans-serif;\r\n\tfont-size: $font-size-normal;\r\n\tline-height: $line-height;\r\n\tletter-spacing: 1px;\r\n\ttext-align: justify;\r\n\toverflow-x: hidden;\r\n    @include screen(tb) {\r\n\t\t  font-size: $font-size-normal;\r\n\t  }\r\n\t  @include screen(pcSmall) {\r\n\t\t  font-size: $font-size-normal;\r\n\t  }\r\n\t&.noscroll {\r\n\t\toverflow: hidden;\r\n\t}\r\n}",".fadeInDown {\r\n    animation-name: fadeInDown;\r\n    animation-duration: 1s;\r\n    animation-fill-mode: both;\r\n}\r\n\r\n@-webkit-keyframes fadeInDown {\r\n    0% {\r\n        opacity: 0;\r\n        transform: translate3d(0, -100%, 0);\r\n    }\r\n    100% {\r\n        opacity: 1;\r\n        transform: none;\r\n    }\r\n}\r\n\r\n@keyframes fadeInDown {\r\n    0% {\r\n        opacity: 0;\r\n        transform: translate3d(0, -100%, 0);\r\n    }\r\n    100% {\r\n        opacity: 1;\r\n        transform: none;\r\n    }\r\n}\r\n\r\n/* Simple CSS3 Fade-in Animation */\r\n@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }\r\n\r\n.fadeIn {\r\n    opacity:0;\r\n    animation:fadeIn ease-in 1;\r\n    animation-fill-mode:forwards;\r\n    animation-duration:1s;\r\n}\r\n\r\n.fadeIn.first {\r\n    animation-delay: 0.4s;\r\n}\r\n\r\n.fadeIn.second {\r\n    animation-delay: 0.6s;\r\n}\r\n\r\n.fadeIn.third {\r\n    animation-delay: 0.8s;\r\n}\r\n\r\n.fadeIn.fourth {\r\n    animation-delay: 1s;\r\n}\r\n","nav {\r\n    background-color: $DarkGray;\r\n    box-shadow: 0 .1rem 1rem rgba(0,0,0,.15);\r\n    display: flex;\r\n    &>a {\r\n        display: flex;\r\n        align-items: center;\r\n        &.logo {\r\n            color: $white;\r\n            padding-right: 30px;\r\n            border-right: 1px solid $line-lightgray;\r\n        }\r\n        &.info {\r\n            color: $black;\r\n            padding-right: 30px;\r\n            padding-left: 30px;\r\n            border-left: 1px solid $line-lightgray;\r\n        }\r\n        img {\r\n            display: inline-block;\r\n            width: 60px;\r\n            padding: 10px;\r\n        }\r\n        p {\r\n            font-weight: bold;\r\n            line-height: 1.25em;\r\n            color: $black;\r\n            display: inline-block;\r\n            span {\r\n                color: $white;\r\n            }\r\n        }\r\n    }\r\n    ul {\r\n        @include ul--style;\r\n        display: flex;\r\n        align-items: center;\r\n        flex: 1;\r\n        li {\r\n            cursor: pointer;\r\n            position: relative;\r\n            padding: 30px 15px;\r\n            color: $black;\r\n            &.active {\r\n                &::after {\r\n                    content: '';\r\n                    position: absolute;\r\n                    bottom: 10px;\r\n                    left: 0;\r\n                    right: 0;\r\n                    margin: auto;\r\n                    display:inline-block;\r\n                    width: calc(100% - 30px);\r\n                    height: 1px;\r\n                    background-color: $black;\r\n                }\r\n            }\r\n        }\r\n    }    \r\n}","/*section*/.header {\r\n    margin: 0 auto;    \r\n    text-align: center;\r\n    padding: 30px 0;\r\n    font-size: 1.25em;\r\n    a {\r\n        margin-right: 30px;\r\n        position: relative;\r\n        color: blue;\r\n        &.active {\r\n            color: $black;\r\n        }\r\n        &::after {\r\n            content: '';\r\n            display: block;\r\n            height: 30px;\r\n            width: 2px;\r\n            background-color: $black;\r\n            position: absolute;\r\n            right: -15px;\r\n            top: 0;\r\n        }\r\n        &:last-child {\r\n            margin-right: 0;\r\n            &::after {\r\n                display: none;\r\n            }\r\n        }\r\n    }\r\n}","/**\r\n * ^nav ^lists\r\n */\r\n.header {\r\n    // Desktop\r\n    .statusbar {\r\n        ul.social li {\r\n            @include member__dropdown;\r\n        }\r\n    }\r\n    // Mobile\r\n    nav {\r\n        .navGroup .navWrap ul.icon {\r\n            li.memberIcon {\r\n                display: block;\r\n                @include screen(lg) {\r\n                    display: none;\r\n                }\r\n            }            \r\n            .member__dropdown_btn {\r\n                width: 50px;\r\n                svg {\r\n                    width: 26px;\r\n                    height: 26px;\r\n                    .cls-1 {fill:#f0f0f0;}\r\n                    .cls-2 {fill:#969696;}\r\n                }\r\n                @include screen(sm) {\r\n                    display: none !important;\r\n                }\r\n            }\r\n            @include member__dropdown;\r\n\r\n        }\r\n    }\r\n}\r\n\r\n/**\r\n * ^wrapper\r\n */\r\n.login-wrapper {\r\n    display: flex;\r\n    align-items: center;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    width: 100%;\r\n    height: 100vh;\r\n    background-color: $btn-blue;\r\n    min-height: 100%;\r\n    padding: 20px;\r\n}\r\n\r\n/**\r\n * ^member ^login\r\n */\r\n/*section*/.login {\r\n    align-items: center;\r\n    background-color: $white;\r\n    color: $black; \r\n    width: 100%;\r\n    max-width: 450px;\r\n    padding: 30px 0 0 0;\r\n    border-radius: 10px 10px 10px 10px;\r\n    box-sizing: border-box;\r\n    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);\r\n    text-align: center;\r\n    margin: 0 auto;\r\n    z-index: 3;\r\n    &.display {\r\n        display: flex;\r\n    }\r\n    a.blue {\r\n      text-decoration: underline;\r\n    }\r\n    >div img {\r\n        width: 60%;\r\n    }\r\n    h1 {\r\n        text-align: center;\r\n        font-weight: 300;\r\n        font-size: 30px;\r\n        margin-bottom: 20px;\r\n        line-height: 30px;\r\n        letter-spacing: .1em;\r\n    }\r\n    ul.list {\r\n        list-style: none;\r\n        display: flex;\r\n        margin: 25px 0 30px 0;\r\n        li {\r\n            flex: 1;\r\n            font-weight: 900;\r\n            text-align: center;\r\n            &:first-child {\r\n                border-right: 1px #fff solid;\r\n            }\r\n        }\r\n        .bule {\r\n            color: $PantoneBlue;\r\n            font-weight: bold;\r\n            position: relative;\r\n            &::after {\r\n                content: \"\";\r\n                position: absolute;\r\n                display: inline-block;\r\n                width: 100%;\r\n                height: 1px;\r\n                background-color: $PantoneBlue;\r\n                bottom: -5px;\r\n                left: 0;\r\n            }\r\n        }\r\n    }\r\n    p.hr {\r\n        position: relative;\r\n        margin: 13px 0;\r\n        border: none;\r\n        color: $DarkGray;\r\n    }\r\n    p.singup_error {\r\n        color: #ff3964;\r\n        text-align: left;\r\n        display: none;\r\n        &.red {\r\n            display: block;\r\n        }\r\n    }\r\n    @include input__wrap;\r\n\r\n    input[type=\"text\"],\r\n    input[type=\"email\"],\r\n    input[type=\"password\"] {\r\n        @include member__input;\r\n    }\r\n\r\n    .form_buttonbar {\r\n        display: flex;\r\n        justify-items: center;\r\n        align-items: center;\r\n        margin-top: 30px;\r\n        p { \r\n            flex: 1; color: $DarkGray; font-weight: 900;\r\n            &:nth-of-type(1) {\r\n                text-align: left;\r\n            }\r\n            &:nth-of-type(2) {\r\n                text-align: right;\r\n            }\r\n        }\r\n        button {\r\n            @include member__button;\r\n        }\r\n    }    \r\n    .formFooter {\r\n        background-color: $line-gray;\r\n        border-top: 1px solid $line-lightgray;\r\n        padding: 25px;\r\n        text-align: center;\r\n        border-radius: 0 0 10px 10px;\r\n        a {\r\n            color: #92badd;\r\n            display: inline-block;\r\n            text-decoration: none;\r\n            font-weight: bold;\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n\r\n// reset and manger page\r\nmain.mamager {\r\n    background-color: #f0f0f0;\r\n    padding: 30px 20px;\r\n    @include screen(sm) {\r\n        padding: 100px 0;\r\n    }\r\n}\r\n.profile_wrap {\r\n    width: 100%;\r\n    max-width: 800px;\r\n    margin: 0 auto;\r\n    padding: 50px 0;\r\n    border-radius: 50px;\r\n    box-sizing: border-box;\r\n    background-color: $Gray;\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    h3 {\r\n        font-size: 20px;\r\n        color: $DarkGray; \r\n        text-align: center;\r\n        flex-basis: 100%;\r\n        margin-bottom: 40px;\r\n    }\r\n    .form_wrap {\r\n        position: relative;\r\n        text-align: center;\r\n        width: 100%;\r\n        flex-basis: 100%;\r\n        height: auto;\r\n        margin: 0 auto 40px auto;\r\n        color: $DarkGray;\r\n        @include screen(sm) {\r\n            flex-basis: 0;\r\n            flex:5;\r\n            margin: 0 auto;\r\n        }\r\n        .form-group {\r\n            margin-bottom: 10px;\r\n        }\r\n        .input__wrap {\r\n            width: 82%;\r\n            margin: 0 auto;            \r\n            text-align: left;\r\n            @include screen(sm) {\r\n                width: 60%;\r\n            }\r\n        }\r\n        &::after {\r\n            content: \"\";\r\n            position: absolute;\r\n            right: 0;\r\n            top: 0;\r\n            display: block;\r\n            width: 1px;\r\n            height: 100%;\r\n            background-color: #fff;\r\n        }\r\n        label {\r\n            font-weight: bold;\r\n            padding-bottom: 5px;\r\n            padding-left: 5px;\r\n            display: block;\r\n        }\r\n        input {\r\n            display: block;\r\n            width: 100%;\r\n            padding: 11px 10px;\r\n            margin-bottom: 15px;\r\n            box-sizing: border-box;\r\n            font-size: 16px;\r\n            color: $DarkGray;\r\n            border: none;\r\n            outline: none;\r\n        }\r\n        .input__wrap:last-child input {\r\n            margin-bottom: 0;\r\n        }\r\n        button {\r\n            @include member__button;\r\n            margin: 5px 0 0 0;\r\n        }\r\n    }\r\n    .profile_picture {\r\n        width: 100%;\r\n        text-align: center;\r\n        flex-basis: 100%;\r\n\r\n        @include screen(sm) {\r\n            flex-basis: 0;\r\n            flex:3;\r\n        }\r\n        img {\r\n            width: 120px;\r\n            height: 120px;\r\n            display: block;\r\n            margin: 0 auto 30px auto;\r\n            border-radius: 50%;\r\n        }\r\n        .button_wrap {\r\n            background-color: #f0f0f0;\r\n            width: 180px;            \r\n            height: 180px;\r\n            border-radius: 30px;\r\n            margin: 0 auto;\r\n            svg {\r\n                fill: $DarkGray;\r\n                width: 30px;\r\n                height: 30px;\r\n                margin-top: 50px;\r\n            }\r\n            button {\r\n                @include member__button;\r\n                display: block;\r\n                height: 30px;\r\n                width: 100px;\r\n                border-radius: 20px;\r\n                margin: 0 auto;\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n","/*section*/.content {\r\n    margin: 0 auto;\r\n    width: 100%;\r\n    box-sizing: border-box;\r\n    &.page {\r\n        .ivu-col {\r\n            height: calc(100vh - 76px);   // 綁定Nav\r\n            overflow: auto;            \r\n            border-right: 0;\r\n            box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1);\r\n            background-color: $bg-lightgray;\r\n            &:last-child {\r\n                border-right: 0;\r\n            }\r\n            .title {\r\n                text-align: left ;\r\n                font-weight: bold;\r\n                padding: 15px;\r\n                background-color: rgba(255, 255, 255, 0.3);\r\n                border-bottom: 1px $line-gray solid;\r\n            }\r\n            .ivu-dropdown {\r\n                position: absolute;\r\n                right: 30px;\r\n            }\r\n            .union {\r\n                &.union-half {\r\n                    height: calc(50vh - 70px);\r\n                    position: relative;\r\n                }\r\n                h4 {\r\n                    padding: 10px;\r\n                }\r\n                .setting {\r\n                    p { display: inline-block; }\r\n                }\r\n                .card-class {\r\n                    border-top: 0;\r\n                    i {\r\n                        color: #abb0b9;\r\n                    }\r\n                    &.active, &:hover {\r\n                        color: $link-bule;\r\n                        i {\r\n                            color: $link-bule;\r\n                        }\r\n                        .ivu-dropdown { opacity: 1; }\r\n                    }\r\n                    &.card-class-a {\r\n                        &:first-child {\r\n                            border-top: 1px solid $line-lightgray;\r\n                        }\r\n                    }\r\n                    &.card-class-b,\r\n                    &.card-class-c {\r\n                        margin-left: 10px;\r\n                        margin-right: 10px;\t\t\t\r\n                    }\r\n                    &.lastcard {\r\n                        border-radius: 0 0 8px 8px;\r\n                    }\r\n                }\r\n                h4 + .card-class-b,\r\n                h4 + .card-class-c, {\r\n                    border-top: 1px solid  $line-lightgray;\r\n                    border-radius: 8px 8px 0 0;\r\n                }\r\n                \r\n                .ivu-card {\r\n                    border-radius: 0;\r\n                    border-top: 0;\r\n                    &:first-child {\r\n                        border-top: 1px solid $line-lightgray;\r\n                    }\r\n                }\r\n                h4 + .ivu-card {\r\n                        border-top: 1px solid $line-lightgray;\r\n                }\r\n            }\r\n        }\r\n    }    \r\n}",".card-class {\r\n    border: 1px solid #dcdee2;\r\n    border-color: #e8eaec;\r\n    background: #fff;\r\n    font-size: 14px;\r\n    position: relative;\r\n    cursor: pointer;\r\n    transition: all .2s ease-in-out;\r\n    .content {\r\n        padding: 16px;\r\n    }\r\n    h3 {\r\n        display: inline-block;\r\n    }\r\n    &::after {\r\n        content: '>';\r\n        display: block;\r\n        position:absolute;\r\n        font-weight: bold;\r\n        right: 10px;\r\n        top: 20px;\r\n    }\r\n}\r\n\r\n.add-new-card {\r\n\tfont-size: 12px;\r\n\tcolor: $link-bule;\r\n\twidth: 100%;\r\n\ttext-align: left;\r\n\tlist-style: none;\r\n\tmargin-top: 25px;\r\n\tpadding: 15px 10px;\r\n\tborder-top: 1px solid $line-gray;\r\n\tborder-bottom: 1px solid $line-gray;\r\n\tbox-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);\r\n\tbackground-color: $white;\r\n\tcursor: pointer;\r\n\ttransition: all .2s ease;\r\n\tposition: absolute;\r\n\tbottom: 0;\r\n\t.ivu-icon {\r\n\t\tcolor: $link-bule;\r\n\t\tfont-size: 22px;\r\n\t\ttext-align: center;\r\n\t\tline-height: 20px;\r\n\t\twidth: 20px; height: 20px;\r\n\t\tmargin-right: 5px;\r\n\t\ttop: 6px;\r\n\t}\r\n}\r\n",".meal-content {\r\n    border-radius: 5px;\r\n    background-color: #fff;\r\n    margin: 10px;\r\n    padding: 10px;\r\n    .detail-recipes,\r\n    .detail-meals {\r\n        display: flex;\r\n        width: 100%;\r\n        flex-wrap: wrap;\r\n    }\r\n    .item-recipes,\r\n    .item-meals {\r\n        display: flex;\r\n        justify-content: space-between;\r\n        position: relative;\r\n        flex-basis: 50%;           \r\n        padding: 15px 10px;\r\n        box-sizing: border-box;\r\n        &::after {\r\n            content: '';\r\n            position: absolute;\r\n            display: block;\r\n            height: 1px;\r\n            width: calc(100% - 20px);\r\n            bottom: 0;\r\n            background-color: rgba(0,0,0,0.1);\r\n        }\r\n    }        \r\n}",".addclass {\r\n    cursor: pointer;    \r\n}\r\n.popmap {\r\n    .title {\r\n        font-weight: bold;\r\n        font-size: 1.125em;\r\n    }    \r\n}\r\n/*ul*/.mapclass {    \r\n    li {\r\n        padding: 10px 10px 10px 0;\r\n        cursor: pointer;\r\n        &.active, &:hover {\r\n            color: $white;\r\n            background-color: $link-bule;\r\n        }\r\n        i {\r\n            color: #abb0b9;\r\n        }        \r\n    }\r\n    li.li-item-b,\r\n    li.li-item-c {\r\n        &.active, &:hover {\r\n            color: $black;\r\n            background-color: #eee;            \r\n        }\r\n        &.active {\r\n            .active-icon {\r\n                display: inline-block;\r\n            }\r\n        }\r\n        .active-icon {\r\n            display: none;\r\n        }\r\n    }\r\n}\r\n/*ul*/.sureclass {\r\n    li {\r\n        padding: 10px 10px 10px 0;\r\n        cursor: pointer;\r\n        i {\r\n            color: $link-bule;\r\n        }\r\n    }\r\n}","/*section*/.store-info {\r\n    max-width: 800px;\r\n    margin-top: 20px;\r\n    h2 {\r\n        margin: 15px 10px;\r\n    }\r\n    .content-wrap {\r\n        background-color: $white;\r\n        padding: 20px;\r\n        box-sizing: border-box;\r\n        border-radius: 10px;\r\n        margin-bottom: 30px;\r\n        .input-wrap {\r\n            display: flex;\r\n            justify-content: space-between;\r\n            align-items: center;\r\n            margin-bottom: 10px;\r\n            padding-bottom: 10px;\r\n            border-bottom: 1px solid $line-gray;\r\n            &:last-child {\r\n                border-bottom: none;\r\n            }\r\n        }\r\n    }\r\n}","\r\n.ivu-input-wrapper,\r\n.ivu-select {\r\n\twidth: 75%;\r\n}\r\n.union .hide {\r\n\tdisplay: none;\r\n}\r\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -85,7 +99,14 @@ module.exports = __webpack_require__.p + "static/fonts/ionicons.d535a25.ttf";
 
 /***/ }),
 
-/***/ "RqZo":
+/***/ "TDfj":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "UHUd":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -113,7 +134,7 @@ module.exports = __webpack_require__.p + "static/fonts/ionicons.99ac330.woff";
 
 /***/ }),
 
-/***/ "XDk3":
+/***/ "XBBH":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -143,7 +164,14 @@ exports.push([module.i, ".ivu-load-loop{-webkit-animation:ani-load-loop 1s linea
 
 /***/ }),
 
-/***/ "eUSo":
+/***/ "d2f6":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "eVB1":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -157,14 +185,7 @@ exports.push([module.i, ".ivu-load-loop{-webkit-animation:ani-load-loop 1s linea
 
 /***/ }),
 
-/***/ "hLg0":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "i/Qi":
+/***/ "gumo":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -247,31 +268,17 @@ if (token) {
 
 /***/ }),
 
-/***/ "ij1x":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "jrnT":
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/img/invoice.jpg";
-
-/***/ }),
-
-/***/ "ot0K":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "pbmN":
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIxMDUuMTI1cHgiIGhlaWdodD0iNzkuOTcxcHgiIHZpZXdCb3g9IjAgMCAxMDUuMTI1IDc5Ljk3MSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTA1LjEyNSA3OS45NzEiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGcgaWQ9ImxhYmxlcyI+DQo8L2c+DQo8ZyBpZD0iSWNvbnMiPg0KCTxnPg0KCQk8Y2lyY2xlIGZpbGw9IiNFOUVBRUIiIGN4PSI1MiIgY3k9IjQ4Ljk3MSIgcj0iMjAiLz4NCgkJPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDhEOEQ4IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTI5LjY1Nyw2NS45MDINCgkJCWMtMy41MTctNC42NzctNS42MDItMTAuNDkyLTUuNjAyLTE2Ljc5NWMwLTE1LjQ0OCwxMi41MjMtMjcuOTcyLDI3Ljk3My0yNy45NzJDNjcuNDc3LDIxLjEzNSw4MCwzMy42NTksODAsNDkuMTA3DQoJCQljMCw2LjMwNC0yLjA4NSwxMi4xMjEtNS42MDQsMTYuNzk4Ii8+DQoJCTxnPg0KCQkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgc3Ryb2tlPSIjMkE1MDgyIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTUyLDU0Ljk3MWMyLjI5MiwwLDYuNDM4LTMuMDYzLDctNA0KCQkJCXMwLjc3NS0xLjg2MywxLTNjMC4wNTMtMC4yNywwLjgyOC0xLjc3MSwxLTJjMC45NDItMS4yNTMsMS01LDEtNWwtMS0xYzAsMC0wLjI0NC0zLjE0MS0wLjM4My00LjY4MQ0KCQkJCWMtMC41NzUtNC40OTgtMy42NzQtNy4zMTktOC42MTctNy4zMTlzLTguMDQyLDIuODIyLTguNjE3LDcuMzE5QzQzLjI0NCwzNi44MzEsNDMsMzkuOTcxLDQzLDM5Ljk3MWwtMSwxYzAsMCwwLjA1OCwzLjc0NywxLDUNCgkJCQljMC4xNzIsMC4yMjksMC45NDcsMS43MywxLDJjMC4yMjQsMS4xMzcsMC40MzgsMi4wNjMsMSwzUzQ5LjcwOCw1NC45NzEsNTIsNTQuOTcxeiIvPg0KCQkJPHBhdGggZmlsbD0iIzJEQzFFNSIgc3Ryb2tlPSIjMkE1MDgyIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTUyLDc0Ljk3MWM3LjAwNCwwLDEzLjM5LTIuNDMyLDE4LTd2LTQNCgkJCQljLTAuNTYxLTIuMDAyLTIuMTYyLTMuMDI2LTQtNGwtNy0zYzAsMC0zLjYwNCwzLTcsM3MtNi0zLTYtM2wtOCwzYy0xLjgzOCwwLjk3NC0zLjQzOSwxLjk5OC00LDR2NA0KCQkJCUMzOC42MSw3Mi41NCw0NC45OTYsNzQuOTcxLDUyLDc0Ljk3MXoiLz4NCgkJCTxnPg0KCQkJCTxsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJBNTA4MiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHgxPSI0NiIgeTE9IjU2Ljk3MSIgeDI9IjQ2IiB5Mj0iNTEuOTcxIi8+DQoJCQk8L2c+DQoJCQk8Zz4NCgkJCQk8bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiMyQTUwODIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iNTgiIHkxPSI1Ny41NjUiIHgyPSI1OCIgeTI9IjUxLjk3MSIvPg0KCQkJPC9nPg0KCQk8L2c+DQoJPC9nPg0KCTxlbGxpcHNlIGZpbGw9IiNFRTU0NTYiIGN4PSIxMi43NzEiIGN5PSI0My40MDkiIHJ4PSIyLjEwNCIgcnk9IjIuMDYzIi8+DQoJPHBvbHlnb24gZmlsbD0iI0VFNTQ1NiIgcG9pbnRzPSI4Ni4wMjgsMzIuNzcxIDg1LjY0NCwzMy45MDUgODYuMzU5LDM0Ljg2NCA4NS4xNjMsMzQuODQ5IDg0LjQ3MSwzNS44MjYgODQuMTE2LDM0LjY4MyANCgkJODIuOTczLDM0LjMyOCA4My45NSwzMy42MzYgODMuOTM1LDMyLjQzOSA4NC44OTQsMzMuMTU1IAkiLz4NCgk8cG9seWdvbiBmaWxsPSIjMkVDM0U2IiBwb2ludHM9IjI5Ljc1LDE0LjU5NiAyOS4wODMsMTQuMzcgMjguNTE5LDE0Ljc5MSAyOC41MjcsMTQuMDg3IDI3Ljk1MiwxMy42OCAyOC42MjUsMTMuNDcxIDI4LjgzNCwxMi43OTkgDQoJCTI5LjI0MSwxMy4zNzQgMjkuOTQ1LDEzLjM2NSAyOS41MjMsMTMuOTI5IAkiLz4NCgk8Y2lyY2xlIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJFQzNFNiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBjeD0iMTUuMjUiIGN5PSIxOC40NzEiIHI9IjEuMTI1Ii8+DQoJPGNpcmNsZSBmaWxsPSIjMkVDM0U2IiBjeD0iODkuNzUiIGN5PSI0Ny4yMjEiIHI9IjEuMjUiLz4NCgk8Y2lyY2xlIGZpbGw9IiMyRUMzRTYiIGN4PSI3MS42ODgiIGN5PSIxOC43ODQiIHI9IjEuNjg4Ii8+DQoJPHJlY3QgeD0iMzciIHk9IjcuOTcxIiBmaWxsPSIjQ0VDRUNFIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+DQoJPHJlY3QgeD0iODUiIHk9IjU3Ljk3MSIgdHJhbnNmb3JtPSJtYXRyaXgoMC45NTAzIC0wLjMxMTQgMC4zMTE0IDAuOTUwMyAtMTQuMjE4MSAyOS44OTE5KSIgZmlsbD0iI0NFQ0VDRSIgd2lkdGg9IjMiIGhlaWdodD0iMyIvPg0KCTxyZWN0IHg9IjE0LjMzNCIgeT0iNTcuODA1IiBmaWxsPSIjQ0VDRUNFIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+DQoJDQoJCTxyZWN0IHg9IjE2IiB5PSIzMS45NzEiIHRyYW5zZm9ybT0ibWF0cml4KDAuNjcwNiAtMC43NDE5IDAuNzQxOSAwLjY3MDYgLTE4Ljg1OTYgMjMuNDczOSkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0NFQ0VDRSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+DQoJPHJlY3QgeD0iNDkiIHk9IjguOTcxIiB0cmFuc2Zvcm09Im1hdHJpeCgwLjU4NjYgLTAuODA5OSAwLjgwOTkgMC41ODY2IDEyLjM5NyA0NS4yMjgzKSIgZmlsbD0iIzJFQzNFNiIgd2lkdGg9IjMiIGhlaWdodD0iMyIvPg0KCTxjaXJjbGUgZmlsbD0iI0ZEREIwMCIgY3g9Ijg4LjgzNCIgY3k9IjIxLjYzOCIgcj0iMS41Ii8+DQoJPGNpcmNsZSBmaWxsPSIjRkREQjAwIiBjeD0iMjYuNTgzIiBjeT0iMjMuNTU1IiByPSIwLjc1Ii8+DQoJPGNpcmNsZSBmaWxsPSIjRkREQjAwIiBjeD0iNjMuNjI1IiBjeT0iOC43NjMiIHI9IjEuMDQyIi8+DQoJPHBvbHlnb24gZmlsbD0iI0ZEREIwMCIgcG9pbnRzPSIyMS4xMTgsMTEuNjY4IDIxLjcwNSwxMi4wODcgMjIuMzg1LDExLjg0MSAyMi4xNjcsMTIuNTMgMjIuNjEsMTMuMDk5IDIxLjg4OSwxMy4xMDQgDQoJCTIxLjQ4NSwxMy43MDMgMjEuMjU2LDEzLjAxOCAyMC41NjIsMTIuODE5IDIxLjE0MywxMi4zODkgCSIvPg0KCTxwb2x5Z29uIGZpbGw9IiNEOEQ4RDgiIHBvaW50cz0iODIuMDgzLDEwLjEzOCA4MS43MjgsMTEuMDg3IDgwLjcyOCwxMS4yNTQgODAuMDgzLDEwLjQ3MiA4MC40MzgsOS41MjIgODEuNDM4LDkuMzU1IAkiLz4NCgk8cG9seWdvbiBmaWxsPSIjRDhEOEQ4IiBwb2ludHM9IjQwLjA4MywxNy4zMDUgMzguODE5LDE3LjgyNiAzNy43MzYsMTYuOTkyIDM3LjkxNywxNS42MzggMzkuMTgxLDE1LjExNyA0MC4yNjQsMTUuOTUgCSIvPg0KCTxwb2x5Z29uIGZpbGw9IiNEOEQ4RDgiIHBvaW50cz0iNjEuNDE3LDE2LjIyMSA2MC41NDgsMTYuMzk0IDU5Ljk2NCwxNS43MjcgNjAuMjQ5LDE0Ljg4OCA2MS4xMTgsMTQuNzE2IDYxLjcwMiwxNS4zODIgCSIvPg0KCTxwb2x5Z29uIGZpbGw9IiNEOEQ4RDgiIHBvaW50cz0iOTQsMzYuNTU1IDkyLjk2NCwzNy4wMTUgOTIuMDQ3LDM2LjM0OCA5Mi4xNjYsMzUuMjIxIDkzLjIwMiwzNC43NiA5NC4xMTksMzUuNDI3IAkiLz4NCjwvZz4NCjxnIGlkPSJMYXllcl8zIj4NCjwvZz4NCjwvc3ZnPg0K"
+
+/***/ }),
+
+/***/ "r+6h":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -408,15 +415,37 @@ var stringify_default = /*#__PURE__*/__webpack_require__.n(stringify);
         phone: '123456789' };
 
       if (this.userName == '' && this.passWord == '') {
-        console.log('登入成功');
-        // axios promise 等回傳來的東西用vuex action來非同步處理
-        localStorage.setItem('token', stringify_default()(resp));
+        var vm = this;
 
-        this.$store.commit({
-          type: 'setUserData',
-          userData: resp
+        // API token 設計
+        // https://forum.vuejs.org/t/axios-token/33528
+        // https://juejin.im/post/5bab739af265da0aa3593177
+        // 先用FormData
+        var data = new FormData();
+        data.append("client_id", "AirdesignPOS");
+        data.append("client_secret", "777ABHJV777");
+        data.append("grant_type", "password");
+        data.append("username", "vincent@airdesign.com.tw");
+        data.append("password", "Abc@123");
+
+        axios.post("https://is.airdesign.com.tw/connect/" + '/token', data).then(function (response) {
+          console.log(response);
+          console.log('登入成功');
+
+          // axios promise 等回傳來的東西用vuex action來非同步處理
+          localStorage.setItem('token', stringify_default()(response.data.access_token));
+
+          vm.$store.commit({
+            type: 'setUserData',
+            userData: resp
+          });
+
+          vm.$router.push('/');
+        }).catch(function (error) {
+          // 重登 或轉 404
+          alert('登入失敗');
+          console.log(error);
         });
-        this.$router.push('/');
       } else {
         alert('登入失敗');
       }
@@ -425,19 +454,10 @@ var stringify_default = /*#__PURE__*/__webpack_require__.n(stringify);
       // * 如果有其他錯誤訊息，可以由我這邊開一個位置，把store 裡的 state叫出來用
       // * 讓前端控制錯誤訊息
       // *
-      // axios.post(apiUrl)
-      // .then(res => res.json())
-      // .then(res => {
-      //   if (res.error) {
-      //     this.errors.push(res.error);
-      //   } else {
-      //     alert('ok!');
-      //   }
-      // });
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-48d6ecc6","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Login.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-2e9095ce","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Login.vue
 var Login_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"login-wrapper"},[_c('section',{staticClass:"login fadeInDown"},[_vm._m(0),_vm._v(" "),_c('form',{attrs:{"novalidate":"true"},on:{"submit":function($event){$event.preventDefault();return _vm.login($event)}}},[_c('div',{staticClass:"input__wrap"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.userName),expression:"userName"}],staticClass:"fadeIn second",attrs:{"type":"text","placeholder":"userName"},domProps:{"value":(_vm.userName)},on:{"input":function($event){if($event.target.composing){ return; }_vm.userName=$event.target.value}}})]),_vm._v(" "),_c('div',{staticClass:"input__wrap"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.passWord),expression:"passWord"}],staticClass:"fadeIn third",attrs:{"type":"password","placeholder":"passWord"},domProps:{"value":(_vm.passWord)},on:{"input":function($event){if($event.target.composing){ return; }_vm.passWord=$event.target.value}}})]),_vm._v(" "),_vm._m(1),_vm._v(" "),_c('div',{staticClass:"formFooter"},[_c('router-link',{staticClass:"underlineHover",attrs:{"to":"/search_password"}},[_vm._v("Forgot Password?")])],1)])])])}
 var Login_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"fadeIn first"},[_c('img',{attrs:{"src":__webpack_require__("pbmN"),"id":"icon","alt":"User Icon"}})])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"form_buttonbar"},[_c('button',{staticClass:"primary fadeIn fourth",attrs:{"type":"submit"}},[_vm._v("Log In")])])}]
 var Login_esExports = { render: Login_render, staticRenderFns: Login_staticRenderFns }
@@ -493,6 +513,7 @@ var state = {
         "strange": "不得包括特殊符號"
     },
     isLoading: false,
+    isLoadingTimer: null,
     billing: ["櫃檯出單機", "廚房出單機"],
     rules1: ["結帳相關規則"],
     rules2: ["客戶聯規則1", "客戶聯規則2"],
@@ -523,9 +544,43 @@ var getters = {
     }
 };
 
+var actions = {
+    isLoading: function isLoading(_ref) {
+        var state = _ref.state,
+            commit = _ref.commit,
+            getters = _ref.getters;
+
+        if (state.isLoadingTimer) {
+            setTimeout(function () {
+                commit('clearIsLoadingTimer');
+            }, 1000);
+        } else {
+            commit('setIsLoadingTimer');
+            commit('isLoadingM');
+        }
+    },
+    hasLoaded: function hasLoaded(_ref2) {
+        var state = _ref2.state,
+            commit = _ref2.commit,
+            getters = _ref2.getters;
+
+        if (!state.isLoadingTimer) {
+            return;
+        } else {
+            commit('hasLoadedM');
+        }
+    }
+};
+
 var mutations = {
-    setUserData: function setUserData(state, _ref) {
-        var userData = _ref.userData;
+    setIsLoadingTimer: function setIsLoadingTimer(state) {
+        state.isLoadingTimer = 1;
+    },
+    clearIsLoadingTimer: function clearIsLoadingTimer(state) {
+        state.isLoadingTimer = null;
+    },
+    setUserData: function setUserData(state, _ref3) {
+        var userData = _ref3.userData;
 
         state.User.account = userData.email;
         state.User.name = userData.name;
@@ -538,24 +593,26 @@ var mutations = {
         state.User.phone = "";
         state.User.isLogin = false;
     },
-    editUserData: function editUserData(state, _ref2) {
-        var value = _ref2.value;
+    editUserData: function editUserData(state, _ref4) {
+        var value = _ref4.value;
 
         state.User.email = value.email;
         state.User.name = value.name;
         state.User.phone = value.phone;
     },
-    isLoading: function isLoading(state) {
-        state.isLoading = !state.isLoading;
+    isLoadingM: function isLoadingM(state) {
+        state.isLoading = true;
+    },
+    hasLoadedM: function hasLoadedM(state) {
+        state.isLoading = false;
     }
 };
-
-var actions = {};
 
 /* harmony default export */ var modules_app = ({
     state: state,
     getters: getters,
-    mutations: mutations
+    mutations: mutations,
+    actions: actions
 });
 // CONCATENATED MODULE: ./resources/assets/js/vuex/modules/food.js
 var food_state = {
@@ -1293,14 +1350,14 @@ var Header_Component = Header_normalizeComponent(
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-38911f2a","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Nav.vue
-var Nav_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{attrs:{"id":"nav"}},[_c('router-link',{staticClass:"logo",attrs:{"to":"/home"}},[_c('img',{attrs:{"src":__webpack_require__("COl+"),"alt":"logo"}}),_vm._v(" "),_c('p',[_c('br'),_c('span',[_vm._v("1.00v1")])])]),_vm._v(" "),(_vm.isLogin)?_c('ul',[_c('router-link',{attrs:{"to":"/food","tag":"li"}},[_vm._v("食材管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/recipes","tag":"li"}},[_vm._v("食譜管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/meal","tag":"li"}},[_vm._v("餐點管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/set","tag":"li"}},[_vm._v("套餐管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("店面管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/printer","tag":"li"}},[_vm._v("印表機管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/storeinfo","tag":"li"}},[_vm._v("店家資訊")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("結帳管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("客戶資訊")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("系統設定")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("帳號與權限")]),_vm._v(" "),_c('li',{on:{"click":_vm.logout}},[_vm._v("登出")])],1):_vm._e(),_vm._v(" "),_c('router-link',{staticClass:"info",attrs:{"to":"/home"}},[_c('p',[_vm._v(_vm._s(_vm.userName)+" 您好"),_c('br'),_c('span',[_vm._v(_vm._s(_vm.nowTime))])])])],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-6cd5c5cc","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Nav.vue
+var Nav_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{attrs:{"id":"nav"}},[_c('router-link',{staticClass:"logo",attrs:{"to":"/home"}},[_c('img',{attrs:{"src":__webpack_require__("COl+"),"alt":"logo"}}),_vm._v(" "),_c('p',[_c('br'),_c('span',[_vm._v("1.00v1")])])]),_vm._v(" "),(_vm.isLogin)?_c('ul',[_c('router-link',{attrs:{"to":"/food","tag":"li"}},[_vm._v("食材管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/recipes","tag":"li"}},[_vm._v("食譜管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/meal","tag":"li"}},[_vm._v("餐點管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/set","tag":"li"}},[_vm._v("套餐管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/store","tag":"li"}},[_vm._v("店面管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/printer","tag":"li"}},[_vm._v("印表機管理")]),_vm._v(" "),_c('router-link',{attrs:{"to":"/storeinfo","tag":"li"}},[_vm._v("店家資訊")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("結帳管理")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("客戶資訊")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("系統設定")]),_vm._v(" "),_c('router-link',{staticClass:"disabled",attrs:{"to":"/home","tag":"li"}},[_vm._v("帳號與權限")]),_vm._v(" "),_c('li',{on:{"click":_vm.logout}},[_vm._v("登出")])],1):_vm._e(),_vm._v(" "),_c('router-link',{staticClass:"info",attrs:{"to":"/home"}},[_c('p',[_vm._v(_vm._s(_vm.userName)+" 您好"),_c('br'),_c('span',[_vm._v(_vm._s(_vm.nowTime))])])])],1)}
 var Nav_staticRenderFns = []
 var Nav_esExports = { render: Nav_render, staticRenderFns: Nav_staticRenderFns }
 /* harmony default export */ var components_Nav = (Nav_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/Nav.vue
 function injectStyle (ssrContext) {
-  __webpack_require__("eUSo")
+  __webpack_require__("gumo")
 }
 var Nav_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -2692,17 +2749,11 @@ var addcard_Component = addcard_normalizeComponent(
             this.getBItem(BdefaultID);
         },
         isLoadingIN: function isLoadingIN(value) {
-            var _this = this;
-
             if (value) {
                 this.$Message.loading({
                     content: 'Loading...',
-                    duration: 2
+                    duration: 1
                 });
-            } else {
-                setTimeout(function () {
-                    _this.$Message.destroy();
-                }, 300);
             }
         }
     },
@@ -2749,7 +2800,7 @@ var addcard_Component = addcard_normalizeComponent(
             console.log('當CITEM被點了', this.currentDItem);
         },
         getAClass: function getAClass() {
-            var _this2 = this;
+            var _this = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee() {
                 return regenerator_default.a.wrap(function _callee$(_context) {
@@ -2757,7 +2808,7 @@ var addcard_Component = addcard_normalizeComponent(
                         switch (_context.prev = _context.next) {
                             case 0:
                                 _context.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/IngredientsCategory/Get').then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + '/IngredientsCategory/Get').then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -2767,18 +2818,18 @@ var addcard_Component = addcard_normalizeComponent(
                                 });
 
                             case 2:
-                                _this2.currentAClass = _context.sent;
+                                _this.currentAClass = _context.sent;
 
                             case 3:
                             case 'end':
                                 return _context.stop();
                         }
                     }
-                }, _callee, _this2);
+                }, _callee, _this);
             }))();
         },
         getBClass: function getBClass(ACategoryID) {
-            var _this3 = this;
+            var _this2 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2() {
                 return regenerator_default.a.wrap(function _callee2$(_context2) {
@@ -2786,7 +2837,7 @@ var addcard_Component = addcard_normalizeComponent(
                         switch (_context2.prev = _context2.next) {
                             case 0:
                                 _context2.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/IngredientsCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/IngredientsCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -2796,18 +2847,18 @@ var addcard_Component = addcard_normalizeComponent(
                                 });
 
                             case 2:
-                                _this3.currentBClass = _context2.sent;
+                                _this2.currentBClass = _context2.sent;
 
                             case 3:
                             case 'end':
                                 return _context2.stop();
                         }
                     }
-                }, _callee2, _this3);
+                }, _callee2, _this2);
             }))();
         },
         getBItem: function getBItem(ACategoryID) {
-            var _this4 = this;
+            var _this3 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee3() {
                 return regenerator_default.a.wrap(function _callee3$(_context3) {
@@ -2815,7 +2866,7 @@ var addcard_Component = addcard_normalizeComponent(
                         switch (_context3.prev = _context3.next) {
                             case 0:
                                 _context3.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/Ingredients/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Ingredients/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -2825,18 +2876,18 @@ var addcard_Component = addcard_normalizeComponent(
                                 });
 
                             case 2:
-                                _this4.currentBItem = _context3.sent;
+                                _this3.currentBItem = _context3.sent;
 
                             case 3:
                             case 'end':
                                 return _context3.stop();
                         }
                     }
-                }, _callee3, _this4);
+                }, _callee3, _this3);
             }))();
         },
         getCItem: function getCItem(BCategoryID) {
-            var _this5 = this;
+            var _this4 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee4() {
                 return regenerator_default.a.wrap(function _callee4$(_context4) {
@@ -2851,7 +2902,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 // "IngredientsCategoryID": 10,
                                 // "IngredientsCategoryName": "五穀根莖類"
                                 _context4.next = 3;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/Ingredients/GetByCategoryID/' + BCategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Ingredients/GetByCategoryID/' + BCategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -2861,18 +2912,18 @@ var addcard_Component = addcard_normalizeComponent(
                                 });
 
                             case 3:
-                                _this5.currentCItem = _context4.sent;
+                                _this4.currentCItem = _context4.sent;
 
                             case 4:
                             case 'end':
                                 return _context4.stop();
                         }
                     }
-                }, _callee4, _this5);
+                }, _callee4, _this4);
             }))();
         },
         getDItem: function getDItem(ItemID) {
-            var _this6 = this;
+            var _this5 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee5() {
                 return regenerator_default.a.wrap(function _callee5$(_context5) {
@@ -2880,7 +2931,7 @@ var addcard_Component = addcard_normalizeComponent(
                         switch (_context5.prev = _context5.next) {
                             case 0:
                                 _context5.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/Ingredients/GetByCategoryID/' + ItemID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Ingredients/GetByCategoryID/' + ItemID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -2890,14 +2941,14 @@ var addcard_Component = addcard_normalizeComponent(
                                 });
 
                             case 2:
-                                _this6.currentDItem = _context5.sent;
+                                _this5.currentDItem = _context5.sent;
 
                             case 3:
                             case 'end':
                                 return _context5.stop();
                         }
                     }
-                }, _callee5, _this6);
+                }, _callee5, _this5);
             }))();
         },
         addNewAClass: function addNewAClass($event) {
@@ -2909,7 +2960,7 @@ var addcard_Component = addcard_normalizeComponent(
             this.addNewAClassCard(ClassFile);
         },
         addNewAClassCard: function addNewAClassCard(ClassFile) {
-            var _this7 = this;
+            var _this6 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee6() {
                 var vm;
@@ -2918,9 +2969,9 @@ var addcard_Component = addcard_normalizeComponent(
                         switch (_context6.prev = _context6.next) {
                             case 0:
                                 // Update Vue object with Axios response data
-                                vm = _this7;
+                                vm = _this6;
                                 _context6.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/IngredientsCategory/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/IngredientsCategory/Create', ClassFile).then(function (response) {
                                     vm.getAClass(vm.currentACardID);
                                     return true;
                                 }).catch(function (error) {
@@ -2932,7 +2983,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 return _context6.stop();
                         }
                     }
-                }, _callee6, _this7);
+                }, _callee6, _this6);
             }))();
         },
         addNewBClass: function addNewBClass($event, ACategoryID) {
@@ -2946,7 +2997,7 @@ var addcard_Component = addcard_normalizeComponent(
             this.addNewBClassCard(ClassFile);
         },
         addNewBClassCard: function addNewBClassCard(ClassFile) {
-            var _this8 = this;
+            var _this7 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee7() {
                 var vm;
@@ -2955,9 +3006,9 @@ var addcard_Component = addcard_normalizeComponent(
                         switch (_context7.prev = _context7.next) {
                             case 0:
                                 // Update Vue object with Axios response data
-                                vm = _this8;
+                                vm = _this7;
                                 _context7.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/IngredientsCategory/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/IngredientsCategory/Create', ClassFile).then(function (response) {
                                     console.log('addNewBClassCard', response);
                                     vm.getBClass(vm.currentACardID);
                                     return true;
@@ -2970,7 +3021,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 return _context7.stop();
                         }
                     }
-                }, _callee7, _this8);
+                }, _callee7, _this7);
             }))();
         },
         addNewBItem: function addNewBItem($event, ACategoryID) {
@@ -2984,7 +3035,7 @@ var addcard_Component = addcard_normalizeComponent(
             this.addNewBItemCard(ClassFile);
         },
         addNewBItemCard: function addNewBItemCard(ClassFile) {
-            var _this9 = this;
+            var _this8 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee8() {
                 var vm;
@@ -2992,9 +3043,9 @@ var addcard_Component = addcard_normalizeComponent(
                     while (1) {
                         switch (_context8.prev = _context8.next) {
                             case 0:
-                                vm = _this9;
+                                vm = _this8;
                                 _context8.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Ingredients/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Ingredients/Create', ClassFile).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     return true;
                                 }).catch(function (error) {
@@ -3006,7 +3057,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 return _context8.stop();
                         }
                     }
-                }, _callee8, _this9);
+                }, _callee8, _this8);
             }))();
         },
         addNewCItem: function addNewCItem($event, BCategoryID) {
@@ -3020,7 +3071,7 @@ var addcard_Component = addcard_normalizeComponent(
             this.addNewCItemCard(ClassFile);
         },
         addNewCItemCard: function addNewCItemCard(ClassFile) {
-            var _this10 = this;
+            var _this9 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee9() {
                 var vm;
@@ -3028,9 +3079,9 @@ var addcard_Component = addcard_normalizeComponent(
                     while (1) {
                         switch (_context9.prev = _context9.next) {
                             case 0:
-                                vm = _this10;
+                                vm = _this9;
                                 _context9.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Ingredients/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Ingredients/Create', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     return true;
                                 }).catch(function (error) {
@@ -3042,7 +3093,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 return _context9.stop();
                         }
                     }
-                }, _callee9, _this10);
+                }, _callee9, _this9);
             }))();
         },
         changeAName: function changeAName(newName, ACategoryID) {
@@ -3054,7 +3105,7 @@ var addcard_Component = addcard_normalizeComponent(
             this.changeACardName(ClassFile);
         },
         changeACardName: function changeACardName(ClassFile) {
-            var _this11 = this;
+            var _this10 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee10() {
                 var vm;
@@ -3062,9 +3113,9 @@ var addcard_Component = addcard_normalizeComponent(
                     while (1) {
                         switch (_context10.prev = _context10.next) {
                             case 0:
-                                vm = _this11;
+                                vm = _this10;
                                 _context10.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/IngredientsCategory/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/IngredientsCategory/Update', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -3076,7 +3127,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 return _context10.stop();
                         }
                     }
-                }, _callee10, _this11);
+                }, _callee10, _this10);
             }))();
         },
         changeBName: function changeBName(newName, BCategoryID) {
@@ -3088,7 +3139,7 @@ var addcard_Component = addcard_normalizeComponent(
             this.changeBCardName(ClassFile);
         },
         changeBCardName: function changeBCardName(ClassFile) {
-            var _this12 = this;
+            var _this11 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee11() {
                 var vm;
@@ -3096,9 +3147,9 @@ var addcard_Component = addcard_normalizeComponent(
                     while (1) {
                         switch (_context11.prev = _context11.next) {
                             case 0:
-                                vm = _this12;
+                                vm = _this11;
                                 _context11.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/IngredientsCategory/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/IngredientsCategory/Update', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -3110,7 +3161,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 return _context11.stop();
                         }
                     }
-                }, _callee11, _this12);
+                }, _callee11, _this11);
             }))();
         },
         changeBItemName: function changeBItemName(newName, BITem) {
@@ -3124,7 +3175,7 @@ var addcard_Component = addcard_normalizeComponent(
             this.changeBItemCardName(ClassFile);
         },
         changeBItemCardName: function changeBItemCardName(ClassFile) {
-            var _this13 = this;
+            var _this12 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee12() {
                 var vm;
@@ -3132,9 +3183,9 @@ var addcard_Component = addcard_normalizeComponent(
                     while (1) {
                         switch (_context12.prev = _context12.next) {
                             case 0:
-                                vm = _this13;
+                                vm = _this12;
                                 _context12.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Ingredients/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Ingredients/Update', ClassFile).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     return;
                                 }).catch(function (error) {
@@ -3146,7 +3197,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 return _context12.stop();
                         }
                     }
-                }, _callee12, _this13);
+                }, _callee12, _this12);
             }))();
         },
         changeCItemName: function changeCItemName(newName, CITem) {
@@ -3160,7 +3211,7 @@ var addcard_Component = addcard_normalizeComponent(
             this.changeCItemCardName(ClassFile);
         },
         changeCItemCardName: function changeCItemCardName(ClassFile) {
-            var _this14 = this;
+            var _this13 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee13() {
                 var vm;
@@ -3168,9 +3219,9 @@ var addcard_Component = addcard_normalizeComponent(
                     while (1) {
                         switch (_context13.prev = _context13.next) {
                             case 0:
-                                vm = _this14;
+                                vm = _this13;
                                 _context13.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Ingredients/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Ingredients/Update', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     return;
                                 }).catch(function (error) {
@@ -3182,7 +3233,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 return _context13.stop();
                         }
                     }
-                }, _callee13, _this14);
+                }, _callee13, _this13);
             }))();
         },
         changeDItem: function changeDItem(obj) {
@@ -3191,7 +3242,7 @@ var addcard_Component = addcard_normalizeComponent(
             this.changeDItemInfo(obj);
         },
         changeDItemInfo: function changeDItemInfo(obj) {
-            var _this15 = this;
+            var _this14 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee14() {
                 var vm;
@@ -3199,9 +3250,9 @@ var addcard_Component = addcard_normalizeComponent(
                     while (1) {
                         switch (_context14.prev = _context14.next) {
                             case 0:
-                                vm = _this15;
+                                vm = _this14;
                                 _context14.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Ingredients/Update', obj).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Ingredients/Update', obj).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     vm.getCItem(vm.currentBCardID);
                                     if (!response.data.Success) {
@@ -3217,7 +3268,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 return _context14.stop();
                         }
                     }
-                }, _callee14, _this15);
+                }, _callee14, _this14);
             }))();
         },
 
@@ -3225,7 +3276,7 @@ var addcard_Component = addcard_normalizeComponent(
             this.deleteACard(ACategoryID);
         },
         deleteACard: function deleteACard(ACategoryID) {
-            var _this16 = this;
+            var _this15 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee15() {
                 var vm;
@@ -3233,9 +3284,9 @@ var addcard_Component = addcard_normalizeComponent(
                     while (1) {
                         switch (_context15.prev = _context15.next) {
                             case 0:
-                                vm = _this16;
+                                vm = _this15;
                                 _context15.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/IngredientsCategory/Delete', { "ID": ACategoryID }).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/IngredientsCategory/Delete', { "ID": ACategoryID }).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -3247,7 +3298,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 return _context15.stop();
                         }
                     }
-                }, _callee15, _this16);
+                }, _callee15, _this15);
             }))();
         },
 
@@ -3255,7 +3306,7 @@ var addcard_Component = addcard_normalizeComponent(
             this.deleteBCard(BCategoryID);
         },
         deleteBCard: function deleteBCard(BCategoryID) {
-            var _this17 = this;
+            var _this16 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee16() {
                 var vm;
@@ -3263,9 +3314,9 @@ var addcard_Component = addcard_normalizeComponent(
                     while (1) {
                         switch (_context16.prev = _context16.next) {
                             case 0:
-                                vm = _this17;
+                                vm = _this16;
                                 _context16.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/IngredientsCategory/Delete', { "ID": BCategoryID }).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/IngredientsCategory/Delete', { "ID": BCategoryID }).then(function (response) {
                                     console.log(response);
                                     console.log('delete success');
                                     vm.getBClass(vm.currentACardID);
@@ -3279,7 +3330,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 return _context16.stop();
                         }
                     }
-                }, _callee16, _this17);
+                }, _callee16, _this16);
             }))();
         },
 
@@ -3289,7 +3340,7 @@ var addcard_Component = addcard_normalizeComponent(
             this.deleteBItemCard(BItem[0], BItem[4]);
         },
         deleteBItemCard: function deleteBItemCard(BItemID, BItemCID) {
-            var _this18 = this;
+            var _this17 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee17() {
                 var vm;
@@ -3297,9 +3348,9 @@ var addcard_Component = addcard_normalizeComponent(
                     while (1) {
                         switch (_context17.prev = _context17.next) {
                             case 0:
-                                vm = _this18;
+                                vm = _this17;
                                 _context17.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Ingredients/Delete', { "ID": BItemID, "ingredientsCategoryID": BItemCID }).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Ingredients/Delete', { "ID": BItemID, "ingredientsCategoryID": BItemCID }).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     return;
                                 }).catch(function (error) {
@@ -3311,7 +3362,7 @@ var addcard_Component = addcard_normalizeComponent(
                                 return _context17.stop();
                         }
                     }
-                }, _callee17, _this18);
+                }, _callee17, _this17);
             }))();
         },
 
@@ -3321,7 +3372,7 @@ var addcard_Component = addcard_normalizeComponent(
             this.deleteCItemCard(CItem[0], CItem[4]);
         },
         deleteCItemCard: function deleteCItemCard(CItemID, CItemCID) {
-            var _this19 = this;
+            var _this18 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee18() {
                 var vm;
@@ -3329,9 +3380,9 @@ var addcard_Component = addcard_normalizeComponent(
                     while (1) {
                         switch (_context18.prev = _context18.next) {
                             case 0:
-                                vm = _this19;
+                                vm = _this18;
                                 _context18.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Ingredients/Delete', { "ID": CItemID, "ingredientsCategoryID": CItemCID }).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Ingredients/Delete', { "ID": CItemID, "ingredientsCategoryID": CItemCID }).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     return;
                                 }).catch(function (error) {
@@ -3343,19 +3394,19 @@ var addcard_Component = addcard_normalizeComponent(
                                 return _context18.stop();
                         }
                     }
-                }, _callee18, _this19);
+                }, _callee18, _this18);
             }))();
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-518225ff","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/food/manage.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-0b51d3f0","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/food/manage.vue
 var manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("食材")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},[_vm._l((_vm.currentAClass),function(item,index){return _c('CardA',{key:item.index,class:{ active: index === 0 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeAName($event, item[0])},"card-on-click":function($event){_vm.AClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteAClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewAClass($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentACardName))]),_vm._v(" "),_c('div',{staticClass:"union union-half"},[_c('h4',[_vm._v("類別")]),_vm._v(" "),_vm._l((_vm.currentBClass),function(item,index){return _c('CardB',{key:item.index,staticClass:"B-class",class:{ lastcard: index === (_vm.currentBClass.length-1) && index > 1 },attrs:{"card-name":item[1],"is-class":true},on:{"card-change-name":function($event){_vm.changeBName($event, item[0])},"card-on-click":function($event){_vm.BClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteBClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBClass.length >= 0),expression:"currentBClass.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBClass($event, _vm.currentACardID)}}})],2),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentBItem),function(item,index){return _c('CardB',{key:item.index,class:{ lastcard: index === (_vm.currentBItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeBItemName($event, item)},"card-on-click":function($event){_vm.BItemOnClick($event, item)},"card-delete":function($event){_vm.deleteBItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBItem.length >= 0),expression:"currentBItem.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBItem($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentBCardName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentCItem),function(item,index){return _c('CardC',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],key:item.index,class:{ lastcard: index === (_vm.currentCItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeCItemName($event, item)},"card-on-click":function($event){_vm.CItemOnClick($event, item)},"card-delete":function($event){_vm.deleteCItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewCItem($event, _vm.currentBCardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentDItemName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('CardFood',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],attrs:{"card-id":_vm.currentDItem[0],"card-name":_vm.currentDItem[1],"card-unit":_vm.currentDItem[2],"card-price":_vm.currentDItem[3]},on:{"item-change":function($event){_vm.changeDItem($event)}}})],1)])],1)],1)}
 var manage_staticRenderFns = []
 var manage_esExports = { render: manage_render, staticRenderFns: manage_staticRenderFns }
 /* harmony default export */ var food_manage = (manage_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/food/manage.vue
 function manage_injectStyle (ssrContext) {
-  __webpack_require__("RqZo")
+  __webpack_require__("2Fh/")
 }
 var manage_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -3621,7 +3672,7 @@ var cardRecipes_Component = cardRecipes_normalizeComponent(
                         switch (_context.prev = _context.next) {
                             case 0:
                                 _context.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/IngredientsCategory/Get').then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + '/IngredientsCategory/Get').then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -3650,7 +3701,7 @@ var cardRecipes_Component = cardRecipes_normalizeComponent(
                         switch (_context2.prev = _context2.next) {
                             case 0:
                                 _context2.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/IngredientsCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/IngredientsCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -3679,7 +3730,7 @@ var cardRecipes_Component = cardRecipes_normalizeComponent(
                         switch (_context3.prev = _context3.next) {
                             case 0:
                                 _context3.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/Ingredients/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Ingredients/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -3709,7 +3760,7 @@ var cardRecipes_Component = cardRecipes_normalizeComponent(
                             case 0:
                                 console.log('CItem CategoryID', BCategoryID);
                                 _context4.next = 3;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/Ingredients/GetByCategoryID/' + BCategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Ingredients/GetByCategoryID/' + BCategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -3947,17 +3998,11 @@ var addingredients_Component = addingredients_normalizeComponent(
             this.getBItem(BdefaultID);
         },
         isLoadingIN: function isLoadingIN(value) {
-            var _this = this;
-
             if (value) {
                 this.$Message.loading({
                     content: 'Loading...',
-                    duration: 2
+                    duration: 1
                 });
-            } else {
-                setTimeout(function () {
-                    _this.$Message.destroy();
-                }, 300);
             }
         }
     },
@@ -4013,7 +4058,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             // this.getDeteailMeals(comboMealID);
         },
         getAClass: function getAClass() {
-            var _this2 = this;
+            var _this = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee() {
                 return regenerator_default.a.wrap(function _callee$(_context) {
@@ -4021,7 +4066,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                         switch (_context.prev = _context.next) {
                             case 0:
                                 _context.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/RecipesCategory/Get').then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + '/RecipesCategory/Get').then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -4031,18 +4076,18 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 });
 
                             case 2:
-                                _this2.currentAClass = _context.sent;
+                                _this.currentAClass = _context.sent;
 
                             case 3:
                             case 'end':
                                 return _context.stop();
                         }
                     }
-                }, _callee, _this2);
+                }, _callee, _this);
             }))();
         },
         getBClass: function getBClass(ACategoryID) {
-            var _this3 = this;
+            var _this2 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2() {
                 return regenerator_default.a.wrap(function _callee2$(_context2) {
@@ -4050,7 +4095,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                         switch (_context2.prev = _context2.next) {
                             case 0:
                                 _context2.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/RecipesCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/RecipesCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -4060,18 +4105,18 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 });
 
                             case 2:
-                                _this3.currentBClass = _context2.sent;
+                                _this2.currentBClass = _context2.sent;
 
                             case 3:
                             case 'end':
                                 return _context2.stop();
                         }
                     }
-                }, _callee2, _this3);
+                }, _callee2, _this2);
             }))();
         },
         getBItem: function getBItem(ACategoryID) {
-            var _this4 = this;
+            var _this3 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee3() {
                 return regenerator_default.a.wrap(function _callee3$(_context3) {
@@ -4079,7 +4124,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                         switch (_context3.prev = _context3.next) {
                             case 0:
                                 _context3.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/Recipes/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Recipes/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -4089,18 +4134,18 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 });
 
                             case 2:
-                                _this4.currentBItem = _context3.sent;
+                                _this3.currentBItem = _context3.sent;
 
                             case 3:
                             case 'end':
                                 return _context3.stop();
                         }
                     }
-                }, _callee3, _this4);
+                }, _callee3, _this3);
             }))();
         },
         getCItem: function getCItem(BCategoryID) {
-            var _this5 = this;
+            var _this4 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee4() {
                 return regenerator_default.a.wrap(function _callee4$(_context4) {
@@ -4117,7 +4162,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 // "ComboMealsCategoryID": 17,
                                 // "ComboMealsCategoryName": "主廚套餐一號"
                                 _context4.next = 3;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/Recipes/GetByCategoryID/' + BCategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Recipes/GetByCategoryID/' + BCategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -4127,20 +4172,20 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 });
 
                             case 3:
-                                _this5.currentCItem = _context4.sent;
+                                _this4.currentCItem = _context4.sent;
 
                             case 4:
                             case 'end':
                                 return _context4.stop();
                         }
                     }
-                }, _callee4, _this5);
+                }, _callee4, _this4);
             }))();
         },
         getDItem: function getDItem(ItemID) {
             // 廢氣中---------------
 
-            var _this6 = this;
+            var _this5 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee5() {
                 return regenerator_default.a.wrap(function _callee5$(_context5) {
@@ -4151,7 +4196,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context5.stop();
                         }
                     }
-                }, _callee5, _this6);
+                }, _callee5, _this5);
             }))();
         },
         addNewAClass: function addNewAClass($event) {
@@ -4164,7 +4209,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             this.addNewAClassCard(ClassFile);
         },
         addNewAClassCard: function addNewAClassCard(ClassFile) {
-            var _this7 = this;
+            var _this6 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee6() {
                 var vm;
@@ -4173,9 +4218,9 @@ var addingredients_Component = addingredients_normalizeComponent(
                         switch (_context6.prev = _context6.next) {
                             case 0:
                                 // Update Vue object with Axios response data
-                                vm = _this7;
+                                vm = _this6;
                                 _context6.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/RecipesCategory/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/RecipesCategory/Create', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return true;
                                 }).catch(function (error) {
@@ -4187,7 +4232,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context6.stop();
                         }
                     }
-                }, _callee6, _this7);
+                }, _callee6, _this6);
             }))();
         },
         addNewBClass: function addNewBClass($event, ACategoryID) {
@@ -4201,7 +4246,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             this.addNewBClassCard(ClassFile);
         },
         addNewBClassCard: function addNewBClassCard(ClassFile) {
-            var _this8 = this;
+            var _this7 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee7() {
                 var vm;
@@ -4210,9 +4255,9 @@ var addingredients_Component = addingredients_normalizeComponent(
                         switch (_context7.prev = _context7.next) {
                             case 0:
                                 // Update Vue object with Axios response data
-                                vm = _this8;
+                                vm = _this7;
                                 _context7.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/RecipesCategory/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/RecipesCategory/Create', ClassFile).then(function (response) {
                                     console.log('addNewBClassCard', response);
                                     vm.getBClass(vm.currentACardID);
                                     return true;
@@ -4225,7 +4270,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context7.stop();
                         }
                     }
-                }, _callee7, _this8);
+                }, _callee7, _this7);
             }))();
         },
         addNewBItem: function addNewBItem($event, ACategoryID) {
@@ -4237,7 +4282,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             this.addNewBItemCard(ClassFile);
         },
         addNewBItemCard: function addNewBItemCard(ClassFile) {
-            var _this9 = this;
+            var _this8 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee8() {
                 var vm;
@@ -4245,9 +4290,9 @@ var addingredients_Component = addingredients_normalizeComponent(
                     while (1) {
                         switch (_context8.prev = _context8.next) {
                             case 0:
-                                vm = _this9;
+                                vm = _this8;
                                 _context8.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Recipes/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Recipes/Create', ClassFile).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     return true;
                                 }).catch(function (error) {
@@ -4259,7 +4304,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context8.stop();
                         }
                     }
-                }, _callee8, _this9);
+                }, _callee8, _this8);
             }))();
         },
         addNewCItem: function addNewCItem($event, BCategoryID) {
@@ -4271,7 +4316,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             this.addNewCItemCard(ClassFile);
         },
         addNewCItemCard: function addNewCItemCard(ClassFile) {
-            var _this10 = this;
+            var _this9 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee9() {
                 var vm;
@@ -4279,9 +4324,9 @@ var addingredients_Component = addingredients_normalizeComponent(
                     while (1) {
                         switch (_context9.prev = _context9.next) {
                             case 0:
-                                vm = _this10;
+                                vm = _this9;
                                 _context9.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Recipes/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Recipes/Create', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     return true;
                                 }).catch(function (error) {
@@ -4293,7 +4338,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context9.stop();
                         }
                     }
-                }, _callee9, _this10);
+                }, _callee9, _this9);
             }))();
         },
         changeAName: function changeAName(newName, ACategoryID) {
@@ -4305,7 +4350,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             this.changeACardName(ClassFile);
         },
         changeACardName: function changeACardName(ClassFile) {
-            var _this11 = this;
+            var _this10 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee10() {
                 var vm;
@@ -4313,9 +4358,9 @@ var addingredients_Component = addingredients_normalizeComponent(
                     while (1) {
                         switch (_context10.prev = _context10.next) {
                             case 0:
-                                vm = _this11;
+                                vm = _this10;
                                 _context10.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/RecipesCategory/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/RecipesCategory/Update', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -4327,7 +4372,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context10.stop();
                         }
                     }
-                }, _callee10, _this11);
+                }, _callee10, _this10);
             }))();
         },
         changeBName: function changeBName(newName, BCategoryID) {
@@ -4339,7 +4384,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             this.changeBCardName(ClassFile);
         },
         changeBCardName: function changeBCardName(ClassFile) {
-            var _this12 = this;
+            var _this11 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee11() {
                 var vm;
@@ -4347,9 +4392,9 @@ var addingredients_Component = addingredients_normalizeComponent(
                     while (1) {
                         switch (_context11.prev = _context11.next) {
                             case 0:
-                                vm = _this12;
+                                vm = _this11;
                                 _context11.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/RecipesCategory/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/RecipesCategory/Update', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -4361,7 +4406,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context11.stop();
                         }
                     }
-                }, _callee11, _this12);
+                }, _callee11, _this11);
             }))();
         },
         changeBItemName: function changeBItemName(newName, BITem) {
@@ -4374,7 +4419,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             this.changeBItemCardName(ClassFile, newName);
         },
         changeBItemCardName: function changeBItemCardName(ClassFile, newName) {
-            var _this13 = this;
+            var _this12 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee12() {
                 var vm;
@@ -4382,9 +4427,9 @@ var addingredients_Component = addingredients_normalizeComponent(
                     while (1) {
                         switch (_context12.prev = _context12.next) {
                             case 0:
-                                vm = _this13;
+                                vm = _this12;
                                 _context12.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Recipes/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Recipes/Update', ClassFile).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     // 改D欄的名字
                                     vm.currentDItem[1] = newName;
@@ -4398,7 +4443,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context12.stop();
                         }
                     }
-                }, _callee12, _this13);
+                }, _callee12, _this12);
             }))();
         },
         changeCItemName: function changeCItemName(newName, CITem) {
@@ -4411,7 +4456,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             this.changeCItemCardName(ClassFile, newName);
         },
         changeCItemCardName: function changeCItemCardName(ClassFile, newName) {
-            var _this14 = this;
+            var _this13 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee13() {
                 var vm;
@@ -4419,9 +4464,9 @@ var addingredients_Component = addingredients_normalizeComponent(
                     while (1) {
                         switch (_context13.prev = _context13.next) {
                             case 0:
-                                vm = _this14;
+                                vm = _this13;
                                 _context13.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Recipes/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Recipes/Update', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     // 改D欄的名字
                                     vm.currentDItem[1] = newName;
@@ -4435,7 +4480,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context13.stop();
                         }
                     }
-                }, _callee13, _this14);
+                }, _callee13, _this13);
             }))();
         },
         changeDItem: function changeDItem(obj) {
@@ -4443,7 +4488,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             console.log('D item項目的OBJ', obj);
         },
         changeDItemInfo: function changeDItemInfo(obj) {
-            var _this15 = this;
+            var _this14 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee14() {
                 var vm;
@@ -4451,9 +4496,9 @@ var addingredients_Component = addingredients_normalizeComponent(
                     while (1) {
                         switch (_context14.prev = _context14.next) {
                             case 0:
-                                vm = _this15;
+                                vm = _this14;
                                 _context14.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Recipes/Update', obj).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Recipes/Update', obj).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     vm.getCItem(vm.currentBCardID);
                                     console.log('changD', response);
@@ -4467,7 +4512,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context14.stop();
                         }
                     }
-                }, _callee14, _this15);
+                }, _callee14, _this14);
             }))();
         },
 
@@ -4479,7 +4524,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             this.deleteACard(ClassFile);
         },
         deleteACard: function deleteACard(ClassFile) {
-            var _this16 = this;
+            var _this15 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee15() {
                 var vm;
@@ -4487,9 +4532,9 @@ var addingredients_Component = addingredients_normalizeComponent(
                     while (1) {
                         switch (_context15.prev = _context15.next) {
                             case 0:
-                                vm = _this16;
+                                vm = _this15;
                                 _context15.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/RecipesCategory/Delete', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/RecipesCategory/Delete', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -4501,7 +4546,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context15.stop();
                         }
                     }
-                }, _callee15, _this16);
+                }, _callee15, _this15);
             }))();
         },
 
@@ -4513,7 +4558,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             this.deleteBCard(ClassFile);
         },
         deleteBCard: function deleteBCard(ClassFile) {
-            var _this17 = this;
+            var _this16 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee16() {
                 var vm;
@@ -4521,9 +4566,9 @@ var addingredients_Component = addingredients_normalizeComponent(
                     while (1) {
                         switch (_context16.prev = _context16.next) {
                             case 0:
-                                vm = _this17;
+                                vm = _this16;
                                 _context16.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/RecipesCategory/Delete', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/RecipesCategory/Delete', ClassFile).then(function (response) {
                                     console.log(response);
                                     console.log('delete success');
                                     vm.getBClass(vm.currentACardID);
@@ -4537,7 +4582,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context16.stop();
                         }
                     }
-                }, _callee16, _this17);
+                }, _callee16, _this16);
             }))();
         },
 
@@ -4560,7 +4605,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             this.deleteBItemCard(ClassFile);
         },
         deleteBItemCard: function deleteBItemCard(ClassFile) {
-            var _this18 = this;
+            var _this17 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee17() {
                 var vm;
@@ -4568,9 +4613,9 @@ var addingredients_Component = addingredients_normalizeComponent(
                     while (1) {
                         switch (_context17.prev = _context17.next) {
                             case 0:
-                                vm = _this18;
+                                vm = _this17;
                                 _context17.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Recipes/Delete', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Recipes/Delete', ClassFile).then(function (response) {
                                     console.log(response);
                                     vm.getBItem(vm.currentACardID);
                                     return;
@@ -4583,7 +4628,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context17.stop();
                         }
                     }
-                }, _callee17, _this18);
+                }, _callee17, _this17);
             }))();
         },
 
@@ -4596,7 +4641,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             this.deleteCItemCard(ClassFile);
         },
         deleteCItemCard: function deleteCItemCard(ClassFile) {
-            var _this19 = this;
+            var _this18 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee18() {
                 var vm;
@@ -4604,9 +4649,9 @@ var addingredients_Component = addingredients_normalizeComponent(
                     while (1) {
                         switch (_context18.prev = _context18.next) {
                             case 0:
-                                vm = _this19;
+                                vm = _this18;
                                 _context18.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Recipes/Delete', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Recipes/Delete', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     return;
                                 }).catch(function (error) {
@@ -4618,7 +4663,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context18.stop();
                         }
                     }
-                }, _callee18, _this19);
+                }, _callee18, _this18);
             }))();
         },
         getDeteailMeals: function getDeteailMeals(comboMealID) {
@@ -4637,7 +4682,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             //     console.log(error);
             // });
 
-            var _this20 = this;
+            var _this19 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee19() {
                 return regenerator_default.a.wrap(function _callee19$(_context19) {
@@ -4648,7 +4693,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                                 return _context19.stop();
                         }
                     }
-                }, _callee19, _this20);
+                }, _callee19, _this19);
             }))();
         },
         AddNewIngredients: function AddNewIngredients($event, ComboMealsID) {
@@ -4666,7 +4711,7 @@ var addingredients_Component = addingredients_normalizeComponent(
             }];
             console.log('ClassFile', ClassFile);
             var vm = this;
-            axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/IngredientsRecipesMap/Create', ClassFile).then(function (response) {
+            axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/IngredientsRecipesMap/Create', ClassFile).then(function (response) {
                 console.log('AddNewIngredients', response);
                 vm.getDeteailMeals(ComboMealsID);
             }).catch(function (error) {
@@ -4689,7 +4734,7 @@ var addingredients_Component = addingredients_normalizeComponent(
                 "AccountID": 0
             }];
             var vm = this;
-            axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/MealsComboMealsMap/Delete', ClassFile).then(function (response) {
+            axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/MealsComboMealsMap/Delete', ClassFile).then(function (response) {
                 console.log('DeleteRecipes', response);
                 console.log(item[3]);
                 vm.getDeteailMeals(item[3]);
@@ -4699,14 +4744,14 @@ var addingredients_Component = addingredients_normalizeComponent(
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-79e1cb71","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/recipes/manage.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-50bef588","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/recipes/manage.vue
 var recipes_manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("食譜")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},[_vm._l((_vm.currentAClass),function(item,index){return _c('CardA',{key:item.index,class:{ active: index === 0 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeAName($event, item[0])},"card-on-click":function($event){_vm.AClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteAClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewAClass($event)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentACardName))]),_vm._v(" "),_c('div',{staticClass:"union union-half"},[_c('h4',[_vm._v("類別")]),_vm._v(" "),_vm._l((_vm.currentBClass),function(item,index){return _c('CardB',{key:item.index,staticClass:"B-class",class:{ lastcard: index === (_vm.currentBClass.length-1) && index > 1 },attrs:{"card-name":item[1],"is-class":true},on:{"card-change-name":function($event){_vm.changeBName($event, item[0])},"card-on-click":function($event){_vm.BClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteBClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBClass.length >= 0),expression:"currentBClass.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBClass($event, _vm.currentACardID)}}})],2),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentBItem),function(item,index){return _c('CardB',{key:item.index,class:{ lastcard: index === (_vm.currentBItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeBItemName($event, item)},"card-on-click":function($event){_vm.BItemOnClick($event, item)},"card-delete":function($event){_vm.deleteBItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBItem.length >= 0),expression:"currentBItem.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBItem($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentBCardName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentCItem),function(item,index){return _c('CardC',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],key:item.index,class:{ lastcard: index === (_vm.currentCItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeCItemName($event, item)},"card-on-click":function($event){_vm.CItemOnClick($event, item)},"card-delete":function($event){_vm.deleteCItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewCItem($event, _vm.currentBCardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentDItemName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('CardRecipes',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],attrs:{"card-recipesid":_vm.currentDItem[0],"card-name":_vm.currentDItem[1],"card-recipescategoryid":_vm.currentDItem[2]},on:{"item-change":function($event){_vm.changeDItem($event)}}}),_vm._v(" "),_c('h4',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}]},[_vm._v("食譜")]),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],staticClass:"meal-content"},[_c('AddNewIngredients',{on:{"new-recipes-item":function($event){_vm.AddNewIngredients($event, _vm.currentDItem[0])}}}),_vm._v(" "),_c('div',{staticClass:"detail-meals"},_vm._l((_vm.deteailMeals),function(item,index){return _c('div',{staticClass:"item-meals"},[_c('div',{on:{"click":function($event){_vm.DeleteRecipes($event, item)}}},[_c('Icon',{attrs:{"type":"ios-remove-circle-outline","size":"20"}})],1),_vm._v(" "),_c('div',[_vm._v(_vm._s(item[2]))]),_vm._v(" "),_c('div',[_vm._v(_vm._s(item[0]))])])}))],1)],1)])],1)],1)}
 var recipes_manage_staticRenderFns = []
 var recipes_manage_esExports = { render: recipes_manage_render, staticRenderFns: recipes_manage_staticRenderFns }
 /* harmony default export */ var components_recipes_manage = (recipes_manage_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/recipes/manage.vue
 function recipes_manage_injectStyle (ssrContext) {
-  __webpack_require__("ot0K")
+  __webpack_require__("200S")
 }
 var recipes_manage_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -5036,7 +5081,7 @@ var cardMeal_Component = cardMeal_normalizeComponent(
                         switch (_context.prev = _context.next) {
                             case 0:
                                 _context.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/RecipesCategory/Get').then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + '/RecipesCategory/Get').then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -5065,7 +5110,7 @@ var cardMeal_Component = cardMeal_normalizeComponent(
                         switch (_context2.prev = _context2.next) {
                             case 0:
                                 _context2.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/RecipesCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/RecipesCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -5094,7 +5139,7 @@ var cardMeal_Component = cardMeal_normalizeComponent(
                         switch (_context3.prev = _context3.next) {
                             case 0:
                                 _context3.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/Recipes/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Recipes/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -5124,7 +5169,7 @@ var cardMeal_Component = cardMeal_normalizeComponent(
                             case 0:
                                 console.log('CItem CategoryID', BCategoryID);
                                 _context4.next = 3;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/Recipes/GetByCategoryID/' + BCategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Recipes/GetByCategoryID/' + BCategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -5371,17 +5416,11 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.getBItem(BdefaultID);
         },
         isLoadingIN: function isLoadingIN(value) {
-            var _this = this;
-
             if (value) {
                 this.$Message.loading({
                     content: 'Loading...',
-                    duration: 2
+                    duration: 1
                 });
-            } else {
-                setTimeout(function () {
-                    _this.$Message.destroy();
-                }, 300);
             }
         }
     },
@@ -5441,7 +5480,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             }
         },
         getAClass: function getAClass() {
-            var _this2 = this;
+            var _this = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee() {
                 return regenerator_default.a.wrap(function _callee$(_context) {
@@ -5449,7 +5488,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                         switch (_context.prev = _context.next) {
                             case 0:
                                 _context.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/MealsCategory/Get').then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + '/MealsCategory/Get').then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -5459,18 +5498,18 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 });
 
                             case 2:
-                                _this2.currentAClass = _context.sent;
+                                _this.currentAClass = _context.sent;
 
                             case 3:
                             case 'end':
                                 return _context.stop();
                         }
                     }
-                }, _callee, _this2);
+                }, _callee, _this);
             }))();
         },
         getBClass: function getBClass(ACategoryID) {
-            var _this3 = this;
+            var _this2 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2() {
                 return regenerator_default.a.wrap(function _callee2$(_context2) {
@@ -5478,7 +5517,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                         switch (_context2.prev = _context2.next) {
                             case 0:
                                 _context2.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/MealsCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/MealsCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -5488,18 +5527,18 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 });
 
                             case 2:
-                                _this3.currentBClass = _context2.sent;
+                                _this2.currentBClass = _context2.sent;
 
                             case 3:
                             case 'end':
                                 return _context2.stop();
                         }
                     }
-                }, _callee2, _this3);
+                }, _callee2, _this2);
             }))();
         },
         getBItem: function getBItem(ACategoryID) {
-            var _this4 = this;
+            var _this3 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee3() {
                 return regenerator_default.a.wrap(function _callee3$(_context3) {
@@ -5507,7 +5546,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                         switch (_context3.prev = _context3.next) {
                             case 0:
                                 _context3.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/Meals/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Meals/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -5517,18 +5556,18 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 });
 
                             case 2:
-                                _this4.currentBItem = _context3.sent;
+                                _this3.currentBItem = _context3.sent;
 
                             case 3:
                             case 'end':
                                 return _context3.stop();
                         }
                     }
-                }, _callee3, _this4);
+                }, _callee3, _this3);
             }))();
         },
         getCItem: function getCItem(BCategoryID) {
-            var _this5 = this;
+            var _this4 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee4() {
                 return regenerator_default.a.wrap(function _callee4$(_context4) {
@@ -5545,7 +5584,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 // "MealsCategoryID": 17,
                                 // "MealsCategoryName": "主廚套餐一號"
                                 _context4.next = 3;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/Meals/GetByCategoryID/' + BCategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Meals/GetByCategoryID/' + BCategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -5555,14 +5594,14 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 });
 
                             case 3:
-                                _this5.currentCItem = _context4.sent;
+                                _this4.currentCItem = _context4.sent;
 
                             case 4:
                             case 'end':
                                 return _context4.stop();
                         }
                     }
-                }, _callee4, _this5);
+                }, _callee4, _this4);
             }))();
         },
         getDItem: function getDItem(ItemID) {
@@ -5577,7 +5616,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             // });
             // 廢氣中---------------
 
-            var _this6 = this;
+            var _this5 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee5() {
                 return regenerator_default.a.wrap(function _callee5$(_context5) {
@@ -5588,7 +5627,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 return _context5.stop();
                         }
                     }
-                }, _callee5, _this6);
+                }, _callee5, _this5);
             }))();
         },
         addNewAClass: function addNewAClass($event) {
@@ -5601,7 +5640,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.addNewAClassCard(ClassFile);
         },
         addNewAClassCard: function addNewAClassCard(ClassFile) {
-            var _this7 = this;
+            var _this6 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee6() {
                 var vm;
@@ -5610,9 +5649,9 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                         switch (_context6.prev = _context6.next) {
                             case 0:
                                 // Update Vue object with Axios response data
-                                vm = _this7;
+                                vm = _this6;
                                 _context6.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/MealsCategory/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/MealsCategory/Create', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return true;
                                 }).catch(function (error) {
@@ -5624,7 +5663,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 return _context6.stop();
                         }
                     }
-                }, _callee6, _this7);
+                }, _callee6, _this6);
             }))();
         },
         addNewBClass: function addNewBClass($event, ACategoryID) {
@@ -5638,7 +5677,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.addNewBClassCard(ClassFile);
         },
         addNewBClassCard: function addNewBClassCard(ClassFile) {
-            var _this8 = this;
+            var _this7 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee7() {
                 var vm;
@@ -5647,9 +5686,9 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                         switch (_context7.prev = _context7.next) {
                             case 0:
                                 // Update Vue object with Axios response data
-                                vm = _this8;
+                                vm = _this7;
                                 _context7.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/MealsCategory/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/MealsCategory/Create', ClassFile).then(function (response) {
                                     console.log('addNewBClassCard', response);
                                     vm.getBClass(vm.currentACardID);
                                     return true;
@@ -5662,7 +5701,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 return _context7.stop();
                         }
                     }
-                }, _callee7, _this8);
+                }, _callee7, _this7);
             }))();
         },
         addNewBItem: function addNewBItem($event, ACategoryID) {
@@ -5679,7 +5718,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.addNewBItemCard(ClassFile);
         },
         addNewBItemCard: function addNewBItemCard(ClassFile) {
-            var _this9 = this;
+            var _this8 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee8() {
                 var vm;
@@ -5687,9 +5726,9 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                     while (1) {
                         switch (_context8.prev = _context8.next) {
                             case 0:
-                                vm = _this9;
+                                vm = _this8;
                                 _context8.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Meals/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Meals/Create', ClassFile).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     return true;
                                 }).catch(function (error) {
@@ -5701,7 +5740,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 return _context8.stop();
                         }
                     }
-                }, _callee8, _this9);
+                }, _callee8, _this8);
             }))();
         },
         addNewCItem: function addNewCItem($event, BCategoryID) {
@@ -5718,7 +5757,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.addNewCItemCard(ClassFile);
         },
         addNewCItemCard: function addNewCItemCard(ClassFile) {
-            var _this10 = this;
+            var _this9 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee9() {
                 var vm;
@@ -5726,9 +5765,9 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                     while (1) {
                         switch (_context9.prev = _context9.next) {
                             case 0:
-                                vm = _this10;
+                                vm = _this9;
                                 _context9.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Meals/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Meals/Create', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     return true;
                                 }).catch(function (error) {
@@ -5740,7 +5779,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 return _context9.stop();
                         }
                     }
-                }, _callee9, _this10);
+                }, _callee9, _this9);
             }))();
         },
         changeAName: function changeAName(newName, ACategoryID) {
@@ -5752,7 +5791,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.changeACardName(ClassFile);
         },
         changeACardName: function changeACardName(ClassFile) {
-            var _this11 = this;
+            var _this10 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee10() {
                 var vm;
@@ -5760,9 +5799,9 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                     while (1) {
                         switch (_context10.prev = _context10.next) {
                             case 0:
-                                vm = _this11;
+                                vm = _this10;
                                 _context10.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/MealsCategory/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/MealsCategory/Update', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -5774,7 +5813,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 return _context10.stop();
                         }
                     }
-                }, _callee10, _this11);
+                }, _callee10, _this10);
             }))();
         },
         changeBName: function changeBName(newName, BCategoryID) {
@@ -5786,7 +5825,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.changeBCardName(ClassFile);
         },
         changeBCardName: function changeBCardName(ClassFile) {
-            var _this12 = this;
+            var _this11 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee11() {
                 var vm;
@@ -5794,9 +5833,9 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                     while (1) {
                         switch (_context11.prev = _context11.next) {
                             case 0:
-                                vm = _this12;
+                                vm = _this11;
                                 _context11.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/MealsCategory/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/MealsCategory/Update', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -5808,7 +5847,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 return _context11.stop();
                         }
                     }
-                }, _callee11, _this12);
+                }, _callee11, _this11);
             }))();
         },
         changeBItemName: function changeBItemName(newName, BITem) {
@@ -5827,7 +5866,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.changeBItemCardName(ClassFile, newName);
         },
         changeBItemCardName: function changeBItemCardName(ClassFile, newName) {
-            var _this13 = this;
+            var _this12 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee12() {
                 var vm;
@@ -5835,9 +5874,9 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                     while (1) {
                         switch (_context12.prev = _context12.next) {
                             case 0:
-                                vm = _this13;
+                                vm = _this12;
                                 _context12.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Meals/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Meals/Update', ClassFile).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     // 改D欄的名字
                                     vm.currentDItem[1] = newName;
@@ -5851,7 +5890,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 return _context12.stop();
                         }
                     }
-                }, _callee12, _this13);
+                }, _callee12, _this12);
             }))();
         },
         changeCItemName: function changeCItemName(newName, CITem) {
@@ -5869,7 +5908,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.changeCItemCardName(ClassFile, newName);
         },
         changeCItemCardName: function changeCItemCardName(ClassFile, newName) {
-            var _this14 = this;
+            var _this13 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee13() {
                 var vm;
@@ -5877,9 +5916,9 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                     while (1) {
                         switch (_context13.prev = _context13.next) {
                             case 0:
-                                vm = _this14;
+                                vm = _this13;
                                 _context13.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Meals/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Meals/Update', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     // 改D欄的名字
                                     vm.currentDItem[1] = newName;
@@ -5893,7 +5932,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 return _context13.stop();
                         }
                     }
-                }, _callee13, _this14);
+                }, _callee13, _this13);
             }))();
         },
         changeDItem: function changeDItem(obj) {
@@ -5901,7 +5940,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             console.log('D item項目的OBJ', obj);
         },
         changeDItemInfo: function changeDItemInfo(obj) {
-            var _this15 = this;
+            var _this14 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee14() {
                 var vm;
@@ -5909,9 +5948,9 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                     while (1) {
                         switch (_context14.prev = _context14.next) {
                             case 0:
-                                vm = _this15;
+                                vm = _this14;
                                 _context14.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Meals/Update', obj).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Meals/Update', obj).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     vm.getCItem(vm.currentBCardID);
                                     console.log('changD', response);
@@ -5925,7 +5964,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 return _context14.stop();
                         }
                     }
-                }, _callee14, _this15);
+                }, _callee14, _this14);
             }))();
         },
 
@@ -5937,7 +5976,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.deleteACard(ClassFile);
         },
         deleteACard: function deleteACard(ClassFile) {
-            var _this16 = this;
+            var _this15 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee15() {
                 var vm;
@@ -5945,9 +5984,9 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                     while (1) {
                         switch (_context15.prev = _context15.next) {
                             case 0:
-                                vm = _this16;
+                                vm = _this15;
                                 _context15.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/MealsCategory/Delete', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/MealsCategory/Delete', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -5959,7 +5998,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 return _context15.stop();
                         }
                     }
-                }, _callee15, _this16);
+                }, _callee15, _this15);
             }))();
         },
 
@@ -5971,7 +6010,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.deleteBCard(ClassFile);
         },
         deleteBCard: function deleteBCard(ClassFile) {
-            var _this17 = this;
+            var _this16 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee16() {
                 var vm;
@@ -5979,9 +6018,9 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                     while (1) {
                         switch (_context16.prev = _context16.next) {
                             case 0:
-                                vm = _this17;
+                                vm = _this16;
                                 _context16.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/MealsCategory/Delete', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/MealsCategory/Delete', ClassFile).then(function (response) {
                                     console.log(response);
                                     console.log('delete success');
                                     vm.getBClass(vm.currentACardID);
@@ -5995,7 +6034,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 return _context16.stop();
                         }
                     }
-                }, _callee16, _this17);
+                }, _callee16, _this16);
             }))();
         },
 
@@ -6025,7 +6064,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.deleteBItemCard(ClassFile);
         },
         deleteBItemCard: function deleteBItemCard(ClassFile) {
-            var _this18 = this;
+            var _this17 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee17() {
                 var vm;
@@ -6033,9 +6072,9 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                     while (1) {
                         switch (_context17.prev = _context17.next) {
                             case 0:
-                                vm = _this18;
+                                vm = _this17;
                                 _context17.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Meals/Delete', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Meals/Delete', ClassFile).then(function (response) {
                                     console.log(response);
                                     vm.getBItem(vm.currentACardID);
                                     return;
@@ -6048,7 +6087,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 return _context17.stop();
                         }
                     }
-                }, _callee17, _this18);
+                }, _callee17, _this17);
             }))();
         },
 
@@ -6078,7 +6117,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             this.deleteCItemCard(ClassFile);
         },
         deleteCItemCard: function deleteCItemCard(ClassFile) {
-            var _this19 = this;
+            var _this18 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee18() {
                 var vm;
@@ -6086,9 +6125,9 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                     while (1) {
                         switch (_context18.prev = _context18.next) {
                             case 0:
-                                vm = _this19;
+                                vm = _this18;
                                 _context18.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Meals/Delete', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Meals/Delete', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     return;
                                 }).catch(function (error) {
@@ -6100,26 +6139,26 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                                 return _context18.stop();
                         }
                     }
-                }, _callee18, _this19);
+                }, _callee18, _this18);
             }))();
         },
         getDeteailMeals: function getDeteailMeals(recipesID, recipesName, recipesCategoryID) {
-            var _this20 = this;
+            var _this19 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee19() {
                 return regenerator_default.a.wrap(function _callee19$(_context19) {
                     while (1) {
                         switch (_context19.prev = _context19.next) {
                             case 0:
-                                _this20.deteailMeals = recipesName;
-                                console.log('抓DMESL', _this20.deteailMeals);
+                                _this19.deteailMeals = recipesName;
+                                console.log('抓DMESL', _this19.deteailMeals);
 
                             case 2:
                             case 'end':
                                 return _context19.stop();
                         }
                     }
-                }, _callee19, _this20);
+                }, _callee19, _this19);
             }))();
         },
         AddNewRecipes: function AddNewRecipes($event, currentDItem) {
@@ -6133,7 +6172,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
             console.log('ClassFile', ClassFile);
 
             var vm = this;
-            axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/Meals/Update', ClassFile).then(function (response) {
+            axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Meals/Update', ClassFile).then(function (response) {
                 console.log('AddNewRecipes--====', response);
                 vm.getDeteailMeals($event[0], $event[1], $event[2]);
             }).catch(function (error) {
@@ -6156,7 +6195,7 @@ var addrecipes_Component = addrecipes_normalizeComponent(
                 "MealsID": item[1]
             }, defineProperty_default()(_ref, 'MealsID', item[3]), defineProperty_default()(_ref, "AccountID", 0), _ref)];
             var vm = this;
-            axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/MealsComboMealsMap/Delete', ClassFile).then(function (response) {
+            axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/MealsComboMealsMap/Delete', ClassFile).then(function (response) {
                 console.log('DeleteRecipes', response);
                 console.log(item[3]);
                 vm.getDeteailMeals(item[3]);
@@ -6166,14 +6205,14 @@ var addrecipes_Component = addrecipes_normalizeComponent(
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-15cd3c92","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/meal/manage.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-6df5ba13","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/meal/manage.vue
 var meal_manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("套餐")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},[_vm._l((_vm.currentAClass),function(item,index){return _c('CardA',{key:item.index,class:{ active: index === 0 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeAName($event, item[0])},"card-on-click":function($event){_vm.AClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteAClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewAClass($event)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentACardName))]),_vm._v(" "),_c('div',{staticClass:"union union-half"},[_c('h4',[_vm._v("類別")]),_vm._v(" "),_vm._l((_vm.currentBClass),function(item,index){return _c('CardB',{key:item.index,staticClass:"B-class",class:{ lastcard: index === (_vm.currentBClass.length-1) && index > 1 },attrs:{"card-name":item[1],"is-class":true},on:{"card-change-name":function($event){_vm.changeBName($event, item[0])},"card-on-click":function($event){_vm.BClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteBClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBClass.length >= 0),expression:"currentBClass.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBClass($event, _vm.currentACardID)}}})],2),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentBItem),function(item,index){return _c('CardB',{key:item.index,class:{ lastcard: index === (_vm.currentBItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeBItemName($event, item)},"card-on-click":function($event){_vm.BItemOnClick($event, item)},"card-delete":function($event){_vm.deleteBItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBItem.length >= 0),expression:"currentBItem.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBItem($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentBCardName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentCItem),function(item,index){return _c('CardC',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],key:item.index,class:{ lastcard: index === (_vm.currentCItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeCItemName($event, item)},"card-on-click":function($event){_vm.CItemOnClick($event, item)},"card-delete":function($event){_vm.deleteCItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewCItem($event, _vm.currentBCardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentDItemName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('CardMeal',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],attrs:{"card-mealid":_vm.currentDItem[0],"card-name":_vm.currentDItem[1],"card-price":_vm.currentDItem[2],"card-image":_vm.currentDItem[3],"card-visible":_vm.currentDItem[4],"card-pointenable":_vm.currentDItem[5],"card-mealcategoryid":_vm.currentDItem[6]},on:{"item-change":function($event){_vm.changeDItem($event)}}}),_vm._v(" "),_c('h4',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}]},[_vm._v("餐點")]),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],staticClass:"meal-content"},[_c('AddNewRecipes',{on:{"new-recipes-item":function($event){_vm.AddNewRecipes($event, _vm.currentDItem)}}}),_vm._v(" "),_c('div',{staticClass:"detail-meals"},[_c('div',{staticClass:"item-meals"},[_c('div',{on:{"click":function($event){_vm.DeleteRecipes($event, _vm.item)}}},[_c('Icon',{attrs:{"type":"ios-remove-circle-outline","size":"20"}})],1),_vm._v(" "),_c('div',[_vm._v(_vm._s(_vm.deteailMeals))])])])],1)],1)])],1)],1)}
 var meal_manage_staticRenderFns = []
 var meal_manage_esExports = { render: meal_manage_render, staticRenderFns: meal_manage_staticRenderFns }
 /* harmony default export */ var components_meal_manage = (meal_manage_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/meal/manage.vue
 function meal_manage_injectStyle (ssrContext) {
-  __webpack_require__("53xJ")
+  __webpack_require__("u9vh")
 }
 var meal_manage_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -6498,7 +6537,7 @@ var cardSet_Component = cardSet_normalizeComponent(
                         switch (_context.prev = _context.next) {
                             case 0:
                                 _context.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/MealsCategory/Get').then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + '/MealsCategory/Get').then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -6527,7 +6566,7 @@ var cardSet_Component = cardSet_normalizeComponent(
                         switch (_context2.prev = _context2.next) {
                             case 0:
                                 _context2.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/MealsCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/MealsCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -6556,7 +6595,7 @@ var cardSet_Component = cardSet_normalizeComponent(
                         switch (_context3.prev = _context3.next) {
                             case 0:
                                 _context3.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/Meals/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Meals/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -6586,7 +6625,7 @@ var cardSet_Component = cardSet_normalizeComponent(
                             case 0:
                                 console.log('CItem CategoryID', BCategoryID);
                                 _context4.next = 3;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/Meals/GetByCategoryID/' + BCategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Meals/GetByCategoryID/' + BCategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -6829,17 +6868,11 @@ var addmeals_Component = addmeals_normalizeComponent(
             this.getBItem(BdefaultID);
         },
         isLoadingIN: function isLoadingIN(value) {
-            var _this = this;
-
             if (value) {
                 this.$Message.loading({
                     content: 'Loading...',
-                    duration: 2
+                    duration: 1
                 });
-            } else {
-                setTimeout(function () {
-                    _this.$Message.destroy();
-                }, 300);
             }
         }
     },
@@ -6895,7 +6928,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             this.getDeteailMeals(comboMealID);
         },
         getAClass: function getAClass() {
-            var _this2 = this;
+            var _this = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee() {
                 return regenerator_default.a.wrap(function _callee$(_context) {
@@ -6903,7 +6936,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                         switch (_context.prev = _context.next) {
                             case 0:
                                 _context.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/ComboMealsCategory/Get').then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + '/ComboMealsCategory/Get').then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -6913,18 +6946,18 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 });
 
                             case 2:
-                                _this2.currentAClass = _context.sent;
+                                _this.currentAClass = _context.sent;
 
                             case 3:
                             case 'end':
                                 return _context.stop();
                         }
                     }
-                }, _callee, _this2);
+                }, _callee, _this);
             }))();
         },
         getBClass: function getBClass(ACategoryID) {
-            var _this3 = this;
+            var _this2 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2() {
                 return regenerator_default.a.wrap(function _callee2$(_context2) {
@@ -6932,7 +6965,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                         switch (_context2.prev = _context2.next) {
                             case 0:
                                 _context2.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/ComboMealsCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/ComboMealsCategory/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -6942,18 +6975,18 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 });
 
                             case 2:
-                                _this3.currentBClass = _context2.sent;
+                                _this2.currentBClass = _context2.sent;
 
                             case 3:
                             case 'end':
                                 return _context2.stop();
                         }
                     }
-                }, _callee2, _this3);
+                }, _callee2, _this2);
             }))();
         },
         getBItem: function getBItem(ACategoryID) {
-            var _this4 = this;
+            var _this3 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee3() {
                 return regenerator_default.a.wrap(function _callee3$(_context3) {
@@ -6961,7 +6994,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                         switch (_context3.prev = _context3.next) {
                             case 0:
                                 _context3.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/ComboMeals/GetByCategoryID/' + ACategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/ComboMeals/GetByCategoryID/' + ACategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -6971,18 +7004,18 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 });
 
                             case 2:
-                                _this4.currentBItem = _context3.sent;
+                                _this3.currentBItem = _context3.sent;
 
                             case 3:
                             case 'end':
                                 return _context3.stop();
                         }
                     }
-                }, _callee3, _this4);
+                }, _callee3, _this3);
             }))();
         },
         getCItem: function getCItem(BCategoryID) {
-            var _this5 = this;
+            var _this4 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee4() {
                 return regenerator_default.a.wrap(function _callee4$(_context4) {
@@ -6999,7 +7032,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 // "ComboMealsCategoryID": 17,
                                 // "ComboMealsCategoryName": "主廚套餐一號"
                                 _context4.next = 3;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/ComboMeals/GetByCategoryID/' + BCategoryID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/ComboMeals/GetByCategoryID/' + BCategoryID)).then(function (response) {
                                     var nameList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -7009,14 +7042,14 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 });
 
                             case 3:
-                                _this5.currentCItem = _context4.sent;
+                                _this4.currentCItem = _context4.sent;
 
                             case 4:
                             case 'end':
                                 return _context4.stop();
                         }
                     }
-                }, _callee4, _this5);
+                }, _callee4, _this4);
             }))();
         },
         getDItem: function getDItem(ItemID) {
@@ -7031,7 +7064,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             // });
             // 廢氣中---------------
 
-            var _this6 = this;
+            var _this5 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee5() {
                 return regenerator_default.a.wrap(function _callee5$(_context5) {
@@ -7042,7 +7075,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 return _context5.stop();
                         }
                     }
-                }, _callee5, _this6);
+                }, _callee5, _this5);
             }))();
         },
         addNewAClass: function addNewAClass($event) {
@@ -7055,7 +7088,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             this.addNewAClassCard(ClassFile);
         },
         addNewAClassCard: function addNewAClassCard(ClassFile) {
-            var _this7 = this;
+            var _this6 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee6() {
                 var vm;
@@ -7064,9 +7097,9 @@ var addmeals_Component = addmeals_normalizeComponent(
                         switch (_context6.prev = _context6.next) {
                             case 0:
                                 // Update Vue object with Axios response data
-                                vm = _this7;
+                                vm = _this6;
                                 _context6.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/ComboMealsCategory/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/ComboMealsCategory/Create', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return true;
                                 }).catch(function (error) {
@@ -7078,7 +7111,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 return _context6.stop();
                         }
                     }
-                }, _callee6, _this7);
+                }, _callee6, _this6);
             }))();
         },
         addNewBClass: function addNewBClass($event, ACategoryID) {
@@ -7092,7 +7125,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             this.addNewBClassCard(ClassFile);
         },
         addNewBClassCard: function addNewBClassCard(ClassFile) {
-            var _this8 = this;
+            var _this7 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee7() {
                 var vm;
@@ -7101,9 +7134,9 @@ var addmeals_Component = addmeals_normalizeComponent(
                         switch (_context7.prev = _context7.next) {
                             case 0:
                                 // Update Vue object with Axios response data
-                                vm = _this8;
+                                vm = _this7;
                                 _context7.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/ComboMealsCategory/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/ComboMealsCategory/Create', ClassFile).then(function (response) {
                                     console.log('addNewBClassCard', response);
                                     vm.getBClass(vm.currentACardID);
                                     return true;
@@ -7116,7 +7149,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 return _context7.stop();
                         }
                     }
-                }, _callee7, _this8);
+                }, _callee7, _this7);
             }))();
         },
         addNewBItem: function addNewBItem($event, ACategoryID) {
@@ -7133,7 +7166,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             this.addNewBItemCard(ClassFile);
         },
         addNewBItemCard: function addNewBItemCard(ClassFile) {
-            var _this9 = this;
+            var _this8 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee8() {
                 var vm;
@@ -7141,9 +7174,9 @@ var addmeals_Component = addmeals_normalizeComponent(
                     while (1) {
                         switch (_context8.prev = _context8.next) {
                             case 0:
-                                vm = _this9;
+                                vm = _this8;
                                 _context8.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/ComboMeals/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/ComboMeals/Create', ClassFile).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     return true;
                                 }).catch(function (error) {
@@ -7155,7 +7188,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 return _context8.stop();
                         }
                     }
-                }, _callee8, _this9);
+                }, _callee8, _this8);
             }))();
         },
         addNewCItem: function addNewCItem($event, BCategoryID) {
@@ -7172,7 +7205,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             this.addNewCItemCard(ClassFile);
         },
         addNewCItemCard: function addNewCItemCard(ClassFile) {
-            var _this10 = this;
+            var _this9 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee9() {
                 var vm;
@@ -7180,9 +7213,9 @@ var addmeals_Component = addmeals_normalizeComponent(
                     while (1) {
                         switch (_context9.prev = _context9.next) {
                             case 0:
-                                vm = _this10;
+                                vm = _this9;
                                 _context9.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/ComboMeals/Create', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/ComboMeals/Create', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     return true;
                                 }).catch(function (error) {
@@ -7194,7 +7227,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 return _context9.stop();
                         }
                     }
-                }, _callee9, _this10);
+                }, _callee9, _this9);
             }))();
         },
         changeAName: function changeAName(newName, ACategoryID) {
@@ -7206,7 +7239,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             this.changeACardName(ClassFile);
         },
         changeACardName: function changeACardName(ClassFile) {
-            var _this11 = this;
+            var _this10 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee10() {
                 var vm;
@@ -7214,9 +7247,9 @@ var addmeals_Component = addmeals_normalizeComponent(
                     while (1) {
                         switch (_context10.prev = _context10.next) {
                             case 0:
-                                vm = _this11;
+                                vm = _this10;
                                 _context10.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/ComboMealsCategory/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/ComboMealsCategory/Update', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -7228,7 +7261,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 return _context10.stop();
                         }
                     }
-                }, _callee10, _this11);
+                }, _callee10, _this10);
             }))();
         },
         changeBName: function changeBName(newName, BCategoryID) {
@@ -7240,7 +7273,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             this.changeBCardName(ClassFile);
         },
         changeBCardName: function changeBCardName(ClassFile) {
-            var _this12 = this;
+            var _this11 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee11() {
                 var vm;
@@ -7248,9 +7281,9 @@ var addmeals_Component = addmeals_normalizeComponent(
                     while (1) {
                         switch (_context11.prev = _context11.next) {
                             case 0:
-                                vm = _this12;
+                                vm = _this11;
                                 _context11.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/ComboMealsCategory/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/ComboMealsCategory/Update', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -7262,7 +7295,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 return _context11.stop();
                         }
                     }
-                }, _callee11, _this12);
+                }, _callee11, _this11);
             }))();
         },
         changeBItemName: function changeBItemName(newName, BITem) {
@@ -7280,7 +7313,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             this.changeBItemCardName(ClassFile, newName);
         },
         changeBItemCardName: function changeBItemCardName(ClassFile, newName) {
-            var _this13 = this;
+            var _this12 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee12() {
                 var vm;
@@ -7288,9 +7321,9 @@ var addmeals_Component = addmeals_normalizeComponent(
                     while (1) {
                         switch (_context12.prev = _context12.next) {
                             case 0:
-                                vm = _this13;
+                                vm = _this12;
                                 _context12.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/ComboMeals/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/ComboMeals/Update', ClassFile).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     // 改D欄的名字
                                     vm.currentDItem[1] = newName;
@@ -7304,7 +7337,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 return _context12.stop();
                         }
                     }
-                }, _callee12, _this13);
+                }, _callee12, _this12);
             }))();
         },
         changeCItemName: function changeCItemName(newName, CITem) {
@@ -7322,7 +7355,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             this.changeCItemCardName(ClassFile, newName);
         },
         changeCItemCardName: function changeCItemCardName(ClassFile, newName) {
-            var _this14 = this;
+            var _this13 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee13() {
                 var vm;
@@ -7330,9 +7363,9 @@ var addmeals_Component = addmeals_normalizeComponent(
                     while (1) {
                         switch (_context13.prev = _context13.next) {
                             case 0:
-                                vm = _this14;
+                                vm = _this13;
                                 _context13.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/ComboMeals/Update', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/ComboMeals/Update', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     // 改D欄的名字
                                     vm.currentDItem[1] = newName;
@@ -7346,7 +7379,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 return _context13.stop();
                         }
                     }
-                }, _callee13, _this14);
+                }, _callee13, _this13);
             }))();
         },
         changeDItem: function changeDItem(obj) {
@@ -7354,7 +7387,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             console.log('D item項目的OBJ', obj);
         },
         changeDItemInfo: function changeDItemInfo(obj) {
-            var _this15 = this;
+            var _this14 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee14() {
                 var vm;
@@ -7362,9 +7395,9 @@ var addmeals_Component = addmeals_normalizeComponent(
                     while (1) {
                         switch (_context14.prev = _context14.next) {
                             case 0:
-                                vm = _this15;
+                                vm = _this14;
                                 _context14.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/ComboMeals/Update', obj).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/ComboMeals/Update', obj).then(function (response) {
                                     vm.getBItem(vm.currentACardID);
                                     vm.getCItem(vm.currentBCardID);
                                     console.log('changD', response);
@@ -7378,7 +7411,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 return _context14.stop();
                         }
                     }
-                }, _callee14, _this15);
+                }, _callee14, _this14);
             }))();
         },
 
@@ -7390,7 +7423,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             this.deleteACard(ClassFile);
         },
         deleteACard: function deleteACard(ClassFile) {
-            var _this16 = this;
+            var _this15 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee15() {
                 var vm;
@@ -7398,9 +7431,9 @@ var addmeals_Component = addmeals_normalizeComponent(
                     while (1) {
                         switch (_context15.prev = _context15.next) {
                             case 0:
-                                vm = _this16;
+                                vm = _this15;
                                 _context15.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/ComboMealsCategory/Delete', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/ComboMealsCategory/Delete', ClassFile).then(function (response) {
                                     vm.getAClass();
                                     return;
                                 }).catch(function (error) {
@@ -7412,7 +7445,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 return _context15.stop();
                         }
                     }
-                }, _callee15, _this16);
+                }, _callee15, _this15);
             }))();
         },
 
@@ -7424,7 +7457,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             this.deleteBCard(ClassFile);
         },
         deleteBCard: function deleteBCard(ClassFile) {
-            var _this17 = this;
+            var _this16 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee16() {
                 var vm;
@@ -7432,9 +7465,9 @@ var addmeals_Component = addmeals_normalizeComponent(
                     while (1) {
                         switch (_context16.prev = _context16.next) {
                             case 0:
-                                vm = _this17;
+                                vm = _this16;
                                 _context16.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/ComboMealsCategory/Delete', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/ComboMealsCategory/Delete', ClassFile).then(function (response) {
                                     console.log(response);
                                     console.log('delete success');
                                     vm.getBClass(vm.currentACardID);
@@ -7448,7 +7481,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 return _context16.stop();
                         }
                     }
-                }, _callee16, _this17);
+                }, _callee16, _this16);
             }))();
         },
 
@@ -7478,7 +7511,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             this.deleteBItemCard(ClassFile);
         },
         deleteBItemCard: function deleteBItemCard(ClassFile) {
-            var _this18 = this;
+            var _this17 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee17() {
                 var vm;
@@ -7486,9 +7519,9 @@ var addmeals_Component = addmeals_normalizeComponent(
                     while (1) {
                         switch (_context17.prev = _context17.next) {
                             case 0:
-                                vm = _this18;
+                                vm = _this17;
                                 _context17.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/ComboMeals/Delete', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/ComboMeals/Delete', ClassFile).then(function (response) {
                                     console.log(response);
                                     vm.getBItem(vm.currentACardID);
                                     return;
@@ -7501,7 +7534,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 return _context17.stop();
                         }
                     }
-                }, _callee17, _this18);
+                }, _callee17, _this17);
             }))();
         },
 
@@ -7531,7 +7564,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             this.deleteCItemCard(ClassFile);
         },
         deleteCItemCard: function deleteCItemCard(ClassFile) {
-            var _this19 = this;
+            var _this18 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee18() {
                 var vm;
@@ -7539,9 +7572,9 @@ var addmeals_Component = addmeals_normalizeComponent(
                     while (1) {
                         switch (_context18.prev = _context18.next) {
                             case 0:
-                                vm = _this19;
+                                vm = _this18;
                                 _context18.next = 3;
-                                return axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/ComboMeals/Delete', ClassFile).then(function (response) {
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/ComboMeals/Delete', ClassFile).then(function (response) {
                                     vm.getCItem(vm.currentBCardID);
                                     return;
                                 }).catch(function (error) {
@@ -7553,11 +7586,11 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 return _context18.stop();
                         }
                     }
-                }, _callee18, _this19);
+                }, _callee18, _this18);
             }))();
         },
         getDeteailMeals: function getDeteailMeals(comboMealID) {
-            var _this20 = this;
+            var _this19 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee19() {
                 return regenerator_default.a.wrap(function _callee19$(_context19) {
@@ -7565,7 +7598,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                         switch (_context19.prev = _context19.next) {
                             case 0:
                                 _context19.next = 2;
-                                return axios.get("http://demo.airdesign.com.tw/POSAPI_demo/api" + ('/MealsComboMealsMap/GetByComboMealsID/' + comboMealID)).then(function (response) {
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/MealsComboMealsMap/GetByComboMealsID/' + comboMealID)).then(function (response) {
                                     var arrayList = response.data.map(function (item) {
                                         return values_default()(item);
                                     });
@@ -7581,14 +7614,14 @@ var addmeals_Component = addmeals_normalizeComponent(
                                 });
 
                             case 2:
-                                _this20.deteailMeals = _context19.sent;
+                                _this19.deteailMeals = _context19.sent;
 
                             case 3:
                             case 'end':
                                 return _context19.stop();
                         }
                     }
-                }, _callee19, _this20);
+                }, _callee19, _this19);
             }))();
         },
         AddNewRecipes: function AddNewRecipes($event, ComboMealsID) {
@@ -7614,7 +7647,7 @@ var addmeals_Component = addmeals_normalizeComponent(
             console.log('ClassFile', ClassFile);
 
             var vm = this;
-            axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/MealsComboMealsMap/Create', ClassFile).then(function (response) {
+            axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/MealsComboMealsMap/Create', ClassFile).then(function (response) {
                 console.log('AddNewRecipes', response);
                 vm.getDeteailMeals(ComboMealsID);
             }).catch(function (error) {
@@ -7637,7 +7670,7 @@ var addmeals_Component = addmeals_normalizeComponent(
                 "AccountID": 0
             }];
             var vm = this;
-            axios.post("http://demo.airdesign.com.tw/POSAPI_demo/api" + '/MealsComboMealsMap/Delete', ClassFile).then(function (response) {
+            axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/MealsComboMealsMap/Delete', ClassFile).then(function (response) {
                 console.log('DeleteRecipes', response);
                 console.log(item[3]);
                 vm.getDeteailMeals(item[3]);
@@ -7647,14 +7680,14 @@ var addmeals_Component = addmeals_normalizeComponent(
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-6341f525","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/set/manage.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-6bbe433c","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/set/manage.vue
 var set_manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("套餐")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},[_vm._l((_vm.currentAClass),function(item,index){return _c('CardA',{key:item.index,class:{ active: index === 0 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeAName($event, item[0])},"card-on-click":function($event){_vm.AClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteAClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewAClass($event)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentACardName))]),_vm._v(" "),_c('div',{staticClass:"union union-half"},[_c('h4',[_vm._v("類別")]),_vm._v(" "),_vm._l((_vm.currentBClass),function(item,index){return _c('CardB',{key:item.index,staticClass:"B-class",class:{ lastcard: index === (_vm.currentBClass.length-1) && index > 1 },attrs:{"card-name":item[1],"is-class":true},on:{"card-change-name":function($event){_vm.changeBName($event, item[0])},"card-on-click":function($event){_vm.BClassOnClick($event, item[0])},"card-delete":function($event){_vm.deleteBClass($event, item[0])}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBClass.length >= 0),expression:"currentBClass.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBClass($event, _vm.currentACardID)}}})],2),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentBItem),function(item,index){return _c('CardB',{key:item.index,class:{ lastcard: index === (_vm.currentBItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeBItemName($event, item)},"card-on-click":function($event){_vm.BItemOnClick($event, item)},"card-delete":function($event){_vm.deleteBItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentBItem.length >= 0),expression:"currentBItem.length >= 0"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewBItem($event, _vm.currentACardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentBCardName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_vm._l((_vm.currentCItem),function(item,index){return _c('CardC',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],key:item.index,class:{ lastcard: index === (_vm.currentCItem.length-1) && index > 1 },attrs:{"card-name":item[1]},on:{"card-change-name":function($event){_vm.changeCItemName($event, item)},"card-on-click":function($event){_vm.CItemOnClick($event, item)},"card-delete":function($event){_vm.deleteCItem($event, item)}}})}),_vm._v(" "),_c('AddNewCard',{directives:[{name:"show",rawName:"v-show",value:(_vm.CCardShow),expression:"CCardShow"}],staticClass:"add-new-card",on:{"add-card-name":function($event){_vm.addNewCItem($event, _vm.currentBCardID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v(_vm._s(_vm.currentDItemName))]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('CardSet',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],attrs:{"card-combomealid":_vm.currentDItem[0],"card-name":_vm.currentDItem[1],"card-price":_vm.currentDItem[2],"card-image":_vm.currentDItem[3],"card-visible":_vm.currentDItem[4],"card-pointenable":_vm.currentDItem[5],"card-combomealcategoryid":_vm.currentDItem[6]},on:{"item-change":function($event){_vm.changeDItem($event)}}}),_vm._v(" "),_c('h4',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}]},[_vm._v("餐點")]),_vm._v(" "),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.DCardShow),expression:"DCardShow"}],staticClass:"meal-content"},[_c('AddNewMeals',{on:{"new-recipes-item":function($event){_vm.AddNewRecipes($event, _vm.currentDItem[0])}}}),_vm._v(" "),_c('div',{staticClass:"detail-meals"},_vm._l((_vm.deteailMeals),function(item,index){return _c('div',{staticClass:"item-meals"},[_c('div',{on:{"click":function($event){_vm.DeleteRecipes($event, item)}}},[_c('Icon',{attrs:{"type":"ios-remove-circle-outline","size":"20"}})],1),_vm._v(" "),_c('div',[_vm._v(_vm._s(item[2]))]),_vm._v(" "),_c('div',[_vm._v(_vm._s(item[0])+"元")])])}))],1)],1)])],1)],1)}
 var set_manage_staticRenderFns = []
 var set_manage_esExports = { render: set_manage_render, staticRenderFns: set_manage_staticRenderFns }
 /* harmony default export */ var components_set_manage = (set_manage_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/set/manage.vue
 function set_manage_injectStyle (ssrContext) {
-  __webpack_require__("ij1x")
+  __webpack_require__("6DH+")
 }
 var set_manage_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -7681,7 +7714,25 @@ var set_manage_Component = set_manage_normalizeComponent(
 
 /* harmony default export */ var js_components_set_manage = (set_manage_Component.exports);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/store/card.vue
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/store/floor.vue
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -7691,46 +7742,450 @@ var set_manage_Component = set_manage_normalizeComponent(
 //
 //
 
-/* harmony default export */ var store_card = ({
-    name: 'CardA',
-    props: ['billingName']
+/* harmony default export */ var floor = ({
+    name: 'Floor',
+    props: ['floorName'],
+    data: function data() {
+        return {
+            needSendToParent: ''
+        };
+    },
+
+    computed: {
+        cloneFloorName: {
+            get: function get() {
+                this.needSendToParent = this.floorName;
+                return this.floorName;
+            },
+            set: function set(newValue) {
+                if (newValue.length > 0) {
+                    this.needSendToParent = newValue;
+                }
+                return this.floorName;
+            }
+        }
+    },
+    methods: {
+        clickFloor: function clickFloor() {
+            this.$emit('floor-on-click', this.floorName);
+            $('.js-card-class-a').removeClass('active');
+            $('.js-card-class-b').removeClass('active');
+            $('.js-card-class-c').removeClass('active');
+            $(this.$el).addClass('active');
+        },
+        handleDropDownClick: function handleDropDownClick(name) {
+            // https://github.com/iview/iview/issues/493
+            if (name == "edit") {
+                $(this.$el).find('h3').addClass('hide');
+                $(this.$el).find('.ivu-input-wrapper').removeClass('hide');
+            }
+            if (name == "delete") {
+                this.$emit('floor-delete', this.floorName);
+            }
+        },
+        addedName: function addedName() {
+            //把input值傳給父
+            this.$emit('floor-change-name', this.needSendToParent);
+            $(this.$el).find('.ivu-input-wrapper').addClass('hide');
+            $(this.$el).find('h3').removeClass('hide');
+        }
+    }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-019ebeea","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/store/card.vue
-var store_card_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('Card',[_c('div',[_c('Icon',{attrs:{"type":"md-print"}}),_vm._v(" "),_c('h3',[_vm._v(_vm._s(_vm.billingName))])],1)])}
-var store_card_staticRenderFns = []
-var store_card_esExports = { render: store_card_render, staticRenderFns: store_card_staticRenderFns }
-/* harmony default export */ var components_store_card = (store_card_esExports);
-// CONCATENATED MODULE: ./resources/assets/js/components/store/card.vue
-function store_card_injectStyle (ssrContext) {
-  __webpack_require__("hLg0")
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-171d7d96","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/store/floor.vue
+var floor_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-class card-class-a js-card-class-a"},[_c('div',{staticClass:"content",on:{"click":function($event){if($event.target !== $event.currentTarget){ return null; }_vm.clickFloor()}}},[_c('Icon',{attrs:{"type":"ios-folder","size":"20"}}),_vm._v(" "),_c('h3',[_vm._v(_vm._s(_vm.cloneFloorName))]),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"Something","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.cloneFloorName),callback:function ($$v) {_vm.cloneFloorName=$$v},expression:"cloneFloorName"}}),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click","placement":"bottom-end"},on:{"on-click":function($event){_vm.handleDropDownClick($event)}}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_c('Icon',{attrs:{"type":"ios-create-outline","size":"20"}})],1),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":"edit"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("編輯名稱")],1),_vm._v(" "),_c('DropdownItem',{attrs:{"name":"delete"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("刪除項目")],1)],1)],1)],1)])}
+var floor_staticRenderFns = []
+var floor_esExports = { render: floor_render, staticRenderFns: floor_staticRenderFns }
+/* harmony default export */ var store_floor = (floor_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/store/floor.vue
+function floor_injectStyle (ssrContext) {
+  __webpack_require__("v7+P")
 }
-var store_card_normalizeComponent = __webpack_require__("VU/8")
+var floor_normalizeComponent = __webpack_require__("VU/8")
 /* script */
 
 
 /* template */
 
 /* template functional */
-var store_card___vue_template_functional__ = false
+var floor___vue_template_functional__ = false
 /* styles */
-var store_card___vue_styles__ = store_card_injectStyle
+var floor___vue_styles__ = floor_injectStyle
 /* scopeId */
-var store_card___vue_scopeId__ = null
+var floor___vue_scopeId__ = null
 /* moduleIdentifier (server only) */
-var store_card___vue_module_identifier__ = null
-var store_card_Component = store_card_normalizeComponent(
-  store_card,
-  components_store_card,
-  store_card___vue_template_functional__,
-  store_card___vue_styles__,
-  store_card___vue_scopeId__,
-  store_card___vue_module_identifier__
+var floor___vue_module_identifier__ = null
+var floor_Component = floor_normalizeComponent(
+  floor,
+  store_floor,
+  floor___vue_template_functional__,
+  floor___vue_styles__,
+  floor___vue_scopeId__,
+  floor___vue_module_identifier__
 )
 
-/* harmony default export */ var js_components_store_card = (store_card_Component.exports);
+/* harmony default export */ var components_store_floor = (floor_Component.exports);
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/store/table.vue
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var table = ({
+    name: 'Table',
+    props: ['tableName', 'isClass'],
+    data: function data() {
+        return {
+            needSendToParent: ''
+        };
+    },
+
+    computed: {
+        cloneTableName: {
+            get: function get() {
+                this.needSendToParent = this.tableName;
+                return this.tableName;
+            },
+            set: function set(newValue) {
+                if (newValue.length > 0) {
+                    this.needSendToParent = newValue;
+                }
+                return this.tableName;
+            }
+        }
+    },
+    methods: {
+        clickTable: function clickTable() {
+            this.$emit('table-on-click', this.tableName);
+            $('.js-card-class-b').removeClass('active');
+            $('.js-card-class-c').removeClass('active');
+            $(this.$el).addClass('active');
+        },
+        handleDropDownClick: function handleDropDownClick(name) {
+            // https://github.com/iview/iview/issues/493
+            if (name == "edit") {
+                $(this.$el).find('h3').addClass('hide');
+                $(this.$el).find('.ivu-input-wrapper').removeClass('hide');
+            }
+            if (name == "delete") {
+                this.$emit('table-delete', this.tableName);
+            }
+        },
+        addedName: function addedName() {
+            //把input值傳給父
+            this.$emit('table-change-name', this.needSendToParent);
+            $(this.$el).find('.ivu-input-wrapper').addClass('hide');
+            $(this.$el).find('h3').removeClass('hide');
+        }
+    }
+});
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-4651e75c","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/store/table.vue
+var table_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-class card-class-b js-card-class-b"},[_c('div',{staticClass:"content",on:{"click":function($event){if($event.target !== $event.currentTarget){ return null; }_vm.clickTable()}}},[(_vm.isClass)?_c('Icon',{attrs:{"type":"ios-folder","size":"20"}}):_c('Icon',{attrs:{"type":"ios-document","size":"20"}}),_vm._v(" "),_c('h3',[_vm._v(_vm._s(_vm.cloneTableName))]),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"Something","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.cloneTableName),callback:function ($$v) {_vm.cloneTableName=$$v},expression:"cloneTableName"}}),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click","placement":"bottom-end"},on:{"on-click":function($event){_vm.handleDropDownClick($event)}}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_c('Icon',{attrs:{"type":"ios-create-outline","size":"20"}})],1),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":"edit"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("編輯名稱")],1),_vm._v(" "),_c('DropdownItem',{attrs:{"name":"delete"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("刪除項目")],1)],1)],1)],1)])}
+var table_staticRenderFns = []
+var table_esExports = { render: table_render, staticRenderFns: table_staticRenderFns }
+/* harmony default export */ var store_table = (table_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/store/table.vue
+function table_injectStyle (ssrContext) {
+  __webpack_require__("d2f6")
+}
+var table_normalizeComponent = __webpack_require__("VU/8")
+/* script */
+
+
+/* template */
+
+/* template functional */
+var table___vue_template_functional__ = false
+/* styles */
+var table___vue_styles__ = table_injectStyle
+/* scopeId */
+var table___vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var table___vue_module_identifier__ = null
+var table_Component = table_normalizeComponent(
+  table,
+  store_table,
+  table___vue_template_functional__,
+  table___vue_styles__,
+  table___vue_scopeId__,
+  table___vue_module_identifier__
+)
+
+/* harmony default export */ var components_store_table = (table_Component.exports);
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/store/tableInfo.vue
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ var tableInfo = ({
+    components: {},
+    name: 'TableInfo',
+    props: ['tableId', 'tableName', 'tableAmount'],
+    data: function data() {
+        return {
+            needSendToParent: {
+                "tableID": '',
+                "tableName": '',
+                "amount": '',
+                "accountID": 0
+            }
+        };
+    },
+
+    computed: {
+        cloneName: {
+            get: function get() {
+                this.needSendToParent["tableName"] = this.tableName;
+                return this.tableName;
+            },
+            set: function set(newValue) {
+                this.needSendToParent["tableName"] = newValue;
+                return this.tableName;
+            }
+        },
+        cloneAmount: {
+            get: function get() {
+                this.needSendToParent["amount"] = this.tableAmount;
+                return this.tableAmount;
+            },
+            set: function set(newValue) {
+                this.needSendToParent["amount"] = newValue;
+                return this.tableAmount;
+            }
+        }
+    },
+    methods: {
+        changeItem: function changeItem() {
+            this.needSendToParent["tableID"] = this.tableId;
+            //把input值傳給父
+            this.$emit('table-info-change', this.needSendToParent);
+        }
+    }
+});
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-3d3e9e3e","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/store/tableInfo.vue
+var tableInfo_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-set"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"left"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("桌面名稱")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"請輸入名稱..."},model:{value:(_vm.cloneName),callback:function ($$v) {_vm.cloneName=$$v},expression:"cloneName"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("桌位數量")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"請輸入數量..."},model:{value:(_vm.cloneAmount),callback:function ($$v) {_vm.cloneAmount=$$v},expression:"cloneAmount"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap",staticStyle:{"justify-content":"flex-end"}},[_c('Button',{nativeOn:{"click":function($event){_vm.changeItem()}}},[_vm._v("儲存")])],1)])])])}
+var tableInfo_staticRenderFns = []
+var tableInfo_esExports = { render: tableInfo_render, staticRenderFns: tableInfo_staticRenderFns }
+/* harmony default export */ var store_tableInfo = (tableInfo_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/store/tableInfo.vue
+function tableInfo_injectStyle (ssrContext) {
+  __webpack_require__("uYxn")
+}
+var tableInfo_normalizeComponent = __webpack_require__("VU/8")
+/* script */
+
+
+/* template */
+
+/* template functional */
+var tableInfo___vue_template_functional__ = false
+/* styles */
+var tableInfo___vue_styles__ = tableInfo_injectStyle
+/* scopeId */
+var tableInfo___vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var tableInfo___vue_module_identifier__ = null
+var tableInfo_Component = tableInfo_normalizeComponent(
+  tableInfo,
+  store_tableInfo,
+  tableInfo___vue_template_functional__,
+  tableInfo___vue_styles__,
+  tableInfo___vue_scopeId__,
+  tableInfo___vue_module_identifier__
+)
+
+/* harmony default export */ var components_store_tableInfo = (tableInfo_Component.exports);
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/store/addNewfloor.vue
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var addNewfloor = ({
+    name: 'addFloor',
+    props: [''],
+    data: function data() {
+        return {
+            newValue: ''
+        };
+    },
+
+    computed: {},
+    methods: {
+        clickCard: function clickCard() {
+            $(this.$el).find('.addclass').addClass('hide');
+            $(this.$el).find('.ivu-input-wrapper').removeClass('hide');
+        },
+        addedName: function addedName(newValue) {
+            $(this.$el).find('.ivu-input-wrapper').addClass('hide');
+            $(this.$el).find('.addclass').removeClass('hide');
+            this.$emit('add-floor-name', this.newValue);
+            this.newValue = '';
+        }
+    }
+});
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-e57e5f70","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/store/addNewfloor.vue
+var addNewfloor_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"addclass",on:{"click":function($event){_vm.clickCard()}}},[_c('Icon',{attrs:{"type":"ios-add-circle-outline","size":"20"}}),_vm._v("新增項目\n    ")],1),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"新項目","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.newValue),callback:function ($$v) {_vm.newValue=$$v},expression:"newValue"}})],1)}
+var addNewfloor_staticRenderFns = []
+var addNewfloor_esExports = { render: addNewfloor_render, staticRenderFns: addNewfloor_staticRenderFns }
+/* harmony default export */ var store_addNewfloor = (addNewfloor_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/store/addNewfloor.vue
+function addNewfloor_injectStyle (ssrContext) {
+  __webpack_require__("TDfj")
+}
+var addNewfloor_normalizeComponent = __webpack_require__("VU/8")
+/* script */
+
+
+/* template */
+
+/* template functional */
+var addNewfloor___vue_template_functional__ = false
+/* styles */
+var addNewfloor___vue_styles__ = addNewfloor_injectStyle
+/* scopeId */
+var addNewfloor___vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var addNewfloor___vue_module_identifier__ = null
+var addNewfloor_Component = addNewfloor_normalizeComponent(
+  addNewfloor,
+  store_addNewfloor,
+  addNewfloor___vue_template_functional__,
+  addNewfloor___vue_styles__,
+  addNewfloor___vue_scopeId__,
+  addNewfloor___vue_module_identifier__
+)
+
+/* harmony default export */ var components_store_addNewfloor = (addNewfloor_Component.exports);
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/store/addNewTable.vue
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var store_addNewTable = ({
+    name: 'addFloor',
+    props: [''],
+    data: function data() {
+        return {
+            newValue: ''
+        };
+    },
+
+    computed: {},
+    methods: {
+        clickCard: function clickCard() {
+            $(this.$el).find('.addclass').addClass('hide');
+            $(this.$el).find('.ivu-input-wrapper').removeClass('hide');
+        },
+        addedName: function addedName(newValue) {
+            $(this.$el).find('.ivu-input-wrapper').addClass('hide');
+            $(this.$el).find('.addclass').removeClass('hide');
+            this.$emit('add-table-name', this.newValue);
+            this.newValue = '';
+        }
+    }
+});
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-6a9b5a68","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/store/addNewTable.vue
+var addNewTable_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"addclass",on:{"click":function($event){_vm.clickCard()}}},[_c('Icon',{attrs:{"type":"ios-add-circle-outline","size":"20"}}),_vm._v("新增項目\n    ")],1),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"新項目","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.newValue),callback:function ($$v) {_vm.newValue=$$v},expression:"newValue"}})],1)}
+var addNewTable_staticRenderFns = []
+var addNewTable_esExports = { render: addNewTable_render, staticRenderFns: addNewTable_staticRenderFns }
+/* harmony default export */ var components_store_addNewTable = (addNewTable_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/store/addNewTable.vue
+function addNewTable_injectStyle (ssrContext) {
+  __webpack_require__("UHUd")
+}
+var addNewTable_normalizeComponent = __webpack_require__("VU/8")
+/* script */
+
+
+/* template */
+
+/* template functional */
+var addNewTable___vue_template_functional__ = false
+/* styles */
+var addNewTable___vue_styles__ = addNewTable_injectStyle
+/* scopeId */
+var addNewTable___vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var addNewTable___vue_module_identifier__ = null
+var addNewTable_Component = addNewTable_normalizeComponent(
+  store_addNewTable,
+  components_store_addNewTable,
+  addNewTable___vue_template_functional__,
+  addNewTable___vue_styles__,
+  addNewTable___vue_scopeId__,
+  addNewTable___vue_module_identifier__
+)
+
+/* harmony default export */ var js_components_store_addNewTable = (addNewTable_Component.exports);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/store/Manage.vue
 
+
+
 //
 //
 //
@@ -7793,133 +8248,342 @@ var store_card_Component = store_card_normalizeComponent(
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+
+
+
 
 
 
 
 /* harmony default export */ var Manage = ({
-  components: {
-    CardA: js_components_store_card
-  },
-  computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['User', 'billing', 'rules']))
+    components: {
+        Floor: components_store_floor,
+        Table: components_store_table,
+        TableInfo: components_store_tableInfo,
+        AddNewfloor: components_store_addNewfloor,
+        AddNewTable: js_components_store_addNewTable
+    },
+    data: function data() {
+        return {
+            currentFloor: [],
+            FloorID: '',
+            currentTable: '',
+            currentTableInfo: '',
+            TableInfoShow: false
+        };
+    },
+    created: function created() {
+        this.getFloor();
+        this.FloorID = 1;
+    },
+
+    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['isLoading']), {
+        isLoadingIN: function isLoadingIN() {
+            return this.isLoading;
+        }
+    }),
+    watch: {
+        currentFloor: function currentFloor(value) {
+            var defaultID = this.currentFloor[0]['tableAreaID'];
+            this.getTable(defaultID);
+        },
+        isLoadingIN: function isLoadingIN(value) {
+            if (value) {
+                this.$Message.loading({
+                    content: 'Loading...',
+                    duration: 0.8
+                });
+            }
+        }
+    },
+    methods: {
+        FloorOnClick: function FloorOnClick(FloorName, FloorID) {
+            this.FloorID = FloorID;
+            this.getTable(FloorID);
+            this.TableInfoShow = false;
+        },
+        TableOnClick: function TableOnClick(tableName, table) {
+            this.currentTableInfo = table;
+            this.TableInfoShow = true;
+        },
+        getFloor: function getFloor() {
+            var _this = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee() {
+                return regenerator_default.a.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                _context.next = 2;
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + '/TableArea/GetAreas').then(function (response) {
+                                    return response.data;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 2:
+                                _this.currentFloor = _context.sent;
+
+                            case 3:
+                            case 'end':
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, _this);
+            }))();
+        },
+        addNewFloor: function addNewFloor($event) {
+            var _this2 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2() {
+                var ClassFile, vm;
+                return regenerator_default.a.wrap(function _callee2$(_context2) {
+                    while (1) {
+                        switch (_context2.prev = _context2.next) {
+                            case 0:
+                                ClassFile = {
+                                    "tableAreaName": $event,
+                                    "sort": 0,
+                                    "accountID": 0
+                                };
+                                vm = _this2;
+                                _context2.next = 4;
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/TableArea/Create', ClassFile).then(function (response) {
+                                    vm.getFloor();
+                                    return true;
+                                }).catch(function (error) {
+                                    console.log('error', error);
+                                });
+
+                            case 4:
+                            case 'end':
+                                return _context2.stop();
+                        }
+                    }
+                }, _callee2, _this2);
+            }))();
+        },
+        FloorChangeName: function FloorChangeName($event, ID) {
+            var _this3 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee3() {
+                var ClassFile, vm;
+                return regenerator_default.a.wrap(function _callee3$(_context3) {
+                    while (1) {
+                        switch (_context3.prev = _context3.next) {
+                            case 0:
+                                ClassFile = {
+                                    "tableAreaID": ID,
+                                    "tableAreaName": $event,
+                                    "sort": 0,
+                                    "accountID": 0
+                                };
+                                vm = _this3;
+                                _context3.next = 4;
+                                return axios.put("http://demo.airdesign.com.tw/POSAPICore/api" + '/TableArea/Update', ClassFile).then(function (response) {
+                                    vm.getFloor();
+                                    return;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 4:
+                            case 'end':
+                                return _context3.stop();
+                        }
+                    }
+                }, _callee3, _this3);
+            }))();
+        },
+        FloorDelete: function FloorDelete($event, ID) {
+            var _this4 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee4() {
+                var ClassFile, vm;
+                return regenerator_default.a.wrap(function _callee4$(_context4) {
+                    while (1) {
+                        switch (_context4.prev = _context4.next) {
+                            case 0:
+                                ClassFile = {
+                                    "tableAreaID": ID,
+                                    "accountID": 0
+                                };
+                                vm = _this4;
+                                // axios's config 寫法
+
+                                _context4.next = 4;
+                                return axios.delete("http://demo.airdesign.com.tw/POSAPICore/api" + '/TableArea/Delete', { data: ClassFile }).then(function (response) {
+                                    vm.getFloor();
+                                    return;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 4:
+                            case 'end':
+                                return _context4.stop();
+                        }
+                    }
+                }, _callee4, _this4);
+            }))();
+        },
+        getTable: function getTable(FloorID) {
+            var _this5 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee5() {
+                return regenerator_default.a.wrap(function _callee5$(_context5) {
+                    while (1) {
+                        switch (_context5.prev = _context5.next) {
+                            case 0:
+                                _context5.next = 2;
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Table/GetTablesByTableAreaID/' + FloorID)).then(function (response) {
+                                    return response.data;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 2:
+                                _this5.currentTable = _context5.sent;
+
+                            case 3:
+                            case 'end':
+                                return _context5.stop();
+                        }
+                    }
+                }, _callee5, _this5);
+            }))();
+        },
+        addNewTable: function addNewTable($event, FloorID) {
+            var _this6 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee6() {
+                var ClassFile, vm;
+                return regenerator_default.a.wrap(function _callee6$(_context6) {
+                    while (1) {
+                        switch (_context6.prev = _context6.next) {
+                            case 0:
+                                ClassFile = {
+                                    "tableName": $event,
+                                    "tableCategoryID": 1,
+                                    "tableAreaID": FloorID,
+                                    "x": 0,
+                                    "y": 0,
+                                    "width": 0,
+                                    "height": 0,
+                                    "amount": 0,
+                                    "accountID": 0
+                                };
+                                vm = _this6;
+                                _context6.next = 4;
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Table/Create', ClassFile).then(function (response) {
+                                    vm.getTable(vm.FloorID);
+                                    return true;
+                                }).catch(function (error) {
+                                    console.log('error', error);
+                                });
+
+                            case 4:
+                            case 'end':
+                                return _context6.stop();
+                        }
+                    }
+                }, _callee6, _this6);
+            }))();
+        },
+        TableChangeName: function TableChangeName($event, ID) {
+            var _this7 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee7() {
+                var ClassFile, vm;
+                return regenerator_default.a.wrap(function _callee7$(_context7) {
+                    while (1) {
+                        switch (_context7.prev = _context7.next) {
+                            case 0:
+                                ClassFile = {
+                                    "tableID": ID,
+                                    "tableName": $event,
+                                    "accountID": 0
+                                };
+                                vm = _this7;
+                                _context7.next = 4;
+                                return axios.put("http://demo.airdesign.com.tw/POSAPICore/api" + '/Table/Update', ClassFile).then(function (response) {
+                                    vm.getTable(vm.FloorID);
+                                    return;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 4:
+                            case 'end':
+                                return _context7.stop();
+                        }
+                    }
+                }, _callee7, _this7);
+            }))();
+        },
+        TableDelete: function TableDelete($event, ID) {
+            var _this8 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee8() {
+                var ClassFile, vm;
+                return regenerator_default.a.wrap(function _callee8$(_context8) {
+                    while (1) {
+                        switch (_context8.prev = _context8.next) {
+                            case 0:
+                                ClassFile = {
+                                    "tableID": ID,
+                                    "accountID": 0
+                                };
+                                vm = _this8;
+                                // axios's config 寫法
+
+                                _context8.next = 4;
+                                return axios.delete("http://demo.airdesign.com.tw/POSAPICore/api" + '/Table/Delete', { data: ClassFile }).then(function (response) {
+                                    vm.getTable(vm.FloorID);
+                                    return;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 4:
+                            case 'end':
+                                return _context8.stop();
+                        }
+                    }
+                }, _callee8, _this8);
+            }))();
+        },
+        changeTableInfo: function changeTableInfo(obj) {
+            var _this9 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee9() {
+                var vm;
+                return regenerator_default.a.wrap(function _callee9$(_context9) {
+                    while (1) {
+                        switch (_context9.prev = _context9.next) {
+                            case 0:
+                                vm = _this9;
+                                _context9.next = 3;
+                                return axios.put("http://demo.airdesign.com.tw/POSAPICore/api" + '/Table/Update', obj).then(function (response) {
+                                    vm.getTable(vm.FloorID);
+                                    return;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 3:
+                            case 'end':
+                                return _context9.stop();
+                        }
+                    }
+                }, _callee9, _this9);
+            }))();
+        }
+    }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-0624a6c6","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/store/Manage.vue
-var Manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content"},[_c('Row',[_c('Col',{attrs:{"span":"8"}},[_c('div',{staticClass:"title"},[_vm._v("出機單設定\n                "),_c('Dropdown',{attrs:{"trigger":"click"}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_c('Icon',{attrs:{"type":"md-create"}})],1),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("新增廚房聯規則")],1),_vm._v(" "),_c('DropdownItem',[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("新增標籤貼紙規則")],1),_vm._v(" "),_c('DropdownItem',[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("新增客戶聯規則")],1),_vm._v(" "),_c('DropdownItem',[_c('Icon',{attrs:{"type":"md-create"}}),_vm._v("編輯出單名稱")],1),_vm._v(" "),_c('DropdownItem',[_c('Icon',{attrs:{"type":"md-copy"}}),_vm._v("複製此出單機")],1)],1)],1)],1),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},_vm._l((_vm.billing),function(item,index){return _c('CardA',{key:item.index,attrs:{"billing-name":item}})}))]),_vm._v(" "),_c('Col',{attrs:{"span":"8"}},[_c('div',{staticClass:"title"},[_vm._v("櫃檯出單機\n                "),_c('Dropdown',{attrs:{"trigger":"click"}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_c('Icon',{attrs:{"type":"md-create"}})],1),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("新增廚房聯規則")],1),_vm._v(" "),_c('DropdownItem',[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("新增標籤貼紙規則")],1),_vm._v(" "),_c('DropdownItem',[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("新增客戶聯規則")],1),_vm._v(" "),_c('DropdownItem',[_c('Icon',{attrs:{"type":"md-create"}}),_vm._v("編輯出單名稱")],1),_vm._v(" "),_c('DropdownItem',[_c('Icon',{attrs:{"type":"md-copy"}}),_vm._v("複製此出單機")],1)],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("結帳相關聯")]),_vm._v(" "),_vm._l((_vm.rules),function(item,index){return _c('CardA',{key:item.index,attrs:{"billing-name":item}})}),_vm._v(" "),_c('h4',[_vm._v("顧客相關聯")]),_vm._v(" "),_vm._l((_vm.rules),function(item,index){return _c('CardA',{key:item.index,attrs:{"billing-name":item}})}),_vm._v(" "),_c('h4',[_vm._v("廚房相關聯")]),_vm._v(" "),_vm._l((_vm.rules),function(item,index){return _c('CardA',{key:item.index,attrs:{"billing-name":item}})})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"8"}},[_c('div',{staticClass:"title"},[_vm._v("和牛區\n                "),_c('Dropdown',{attrs:{"trigger":"click"}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_c('Icon',{attrs:{"type":"md-create"}})],1),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("新增廚房聯規則")],1),_vm._v(" "),_c('DropdownItem',[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("新增標籤貼紙規則")],1),_vm._v(" "),_c('DropdownItem',[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("新增客戶聯規則")],1),_vm._v(" "),_c('DropdownItem',[_c('Icon',{attrs:{"type":"md-create"}}),_vm._v("編輯出單名稱")],1),_vm._v(" "),_c('DropdownItem',[_c('Icon',{attrs:{"type":"md-copy"}}),_vm._v("複製此出單機")],1)],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("基本設定")]),_vm._v(" "),_c('Card',[_c('div',{staticClass:"setting"},[_c('h3',[_vm._v("列印名稱")]),_vm._v(" "),_c('p',[_vm._v("和牛區")])])]),_vm._v(" "),_c('Card',[_c('div',{staticClass:"setting"},[_c('h3',[_vm._v("列印名稱")]),_vm._v(" "),_c('p',[_vm._v("印單時機")])])]),_vm._v(" "),_c('h4',[_vm._v("排列與切單")]),_vm._v(" "),_c('Card',[_c('div',{staticClass:"setting"},[_c('h3',[_vm._v("套餐排列")]),_vm._v(" "),_c('p',[_vm._v("套餐內品項")])])]),_vm._v(" "),_c('Card',[_c('div',{staticClass:"setting"},[_c('h3',[_vm._v("相同品項顯示")]),_vm._v(" "),_c('p',[_vm._v("同一行")])])]),_vm._v(" "),_c('Card',[_c('div',{staticClass:"setting"},[_c('h3',[_vm._v("切單方式")]),_vm._v(" "),_c('p',[_vm._v("不切單")])])]),_vm._v(" "),_c('h4',[_vm._v("編輯列印品項")]),_vm._v(" "),_c('Card',[_c('div',[_c('h3',[_vm._v("編輯列印品項")])])]),_vm._v(" "),_c('Card',[_c('div',[_c('h3',[_vm._v("和牛上選牛舌")])])]),_vm._v(" "),_c('Card',[_c('div',[_c('h3',[_vm._v("特選厚切牛舌")])])]),_vm._v(" "),_c('Card',[_c('div',[_c('h3',[_vm._v("特選厚切牛舌")])])]),_vm._v(" "),_c('Card',[_c('div',[_c('h3',[_vm._v("特選厚切牛舌")])])]),_vm._v(" "),_c('Card',[_c('div',[_c('h3',[_vm._v("特選厚切牛舌")])])]),_vm._v(" "),_c('Card',[_c('div',[_c('h3',[_vm._v("特選厚切牛舌")])])]),_vm._v(" "),_c('Card',[_c('div',[_c('h3',[_vm._v("特選厚切牛舌")])])]),_vm._v(" "),_c('Card',[_c('div',[_c('h3',[_vm._v("特選厚切牛舌")])])]),_vm._v(" "),_c('Card',[_c('div',[_c('h3',[_vm._v("特選厚切牛舌")])])]),_vm._v(" "),_c('Card',[_c('div',[_c('h3',[_vm._v("特選厚切牛舌")])])]),_vm._v(" "),_c('Card',[_c('div',[_c('h3',[_vm._v("特選厚切牛舌")])])])],1)])],1)],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-24f52cf8","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/store/Manage.vue
+var Manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("樓層/區域")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},[_vm._l((_vm.currentFloor),function(item,index){return _c('Floor',{key:item.index,class:{ active: index === 0 },attrs:{"floor-name":item['tableAreaName']},on:{"floor-on-click":function($event){_vm.FloorOnClick($event, item['tableAreaID'])},"floor-change-name":function($event){_vm.FloorChangeName($event, item['tableAreaID'])},"floor-delete":function($event){_vm.FloorDelete($event, item['tableAreaID'])}}})}),_vm._v(" "),_c('AddNewfloor',{staticClass:"add-new-card",on:{"add-floor-name":function($event){_vm.addNewFloor($event)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("餐桌清單")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("類別")]),_vm._v(" "),_vm._l((_vm.currentTable),function(item,index){return _c('Table',{key:item.index,class:{ lastcard: index === (_vm.currentTable.length-1) && index > 1 },attrs:{"table-name":item['tableName'],"is-class":true},on:{"table-on-click":function($event){_vm.TableOnClick($event, item)},"table-change-name":function($event){_vm.TableChangeName($event, item['tableID'])},"table-delete":function($event){_vm.TableDelete($event, item['tableID'])}}})}),_vm._v(" "),_c('AddNewTable',{staticClass:"add-new-card",on:{"add-table-name":function($event){_vm.addNewTable($event, _vm.FloorID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v("桌面設定")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_c('TableInfo',{directives:[{name:"show",rawName:"v-show",value:(_vm.TableInfoShow),expression:"TableInfoShow"}],attrs:{"table-id":_vm.currentTableInfo['tableID'],"table-name":_vm.currentTableInfo['tableName'],"table-amount":_vm.currentTableInfo['amount']},on:{"table-info-change":function($event){_vm.changeTableInfo($event)}}})],1)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}})],1)],1)}
 var Manage_staticRenderFns = []
 var Manage_esExports = { render: Manage_render, staticRenderFns: Manage_staticRenderFns }
 /* harmony default export */ var store_Manage = (Manage_esExports);
@@ -7949,7 +8613,7 @@ var Manage_Component = Manage_normalizeComponent(
 
 /* harmony default export */ var components_store_Manage = (Manage_Component.exports);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/card.vue
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/Area.vue
 //
 //
 //
@@ -7979,9 +8643,9 @@ var Manage_Component = Manage_normalizeComponent(
 //
 //
 
-/* harmony default export */ var printer_card = ({
-    name: 'CardP',
-    props: ['billingName', 'isClass'],
+/* harmony default export */ var Area = ({
+    name: 'Area',
+    props: ['areaName', 'isClass'],
     data: function data() {
         return {
             needSendToParent: ''
@@ -7989,22 +8653,24 @@ var Manage_Component = Manage_normalizeComponent(
     },
 
     computed: {
-        cloneBillingName: {
+        cloneAreaName: {
             get: function get() {
-                this.needSendToParent = this.billingName;
-                return this.billingName;
+                this.needSendToParent = this.areaName;
+                return this.areaName;
             },
             set: function set(newValue) {
                 if (newValue.length > 0) {
                     this.needSendToParent = newValue;
                 }
-                return this.billingName;
+                return this.areaName;
             }
         }
     },
     methods: {
-        clickCard: function clickCard() {
-            this.$emit('card-on-click', this.cardName);
+        clickArea: function clickArea() {
+            this.$emit('area-on-click', this.areaName);
+            $('.js-card-class-area').removeClass('active');
+            $('.js-card-class-printer').removeClass('active');
             $(this.$el).addClass('active');
         },
         handleDropDownClick: function handleDropDownClick(name) {
@@ -8014,7 +8680,7 @@ var Manage_Component = Manage_normalizeComponent(
                 $(this.$el).find('.ivu-input-wrapper').removeClass('hide');
             }
             if (name == "delete") {
-                this.$emit('card-delete', this.cardName);
+                this.$emit('area-delete', this.areaName);
             }
         },
         addedName: function addedName() {
@@ -8025,54 +8691,41 @@ var Manage_Component = Manage_normalizeComponent(
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-663b6654","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/card.vue
-var printer_card_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-class js-card-class"},[_c('div',{staticClass:"content",on:{"click":function($event){if($event.target !== $event.currentTarget){ return null; }_vm.clickCard()}}},[(_vm.isClass)?_c('Icon',{attrs:{"type":"ios-folder","size":"20"}}):_c('Icon',{attrs:{"type":"ios-document","size":"20"}}),_vm._v(" "),_c('h3',[_vm._v(_vm._s(_vm.cloneBillingName))]),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"Something","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.cloneBillingName),callback:function ($$v) {_vm.cloneBillingName=$$v},expression:"cloneBillingName"}}),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click","placement":"bottom-end"},on:{"on-click":function($event){_vm.handleDropDownClick($event)}}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_c('Icon',{attrs:{"type":"ios-create-outline","size":"20"}})],1),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":"edit"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("編輯名稱")],1),_vm._v(" "),_c('DropdownItem',{attrs:{"name":"delete"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("刪除項目")],1)],1)],1)],1)])}
-var printer_card_staticRenderFns = []
-var printer_card_esExports = { render: printer_card_render, staticRenderFns: printer_card_staticRenderFns }
-/* harmony default export */ var components_printer_card = (printer_card_esExports);
-// CONCATENATED MODULE: ./resources/assets/js/components/printer/card.vue
-function printer_card_injectStyle (ssrContext) {
-  __webpack_require__("i/Qi")
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-1e3d3921","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/Area.vue
+var Area_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-class js-card-class-area"},[_c('div',{staticClass:"content",on:{"click":function($event){if($event.target !== $event.currentTarget){ return null; }_vm.clickArea()}}},[(_vm.isClass)?_c('Icon',{attrs:{"type":"ios-folder","size":"20"}}):_c('Icon',{attrs:{"type":"ios-document","size":"20"}}),_vm._v(" "),_c('h3',[_vm._v(_vm._s(_vm.cloneAreaName))]),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"Something","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.cloneAreaName),callback:function ($$v) {_vm.cloneAreaName=$$v},expression:"cloneAreaName"}}),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click","placement":"bottom-end"},on:{"on-click":function($event){_vm.handleDropDownClick($event)}}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_c('Icon',{attrs:{"type":"ios-create-outline","size":"20"}})],1),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":"edit"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("編輯名稱")],1),_vm._v(" "),_c('DropdownItem',{attrs:{"name":"delete"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("刪除項目")],1)],1)],1)],1)])}
+var Area_staticRenderFns = []
+var Area_esExports = { render: Area_render, staticRenderFns: Area_staticRenderFns }
+/* harmony default export */ var printer_Area = (Area_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/printer/Area.vue
+function Area_injectStyle (ssrContext) {
+  __webpack_require__("uP0R")
 }
-var printer_card_normalizeComponent = __webpack_require__("VU/8")
+var Area_normalizeComponent = __webpack_require__("VU/8")
 /* script */
 
 
 /* template */
 
 /* template functional */
-var printer_card___vue_template_functional__ = false
+var Area___vue_template_functional__ = false
 /* styles */
-var printer_card___vue_styles__ = printer_card_injectStyle
+var Area___vue_styles__ = Area_injectStyle
 /* scopeId */
-var printer_card___vue_scopeId__ = null
+var Area___vue_scopeId__ = null
 /* moduleIdentifier (server only) */
-var printer_card___vue_module_identifier__ = null
-var printer_card_Component = printer_card_normalizeComponent(
-  printer_card,
-  components_printer_card,
-  printer_card___vue_template_functional__,
-  printer_card___vue_styles__,
-  printer_card___vue_scopeId__,
-  printer_card___vue_module_identifier__
+var Area___vue_module_identifier__ = null
+var Area_Component = Area_normalizeComponent(
+  Area,
+  printer_Area,
+  Area___vue_template_functional__,
+  Area___vue_styles__,
+  Area___vue_scopeId__,
+  Area___vue_module_identifier__
 )
 
-/* harmony default export */ var js_components_printer_card = (printer_card_Component.exports);
+/* harmony default export */ var components_printer_Area = (Area_Component.exports);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/cardDetail.vue
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/Printer.vue
 //
 //
 //
@@ -8102,138 +8755,210 @@ var printer_card_Component = printer_card_normalizeComponent(
 //
 //
 
-
-
-/* harmony default export */ var cardDetail = ({
-    name: 'CardDetail',
-    props: [],
+/* harmony default export */ var Printer = ({
+    name: 'Printer',
+    props: ['printerName', 'isClass'],
     data: function data() {
         return {
-            cloneName: '飲料區',
-            cloneTime: '重印、刪除、出單',
-            cloneType: '全部'
+            needSendToParent: ''
         };
     },
 
-    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['imgSrc'])),
+    computed: {
+        clonePrinterName: {
+            get: function get() {
+                this.needSendToParent = this.printerName;
+                return this.printerName;
+            },
+            set: function set(newValue) {
+                if (newValue.length > 0) {
+                    this.needSendToParent = newValue;
+                }
+                return this.printerName;
+            }
+        }
+    },
     methods: {
-        changeItem: function changeItem() {}
+        clickPrinter: function clickPrinter() {
+            this.$emit('printer-on-click', this.printerName);
+            $('.js-card-class-printer').removeClass('active');
+            $(this.$el).addClass('active');
+        },
+        handleDropDownClick: function handleDropDownClick(name) {
+            // https://github.com/iview/iview/issues/493
+            if (name == "edit") {
+                $(this.$el).find('h3').addClass('hide');
+                $(this.$el).find('.ivu-input-wrapper').removeClass('hide');
+            }
+            if (name == "delete") {
+                this.$emit('printer-delete', this.printerName);
+            }
+        },
+        addedName: function addedName() {
+            //把input值傳給父
+            // this.$emit('card-change-name', this.needSendToParent); 
+            // $(this.$el).find('.ivu-input-wrapper').addClass('hide');
+            // $(this.$el).find('h3').removeClass('hide');
+        }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-bd084488","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/cardDetail.vue
-var cardDetail_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-detail"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"col-wrap"},[_c('p',[_vm._v("規格名稱")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.cloneName),callback:function ($$v) {_vm.cloneName=$$v},expression:"cloneName"}})],1),_vm._v(" "),_c('div',{staticClass:"col-wrap"},[_c('p',[_vm._v("印單時機")]),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click"}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_vm._v("\n                    重印、刪除、出單 >\n                ")]),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":""}},[_vm._v("重印、出單")]),_vm._v(" "),_c('DropdownItem',{attrs:{"name":""}},[_vm._v("刪除、出單")]),_vm._v(" "),_c('DropdownItem',{attrs:{"name":""}},[_vm._v("重印、刪除、出單")])],1)],1)],1),_vm._v(" "),_c('div',{staticClass:"col-wrap"},[_c('p',[_vm._v("內用/外帶")]),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click"}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_vm._v("\n                    全部 >\n                ")]),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":""}},[_vm._v("外帶")]),_vm._v(" "),_c('DropdownItem',{attrs:{"name":""}},[_vm._v("內用")]),_vm._v(" "),_c('DropdownItem',{attrs:{"name":""}},[_vm._v("全部")])],1)],1)],1)])])}
-var cardDetail_staticRenderFns = []
-var cardDetail_esExports = { render: cardDetail_render, staticRenderFns: cardDetail_staticRenderFns }
-/* harmony default export */ var printer_cardDetail = (cardDetail_esExports);
-// CONCATENATED MODULE: ./resources/assets/js/components/printer/cardDetail.vue
-function cardDetail_injectStyle (ssrContext) {
-  __webpack_require__("XDk3")
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-7854b11a","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/Printer.vue
+var Printer_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-class js-card-class-printer"},[_c('div',{staticClass:"content",on:{"click":function($event){if($event.target !== $event.currentTarget){ return null; }_vm.clickPrinter()}}},[(_vm.isClass)?_c('Icon',{attrs:{"type":"ios-folder","size":"20"}}):_c('Icon',{attrs:{"type":"ios-document","size":"20"}}),_vm._v(" "),_c('h3',[_vm._v(_vm._s(_vm.clonePrinterName))]),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"Something","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.clonePrinterName),callback:function ($$v) {_vm.clonePrinterName=$$v},expression:"clonePrinterName"}}),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click","placement":"bottom-end"},on:{"on-click":function($event){_vm.handleDropDownClick($event)}}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_c('Icon',{attrs:{"type":"ios-create-outline","size":"20"}})],1),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":"edit"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("編輯名稱")],1),_vm._v(" "),_c('DropdownItem',{attrs:{"name":"delete"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("刪除項目")],1)],1)],1)],1)])}
+var Printer_staticRenderFns = []
+var Printer_esExports = { render: Printer_render, staticRenderFns: Printer_staticRenderFns }
+/* harmony default export */ var printer_Printer = (Printer_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/printer/Printer.vue
+function Printer_injectStyle (ssrContext) {
+  __webpack_require__("eVB1")
 }
-var cardDetail_normalizeComponent = __webpack_require__("VU/8")
+var Printer_normalizeComponent = __webpack_require__("VU/8")
 /* script */
 
 
 /* template */
 
 /* template functional */
-var cardDetail___vue_template_functional__ = false
+var Printer___vue_template_functional__ = false
 /* styles */
-var cardDetail___vue_styles__ = cardDetail_injectStyle
+var Printer___vue_styles__ = Printer_injectStyle
 /* scopeId */
-var cardDetail___vue_scopeId__ = null
+var Printer___vue_scopeId__ = null
 /* moduleIdentifier (server only) */
-var cardDetail___vue_module_identifier__ = null
-var cardDetail_Component = cardDetail_normalizeComponent(
-  cardDetail,
-  printer_cardDetail,
-  cardDetail___vue_template_functional__,
-  cardDetail___vue_styles__,
-  cardDetail___vue_scopeId__,
-  cardDetail___vue_module_identifier__
+var Printer___vue_module_identifier__ = null
+var Printer_Component = Printer_normalizeComponent(
+  Printer,
+  printer_Printer,
+  Printer___vue_template_functional__,
+  Printer___vue_styles__,
+  Printer___vue_scopeId__,
+  Printer___vue_module_identifier__
 )
 
-/* harmony default export */ var components_printer_cardDetail = (cardDetail_Component.exports);
+/* harmony default export */ var components_printer_Printer = (Printer_Component.exports);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/cardCheckout.vue
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/PrinterInfo.vue
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
-
-/* harmony default export */ var cardCheckout = ({
-    name: 'CardDetail',
-    props: [],
+/* harmony default export */ var PrinterInfo = ({
+    components: {},
+    name: 'PrinterInfo',
+    props: ['printerId', 'printerName', 'printerIp', 'printerEmulation'],
     data: function data() {
         return {
-            cloneName: '飲料區',
-            cloneTime: '重印、刪除、出單',
-            cloneType: '全部'
+            needSendToParent: {
+                "PrinterID": '',
+                "Name": '',
+                "IP": '',
+                "Emulation": '',
+                "AccountID": 0
+            }
         };
     },
 
-    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['imgSrc'])),
+    computed: {
+        cloneName: {
+            get: function get() {
+                this.needSendToParent["Name"] = this.printerName;
+                return this.printerName;
+            },
+            set: function set(newValue) {
+                this.needSendToParent["Name"] = newValue;
+                return this.printerName;
+            }
+        },
+        cloneIP: {
+            get: function get() {
+                this.needSendToParent["IP"] = this.printerIp;
+                return this.printerIp;
+            },
+            set: function set(newValue) {
+                this.needSendToParent["IP"] = newValue;
+                return this.printerIp;
+            }
+        },
+        cloneEmulation: {
+            get: function get() {
+                this.needSendToParent["Emulation"] = this.printerEmulation;
+                return this.printerEmulation;
+            },
+            set: function set(newValue) {
+                this.needSendToParent["Emulation"] = newValue;
+                return this.printerEmulation;
+            }
+        }
+    },
     methods: {
-        changeItem: function changeItem() {}
+        changeItem: function changeItem() {
+            this.needSendToParent["PrinterID"] = this.printerId;
+            //把input值傳給父
+            this.$emit('printer-info-change', this.needSendToParent);
+        }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-2374c7da","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/cardCheckout.vue
-var cardCheckout_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
-var cardCheckout_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-checkout"},[_c('div',{staticClass:"content"},[_c('p',[_vm._v("選擇新圖片")]),_vm._v(" "),_c('div',{staticClass:"img-wrap"},[_c('img',{attrs:{"src":__webpack_require__("jrnT"),"alt":"invoice"}})])])])}]
-var cardCheckout_esExports = { render: cardCheckout_render, staticRenderFns: cardCheckout_staticRenderFns }
-/* harmony default export */ var printer_cardCheckout = (cardCheckout_esExports);
-// CONCATENATED MODULE: ./resources/assets/js/components/printer/cardCheckout.vue
-function cardCheckout_injectStyle (ssrContext) {
-  __webpack_require__("zBOZ")
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-2c294434","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/PrinterInfo.vue
+var PrinterInfo_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-set"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"left"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("出單機名稱")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"請輸入名稱..."},model:{value:(_vm.cloneName),callback:function ($$v) {_vm.cloneName=$$v},expression:"cloneName"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("出單機IP")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"請輸入IP..."},model:{value:(_vm.cloneIP),callback:function ($$v) {_vm.cloneIP=$$v},expression:"cloneIP"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("Emulation")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"請輸入Emulation..."},model:{value:(_vm.cloneEmulation),callback:function ($$v) {_vm.cloneEmulation=$$v},expression:"cloneEmulation"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap",staticStyle:{"justify-content":"flex-end"}},[_c('Button',{nativeOn:{"click":function($event){_vm.changeItem()}}},[_vm._v("儲存")])],1)])])])}
+var PrinterInfo_staticRenderFns = []
+var PrinterInfo_esExports = { render: PrinterInfo_render, staticRenderFns: PrinterInfo_staticRenderFns }
+/* harmony default export */ var printer_PrinterInfo = (PrinterInfo_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/printer/PrinterInfo.vue
+function PrinterInfo_injectStyle (ssrContext) {
+  __webpack_require__("r+6h")
 }
-var cardCheckout_normalizeComponent = __webpack_require__("VU/8")
+var PrinterInfo_normalizeComponent = __webpack_require__("VU/8")
 /* script */
 
 
 /* template */
 
 /* template functional */
-var cardCheckout___vue_template_functional__ = false
+var PrinterInfo___vue_template_functional__ = false
 /* styles */
-var cardCheckout___vue_styles__ = cardCheckout_injectStyle
+var PrinterInfo___vue_styles__ = PrinterInfo_injectStyle
 /* scopeId */
-var cardCheckout___vue_scopeId__ = null
+var PrinterInfo___vue_scopeId__ = null
 /* moduleIdentifier (server only) */
-var cardCheckout___vue_module_identifier__ = null
-var cardCheckout_Component = cardCheckout_normalizeComponent(
-  cardCheckout,
-  printer_cardCheckout,
-  cardCheckout___vue_template_functional__,
-  cardCheckout___vue_styles__,
-  cardCheckout___vue_scopeId__,
-  cardCheckout___vue_module_identifier__
+var PrinterInfo___vue_module_identifier__ = null
+var PrinterInfo_Component = PrinterInfo_normalizeComponent(
+  PrinterInfo,
+  printer_PrinterInfo,
+  PrinterInfo___vue_template_functional__,
+  PrinterInfo___vue_styles__,
+  PrinterInfo___vue_scopeId__,
+  PrinterInfo___vue_module_identifier__
 )
 
-/* harmony default export */ var components_printer_cardCheckout = (cardCheckout_Component.exports);
+/* harmony default export */ var components_printer_PrinterInfo = (PrinterInfo_Component.exports);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/Manage.vue
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+
 //
 //
 //
@@ -8293,35 +9018,96 @@ var cardCheckout_Component = cardCheckout_normalizeComponent(
 
 /* harmony default export */ var printer_Manage = ({
     components: {
-        CardP: js_components_printer_card,
-        CardDetail: components_printer_cardDetail,
-        CardCheckout: components_printer_cardCheckout
+        Area: components_printer_Area,
+        Printer: components_printer_Printer,
+        PrinterInfo: components_printer_PrinterInfo
     },
     data: function data() {
         return {
-            isbilling: true,
-            currentCard: []
+            currentArea: [],
+            AreaId: '',
+            currentPrinter: [],
+            currentPrinterInfo: [],
+            PrinterInfoShow: false
         };
     },
-    created: function created() {},
+    created: function created() {
+        this.getPrinterArea();
+        this.AreaId = 1;
+    },
 
-    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['User', 'billing', 'rules1', 'rules2', 'rules3'])),
+    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])([])),
+    watch: {
+        currentArea: function currentArea(value) {
+            var PrinterAreaID = this.currentArea[0]['printerAreaID'];
+            this.getPrinter(PrinterAreaID);
+        }
+    },
     methods: {
-        ClassOnClick: function ClassOnClick($e) {
-            $('.card-class').removeClass('active');
+        AreaOnClick: function AreaOnClick(AreaName, AreaId) {
+            this.AreaId = AreaId;
+            this.getPrinter(AreaId);
         },
-        CardOnClick: function CardOnClick($e, value) {
-            $('.card-item').removeClass('active');
-            if (value === 1) {
-                this.isbilling = true;
-            } else {
-                this.isbilling = false;
-            }
+        PrinterOnClick: function PrinterOnClick(printerName, printer) {
+            this.currentPrinterInfo = printer;
+            this.PrinterInfoShow = true;
+        },
+        getPrinterArea: function getPrinterArea() {
+            var _this = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee() {
+                return regenerator_default.a.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                _context.next = 2;
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + '/PrinterArea/GetAreas').then(function (response) {
+                                    return response.data;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 2:
+                                _this.currentArea = _context.sent;
+
+                            case 3:
+                            case 'end':
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, _this);
+            }))();
+        },
+        getPrinter: function getPrinter(PrinterAreaID) {
+            var _this2 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2() {
+                return regenerator_default.a.wrap(function _callee2$(_context2) {
+                    while (1) {
+                        switch (_context2.prev = _context2.next) {
+                            case 0:
+                                _context2.next = 2;
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Printer/GetPrintersByPrinterAreaID/' + PrinterAreaID)).then(function (response) {
+                                    return response.data;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 2:
+                                _this2.currentPrinter = _context2.sent;
+
+                            case 3:
+                            case 'end':
+                                return _context2.stop();
+                        }
+                    }
+                }, _callee2, _this2);
+            }))();
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-a2bd5f40","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/Manage.vue
-var printer_Manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("出機單設定")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},_vm._l((_vm.billing),function(item,index){return _c('CardP',{key:item.index,staticClass:"card-class",class:{ active: index === 0 },attrs:{"billing-name":item},on:{"card-on-click":function($event){_vm.ClassOnClick($event)}}})}))]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("櫃檯出單機")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("結帳相關聯")]),_vm._v(" "),_vm._l((_vm.rules1),function(item,index){return _c('CardP',{key:item.index,staticClass:"card-item",attrs:{"billing-name":item},on:{"card-on-click":function($event){_vm.CardOnClick($event, 1)}}})}),_vm._v(" "),_c('h4',[_vm._v("顧客聯")]),_vm._v(" "),_vm._l((_vm.rules2),function(item,index){return _c('CardP',{key:item.index,staticClass:"card-item",attrs:{"billing-name":item},on:{"card-on-click":function($event){_vm.CardOnClick($event, 2)}}})}),_vm._v(" "),_c('h4',[_vm._v("廚房聯")]),_vm._v(" "),_vm._l((_vm.rules3),function(item,index){return _c('CardP',{key:item.index,staticClass:"card-item",attrs:{"billing-name":item},on:{"card-on-click":function($event){_vm.CardOnClick($event, 3)}}})})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v("和牛區")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("基本設定")]),_vm._v(" "),(_vm.isbilling)?_c('CardCheckout'):_vm._e(),_vm._v(" "),(!_vm.isbilling)?_c('CardDetail'):_vm._e()],1)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}})],1)],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-242da9d2","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/Manage.vue
+var printer_Manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("出機單設定")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},_vm._l((_vm.currentArea),function(item,index){return _c('Area',{key:item.index,staticClass:"card-class",class:{ active: index === 0 },attrs:{"area-name":item['printerAreaName']},on:{"area-on-click":function($event){_vm.AreaOnClick($event, item['printerAreaID'])}}})}))]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("櫃檯出單機")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("出單機名稱")]),_vm._v(" "),_vm._l((_vm.currentPrinter),function(item,index){return _c('Printer',{key:item.index,staticClass:"card-item",attrs:{"printer-name":item['printerName']},on:{"printer-on-click":function($event){_vm.PrinterOnClick($event, item)}}})})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v("和牛區")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("基本設定")]),_vm._v(" "),_c('PrinterInfo',{directives:[{name:"show",rawName:"v-show",value:(_vm.PrinterInfoShow),expression:"PrinterInfoShow"}],attrs:{"printer-id":_vm.currentPrinterInfo['printerID'],"printer-name":_vm.currentPrinterInfo['printerName'],"printer-ip":_vm.currentPrinterInfo['ip'],"printer-emulation":_vm.currentPrinterInfo['emulation']},on:{"printer-info-change":function($event){_vm.changePrinterInfo($event)}}})],1)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}})],1)],1)}
 var printer_Manage_staticRenderFns = []
 var printer_Manage_esExports = { render: printer_Manage_render, staticRenderFns: printer_Manage_staticRenderFns }
 /* harmony default export */ var components_printer_Manage = (printer_Manage_esExports);
@@ -8353,6 +9139,26 @@ var printer_Manage_Component = printer_Manage_normalizeComponent(
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/storeinfo/Manage.vue
 
+
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -8399,28 +9205,130 @@ var printer_Manage_Component = printer_Manage_normalizeComponent(
 
 
 /* harmony default export */ var storeinfo_Manage = ({
-  components: {},
-  data: function data() {
-    return {
-      nameCh: '餐廳名字',
-      nameEn: 'Name',
-      address: '台北市信義區信義路五段七號',
-      phone: '021231234',
-      note: '注意事項',
-      storeId: 'A122569',
-      faxType: '稅別',
-      faxNumble: '稅額'
-    };
-  },
+    components: {},
+    data: function data() {
+        return {
+            currentInfo: [],
+            currentTaxType: [],
+            taxTypeID: ''
+        };
+    },
+    created: function created() {
+        this.getStoreInfo();
+        this.getTaxType();
+    },
 
-  computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])([]))
+    watch: {
+        taxTypeID: function taxTypeID() {
+            this.currentInfo['taxTypeID'] = this.taxTypeID;
+        },
+        isLoadingIN: function isLoadingIN(value) {
+            if (value) {
+                this.$Message.loading({
+                    content: 'Loading...',
+                    duration: 0.8
+                });
+            }
+        }
+    },
+    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['isLoading']), {
+        isLoadingIN: function isLoadingIN() {
+            return this.isLoading;
+        }
+    }),
+    methods: {
+        getStoreInfo: function getStoreInfo() {
+            var _this = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee() {
+                var vm;
+                return regenerator_default.a.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                vm = _this;
+                                _context.next = 3;
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + '/Store/GetStore').then(function (response) {
+                                    vm.taxTypeID = response.data[0]['taxTypeID'];
+                                    return response.data[0];
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 3:
+                                _this.currentInfo = _context.sent;
+
+                            case 4:
+                            case 'end':
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, _this);
+            }))();
+        },
+        getTaxType: function getTaxType() {
+            var _this2 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2() {
+                return regenerator_default.a.wrap(function _callee2$(_context2) {
+                    while (1) {
+                        switch (_context2.prev = _context2.next) {
+                            case 0:
+                                _context2.next = 2;
+                                return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + '/Store/GetTaxType').then(function (response) {
+                                    return response.data;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 2:
+                                _this2.currentTaxType = _context2.sent;
+
+                            case 3:
+                            case 'end':
+                                return _context2.stop();
+                        }
+                    }
+                }, _callee2, _this2);
+            }))();
+        },
+        saveInfo: function saveInfo() {
+            var _this3 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee3() {
+                var vm;
+                return regenerator_default.a.wrap(function _callee3$(_context3) {
+                    while (1) {
+                        switch (_context3.prev = _context3.next) {
+                            case 0:
+                                vm = _this3;
+                                _context3.next = 3;
+                                return axios.put("http://demo.airdesign.com.tw/POSAPICore/api" + '/Store/Update', _this3.currentInfo).then(function (response) {
+                                    vm.getStoreInfo();
+                                    return;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 3:
+                            case 'end':
+                                return _context3.stop();
+                        }
+                    }
+                }, _callee3, _this3);
+            }))();
+        }
+    }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-5b7a3ea1","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/storeinfo/Manage.vue
-var storeinfo_Manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content store-info"},[_c('h2',[_vm._v("店家資訊")]),_vm._v(" "),_c('div',{staticClass:"content-wrap"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("店家名稱(中)")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.nameCh),callback:function ($$v) {_vm.nameCh=$$v},expression:"nameCh"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("店家名稱(英)")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.nameEn),callback:function ($$v) {_vm.nameEn=$$v},expression:"nameEn"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("地址")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.address),callback:function ($$v) {_vm.address=$$v},expression:"address"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("電話")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.phone),callback:function ($$v) {_vm.phone=$$v},expression:"phone"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("備註")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.note),callback:function ($$v) {_vm.note=$$v},expression:"note"}})],1)]),_vm._v(" "),_c('div',{staticClass:"content-wrap"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("店家ID")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.storeId),callback:function ($$v) {_vm.storeId=$$v},expression:"storeId"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("稅別")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.faxType),callback:function ($$v) {_vm.faxType=$$v},expression:"faxType"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("稅額")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.faxNumble),callback:function ($$v) {_vm.faxNumble=$$v},expression:"faxNumble"}})],1)])])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-0a032878","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/storeinfo/Manage.vue
+var storeinfo_Manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content store-info"},[_c('h2',[_vm._v("店家資訊")]),_vm._v(" "),_c('div',{staticClass:"content-wrap"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("店家名稱(中)")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.currentInfo['chineseName']),callback:function ($$v) {_vm.$set(_vm.currentInfo, 'chineseName', $$v)},expression:"currentInfo['chineseName']"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("店家名稱(英)")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.currentInfo['englishName']),callback:function ($$v) {_vm.$set(_vm.currentInfo, 'englishName', $$v)},expression:"currentInfo['englishName']"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("統一編號")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.currentInfo['taxID']),callback:function ($$v) {_vm.$set(_vm.currentInfo, 'taxID', $$v)},expression:"currentInfo['taxID']"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("地址")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.currentInfo['address']),callback:function ($$v) {_vm.$set(_vm.currentInfo, 'address', $$v)},expression:"currentInfo['address']"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("聯絡電話")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.currentInfo['telephone']),callback:function ($$v) {_vm.$set(_vm.currentInfo, 'telephone', $$v)},expression:"currentInfo['telephone']"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("聯絡人")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.currentInfo['contact']),callback:function ($$v) {_vm.$set(_vm.currentInfo, 'contact', $$v)},expression:"currentInfo['contact']"}})],1)]),_vm._v(" "),_c('div',{staticClass:"content-wrap"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("顯示圖")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.currentInfo['logoImage']),callback:function ($$v) {_vm.$set(_vm.currentInfo, 'logoImage', $$v)},expression:"currentInfo['logoImage']"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("服務費")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.currentInfo['serviceFee']),callback:function ($$v) {_vm.$set(_vm.currentInfo, 'serviceFee', $$v)},expression:"currentInfo['serviceFee']"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("稅別")]),_vm._v(" "),_c('Select',{attrs:{"placeholder":"請選擇","loading-text":"加載中"},model:{value:(_vm.taxTypeID),callback:function ($$v) {_vm.taxTypeID=$$v},expression:"taxTypeID"}},_vm._l((_vm.currentTaxType),function(item){return _c('Option',{key:item.taxTypeID,attrs:{"value":item.taxTypeID}},[_vm._v(_vm._s(item.taxTypeName))])}))],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("稅率")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"Enter something..."},model:{value:(_vm.currentInfo['taxRate']),callback:function ($$v) {_vm.$set(_vm.currentInfo, 'taxRate', $$v)},expression:"currentInfo['taxRate']"}})],1)]),_vm._v(" "),_c('div',{staticClass:"bottom-wrap"},[_c('div',{staticClass:"input-wrap"},[_c('Button',{nativeOn:{"click":function($event){_vm.saveInfo()}}},[_vm._v("儲存")])],1)])])}
 var storeinfo_Manage_staticRenderFns = []
 var storeinfo_Manage_esExports = { render: storeinfo_Manage_render, staticRenderFns: storeinfo_Manage_staticRenderFns }
 /* harmony default export */ var components_storeinfo_Manage = (storeinfo_Manage_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/storeinfo/Manage.vue
+function Manage_injectStyle (ssrContext) {
+  __webpack_require__("XBBH")
+}
 var storeinfo_Manage_normalizeComponent = __webpack_require__("VU/8")
 /* script */
 
@@ -8430,7 +9338,7 @@ var storeinfo_Manage_normalizeComponent = __webpack_require__("VU/8")
 /* template functional */
 var storeinfo_Manage___vue_template_functional__ = false
 /* styles */
-var storeinfo_Manage___vue_styles__ = null
+var storeinfo_Manage___vue_styles__ = Manage_injectStyle
 /* scopeId */
 var storeinfo_Manage___vue_scopeId__ = null
 /* moduleIdentifier (server only) */
@@ -8574,10 +9482,11 @@ __webpack_require__("iiYX");
 
 
 //添加请求拦截器
+
 axios.interceptors.request.use(function (config) {
     //在发送请求之前做某事，比如说 设置loading动画显示
 
-    vuex_store.commit({
+    vuex_store.dispatch({
         type: 'isLoading'
     });
     return config;
@@ -8588,10 +9497,15 @@ axios.interceptors.request.use(function (config) {
 
 //添加响应拦截器
 axios.interceptors.response.use(function (response) {
+    // 檢查token 是否過期?12/26
+    // if (response.data.errno === 999) {
+    //     router.replace('/');
+    //     console.log("token过期");
+    // }
     //对响应数据做些事，比如说把loading动画关掉
 
-    vuex_store.commit({
-        type: 'isLoading'
+    vuex_store.dispatch({
+        type: 'hasLoaded'
     });
     return response;
 }, function (error) {
@@ -8609,11 +9523,12 @@ var router = new vue_router_esm["a" /* default */]({
 router.beforeEach(function (to, form, next) {
     var loginUserData = JSON.parse(localStorage.getItem('token'));
 
-    // if (!isLogin) {
-    // }
     if (loginUserData) {
-        // 如在登入狀態下重整，應該把存在localStorage的資料再送給state一次
-        // 如串後端，API應該再傳給state
+        //判断token是否存在
+
+        //将token设置成请求头
+        axios.defaults.headers.common['Authorization'] = 'Bearer ' + loginUserData;
+
         vuex_store.commit({
             type: 'setUserData',
             userData: loginUserData
@@ -8655,6 +9570,34 @@ new vue_esm["default"]({
 
 /***/ }),
 
+/***/ "u9vh":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "uP0R":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "uYxn":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "v7+P":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "xZZD":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8670,13 +9613,6 @@ var update = __webpack_require__("rjj0")("42898d5c", content, true, {});
 /***/ }),
 
 /***/ "z+DR":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "zBOZ":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

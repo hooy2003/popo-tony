@@ -7,13 +7,15 @@
                 <div class="union">
                     <Floor v-for="(item, index) in currentFloor"
                            :key='item.index'
-                           :floor-name="item[1]"
+                           :floor-name="item['tableAreaName']"
                            :class="{ active: index === 0 }"
-                           @floor-on-click="FloorOnClick($event, item[0])"
+                           @floor-on-click="FloorOnClick($event, item['tableAreaID'])"
+                           @floor-change-name="FloorChangeName($event, item['tableAreaID'])"
+                           @floor-delete="FloorDelete($event, item['tableAreaID'])"
                     >
                     </Floor>
-                    <AddNewfloor  
-                                  class="add-new-card"
+                    <AddNewfloor  class="add-new-card"
+                                  @add-floor-name="addNewFloor($event)"
                     >
                     </AddNewfloor>
                 </div>
@@ -24,10 +26,12 @@
                     <h4>類別</h4>
                     <Table v-for="(item, index) in currentTable"
                            :key='item.index'
-                           :table-name="item[1]"
+                           :table-name="item['tableName']"
                            :is-class="true"
                            :class="{ lastcard: index === (currentTable.length-1) && index > 1 }"
                            @table-on-click="TableOnClick($event, item)"
+                           @table-change-name="TableChangeName($event, item['tableID'])"
+                           @table-delete="TableDelete($event, item['tableID'])"
                     >
                     </Table>
                      <AddNewTable 
@@ -43,9 +47,9 @@
                     <h4>項目</h4>
                     <TableInfo
                         v-show="TableInfoShow"
-                        :table-id="currentTableInfo[0]"
-                        :table-name="currentTableInfo[1]"
-                        :table-amount="currentTableInfo[12]"
+                        :table-id="currentTableInfo['tableID']"
+                        :table-name="currentTableInfo['tableName']"
+                        :table-amount="currentTableInfo['amount']"
                         @table-info-change="changeTableInfo($event)"
                     >
                     </TableInfo>
@@ -87,54 +91,98 @@ import AddNewTable from './addNewTable.vue';
     },
     computed: {
       ...mapGetters([
+          'isLoading'
       ]),
+      isLoadingIN: function() {
+        return this.isLoading;
+      }
     },
     watch: {
         currentFloor: function(value) {
-            const defaultID = this.currentFloor[0][0];
-            const defaultName = this.currentFloor[0][1];
-
+            const defaultID = this.currentFloor[0]['tableAreaID'];
             this.getTable(defaultID);  
         },
+        isLoadingIN (value) {
+            if (value) {
+                this.$Message.loading({
+                    content: 'Loading...',
+                    duration: 0.8
+                });
+            }
+        }
     },
     methods: {
         FloorOnClick: function(FloorName, FloorID) {
             this.FloorID = FloorID;
             this.getTable(FloorID);
+            this.TableInfoShow = false;
         },
         TableOnClick: function(tableName, table) {
-    // "TableCategoryID": 0,
-    // "TableCategoryName": "string",
-    // "Image": "string",
-    // "TableAreaID": 0,
-    // "TableAreaName": "string",
-    // "Sort": 0,
-    // "TableID": 0,
-    // "TableName": "string",
-    // "X": 0,
-    // "Y": 0,
-    // "Width": 0,
-    // "Height": 0,
-    // "Amount": 0 
-            console.log('TableOnClick', table );
             this.currentTableInfo = table;
             this.TableInfoShow = true;
-        },
+        },        
         async getFloor() {
             this.currentFloor = await axios.get(process.env.API_HOST + `/TableArea/GetAreas`)
+            .then(function (response) {                
+                return response.data;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        async addNewFloor ($event) {
+            const ClassFile = {
+                                "tableAreaName": $event,
+                                "sort": 0,
+                                "accountID": 0
+                              };
+            const vm = this;
+            await axios.post(process.env.API_HOST + `/TableArea/Create`, ClassFile)
             .then(function (response) {
-                const nameList = response.data.map(item => Object.values(item));
-                return nameList;
+                vm.getFloor();
+                return true;
+            })
+            .catch(function (error) {
+                console.log('error', error);
+            });
+        },
+        async FloorChangeName ($event, ID) {
+            const ClassFile = {
+                                "tableAreaID": ID,
+                                "tableAreaName": $event,
+                                "sort": 0,
+                                "accountID": 0
+                              };
+            const vm = this;
+            await axios.put(process.env.API_HOST + `/TableArea/Update`, ClassFile)
+            .then(function (response) {
+                vm.getFloor();
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        async FloorDelete ($event, ID) {
+            const ClassFile = {
+                                "tableAreaID": ID,
+                                "accountID": 0
+                              };
+            const vm = this;
+            // axios's config 寫法
+            await axios.delete(process.env.API_HOST + `/TableArea/Delete`, { data: ClassFile})
+            .then(function (response) {
+                vm.getFloor();
+                return;
             })
             .catch(function (error) {
                 console.log(error);
             });
         },
         async getTable(FloorID) {
-            this.currentTable = await axios.get(process.env.API_HOST + `/Table/GetTablesByTableAreaID?TableAreaID=${FloorID}`)
+            this.currentTable = await axios.get(process.env.API_HOST + `/Table/GetTablesByTableAreaID/${FloorID}`)
             .then(function (response) {
-                const nameList = response.data.map(item => Object.values(item));
-                return nameList;
+                return response.data;
             })
             .catch(function (error) {
                 console.log(error);
@@ -142,17 +190,16 @@ import AddNewTable from './addNewTable.vue';
         },
         async addNewTable ($event, FloorID) {
             const ClassFile = {
-                                "Name": $event,
-                                "TableCategoryID": 0,
-                                "TableAreaID": FloorID,
-                                "X": 0,
-                                "Y": 0,
-                                "Width": 0,
-                                "Height": 0,
-                                "Amount": 0,
-                                "AccountID": 0
+                                "tableName": $event,
+                                "tableCategoryID": 1,
+                                "tableAreaID": FloorID,
+                                "x": 0,
+                                "y": 0,
+                                "width": 0,
+                                "height": 0,
+                                "amount": 0,
+                                "accountID": 0
                               };
-            console.log('addNewTable', ClassFile);
             const vm = this;
             await axios.post(process.env.API_HOST + `/Table/Create`, ClassFile)
             .then(function (response) {
@@ -163,9 +210,41 @@ import AddNewTable from './addNewTable.vue';
                 console.log('error', error);
             });
         },
+        async TableChangeName ($event, ID) {
+            const ClassFile = {
+                                "tableID": ID,
+                                "tableName": $event,
+                                "accountID": 0
+                              };
+            const vm = this;
+            await axios.put(process.env.API_HOST + `/Table/Update`, ClassFile)
+            .then(function (response) {
+                vm.getTable(vm.FloorID);
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        async TableDelete ($event, ID) {
+            const ClassFile = {
+                                "tableID": ID,
+                                "accountID": 0
+                              };
+            const vm = this;
+            // axios's config 寫法
+            await axios.delete(process.env.API_HOST + `/Table/Delete`, { data: ClassFile})
+            .then(function (response) {
+                vm.getTable(vm.FloorID);
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
         async changeTableInfo(obj) {
             const vm = this;
-            await axios.post(process.env.API_HOST + `/Table/Update`, obj)
+            await axios.put(process.env.API_HOST + `/Table/Update`, obj)
             .then(function (response) {
                 vm.getTable(vm.FloorID);
                 return;

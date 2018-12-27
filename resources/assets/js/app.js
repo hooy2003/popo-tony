@@ -41,7 +41,6 @@ axios.interceptors.response.use(response => {
     store.dispatch({
         type: 'hasLoaded'
     });
-    console.log('响应拦截器', response);
     return response;
 }, error => {
     //请求错误时做些事
@@ -59,6 +58,10 @@ router.beforeEach( (to, form, next) => {
     const loginUserData = JSON.parse(localStorage.getItem('token'));
 
     if(loginUserData) { //判断token是否存在
+
+        //将token设置成请求头
+        axios.defaults.headers.common['Authorization'] = `Bearer ` + loginUserData;
+
         store.commit({
             type: 'setUserData',
             userData: loginUserData,

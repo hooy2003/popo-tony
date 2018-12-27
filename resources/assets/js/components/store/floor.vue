@@ -1,7 +1,7 @@
 <template>
     <div class="card-class card-class-a js-card-class-a"
          >
-        <div class="content" @click.self="clickCard()">
+        <div class="content" @click.self="clickFloor()">
             <Icon type="ios-folder" size="20"></Icon>
             <h3>{{cloneFloorName}}</h3>
             <Input v-model="cloneFloorName"
@@ -11,6 +11,7 @@
                    icon="ios-checkmark-circle"></Input>
             <Dropdown trigger="click"
                 @on-click="handleDropDownClick($event)"
+                placement="bottom-end"
             >
                 <a href="javascript:void(0)">
                     <Icon type="ios-create-outline" size="20"></Icon>
@@ -47,7 +48,7 @@
             },
         },
         methods: {
-            clickCard: function() {
+            clickFloor: function() {
                 this.$emit('floor-on-click', this.floorName);
                 $('.js-card-class-a').removeClass('active');
                 $('.js-card-class-b').removeClass('active');
@@ -61,12 +62,12 @@
                     $(this.$el).find('.ivu-input-wrapper').removeClass('hide');
                 }
                 if (name == "delete") {
-                    this.$emit('card-delete', this.floorName);
+                    this.$emit('floor-delete', this.floorName);
                 }
             },
             addedName () {
                 //把input值傳給父
-                this.$emit('card-change-name', this.needSendToParent); 
+                this.$emit('floor-change-name', this.needSendToParent); 
                 $(this.$el).find('.ivu-input-wrapper').addClass('hide');
                 $(this.$el).find('h3').removeClass('hide');
             }

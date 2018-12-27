@@ -7,10 +7,10 @@
                 <div class="union">
                     <Area v-for="(item, index) in currentArea"
                            :key='item.index'  
-                           :area-name="item['PrinterAreaName']"
+                           :area-name="item['printerAreaName']"
                            :class="{ active: index === 0 }"
                            class="card-class"                           
-                           @area-on-click="AreaOnClick($event, item['PrinterAreaID'])"
+                           @area-on-click="AreaOnClick($event, item['printerAreaID'])"
                     >
                     </Area>
                 </div>
@@ -21,7 +21,7 @@
                     <h4>出單機名稱</h4>
                     <Printer v-for="(item, index) in currentPrinter"
                            :key='item.index'
-                           :printer-name="item['PrinterName']" 
+                           :printer-name="item['printerName']" 
                            class="card-item"
                            @printer-on-click="PrinterOnClick($event, item)"
                     >
@@ -34,10 +34,10 @@
                     <h4>基本設定</h4>
                     <PrinterInfo
                         v-show="PrinterInfoShow"
-                        :printer-id="currentPrinterInfo['PrinterID']"
-                        :printer-name="currentPrinterInfo['PrinterName']"
-                        :printer-ip="currentPrinterInfo['IP']"
-                        :printer-emulation="currentPrinterInfo['Emulation']"
+                        :printer-id="currentPrinterInfo['printerID']"
+                        :printer-name="currentPrinterInfo['printerName']"
+                        :printer-ip="currentPrinterInfo['ip']"
+                        :printer-emulation="currentPrinterInfo['emulation']"
                         @printer-info-change="changePrinterInfo($event)"
                     >
                     </PrinterInfo>
@@ -80,8 +80,7 @@ import PrinterInfo from './PrinterInfo.vue'
     },
     watch: {
         currentArea: function(value) {
-            const PrinterAreaID = this.currentArea[0]['PrinterAreaID'];
-
+            const PrinterAreaID = this.currentArea[0]['printerAreaID'];
             this.getPrinter(PrinterAreaID); 
         }
     },
@@ -104,7 +103,7 @@ import PrinterInfo from './PrinterInfo.vue'
             });
         },
         async getPrinter(PrinterAreaID) {
-            this.currentPrinter = await axios.get(process.env.API_HOST + `/Printer/GetPrintersByPrinterAreaID?PrinterAreaID=${PrinterAreaID}`)
+            this.currentPrinter = await axios.get(process.env.API_HOST + `/Printer/GetPrintersByPrinterAreaID/${PrinterAreaID}`)
             .then(function (response) {
                 return response.data;
             })

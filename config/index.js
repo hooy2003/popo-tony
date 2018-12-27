@@ -13,7 +13,7 @@ module.exports = {
     env: require('./dev.env'),
     proxyTable: {
       '/api': {                                             // 自訂 local 端的位置
-        target: 'http://demo.airdesign.com.tw/POSAPI/api',  // 遠端 URL Domain
+        target: 'http://demo.airdesign.com.tw/POSAPICore/api',  // 遠端 URL Domain
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''

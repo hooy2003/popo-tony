@@ -57,18 +57,16 @@
           // https://juejin.im/post/5bab739af265da0aa3593177
           // 先用FormData
           let data = new FormData();
-          data.append("client_id", "AirdesignPOS");
-          data.append("client_secret", "777ABHJV777");
-          data.append("grant_type", "password");
-          data.append("username", "vincent@airdesign.com.tw");
-          data.append("password", "Abc@123");
+              data.append("client_id", "AirdesignPOS");
+              data.append("client_secret", "777ABHJV777");
+              data.append("grant_type", "password");
+              data.append("username", "vincent@airdesign.com.tw");
+              data.append("password", "Abc@123");
 
           axios.post(process.env.TOKEN_HOST + `/token`, data)
           .then(function (response) {
               console.log(response);
-              console.log('登入成功');
-              //将token设置成请求头
-              axios.defaults.headers.common['Authorization'] = response.data.access_token;
+              console.log('登入成功');             
 
               // axios promise 等回傳來的東西用vuex action來非同步處理
               localStorage.setItem('token', JSON.stringify(response.data.access_token));

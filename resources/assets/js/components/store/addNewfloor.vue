@@ -31,7 +31,7 @@
             addedName (newValue) {
                 $(this.$el).find('.ivu-input-wrapper').addClass('hide');
                 $(this.$el).find('.addclass').removeClass('hide');
-                this.$emit('add-card-name', this.newValue);
+                this.$emit('add-floor-name', this.newValue);
                 this.newValue = '';
             }
         }

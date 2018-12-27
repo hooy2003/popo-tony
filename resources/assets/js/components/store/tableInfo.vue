@@ -34,38 +34,38 @@ import { mapGetters } from 'vuex';
         data() {
             return {
                 needSendToParent: {
-                                    "TableID": '',
-                                    "Name": '',
-                                    "Amount": '',
-                                    "AccountID": 0
+                                    "tableID": '',
+                                    "tableName": '',
+                                    "amount": '',
+                                    "accountID": 0
                                },
             }
         },
         computed: {
             cloneName: {
                 get: function() {
-                    this.needSendToParent["Name"] = this.tableName;
+                    this.needSendToParent["tableName"] = this.tableName;
                     return this.tableName;
                 },
                 set: function(newValue) {
-                    this.needSendToParent["Name"] = newValue;
+                    this.needSendToParent["tableName"] = newValue;
                     return this.tableName;
                 }
             },
             cloneAmount: {
                 get: function() {
-                    this.needSendToParent["Amount"] = this.tableAmount;
+                    this.needSendToParent["amount"] = this.tableAmount;
                     return this.tableAmount;
                 },
                 set: function(newValue) {
-                    this.needSendToParent["Amount"] = newValue;
+                    this.needSendToParent["amount"] = newValue;
                     return this.tableAmount;
                 }
             },
         },
         methods: {
             changeItem () {
-                this.needSendToParent["TableID"] = this.tableId;
+                this.needSendToParent["tableID"] = this.tableId;
                 //把input值傳給父
                 this.$emit('table-info-change', this.needSendToParent); 
             }

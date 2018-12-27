@@ -2,7 +2,6 @@
     <div class="card-class card-class-b js-card-class-b"
          >
         <div class="content" @click.self="clickTable()">
-
             <Icon v-if="isClass" type="ios-folder" size="20"></Icon>
             <Icon v-else type="ios-document" size="20"></Icon>
             <h3>{{cloneTableName}}</h3>
@@ -13,6 +12,7 @@
                    icon="ios-checkmark-circle"></Input>
             <Dropdown trigger="click"
                 @on-click="handleDropDownClick($event)"
+                placement="bottom-end"
             >
                 <a href="javascript:void(0)">
                     <Icon type="ios-create-outline" size="20"></Icon>
