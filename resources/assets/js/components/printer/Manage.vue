@@ -11,8 +11,14 @@
                            :class="{ active: index === 0 }"
                            class="card-class"                           
                            @area-on-click="AreaOnClick($event, item['printerAreaID'])"
+                           @area-change-name="AreaChangeName($event, item['printerAreaID'])"
+                           @area-delete="AreaDelete($event, item['printerAreaID'])"
                     >
                     </Area>
+                    <AddNewArea  class="add-new-card"
+                                  @add-area-name="addNewArea($event)"
+                    >
+                    </AddNewArea>
                 </div>
             </Col>
             <Col span="5">
@@ -24,8 +30,15 @@
                            :printer-name="item['printerName']" 
                            class="card-item"
                            @printer-on-click="PrinterOnClick($event, item)"
+                           @printer-change-name="PrinterChangeName($event, item['printerID'], item['ip'])"
+                           @printer-delete="PrinterDelete($event, item['printerID'])"
                     >
                     </Printer>
+                    <AddNewPrinter
+                            class="add-new-card"
+                            @add-printer-name="addNewPrinter($event, AreaId)"
+                    >
+                    </AddNewPrinter>
                 </div>
             </Col>
             <Col span="9">
@@ -54,12 +67,16 @@ import { mapGetters } from 'vuex';
 import Area from './Area.vue';
 import Printer from './Printer.vue';
 import PrinterInfo from './PrinterInfo.vue'
+import AddNewPrinter from './addNewPrinter.vue'
+import AddNewArea from './addNewArea.vue'
 
   export default {
     components: {
         Area,
         Printer,
-        PrinterInfo
+        PrinterInfo,
+        AddNewPrinter,
+        AddNewArea
     },
     data() {
         return {
@@ -76,18 +93,31 @@ import PrinterInfo from './PrinterInfo.vue'
     },
     computed: {
       ...mapGetters([
-      ]),      
+          'isLoading'
+      ]),
+      isLoadingIN: function() {
+        return this.isLoading;
+      }
     },
     watch: {
         currentArea: function(value) {
             const PrinterAreaID = this.currentArea[0]['printerAreaID'];
             this.getPrinter(PrinterAreaID); 
+        },
+        isLoadingIN (value) {
+            if (value) {
+                this.$Message.loading({
+                    content: 'Loading...',
+                    duration: 0.8
+                });
+            }
         }
     },
     methods: {
         AreaOnClick (AreaName, AreaId) {
             this.AreaId = AreaId;
             this.getPrinter(AreaId);
+            this.PrinterInfoShow = false;
         },
         PrinterOnClick (printerName, printer) {
             this.currentPrinterInfo = printer;
@@ -102,6 +132,53 @@ import PrinterInfo from './PrinterInfo.vue'
                 console.log(error);
             });
         },
+        async addNewArea ($event) {
+            const ClassFile = {
+                                "printerAreaName": $event,
+                                "accountID": 0
+                              };
+            const vm = this;
+            await axios.post(process.env.API_HOST + `/PrinterArea/Create`, ClassFile)
+            .then(function (response) {
+                vm.getPrinterArea();
+                return;
+            })
+            .catch(function (error) {
+                console.log('error', error);
+            });
+        },
+        async AreaChangeName ($event, AreaId) {
+            const ClassFile = {
+                                "printerAreaID": AreaId,
+                                "printerAreaName": $event,
+                                "accountID": 0
+                              };
+            const vm = this;
+            await axios.put(process.env.API_HOST + `/PrinterArea/Update`, ClassFile)
+            .then(function (response) {
+                vm.getPrinterArea();
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        async AreaDelete ($event, AreaId) {
+            const ClassFile = {
+                                "printerAreaID": AreaId,
+                                "accountID": 0
+                              };
+            const vm = this;
+            // axios's config 寫法
+            await axios.delete(process.env.API_HOST + `/PrinterArea/Delete`, { data: ClassFile})
+            .then(function (response) {
+                vm.getPrinterArea();
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
         async getPrinter(PrinterAreaID) {
             this.currentPrinter = await axios.get(process.env.API_HOST + `/Printer/GetPrintersByPrinterAreaID/${PrinterAreaID}`)
             .then(function (response) {
@@ -110,8 +187,70 @@ import PrinterInfo from './PrinterInfo.vue'
             .catch(function (error) {
                 console.log(error);
             });
-        },       
-        
+        },
+        async addNewPrinter ($event, AreaId) {
+            const ClassFile = {
+                                "printerName": $event,
+                                "printerAreaID": AreaId,
+                                "ip": '111',
+                                "emulation": '111',
+                                "accountID": '0'
+                              };
+            const vm = this;
+            await axios.post(process.env.API_HOST + `/Printer/Create`, ClassFile)
+            .then(function (response) {
+                vm.getPrinter(vm.AreaId);
+                return;
+            })
+            .catch(function (error) {
+                console.log('error', error);
+            });
+        },
+        async PrinterChangeName ($event, PrinterId, PrinterIp) {
+            const ClassFile = {
+                                "printerID": PrinterId,
+                                "printerName": $event,
+                                "ip": PrinterIp,
+                                "accountID": 0
+                              };
+            const vm = this;
+            console.log('PrinterChangeName', ClassFile);
+            await axios.put(process.env.API_HOST + `/Printer/Update`, ClassFile)
+            .then(function (response) {
+                vm.getPrinter(vm.AreaId);
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        async PrinterDelete ($event, PrinterId) {
+            const ClassFile = {
+                                "printerID": PrinterId,
+                                "accountID": 0
+                              };
+            const vm = this;
+            // axios's config 寫法
+            await axios.delete(process.env.API_HOST + `/Printer/Delete`, { data: ClassFile})
+            .then(function (response) {
+                vm.getPrinter(vm.AreaId);
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        },
+        async changePrinterInfo (PrinterInfo) {
+            const vm = this;
+            await axios.put(process.env.API_HOST + `/Printer/Update`, PrinterInfo)
+            .then(function (response) {
+                vm.getPrinter(vm.AreaId);
+                return;
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        }
     }
   }
 </script>

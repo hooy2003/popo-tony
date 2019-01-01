@@ -34,7 +34,7 @@
                            @table-delete="TableDelete($event, item['tableID'])"
                     >
                     </Table>
-                     <AddNewTable 
+                    <AddNewTable 
                             class="add-new-card"
                             @add-table-name="addNewTable($event, FloorID)"
                     >
@@ -140,7 +140,7 @@ import AddNewTable from './addNewTable.vue';
             await axios.post(process.env.API_HOST + `/TableArea/Create`, ClassFile)
             .then(function (response) {
                 vm.getFloor();
-                return true;
+                return;
             })
             .catch(function (error) {
                 console.log('error', error);
@@ -204,7 +204,7 @@ import AddNewTable from './addNewTable.vue';
             await axios.post(process.env.API_HOST + `/Table/Create`, ClassFile)
             .then(function (response) {
                 vm.getTable(vm.FloorID);
-                return true;
+                return;
             })
             .catch(function (error) {
                 console.log('error', error);

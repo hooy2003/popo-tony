@@ -2,7 +2,6 @@
     <div class="card-class js-card-class-area"
          >
         <div class="content" @click.self="clickArea()">
-
             <Icon v-if="isClass" type="ios-folder" size="20"></Icon>
             <Icon v-else type="ios-document" size="20"></Icon>
             <h3>{{cloneAreaName}}</h3>
@@ -71,9 +70,9 @@
             },
             addedName () {
                 //把input值傳給父
-                // this.$emit('card-change-name', this.needSendToParent); 
-                // $(this.$el).find('.ivu-input-wrapper').addClass('hide');
-                // $(this.$el).find('h3').removeClass('hide');
+                this.$emit('area-change-name', this.needSendToParent); 
+                $(this.$el).find('.ivu-input-wrapper').addClass('hide');
+                $(this.$el).find('h3').removeClass('hide');
             }
         }
     }

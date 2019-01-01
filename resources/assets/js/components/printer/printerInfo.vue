@@ -17,7 +17,7 @@
                     <Input v-model="cloneEmulation" placeholder="請輸入Emulation..."></Input>
                 </div>
                 <div class="input-wrap" style="justify-content: flex-end;">
-                    <Button @click.native="changeItem()">儲存</Button>
+                    <Button @click.native="changeInfo()">儲存</Button>
                 </div>
             </div>      
         </div>
@@ -39,49 +39,49 @@ import { mapGetters } from 'vuex';
         data() {
             return {
                 needSendToParent: {
-                                    "PrinterID": '',
-                                    "Name": '',
-                                    "IP": '',
-                                    "Emulation": '',
-                                    "AccountID": 0
+                                    "printerID": '',
+                                    "printerName": '',
+                                    "ip": '',
+                                    "emulation": '',
+                                    "accountID": 0
                                },
             }
         },
         computed: {
             cloneName: {
                 get: function() {
-                    this.needSendToParent["Name"] = this.printerName;
+                    this.needSendToParent["printerName"] = this.printerName;
                     return this.printerName;
                 },
                 set: function(newValue) {
-                    this.needSendToParent["Name"] = newValue;
+                    this.needSendToParent["printerName"] = newValue;
                     return this.printerName;
                 }
             },
             cloneIP: {
                 get: function() {
-                    this.needSendToParent["IP"] = this.printerIp;
+                    this.needSendToParent["ip"] = this.printerIp;
                     return this.printerIp;
                 },
                 set: function(newValue) {
-                    this.needSendToParent["IP"] = newValue;
+                    this.needSendToParent["ip"] = newValue;
                     return this.printerIp;
                 }
             },
             cloneEmulation: {
                 get: function() {
-                    this.needSendToParent["Emulation"] = this.printerEmulation;
+                    this.needSendToParent["emulation"] = this.printerEmulation;
                     return this.printerEmulation;
                 },
                 set: function(newValue) {
-                    this.needSendToParent["Emulation"] = newValue;
+                    this.needSendToParent["emulation"] = newValue;
                     return this.printerEmulation;
                 }
             },
         },
         methods: {
-            changeItem () {
-                this.needSendToParent["PrinterID"] = this.printerId;
+            changeInfo () {
+                this.needSendToParent["printerID"] = this.printerId;
                 //把input值傳給父
                 this.$emit('printer-info-change', this.needSendToParent); 
             }

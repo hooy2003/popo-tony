@@ -56,14 +56,15 @@
           // https://forum.vuejs.org/t/axios-token/33528
           // https://juejin.im/post/5bab739af265da0aa3593177
           // 先用FormData
-          let data = new FormData();
-              data.append("client_id", "AirdesignPOS");
-              data.append("client_secret", "777ABHJV777");
-              data.append("grant_type", "password");
-              data.append("username", "vincent@airdesign.com.tw");
-              data.append("password", "Abc@123");
 
-          axios.post(process.env.TOKEN_HOST + `/token`, data)
+          let params = new FormData();
+              params.append("client_id", "AirdesignPOS");
+              params.append("client_secret", "777ABHJV777");
+              params.append("grant_type", "password");
+              params.append("username", "vincent@airdesign.com.tw");
+              params.append("password", "Abc@123");
+
+          axios.post(process.env.TOKEN_HOST + `/token`, params)
           .then(function (response) {
               console.log(response);
               console.log('登入成功');             

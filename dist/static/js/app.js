@@ -35,6 +35,13 @@ module.exports = __webpack_require__.p + "static/img/ionicons.svg";
 
 /***/ }),
 
+/***/ "77uy":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "B56r":
 /***/ (function(module, exports) {
 
@@ -46,6 +53,13 @@ module.exports = __webpack_require__.p + "static/img/ionicons.svg";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/img/logo.png";
+
+/***/ }),
+
+/***/ "EjoK":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -127,6 +141,13 @@ module.exports = __webpack_require__.p + "static/fonts/ionicons.d535a25.ttf";
 
 /***/ }),
 
+/***/ "WmgH":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "WpM7":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -171,7 +192,7 @@ exports.push([module.i, ".ivu-load-loop{-webkit-animation:ani-load-loop 1s linea
 
 /***/ }),
 
-/***/ "eVB1":
+/***/ "dZ0M":
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
@@ -272,13 +293,6 @@ if (token) {
 /***/ (function(module, exports) {
 
 module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIxMDUuMTI1cHgiIGhlaWdodD0iNzkuOTcxcHgiIHZpZXdCb3g9IjAgMCAxMDUuMTI1IDc5Ljk3MSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTA1LjEyNSA3OS45NzEiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGcgaWQ9ImxhYmxlcyI+DQo8L2c+DQo8ZyBpZD0iSWNvbnMiPg0KCTxnPg0KCQk8Y2lyY2xlIGZpbGw9IiNFOUVBRUIiIGN4PSI1MiIgY3k9IjQ4Ljk3MSIgcj0iMjAiLz4NCgkJPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDhEOEQ4IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTI5LjY1Nyw2NS45MDINCgkJCWMtMy41MTctNC42NzctNS42MDItMTAuNDkyLTUuNjAyLTE2Ljc5NWMwLTE1LjQ0OCwxMi41MjMtMjcuOTcyLDI3Ljk3My0yNy45NzJDNjcuNDc3LDIxLjEzNSw4MCwzMy42NTksODAsNDkuMTA3DQoJCQljMCw2LjMwNC0yLjA4NSwxMi4xMjEtNS42MDQsMTYuNzk4Ii8+DQoJCTxnPg0KCQkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgc3Ryb2tlPSIjMkE1MDgyIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTUyLDU0Ljk3MWMyLjI5MiwwLDYuNDM4LTMuMDYzLDctNA0KCQkJCXMwLjc3NS0xLjg2MywxLTNjMC4wNTMtMC4yNywwLjgyOC0xLjc3MSwxLTJjMC45NDItMS4yNTMsMS01LDEtNWwtMS0xYzAsMC0wLjI0NC0zLjE0MS0wLjM4My00LjY4MQ0KCQkJCWMtMC41NzUtNC40OTgtMy42NzQtNy4zMTktOC42MTctNy4zMTlzLTguMDQyLDIuODIyLTguNjE3LDcuMzE5QzQzLjI0NCwzNi44MzEsNDMsMzkuOTcxLDQzLDM5Ljk3MWwtMSwxYzAsMCwwLjA1OCwzLjc0NywxLDUNCgkJCQljMC4xNzIsMC4yMjksMC45NDcsMS43MywxLDJjMC4yMjQsMS4xMzcsMC40MzgsMi4wNjMsMSwzUzQ5LjcwOCw1NC45NzEsNTIsNTQuOTcxeiIvPg0KCQkJPHBhdGggZmlsbD0iIzJEQzFFNSIgc3Ryb2tlPSIjMkE1MDgyIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTUyLDc0Ljk3MWM3LjAwNCwwLDEzLjM5LTIuNDMyLDE4LTd2LTQNCgkJCQljLTAuNTYxLTIuMDAyLTIuMTYyLTMuMDI2LTQtNGwtNy0zYzAsMC0zLjYwNCwzLTcsM3MtNi0zLTYtM2wtOCwzYy0xLjgzOCwwLjk3NC0zLjQzOSwxLjk5OC00LDR2NA0KCQkJCUMzOC42MSw3Mi41NCw0NC45OTYsNzQuOTcxLDUyLDc0Ljk3MXoiLz4NCgkJCTxnPg0KCQkJCTxsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJBNTA4MiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHgxPSI0NiIgeTE9IjU2Ljk3MSIgeDI9IjQ2IiB5Mj0iNTEuOTcxIi8+DQoJCQk8L2c+DQoJCQk8Zz4NCgkJCQk8bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiMyQTUwODIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB4MT0iNTgiIHkxPSI1Ny41NjUiIHgyPSI1OCIgeTI9IjUxLjk3MSIvPg0KCQkJPC9nPg0KCQk8L2c+DQoJPC9nPg0KCTxlbGxpcHNlIGZpbGw9IiNFRTU0NTYiIGN4PSIxMi43NzEiIGN5PSI0My40MDkiIHJ4PSIyLjEwNCIgcnk9IjIuMDYzIi8+DQoJPHBvbHlnb24gZmlsbD0iI0VFNTQ1NiIgcG9pbnRzPSI4Ni4wMjgsMzIuNzcxIDg1LjY0NCwzMy45MDUgODYuMzU5LDM0Ljg2NCA4NS4xNjMsMzQuODQ5IDg0LjQ3MSwzNS44MjYgODQuMTE2LDM0LjY4MyANCgkJODIuOTczLDM0LjMyOCA4My45NSwzMy42MzYgODMuOTM1LDMyLjQzOSA4NC44OTQsMzMuMTU1IAkiLz4NCgk8cG9seWdvbiBmaWxsPSIjMkVDM0U2IiBwb2ludHM9IjI5Ljc1LDE0LjU5NiAyOS4wODMsMTQuMzcgMjguNTE5LDE0Ljc5MSAyOC41MjcsMTQuMDg3IDI3Ljk1MiwxMy42OCAyOC42MjUsMTMuNDcxIDI4LjgzNCwxMi43OTkgDQoJCTI5LjI0MSwxMy4zNzQgMjkuOTQ1LDEzLjM2NSAyOS41MjMsMTMuOTI5IAkiLz4NCgk8Y2lyY2xlIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJFQzNFNiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBjeD0iMTUuMjUiIGN5PSIxOC40NzEiIHI9IjEuMTI1Ii8+DQoJPGNpcmNsZSBmaWxsPSIjMkVDM0U2IiBjeD0iODkuNzUiIGN5PSI0Ny4yMjEiIHI9IjEuMjUiLz4NCgk8Y2lyY2xlIGZpbGw9IiMyRUMzRTYiIGN4PSI3MS42ODgiIGN5PSIxOC43ODQiIHI9IjEuNjg4Ii8+DQoJPHJlY3QgeD0iMzciIHk9IjcuOTcxIiBmaWxsPSIjQ0VDRUNFIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+DQoJPHJlY3QgeD0iODUiIHk9IjU3Ljk3MSIgdHJhbnNmb3JtPSJtYXRyaXgoMC45NTAzIC0wLjMxMTQgMC4zMTE0IDAuOTUwMyAtMTQuMjE4MSAyOS44OTE5KSIgZmlsbD0iI0NFQ0VDRSIgd2lkdGg9IjMiIGhlaWdodD0iMyIvPg0KCTxyZWN0IHg9IjE0LjMzNCIgeT0iNTcuODA1IiBmaWxsPSIjQ0VDRUNFIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+DQoJDQoJCTxyZWN0IHg9IjE2IiB5PSIzMS45NzEiIHRyYW5zZm9ybT0ibWF0cml4KDAuNjcwNiAtMC43NDE5IDAuNzQxOSAwLjY3MDYgLTE4Ljg1OTYgMjMuNDczOSkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0NFQ0VDRSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+DQoJPHJlY3QgeD0iNDkiIHk9IjguOTcxIiB0cmFuc2Zvcm09Im1hdHJpeCgwLjU4NjYgLTAuODA5OSAwLjgwOTkgMC41ODY2IDEyLjM5NyA0NS4yMjgzKSIgZmlsbD0iIzJFQzNFNiIgd2lkdGg9IjMiIGhlaWdodD0iMyIvPg0KCTxjaXJjbGUgZmlsbD0iI0ZEREIwMCIgY3g9Ijg4LjgzNCIgY3k9IjIxLjYzOCIgcj0iMS41Ii8+DQoJPGNpcmNsZSBmaWxsPSIjRkREQjAwIiBjeD0iMjYuNTgzIiBjeT0iMjMuNTU1IiByPSIwLjc1Ii8+DQoJPGNpcmNsZSBmaWxsPSIjRkREQjAwIiBjeD0iNjMuNjI1IiBjeT0iOC43NjMiIHI9IjEuMDQyIi8+DQoJPHBvbHlnb24gZmlsbD0iI0ZEREIwMCIgcG9pbnRzPSIyMS4xMTgsMTEuNjY4IDIxLjcwNSwxMi4wODcgMjIuMzg1LDExLjg0MSAyMi4xNjcsMTIuNTMgMjIuNjEsMTMuMDk5IDIxLjg4OSwxMy4xMDQgDQoJCTIxLjQ4NSwxMy43MDMgMjEuMjU2LDEzLjAxOCAyMC41NjIsMTIuODE5IDIxLjE0MywxMi4zODkgCSIvPg0KCTxwb2x5Z29uIGZpbGw9IiNEOEQ4RDgiIHBvaW50cz0iODIuMDgzLDEwLjEzOCA4MS43MjgsMTEuMDg3IDgwLjcyOCwxMS4yNTQgODAuMDgzLDEwLjQ3MiA4MC40MzgsOS41MjIgODEuNDM4LDkuMzU1IAkiLz4NCgk8cG9seWdvbiBmaWxsPSIjRDhEOEQ4IiBwb2ludHM9IjQwLjA4MywxNy4zMDUgMzguODE5LDE3LjgyNiAzNy43MzYsMTYuOTkyIDM3LjkxNywxNS42MzggMzkuMTgxLDE1LjExNyA0MC4yNjQsMTUuOTUgCSIvPg0KCTxwb2x5Z29uIGZpbGw9IiNEOEQ4RDgiIHBvaW50cz0iNjEuNDE3LDE2LjIyMSA2MC41NDgsMTYuMzk0IDU5Ljk2NCwxNS43MjcgNjAuMjQ5LDE0Ljg4OCA2MS4xMTgsMTQuNzE2IDYxLjcwMiwxNS4zODIgCSIvPg0KCTxwb2x5Z29uIGZpbGw9IiNEOEQ4RDgiIHBvaW50cz0iOTQsMzYuNTU1IDkyLjk2NCwzNy4wMTUgOTIuMDQ3LDM2LjM0OCA5Mi4xNjYsMzUuMjIxIDkzLjIwMiwzNC43NiA5NC4xMTksMzUuNDI3IAkiLz4NCjwvZz4NCjxnIGlkPSJMYXllcl8zIj4NCjwvZz4NCjwvc3ZnPg0K"
-
-/***/ }),
-
-/***/ "r+6h":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -421,14 +435,15 @@ var stringify_default = /*#__PURE__*/__webpack_require__.n(stringify);
         // https://forum.vuejs.org/t/axios-token/33528
         // https://juejin.im/post/5bab739af265da0aa3593177
         // 先用FormData
-        var data = new FormData();
-        data.append("client_id", "AirdesignPOS");
-        data.append("client_secret", "777ABHJV777");
-        data.append("grant_type", "password");
-        data.append("username", "vincent@airdesign.com.tw");
-        data.append("password", "Abc@123");
 
-        axios.post("https://is.airdesign.com.tw/connect/" + '/token', data).then(function (response) {
+        var params = new FormData();
+        params.append("client_id", "AirdesignPOS");
+        params.append("client_secret", "777ABHJV777");
+        params.append("grant_type", "password");
+        params.append("username", "vincent@airdesign.com.tw");
+        params.append("password", "Abc@123");
+
+        axios.post("https://is.airdesign.com.tw/connect/" + '/token', params).then(function (response) {
           console.log(response);
           console.log('登入成功');
 
@@ -457,7 +472,7 @@ var stringify_default = /*#__PURE__*/__webpack_require__.n(stringify);
     }
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-2e9095ce","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Login.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-031a7b8f","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Login.vue
 var Login_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"login-wrapper"},[_c('section',{staticClass:"login fadeInDown"},[_vm._m(0),_vm._v(" "),_c('form',{attrs:{"novalidate":"true"},on:{"submit":function($event){$event.preventDefault();return _vm.login($event)}}},[_c('div',{staticClass:"input__wrap"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.userName),expression:"userName"}],staticClass:"fadeIn second",attrs:{"type":"text","placeholder":"userName"},domProps:{"value":(_vm.userName)},on:{"input":function($event){if($event.target.composing){ return; }_vm.userName=$event.target.value}}})]),_vm._v(" "),_c('div',{staticClass:"input__wrap"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.passWord),expression:"passWord"}],staticClass:"fadeIn third",attrs:{"type":"password","placeholder":"passWord"},domProps:{"value":(_vm.passWord)},on:{"input":function($event){if($event.target.composing){ return; }_vm.passWord=$event.target.value}}})]),_vm._v(" "),_vm._m(1),_vm._v(" "),_c('div',{staticClass:"formFooter"},[_c('router-link',{staticClass:"underlineHover",attrs:{"to":"/search_password"}},[_vm._v("Forgot Password?")])],1)])])])}
 var Login_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"fadeIn first"},[_c('img',{attrs:{"src":__webpack_require__("pbmN"),"id":"icon","alt":"User Icon"}})])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"form_buttonbar"},[_c('button',{staticClass:"primary fadeIn fourth",attrs:{"type":"submit"}},[_vm._v("Log In")])])}]
 var Login_esExports = { render: Login_render, staticRenderFns: Login_staticRenderFns }
@@ -8351,7 +8366,7 @@ var addNewTable_Component = addNewTable_normalizeComponent(
                                 _context2.next = 4;
                                 return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/TableArea/Create', ClassFile).then(function (response) {
                                     vm.getFloor();
-                                    return true;
+                                    return;
                                 }).catch(function (error) {
                                     console.log('error', error);
                                 });
@@ -8478,7 +8493,7 @@ var addNewTable_Component = addNewTable_normalizeComponent(
                                 _context6.next = 4;
                                 return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Table/Create', ClassFile).then(function (response) {
                                     vm.getTable(vm.FloorID);
-                                    return true;
+                                    return;
                                 }).catch(function (error) {
                                     console.log('error', error);
                                 });
@@ -8582,7 +8597,7 @@ var addNewTable_Component = addNewTable_normalizeComponent(
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-24f52cf8","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/store/Manage.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-26360a40","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/store/Manage.vue
 var Manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("樓層/區域")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},[_vm._l((_vm.currentFloor),function(item,index){return _c('Floor',{key:item.index,class:{ active: index === 0 },attrs:{"floor-name":item['tableAreaName']},on:{"floor-on-click":function($event){_vm.FloorOnClick($event, item['tableAreaID'])},"floor-change-name":function($event){_vm.FloorChangeName($event, item['tableAreaID'])},"floor-delete":function($event){_vm.FloorDelete($event, item['tableAreaID'])}}})}),_vm._v(" "),_c('AddNewfloor',{staticClass:"add-new-card",on:{"add-floor-name":function($event){_vm.addNewFloor($event)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("餐桌清單")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("類別")]),_vm._v(" "),_vm._l((_vm.currentTable),function(item,index){return _c('Table',{key:item.index,class:{ lastcard: index === (_vm.currentTable.length-1) && index > 1 },attrs:{"table-name":item['tableName'],"is-class":true},on:{"table-on-click":function($event){_vm.TableOnClick($event, item)},"table-change-name":function($event){_vm.TableChangeName($event, item['tableID'])},"table-delete":function($event){_vm.TableDelete($event, item['tableID'])}}})}),_vm._v(" "),_c('AddNewTable',{staticClass:"add-new-card",on:{"add-table-name":function($event){_vm.addNewTable($event, _vm.FloorID)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v("桌面設定")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("項目")]),_vm._v(" "),_c('TableInfo',{directives:[{name:"show",rawName:"v-show",value:(_vm.TableInfoShow),expression:"TableInfoShow"}],attrs:{"table-id":_vm.currentTableInfo['tableID'],"table-name":_vm.currentTableInfo['tableName'],"table-amount":_vm.currentTableInfo['amount']},on:{"table-info-change":function($event){_vm.changeTableInfo($event)}}})],1)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}})],1)],1)}
 var Manage_staticRenderFns = []
 var Manage_esExports = { render: Manage_render, staticRenderFns: Manage_staticRenderFns }
@@ -8614,7 +8629,6 @@ var Manage_Component = Manage_normalizeComponent(
 /* harmony default export */ var components_store_Manage = (Manage_Component.exports);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/Area.vue
-//
 //
 //
 //
@@ -8685,20 +8699,20 @@ var Manage_Component = Manage_normalizeComponent(
         },
         addedName: function addedName() {
             //把input值傳給父
-            // this.$emit('card-change-name', this.needSendToParent); 
-            // $(this.$el).find('.ivu-input-wrapper').addClass('hide');
-            // $(this.$el).find('h3').removeClass('hide');
+            this.$emit('area-change-name', this.needSendToParent);
+            $(this.$el).find('.ivu-input-wrapper').addClass('hide');
+            $(this.$el).find('h3').removeClass('hide');
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-1e3d3921","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/Area.vue
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-f30d94c2","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/Area.vue
 var Area_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-class js-card-class-area"},[_c('div',{staticClass:"content",on:{"click":function($event){if($event.target !== $event.currentTarget){ return null; }_vm.clickArea()}}},[(_vm.isClass)?_c('Icon',{attrs:{"type":"ios-folder","size":"20"}}):_c('Icon',{attrs:{"type":"ios-document","size":"20"}}),_vm._v(" "),_c('h3',[_vm._v(_vm._s(_vm.cloneAreaName))]),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"Something","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.cloneAreaName),callback:function ($$v) {_vm.cloneAreaName=$$v},expression:"cloneAreaName"}}),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click","placement":"bottom-end"},on:{"on-click":function($event){_vm.handleDropDownClick($event)}}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_c('Icon',{attrs:{"type":"ios-create-outline","size":"20"}})],1),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":"edit"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("編輯名稱")],1),_vm._v(" "),_c('DropdownItem',{attrs:{"name":"delete"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("刪除項目")],1)],1)],1)],1)])}
 var Area_staticRenderFns = []
 var Area_esExports = { render: Area_render, staticRenderFns: Area_staticRenderFns }
 /* harmony default export */ var printer_Area = (Area_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/printer/Area.vue
 function Area_injectStyle (ssrContext) {
-  __webpack_require__("uP0R")
+  __webpack_require__("WmgH")
 }
 var Area_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -8795,21 +8809,20 @@ var Area_Component = Area_normalizeComponent(
             }
         },
         addedName: function addedName() {
-            //把input值傳給父
-            // this.$emit('card-change-name', this.needSendToParent); 
-            // $(this.$el).find('.ivu-input-wrapper').addClass('hide');
-            // $(this.$el).find('h3').removeClass('hide');
+            this.$emit('printer-change-name', this.needSendToParent);
+            $(this.$el).find('.ivu-input-wrapper').addClass('hide');
+            $(this.$el).find('h3').removeClass('hide');
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-7854b11a","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/Printer.vue
-var Printer_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-class js-card-class-printer"},[_c('div',{staticClass:"content",on:{"click":function($event){if($event.target !== $event.currentTarget){ return null; }_vm.clickPrinter()}}},[(_vm.isClass)?_c('Icon',{attrs:{"type":"ios-folder","size":"20"}}):_c('Icon',{attrs:{"type":"ios-document","size":"20"}}),_vm._v(" "),_c('h3',[_vm._v(_vm._s(_vm.clonePrinterName))]),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"Something","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.clonePrinterName),callback:function ($$v) {_vm.clonePrinterName=$$v},expression:"clonePrinterName"}}),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click","placement":"bottom-end"},on:{"on-click":function($event){_vm.handleDropDownClick($event)}}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_c('Icon',{attrs:{"type":"ios-create-outline","size":"20"}})],1),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":"edit"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("編輯名稱")],1),_vm._v(" "),_c('DropdownItem',{attrs:{"name":"delete"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("刪除項目")],1)],1)],1)],1)])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-d26f42cc","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/Printer.vue
+var Printer_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-class card-class-b js-card-class-printer"},[_c('div',{staticClass:"content",on:{"click":function($event){if($event.target !== $event.currentTarget){ return null; }_vm.clickPrinter()}}},[(_vm.isClass)?_c('Icon',{attrs:{"type":"ios-folder","size":"20"}}):_c('Icon',{attrs:{"type":"ios-document","size":"20"}}),_vm._v(" "),_c('h3',[_vm._v(_vm._s(_vm.clonePrinterName))]),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"Something","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.clonePrinterName),callback:function ($$v) {_vm.clonePrinterName=$$v},expression:"clonePrinterName"}}),_vm._v(" "),_c('Dropdown',{attrs:{"trigger":"click","placement":"bottom-end"},on:{"on-click":function($event){_vm.handleDropDownClick($event)}}},[_c('a',{attrs:{"href":"javascript:void(0)"}},[_c('Icon',{attrs:{"type":"ios-create-outline","size":"20"}})],1),_vm._v(" "),_c('DropdownMenu',{attrs:{"slot":"list"},slot:"list"},[_c('DropdownItem',{attrs:{"name":"edit"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("編輯名稱")],1),_vm._v(" "),_c('DropdownItem',{attrs:{"name":"delete"}},[_c('Icon',{attrs:{"type":"ios-add-circle"}}),_vm._v("刪除項目")],1)],1)],1)],1)])}
 var Printer_staticRenderFns = []
 var Printer_esExports = { render: Printer_render, staticRenderFns: Printer_staticRenderFns }
 /* harmony default export */ var printer_Printer = (Printer_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/printer/Printer.vue
 function Printer_injectStyle (ssrContext) {
-  __webpack_require__("eVB1")
+  __webpack_require__("EjoK")
 }
 var Printer_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -8865,18 +8878,18 @@ var Printer_Component = Printer_normalizeComponent(
 
 
 
-/* harmony default export */ var PrinterInfo = ({
+/* harmony default export */ var printer_PrinterInfo = ({
     components: {},
     name: 'PrinterInfo',
     props: ['printerId', 'printerName', 'printerIp', 'printerEmulation'],
     data: function data() {
         return {
             needSendToParent: {
-                "PrinterID": '',
-                "Name": '',
-                "IP": '',
-                "Emulation": '',
-                "AccountID": 0
+                "printerID": '',
+                "printerName": '',
+                "ip": '',
+                "emulation": '',
+                "accountID": 0
             }
         };
     },
@@ -8884,51 +8897,51 @@ var Printer_Component = Printer_normalizeComponent(
     computed: {
         cloneName: {
             get: function get() {
-                this.needSendToParent["Name"] = this.printerName;
+                this.needSendToParent["printerName"] = this.printerName;
                 return this.printerName;
             },
             set: function set(newValue) {
-                this.needSendToParent["Name"] = newValue;
+                this.needSendToParent["printerName"] = newValue;
                 return this.printerName;
             }
         },
         cloneIP: {
             get: function get() {
-                this.needSendToParent["IP"] = this.printerIp;
+                this.needSendToParent["ip"] = this.printerIp;
                 return this.printerIp;
             },
             set: function set(newValue) {
-                this.needSendToParent["IP"] = newValue;
+                this.needSendToParent["ip"] = newValue;
                 return this.printerIp;
             }
         },
         cloneEmulation: {
             get: function get() {
-                this.needSendToParent["Emulation"] = this.printerEmulation;
+                this.needSendToParent["emulation"] = this.printerEmulation;
                 return this.printerEmulation;
             },
             set: function set(newValue) {
-                this.needSendToParent["Emulation"] = newValue;
+                this.needSendToParent["emulation"] = newValue;
                 return this.printerEmulation;
             }
         }
     },
     methods: {
-        changeItem: function changeItem() {
-            this.needSendToParent["PrinterID"] = this.printerId;
+        changeInfo: function changeInfo() {
+            this.needSendToParent["printerID"] = this.printerId;
             //把input值傳給父
             this.$emit('printer-info-change', this.needSendToParent);
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-2c294434","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/PrinterInfo.vue
-var PrinterInfo_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-set"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"left"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("出單機名稱")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"請輸入名稱..."},model:{value:(_vm.cloneName),callback:function ($$v) {_vm.cloneName=$$v},expression:"cloneName"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("出單機IP")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"請輸入IP..."},model:{value:(_vm.cloneIP),callback:function ($$v) {_vm.cloneIP=$$v},expression:"cloneIP"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("Emulation")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"請輸入Emulation..."},model:{value:(_vm.cloneEmulation),callback:function ($$v) {_vm.cloneEmulation=$$v},expression:"cloneEmulation"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap",staticStyle:{"justify-content":"flex-end"}},[_c('Button',{nativeOn:{"click":function($event){_vm.changeItem()}}},[_vm._v("儲存")])],1)])])])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-1c139660","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/PrinterInfo.vue
+var PrinterInfo_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"card-set"},[_c('div',{staticClass:"content"},[_c('div',{staticClass:"left"},[_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("出單機名稱")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"請輸入名稱..."},model:{value:(_vm.cloneName),callback:function ($$v) {_vm.cloneName=$$v},expression:"cloneName"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("出單機IP")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"請輸入IP..."},model:{value:(_vm.cloneIP),callback:function ($$v) {_vm.cloneIP=$$v},expression:"cloneIP"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap"},[_c('p',[_vm._v("Emulation")]),_vm._v(" "),_c('Input',{attrs:{"placeholder":"請輸入Emulation..."},model:{value:(_vm.cloneEmulation),callback:function ($$v) {_vm.cloneEmulation=$$v},expression:"cloneEmulation"}})],1),_vm._v(" "),_c('div',{staticClass:"input-wrap",staticStyle:{"justify-content":"flex-end"}},[_c('Button',{nativeOn:{"click":function($event){_vm.changeInfo()}}},[_vm._v("儲存")])],1)])])])}
 var PrinterInfo_staticRenderFns = []
 var PrinterInfo_esExports = { render: PrinterInfo_render, staticRenderFns: PrinterInfo_staticRenderFns }
-/* harmony default export */ var printer_PrinterInfo = (PrinterInfo_esExports);
+/* harmony default export */ var components_printer_PrinterInfo = (PrinterInfo_esExports);
 // CONCATENATED MODULE: ./resources/assets/js/components/printer/PrinterInfo.vue
 function PrinterInfo_injectStyle (ssrContext) {
-  __webpack_require__("r+6h")
+  __webpack_require__("yjFf")
 }
 var PrinterInfo_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -8945,15 +8958,157 @@ var PrinterInfo___vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var PrinterInfo___vue_module_identifier__ = null
 var PrinterInfo_Component = PrinterInfo_normalizeComponent(
-  PrinterInfo,
   printer_PrinterInfo,
+  components_printer_PrinterInfo,
   PrinterInfo___vue_template_functional__,
   PrinterInfo___vue_styles__,
   PrinterInfo___vue_scopeId__,
   PrinterInfo___vue_module_identifier__
 )
 
-/* harmony default export */ var components_printer_PrinterInfo = (PrinterInfo_Component.exports);
+/* harmony default export */ var js_components_printer_PrinterInfo = (PrinterInfo_Component.exports);
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/addNewPrinter.vue
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var printer_addNewPrinter = ({
+    name: 'addPrinter',
+    props: [''],
+    data: function data() {
+        return {
+            newValue: ''
+        };
+    },
+
+    computed: {},
+    methods: {
+        clickCard: function clickCard() {
+            $(this.$el).find('.addclass').addClass('hide');
+            $(this.$el).find('.ivu-input-wrapper').removeClass('hide');
+        },
+        addedName: function addedName(newValue) {
+            $(this.$el).find('.ivu-input-wrapper').addClass('hide');
+            $(this.$el).find('.addclass').removeClass('hide');
+            this.$emit('add-printer-name', this.newValue);
+            this.newValue = '';
+        }
+    }
+});
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-ec9b6f5a","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/addNewPrinter.vue
+var addNewPrinter_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"addclass",on:{"click":function($event){_vm.clickCard()}}},[_c('Icon',{attrs:{"type":"ios-add-circle-outline","size":"20"}}),_vm._v("新增項目\n    ")],1),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"新項目","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.newValue),callback:function ($$v) {_vm.newValue=$$v},expression:"newValue"}})],1)}
+var addNewPrinter_staticRenderFns = []
+var addNewPrinter_esExports = { render: addNewPrinter_render, staticRenderFns: addNewPrinter_staticRenderFns }
+/* harmony default export */ var components_printer_addNewPrinter = (addNewPrinter_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/printer/addNewPrinter.vue
+function addNewPrinter_injectStyle (ssrContext) {
+  __webpack_require__("77uy")
+}
+var addNewPrinter_normalizeComponent = __webpack_require__("VU/8")
+/* script */
+
+
+/* template */
+
+/* template functional */
+var addNewPrinter___vue_template_functional__ = false
+/* styles */
+var addNewPrinter___vue_styles__ = addNewPrinter_injectStyle
+/* scopeId */
+var addNewPrinter___vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var addNewPrinter___vue_module_identifier__ = null
+var addNewPrinter_Component = addNewPrinter_normalizeComponent(
+  printer_addNewPrinter,
+  components_printer_addNewPrinter,
+  addNewPrinter___vue_template_functional__,
+  addNewPrinter___vue_styles__,
+  addNewPrinter___vue_scopeId__,
+  addNewPrinter___vue_module_identifier__
+)
+
+/* harmony default export */ var js_components_printer_addNewPrinter = (addNewPrinter_Component.exports);
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/addNewArea.vue
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var printer_addNewArea = ({
+    name: 'addArea',
+    props: [''],
+    data: function data() {
+        return {
+            newValue: ''
+        };
+    },
+
+    computed: {},
+    methods: {
+        clickCard: function clickCard() {
+            $(this.$el).find('.addclass').addClass('hide');
+            $(this.$el).find('.ivu-input-wrapper').removeClass('hide');
+        },
+        addedName: function addedName(newValue) {
+            $(this.$el).find('.ivu-input-wrapper').addClass('hide');
+            $(this.$el).find('.addclass').removeClass('hide');
+            this.$emit('add-area-name', this.newValue);
+            this.newValue = '';
+        }
+    }
+});
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-453b1bfc","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/addNewArea.vue
+var addNewArea_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('div',{staticClass:"addclass",on:{"click":function($event){_vm.clickCard()}}},[_c('Icon',{attrs:{"type":"ios-add-circle-outline","size":"20"}}),_vm._v("新增項目\n    ")],1),_vm._v(" "),_c('Input',{staticClass:"hide",attrs:{"placeholder":"新項目","icon":"ios-checkmark-circle"},on:{"on-click":function($event){_vm.addedName()}},model:{value:(_vm.newValue),callback:function ($$v) {_vm.newValue=$$v},expression:"newValue"}})],1)}
+var addNewArea_staticRenderFns = []
+var addNewArea_esExports = { render: addNewArea_render, staticRenderFns: addNewArea_staticRenderFns }
+/* harmony default export */ var components_printer_addNewArea = (addNewArea_esExports);
+// CONCATENATED MODULE: ./resources/assets/js/components/printer/addNewArea.vue
+function addNewArea_injectStyle (ssrContext) {
+  __webpack_require__("dZ0M")
+}
+var addNewArea_normalizeComponent = __webpack_require__("VU/8")
+/* script */
+
+
+/* template */
+
+/* template functional */
+var addNewArea___vue_template_functional__ = false
+/* styles */
+var addNewArea___vue_styles__ = addNewArea_injectStyle
+/* scopeId */
+var addNewArea___vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var addNewArea___vue_module_identifier__ = null
+var addNewArea_Component = addNewArea_normalizeComponent(
+  printer_addNewArea,
+  components_printer_addNewArea,
+  addNewArea___vue_template_functional__,
+  addNewArea___vue_styles__,
+  addNewArea___vue_scopeId__,
+  addNewArea___vue_module_identifier__
+)
+
+/* harmony default export */ var js_components_printer_addNewArea = (addNewArea_Component.exports);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/printer/Manage.vue
 
@@ -9010,6 +9165,21 @@ var PrinterInfo_Component = PrinterInfo_normalizeComponent(
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
 
 
 
@@ -9020,7 +9190,9 @@ var PrinterInfo_Component = PrinterInfo_normalizeComponent(
     components: {
         Area: components_printer_Area,
         Printer: components_printer_Printer,
-        PrinterInfo: components_printer_PrinterInfo
+        PrinterInfo: js_components_printer_PrinterInfo,
+        AddNewPrinter: js_components_printer_addNewPrinter,
+        AddNewArea: js_components_printer_addNewArea
     },
     data: function data() {
         return {
@@ -9036,17 +9208,30 @@ var PrinterInfo_Component = PrinterInfo_normalizeComponent(
         this.AreaId = 1;
     },
 
-    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])([])),
+    computed: extends_default()({}, Object(vuex_esm["b" /* mapGetters */])(['isLoading']), {
+        isLoadingIN: function isLoadingIN() {
+            return this.isLoading;
+        }
+    }),
     watch: {
         currentArea: function currentArea(value) {
             var PrinterAreaID = this.currentArea[0]['printerAreaID'];
             this.getPrinter(PrinterAreaID);
+        },
+        isLoadingIN: function isLoadingIN(value) {
+            if (value) {
+                this.$Message.loading({
+                    content: 'Loading...',
+                    duration: 0.8
+                });
+            }
         }
     },
     methods: {
         AreaOnClick: function AreaOnClick(AreaName, AreaId) {
             this.AreaId = AreaId;
             this.getPrinter(AreaId);
+            this.PrinterInfoShow = false;
         },
         PrinterOnClick: function PrinterOnClick(printerName, printer) {
             this.currentPrinterInfo = printer;
@@ -9078,15 +9263,108 @@ var PrinterInfo_Component = PrinterInfo_normalizeComponent(
                 }, _callee, _this);
             }))();
         },
-        getPrinter: function getPrinter(PrinterAreaID) {
+        addNewArea: function addNewArea($event) {
             var _this2 = this;
 
             return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2() {
+                var ClassFile, vm;
                 return regenerator_default.a.wrap(function _callee2$(_context2) {
                     while (1) {
                         switch (_context2.prev = _context2.next) {
                             case 0:
-                                _context2.next = 2;
+                                ClassFile = {
+                                    "printerAreaName": $event,
+                                    "accountID": 0
+                                };
+                                vm = _this2;
+                                _context2.next = 4;
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/PrinterArea/Create', ClassFile).then(function (response) {
+                                    vm.getPrinterArea();
+                                    return;
+                                }).catch(function (error) {
+                                    console.log('error', error);
+                                });
+
+                            case 4:
+                            case 'end':
+                                return _context2.stop();
+                        }
+                    }
+                }, _callee2, _this2);
+            }))();
+        },
+        AreaChangeName: function AreaChangeName($event, AreaId) {
+            var _this3 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee3() {
+                var ClassFile, vm;
+                return regenerator_default.a.wrap(function _callee3$(_context3) {
+                    while (1) {
+                        switch (_context3.prev = _context3.next) {
+                            case 0:
+                                ClassFile = {
+                                    "printerAreaID": AreaId,
+                                    "printerAreaName": $event,
+                                    "accountID": 0
+                                };
+                                vm = _this3;
+                                _context3.next = 4;
+                                return axios.put("http://demo.airdesign.com.tw/POSAPICore/api" + '/PrinterArea/Update', ClassFile).then(function (response) {
+                                    vm.getPrinterArea();
+                                    return;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 4:
+                            case 'end':
+                                return _context3.stop();
+                        }
+                    }
+                }, _callee3, _this3);
+            }))();
+        },
+        AreaDelete: function AreaDelete($event, AreaId) {
+            var _this4 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee4() {
+                var ClassFile, vm;
+                return regenerator_default.a.wrap(function _callee4$(_context4) {
+                    while (1) {
+                        switch (_context4.prev = _context4.next) {
+                            case 0:
+                                ClassFile = {
+                                    "printerAreaID": AreaId,
+                                    "accountID": 0
+                                };
+                                vm = _this4;
+                                // axios's config 寫法
+
+                                _context4.next = 4;
+                                return axios.delete("http://demo.airdesign.com.tw/POSAPICore/api" + '/PrinterArea/Delete', { data: ClassFile }).then(function (response) {
+                                    vm.getPrinterArea();
+                                    return;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 4:
+                            case 'end':
+                                return _context4.stop();
+                        }
+                    }
+                }, _callee4, _this4);
+            }))();
+        },
+        getPrinter: function getPrinter(PrinterAreaID) {
+            var _this5 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee5() {
+                return regenerator_default.a.wrap(function _callee5$(_context5) {
+                    while (1) {
+                        switch (_context5.prev = _context5.next) {
+                            case 0:
+                                _context5.next = 2;
                                 return axios.get("http://demo.airdesign.com.tw/POSAPICore/api" + ('/Printer/GetPrintersByPrinterAreaID/' + PrinterAreaID)).then(function (response) {
                                     return response.data;
                                 }).catch(function (error) {
@@ -9094,20 +9372,145 @@ var PrinterInfo_Component = PrinterInfo_normalizeComponent(
                                 });
 
                             case 2:
-                                _this2.currentPrinter = _context2.sent;
+                                _this5.currentPrinter = _context5.sent;
 
                             case 3:
                             case 'end':
-                                return _context2.stop();
+                                return _context5.stop();
                         }
                     }
-                }, _callee2, _this2);
+                }, _callee5, _this5);
+            }))();
+        },
+        addNewPrinter: function addNewPrinter($event, AreaId) {
+            var _this6 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee6() {
+                var ClassFile, vm;
+                return regenerator_default.a.wrap(function _callee6$(_context6) {
+                    while (1) {
+                        switch (_context6.prev = _context6.next) {
+                            case 0:
+                                ClassFile = {
+                                    "printerName": $event,
+                                    "printerAreaID": AreaId,
+                                    "ip": '111',
+                                    "emulation": '111',
+                                    "accountID": '0'
+                                };
+                                vm = _this6;
+                                _context6.next = 4;
+                                return axios.post("http://demo.airdesign.com.tw/POSAPICore/api" + '/Printer/Create', ClassFile).then(function (response) {
+                                    vm.getPrinter(vm.AreaId);
+                                    return;
+                                }).catch(function (error) {
+                                    console.log('error', error);
+                                });
+
+                            case 4:
+                            case 'end':
+                                return _context6.stop();
+                        }
+                    }
+                }, _callee6, _this6);
+            }))();
+        },
+        PrinterChangeName: function PrinterChangeName($event, PrinterId, PrinterIp) {
+            var _this7 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee7() {
+                var ClassFile, vm;
+                return regenerator_default.a.wrap(function _callee7$(_context7) {
+                    while (1) {
+                        switch (_context7.prev = _context7.next) {
+                            case 0:
+                                ClassFile = {
+                                    "printerID": PrinterId,
+                                    "printerName": $event,
+                                    "ip": PrinterIp,
+                                    "accountID": 0
+                                };
+                                vm = _this7;
+
+                                console.log('PrinterChangeName', ClassFile);
+                                _context7.next = 5;
+                                return axios.put("http://demo.airdesign.com.tw/POSAPICore/api" + '/Printer/Update', ClassFile).then(function (response) {
+                                    vm.getPrinter(vm.AreaId);
+                                    return;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 5:
+                            case 'end':
+                                return _context7.stop();
+                        }
+                    }
+                }, _callee7, _this7);
+            }))();
+        },
+        PrinterDelete: function PrinterDelete($event, PrinterId) {
+            var _this8 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee8() {
+                var ClassFile, vm;
+                return regenerator_default.a.wrap(function _callee8$(_context8) {
+                    while (1) {
+                        switch (_context8.prev = _context8.next) {
+                            case 0:
+                                ClassFile = {
+                                    "printerID": PrinterId,
+                                    "accountID": 0
+                                };
+                                vm = _this8;
+                                // axios's config 寫法
+
+                                _context8.next = 4;
+                                return axios.delete("http://demo.airdesign.com.tw/POSAPICore/api" + '/Printer/Delete', { data: ClassFile }).then(function (response) {
+                                    vm.getPrinter(vm.AreaId);
+                                    return;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 4:
+                            case 'end':
+                                return _context8.stop();
+                        }
+                    }
+                }, _callee8, _this8);
+            }))();
+        },
+        changePrinterInfo: function changePrinterInfo(PrinterInfo) {
+            var _this9 = this;
+
+            return asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee9() {
+                var vm;
+                return regenerator_default.a.wrap(function _callee9$(_context9) {
+                    while (1) {
+                        switch (_context9.prev = _context9.next) {
+                            case 0:
+                                vm = _this9;
+                                _context9.next = 3;
+                                return axios.put("http://demo.airdesign.com.tw/POSAPICore/api" + '/Printer/Update', PrinterInfo).then(function (response) {
+                                    vm.getPrinter(vm.AreaId);
+                                    return;
+                                }).catch(function (error) {
+                                    console.log(error);
+                                });
+
+                            case 3:
+                            case 'end':
+                                return _context9.stop();
+                        }
+                    }
+                }, _callee9, _this9);
             }))();
         }
     }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-242da9d2","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/Manage.vue
-var printer_Manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("出機單設定")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},_vm._l((_vm.currentArea),function(item,index){return _c('Area',{key:item.index,staticClass:"card-class",class:{ active: index === 0 },attrs:{"area-name":item['printerAreaName']},on:{"area-on-click":function($event){_vm.AreaOnClick($event, item['printerAreaID'])}}})}))]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("櫃檯出單機")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("出單機名稱")]),_vm._v(" "),_vm._l((_vm.currentPrinter),function(item,index){return _c('Printer',{key:item.index,staticClass:"card-item",attrs:{"printer-name":item['printerName']},on:{"printer-on-click":function($event){_vm.PrinterOnClick($event, item)}}})})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v("和牛區")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("基本設定")]),_vm._v(" "),_c('PrinterInfo',{directives:[{name:"show",rawName:"v-show",value:(_vm.PrinterInfoShow),expression:"PrinterInfoShow"}],attrs:{"printer-id":_vm.currentPrinterInfo['printerID'],"printer-name":_vm.currentPrinterInfo['printerName'],"printer-ip":_vm.currentPrinterInfo['ip'],"printer-emulation":_vm.currentPrinterInfo['emulation']},on:{"printer-info-change":function($event){_vm.changePrinterInfo($event)}}})],1)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}})],1)],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-41c6bd76","hasScoped":false,"transformToRequire":{"video":["src","poster"],"source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/printer/Manage.vue
+var printer_Manage_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"content page"},[_c('Row',[_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("出機單設定")]),_vm._v(" "),_c('div',{staticStyle:{"margin-bottom":"40px"}}),_vm._v(" "),_c('div',{staticClass:"union"},[_vm._l((_vm.currentArea),function(item,index){return _c('Area',{key:item.index,staticClass:"card-class",class:{ active: index === 0 },attrs:{"area-name":item['printerAreaName']},on:{"area-on-click":function($event){_vm.AreaOnClick($event, item['printerAreaID'])},"area-change-name":function($event){_vm.AreaChangeName($event, item['printerAreaID'])},"area-delete":function($event){_vm.AreaDelete($event, item['printerAreaID'])}}})}),_vm._v(" "),_c('AddNewArea',{staticClass:"add-new-card",on:{"add-area-name":function($event){_vm.addNewArea($event)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}},[_c('div',{staticClass:"title"},[_vm._v("櫃檯出單機")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("出單機名稱")]),_vm._v(" "),_vm._l((_vm.currentPrinter),function(item,index){return _c('Printer',{key:item.index,staticClass:"card-item",attrs:{"printer-name":item['printerName']},on:{"printer-on-click":function($event){_vm.PrinterOnClick($event, item)},"printer-change-name":function($event){_vm.PrinterChangeName($event, item['printerID'], item['ip'])},"printer-delete":function($event){_vm.PrinterDelete($event, item['printerID'])}}})}),_vm._v(" "),_c('AddNewPrinter',{staticClass:"add-new-card",on:{"add-printer-name":function($event){_vm.addNewPrinter($event, _vm.AreaId)}}})],2)]),_vm._v(" "),_c('Col',{attrs:{"span":"9"}},[_c('div',{staticClass:"title"},[_vm._v("和牛區")]),_vm._v(" "),_c('div',{staticClass:"union"},[_c('h4',[_vm._v("基本設定")]),_vm._v(" "),_c('PrinterInfo',{directives:[{name:"show",rawName:"v-show",value:(_vm.PrinterInfoShow),expression:"PrinterInfoShow"}],attrs:{"printer-id":_vm.currentPrinterInfo['printerID'],"printer-name":_vm.currentPrinterInfo['printerName'],"printer-ip":_vm.currentPrinterInfo['ip'],"printer-emulation":_vm.currentPrinterInfo['emulation']},on:{"printer-info-change":function($event){_vm.changePrinterInfo($event)}}})],1)]),_vm._v(" "),_c('Col',{attrs:{"span":"5"}})],1)],1)}
 var printer_Manage_staticRenderFns = []
 var printer_Manage_esExports = { render: printer_Manage_render, staticRenderFns: printer_Manage_staticRenderFns }
 /* harmony default export */ var components_printer_Manage = (printer_Manage_esExports);
@@ -9577,13 +9980,6 @@ new vue_esm["default"]({
 
 /***/ }),
 
-/***/ "uP0R":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "uYxn":
 /***/ (function(module, exports) {
 
@@ -9609,6 +10005,13 @@ if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var update = __webpack_require__("rjj0")("42898d5c", content, true, {});
+
+/***/ }),
+
+/***/ "yjFf":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 

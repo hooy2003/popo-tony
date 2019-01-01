@@ -1,5 +1,5 @@
 <template>
-    <div class="card-class js-card-class-printer"
+    <div class="card-class card-class-b js-card-class-printer"
          >
         <div class="content" @click.self="clickPrinter()">
 
@@ -69,10 +69,9 @@
                 }
             },
             addedName () {
-                //把input值傳給父
-                // this.$emit('card-change-name', this.needSendToParent); 
-                // $(this.$el).find('.ivu-input-wrapper').addClass('hide');
-                // $(this.$el).find('h3').removeClass('hide');
+                this.$emit('printer-change-name', this.needSendToParent); 
+                $(this.$el).find('.ivu-input-wrapper').addClass('hide');
+                $(this.$el).find('h3').removeClass('hide');
             }
         }
     }
