@@ -107,14 +107,12 @@ import ImageUploader from '../ImageUploader.vue';
                 }
             },
             imgSrc () {
-                console.log('imgSrcimgSrcimgSrc', this.cardImage);
                 return 'http://demo.airdesign.com.tw/aPosWeb/upload/' + this.cardImage;
             }
         },
         methods: {
             changeItem () {
                 this.needSendToParent["ComboMealsID"] = this.cardCombomealid;
-                console.log('in cardFood-OBJ', this.needSendToParent);
                 // Send input value to parent
                 this.$emit('item-change', this.needSendToParent); 
             }

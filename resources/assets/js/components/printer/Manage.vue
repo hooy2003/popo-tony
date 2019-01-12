@@ -226,7 +226,7 @@ import AddNewArea from './addNewArea.vue'
                                 "accountID": 0
                               };
             const vm = this;
-            // axios's config 寫法
+            // axios's config writing
             await axios.delete(process.env.API_HOST + `/Printer/Delete`, { data: ClassFile})
             .then(function (response) {
                 vm.getPrinter(vm.AreaId);

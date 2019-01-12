@@ -106,8 +106,8 @@
                                 <div @click="DeleteRecipes($event, item)">
                                     <Icon type="ios-remove-circle-outline" size="20"></Icon>
                                 </div>
-                                <div>{{item['name']}}</div>
-                                <div>{{item['price']}}元</div>
+                                <div>{{item['mealsName']}}</div>
+                                <div>10元</div>
                             </div>
                         </div>                        
                     </div>
@@ -170,7 +170,7 @@ import AddNewMeals from '../utils/addmeals.vue';
         // Handle Async
         currentAClass: function(value) {
             const BdefaultID = this.currentAClass[0]['comboMealsCategoryID'];
-            const BdefaultName = this.currentAClass[0]['price'];
+            const BdefaultName = this.currentAClass[0]['name'];
 
             // Give B blokc a name
             this.currentACardName = BdefaultName;
@@ -218,16 +218,15 @@ import AddNewMeals from '../utils/addmeals.vue';
             this.currentDItemName = BItemName;
             this.currentDItem = BItem;
 
-            const comboMealID = BItem[0];
+            const comboMealID = BItem['comboMealsID'];
             this.getDeteailMeals(comboMealID);
         },
         CItemOnClick: function(CITemName, CItem) {
-            console.log('C Item OnClick', CITemName);
             this.DCardShow = true;            
             this.currentDItemName = CITemName;
             this.currentDItem = CItem;
 
-            const comboMealID = CItem[0];
+            const comboMealID = CItem['comboMealsID'];
             this.getDeteailMeals(comboMealID);
          },
         async getAClass() {
@@ -258,7 +257,6 @@ import AddNewMeals from '../utils/addmeals.vue';
             });
         },
         async getCItem(BCategoryID) {
-            console.log('currentCItem CategoryID', BCategoryID);
             this.currentCItem = await axios.get(process.env.API_HOST + `/ComboMeals/GetByCategoryID/${BCategoryID}`)
             .then(function (response) {
                 return response.data;
@@ -511,7 +509,6 @@ import AddNewMeals from '../utils/addmeals.vue';
             await axios.delete(process.env.API_HOST + `/ComboMeals/Delete`, { data: ClassFile})
             .then(function (response) {
                 vm.getBItem(vm.currentACardID);
-                return;
             })
             .catch(function (error) {
                 console.log(error);
@@ -527,10 +524,9 @@ import AddNewMeals from '../utils/addmeals.vue';
         },
         async deleteCItemCard(ClassFile) {
             const vm = this;
-            await axios.post(process.env.API_HOST + `/ComboMeals/Delete`, { data: ClassFile})
+            await axios.delete(process.env.API_HOST + `/ComboMeals/Delete`, { data: ClassFile})
             .then(function (response) {
                 vm.getCItem(vm.currentBCardID);
-                return;
             })
             .catch(function (error) {
                 console.log(error);
@@ -539,10 +535,7 @@ import AddNewMeals from '../utils/addmeals.vue';
         async getDeteailMeals(comboMealID) {
             this.deteailMeals = await axios.get(process.env.API_HOST + `/MealsComboMealsMap/GetByComboMealsID/${comboMealID}`)
             .then(function (response) {
-                const arrayList = response.data.map(item => Object.values(item));
-
-                console.log('MealsComboMealsMap/GetByComboMealsID/', arrayList);
-                return arrayList;
+                return response.data;
             })
             .catch(function (error) {
                 console.log(error);
@@ -550,16 +543,14 @@ import AddNewMeals from '../utils/addmeals.vue';
         },
         AddNewRecipes($event, ComboMealsID) {
             const ClassFile = [{
-                "MealsID": $event[0],
+                "MealsID": $event['mealsID'],
                 "ComboMealsID": ComboMealsID,
                 "AccountID": 0
             },];
-            console.log('ClassFile', ClassFile);
 
             const vm = this;
             axios.post(process.env.API_HOST + `/MealsComboMealsMap/Create`, ClassFile)
             .then(function (response) {
-                console.log('AddNewRecipes', response)
                 vm.getDeteailMeals( ComboMealsID );
             })
             .catch(function (error) {
@@ -567,28 +558,19 @@ import AddNewMeals from '../utils/addmeals.vue';
             });
         },
         DeleteRecipes($event, item) {
-            console.log('刪除餐點------', item);
-            // 'item' is-------
-            // "MealsComboMealsMapID": 46,
-            // "MealsID": 20,
-            // "MealsName": "test1_1",
-            // "ComboMealsID": 18,
-            // "ComboMealsName": "主廚一號裡面的餐點A"
-
             const ClassFile = [
                 {
-                    "MealsComboMealsMapID": item[0],
-                    "MealsID": item[1],
-                    "ComboMealsID": item[3],
+                    "MealsComboMealsMapID": item['mealsComboMealsMapID'],
+                    "MealsID": item['mealsID'],
+                    "ComboMealsID": item['comboMealsID'],
                     "AccountID": 0
                 }
             ];
             const vm = this;
-            axios.post(process.env.API_HOST + `/MealsComboMealsMap/Delete`, ClassFile)
+            axios.delete(process.env.API_HOST + `/MealsComboMealsMap/Delete`, { data: ClassFile})
             .then(function (response) {
-                console.log('DeleteRecipes', response)
-                console.log(item[3]);
-                vm.getDeteailMeals( item[3] );
+                const id = item['comboMealsID'];
+                vm.getDeteailMeals( id );
             })
             .catch(function (error) {
                 console.log('error', error);

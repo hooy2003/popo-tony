@@ -44,13 +44,13 @@ import { mapGetters } from 'vuex'
     },
     methods: {
       check(e) {
-        // checkInput will return [type, isError, errorMsg]
+        // CheckInput will return [type, isError, errorMsg]
         let errorStaus = checkInput(e.target, e.target.value),
             type       = errorStaus[0],
             isError    = errorStaus[1],
             errorMsg   = errorStaus[2];
 
-        // 把'是否有錯誤'當作開關
+        // Put 'Has error' as a switch
         this.inputHasError  = isError;
 
         if (type == 'email') {
@@ -60,7 +60,7 @@ import { mapGetters } from 'vuex'
       searchPassword() {
         this.errors = [];
 
-        // 如果任一input有錯誤
+        // If any Input wrong
         if(this.inputHasError) {
           return;
         }
@@ -71,7 +71,7 @@ import { mapGetters } from 'vuex'
         }
         else {
           // ** 
-          // * 後端API串接
+          // * API concatenation
           // *
           alert('新密碼已經寄到您的信箱中了');
         }

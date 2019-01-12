@@ -78,7 +78,7 @@ import { mapGetters } from 'vuex'
             isError    = errorStaus[1],
             errorMsg   = errorStaus[2];
 
-        // 把'是否有錯誤'當作開關
+        // Put 'Has error' as a switch
         this.inputHasError  = isError;
 
         if (type == 'email') {
@@ -115,19 +115,8 @@ import { mapGetters } from 'vuex'
         if (!this.errors.length) {
           alert('註冊成功');
           // ** 
-          // * 後端API串接
-          // * 如果有其他錯誤訊息，可以由我這邊開一個位置，把store 裡的 state叫出來用
-          // * 讓前端控制錯誤訊息
+          // * API concatenation
           // *
-          // axios.get(apiUrl)
-          // .then(res => res.json())
-          // .then(res => {
-          //   if (res.error) {
-          //     this.errors.push(res.error);
-          //   } else {
-          //     alert('ok!');
-          //   }
-          // });
         }
         else {
           alert('註冊失敗');

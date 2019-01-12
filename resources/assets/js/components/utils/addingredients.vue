@@ -101,9 +101,9 @@
         },
         methods: {
             AClassOnClick: function(AClassName, ACategoryID) {
-                // 給B區塊標題名字
+                // Give B blokc a name
                 this.currentAClassName = AClassName;
-                // 清空C區塊
+                // Clean C block
                 this.CItem = '';
                 this.getBClass(ACategoryID);
                 this.getBItem(ACategoryID);
@@ -166,7 +166,6 @@
                 });
             },
             async getCItem(BCategoryID) {
-                console.log('CItem CategoryID', BCategoryID);
                 this.CItem = await axios.get(process.env.API_HOST + `/Ingredients/GetByCategoryID/${BCategoryID}`)
                 .then(function (response) {
                     const nameList = response.data.map(item => Object.values(item));

@@ -108,7 +108,6 @@ import ImageUploader from '../ImageUploader.vue';
                 }
             },
             imgSrc () {
-                console.log('imgSrcimgSrcimgSrc', this.cardImage);
                 return 'http://demo.airdesign.com.tw/aPosWeb/upload/' + this.cardImage;
             }
         },

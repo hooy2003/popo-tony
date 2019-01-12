@@ -52,10 +52,10 @@
         if( this.userName == '' && this.passWord == '' ) {
           let vm = this;
           
-          // API token 設計
+          // API token Design
           // https://forum.vuejs.org/t/axios-token/33528
           // https://juejin.im/post/5bab739af265da0aa3593177
-          // 先用FormData
+          // First with FormData
 
           let params = new FormData();
               params.append("client_id", "AirdesignPOS");
@@ -66,10 +66,9 @@
 
           axios.post(process.env.TOKEN_HOST + `/token`, params)
           .then(function (response) {
-              console.log(response);
-              console.log('登入成功');             
 
-              // axios promise 等回傳來的東西用vuex action來非同步處理
+              // axios promise 
+              // Waiting for the return's item, handle async by vuex action
               localStorage.setItem('token', JSON.stringify(response.data.access_token));
 
               vm.$store.commit({
@@ -80,18 +79,13 @@
               vm.$router.push('/');
           })
           .catch(function (error) {
-              // 重登 或轉 404
+              // relogin or redirection to 404
               alert('登入失敗');
               console.log(error);
           });
         } else {
           alert('登入失敗');
         }
-        // ** 
-        // * 後端API串接
-        // * 如果有其他錯誤訊息，可以由我這邊開一個位置，把store 裡的 state叫出來用
-        // * 讓前端控制錯誤訊息
-        // *
       }
     }
   }

@@ -53,7 +53,7 @@ import { mapGetters } from 'vuex'
       logout(){
         localStorage.removeItem('token');
         this.$router.push('/login');
-        //清空state裡面的值
+        // Clean state's value
         this.$store.commit({
           type: 'clearUserData'
         });

@@ -98,7 +98,6 @@ import ImageUploader from '../ImageUploader.vue';
         methods: {
             changeItem () {
                 this.needSendToParent["ID"] = this.cardId;
-                console.log('in cardFood-OBJ', this.needSendToParent);
                 // Send input value to parent
                 this.$emit('item-change', this.needSendToParent); 
             }

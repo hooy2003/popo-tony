@@ -21,7 +21,6 @@ import { mapGetters } from 'vuex'
         'User'
       ]),
       isLogin () {
-        // 把return islogin 拆出去，方便call
         return this.User.isLogin;
       }
     },
@@ -29,7 +28,7 @@ import { mapGetters } from 'vuex'
       logout(){
         localStorage.removeItem('token');
         this.$router.push('/login');
-        //清空state裡面的值
+        // Clean state value
         this.$store.commit({
           type: 'clearUserData'
         });

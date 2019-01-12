@@ -16,10 +16,10 @@
                         :key='item.index'
                         class="li-class-a"
                         :class="{ active: index === 0 }"
-                        @click="AClassOnClick(item[1], item[0])"
+                        @click="AClassOnClick(item['name'], item['mealsCategoryID'])"
                     >
                     <Icon type="ios-folder-open-outline" size="20"></Icon>
-                    {{item[1]}}
+                    {{item['name']}}
                     </li>
                 </ul>
             </Col>
@@ -29,10 +29,10 @@
                     <li v-for="(item, index) in BClass"
                         :key='item.index'
                         class="li-class-b"
-                        @click="BClassOnClick($event, item[1], item[0])"
+                        @click="BClassOnClick($event, item['name'], item['mealsCategoryID'])"
                     >
                     <Icon type="ios-folder-open-outline" size="20"></Icon>
-                    {{item[1]}}
+                    {{item['name']}}
                     </li>
                 </ul>
                 <ul class="mapclass">
@@ -42,7 +42,7 @@
                         @click="BItemOnClick($event, item)"
                     >
                     <Icon type="ios-document" size="20"></Icon>
-                    {{item[1]}}
+                    {{item['name']}}
                     <Icon type="ios-checkmark" size="20" class="active-icon"></Icon>
                     </li>
                 </ul>
@@ -56,7 +56,7 @@
                         @click="CItemOnClick($event, item)"
                     >
                     <Icon type="ios-document" size="20"></Icon>
-                    {{item[1]}}
+                    {{item['name']}}
                     <Icon type="ios-checkmark" size="20" class="active-icon"></Icon>
                     </li>
                 </ul>
@@ -92,8 +92,8 @@
         },
         watch: {
             AClass: function(value) {
-                const BdefaultID = this.AClass[0][0];
-                const BdefaultName = this.AClass[0][1];
+                const BdefaultID = this.AClass[0]['mealsCategoryID'];
+                const BdefaultName = this.AClass[0]['name'];
                 this.currentAClassName = BdefaultName;
                 this.getBClass(BdefaultID);
                 this.getBItem(BdefaultID);
@@ -101,9 +101,8 @@
         },
         methods: {
             AClassOnClick: function(AClassName, ACategoryID) {
-                // 給B區塊標題名字
                 this.currentAClassName = AClassName;
-                // 清空C區塊
+
                 this.CItem = '';
                 this.getBClass(ACategoryID);
                 this.getBItem(ACategoryID);
@@ -138,8 +137,7 @@
             async getAClass() {
                 this.AClass = await axios.get(process.env.API_HOST + `/MealsCategory/Get`)
                 .then(function (response) {
-                    const nameList = response.data.map(item => Object.values(item));
-                    return nameList;
+                    return response.data;
                 })
                 .catch(function (error) {
                     console.log(error);
@@ -148,8 +146,7 @@
             async getBClass(ACategoryID) {
                 this.BClass = await axios.get(process.env.API_HOST + `/MealsCategory/GetByCategoryID/${ACategoryID}`)
                 .then(function (response) {
-                    const nameList = response.data.map(item => Object.values(item));
-                    return nameList;
+                    return response.data;
                 })
                 .catch(function (error) {
                     console.log(error);
@@ -158,19 +155,16 @@
             async getBItem(ACategoryID) {
                 this.BItem = await axios.get(process.env.API_HOST + `/Meals/GetByCategoryID/${ACategoryID}`)
                 .then(function (response) {
-                    const nameList = response.data.map(item => Object.values(item));
-                    return nameList;
+                    return response.data;
                 })
                 .catch(function (error) {
                     console.log(error);
                 });
             },
             async getCItem(BCategoryID) {
-                console.log('CItem CategoryID', BCategoryID);
                 this.CItem = await axios.get(process.env.API_HOST + `/Meals/GetByCategoryID/${BCategoryID}`)
                 .then(function (response) {
-                    const nameList = response.data.map(item => Object.values(item));
-                    return nameList;
+                    return response.data;
                 })
                 .catch(function (error) {
                     console.log(error);

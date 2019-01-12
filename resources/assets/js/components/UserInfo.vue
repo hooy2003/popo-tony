@@ -79,13 +79,13 @@ import { mapGetters } from 'vuex'
     },
     methods: {
       check(e) {
-        // checkInput will return [type, isError, errorMsg]
+        // CheckInput will return [type, isError, errorMsg]
         let errorStaus = checkInput(e.target, e.target.value),
             type       = errorStaus[0],
             isError    = errorStaus[1],
             errorMsg   = errorStaus[2];
 
-        // 把'是否有錯誤'當作開關
+        //  Put 'Has error' as a switch
         this.inputHasError  = isError;
 
         if (type == 'email') {
@@ -105,7 +105,7 @@ import { mapGetters } from 'vuex'
         let AllData = { email: this.email.value,
                         name:  this.name.value,
                         phone: this.phone.value};
-        // 如果任一input有錯誤
+        // If any Input wrong
         if(this.inputHasError) {
           alert('資料有誤');
           return;
@@ -118,18 +118,8 @@ import { mapGetters } from 'vuex'
           localStorage.setItem('token', JSON.stringify(AllData));
         }
         // ** 
-        // * 後端API串接
-        // *
-        // axios.get(apiUrl)
-        // .then(res => res.json())
-        // .then(res => {
-        //   if (res.error) {
-        //     this.errors.push(res.error);
-        //   } else {
-        // this.$store.commit 全部的東西進去
-        //     alert('ok!');
-        //   }
-        // });        
+        // * API concatenation
+        // *    
       },
     }
   }
