@@ -52,7 +52,7 @@ import ImageUploader from '../ImageUploader.vue';
             changeItem () {
                 this.needSendToParent["RecipesID"] = this.cardRecipesid;
                 console.log('in cardRecipes-OBJ', this.needSendToParent);
-                //把input值傳給父
+                // Send input value to parent
                 this.$emit('item-change', this.needSendToParent); 
             }
         }

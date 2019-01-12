@@ -12,15 +12,15 @@ module.exports = {
     assetsPublicPath: '/',
     env: require('./dev.env'),
     proxyTable: {
-      '/api': {                                             // 自訂 local 端的位置
-        target: 'http://demo.airdesign.com.tw/POSAPICore/api',  // 遠端 URL Domain
+      '/api': {                                                 // Custom local position
+        target: 'http://demo.airdesign.com.tw/POSAPICore/api',  // Remote URL Domain
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
         }
       },
       '/connect': {
-        target: 'https://is.airdesign.com.tw/connect/',  // 遠端 URL Domain
+        target: 'https://is.airdesign.com.tw/connect/',        // Remote URL Domain
         changeOrigin: true,
         pathRewrite: {
           '^/connect': ''

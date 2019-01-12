@@ -14,9 +14,13 @@
             <router-link to="/storeinfo" tag="li">店家資訊</router-link>
             <router-link to="/home" tag="li" class="disabled">結帳管理</router-link>
             <router-link to="/home" tag="li" class="disabled">客戶資訊</router-link>
-            <router-link to="/home" tag="li" class="disabled">系統設定</router-link>
-            <router-link to="/home" tag="li" class="disabled">帳號與權限</router-link>
-            <li @click="logout" >登出</li>
+            <div class="more-btn">帳號系統
+              <ul>
+                <router-link to="/home" tag="li" class="disabled">系統設定</router-link>
+                <router-link to="/home" tag="li" class="disabled">帳號與權限</router-link>
+                <li @click="logout" >登出</li>
+              </ul>
+            </div>
         </ul>
         <router-link to="/home" class="info">
             <p>{{userName}} 您好<br /><span>{{nowTime}}</span></p>

@@ -69,7 +69,7 @@
                 }
             },
             addedName () {
-                //把input值傳給父
+                // Send input value to parent
                 this.$emit('card-change-name', this.needSendToParent); 
                 $(this.$el).find('.ivu-input-wrapper').addClass('hide');
                 $(this.$el).find('h3').removeClass('hide');

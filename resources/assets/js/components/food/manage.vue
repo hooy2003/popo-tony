@@ -7,11 +7,11 @@
                 <div class="union">
                     <CardA v-for="(item, index) in currentAClass"
                            :key='item.index'
-                           :card-name="item[1]"
+                           :card-name="item['name']"
                            :class="{ active: index === 0 }"
-                           @card-change-name="changeAName($event, item[0])"
-                           @card-on-click="AClassOnClick($event, item[0])"
-                           @card-delete="deleteAClass($event, item[0])"
+                           @card-change-name="changeAName($event, item['id'])"
+                           @card-on-click="AClassOnClick($event, item['id'])"
+                           @card-delete="deleteAClass($event, item['id'])"
                     >
                     </CardA>
                     <AddNewCard  @add-card-name="addNewAClass($event, currentACardID)"
@@ -26,12 +26,12 @@
                     <h4>類別</h4>
                     <CardB v-for="(item, index) in currentBClass"
                            :key='item.index'
-                           :card-name="item[1]"
+                           :card-name="item['name']"
                            :is-class="true"
                            :class="{ lastcard: index === (currentBClass.length-1) && index > 1 }"
-                           @card-change-name="changeBName($event, item[0])"
-                           @card-on-click="BClassOnClick($event, item[0])"
-                           @card-delete="deleteBClass($event, item[0])"
+                           @card-change-name="changeBName($event, iitem['id'])"
+                           @card-on-click="BClassOnClick($event, item['id'])"
+                           @card-delete="deleteBClass($event, item['id'])"
                            class="B-class"
                     >
                     </CardB>
@@ -46,7 +46,7 @@
                     <h4>項目</h4>
                     <CardB v-for="(item, index) in currentBItem"
                            :key='item.index'
-                           :card-name="item[1]" 
+                           :card-name="item['name']" 
                            :class="{ lastcard: index === (currentBItem.length-1) && index > 1 }"
                            @card-change-name="changeBItemName($event, item)"
                            @card-on-click="BItemOnClick($event, item)"
@@ -66,7 +66,7 @@
                     <h4>項目</h4>                    
                     <CardC v-for="(item, index) in currentCItem"
                            :key='item.index'
-                           :card-name="item[1]"
+                           :card-name="item['name']"
                            :class="{ lastcard: index === (currentCItem.length-1) && index > 1 }"
                            @card-change-name="changeCItemName($event, item)"
                            @card-on-click="CItemOnClick($event, item)"
@@ -86,10 +86,10 @@
                 <div class="union">
                     <CardFood
                         v-show="DCardShow"
-                        :card-id="currentDItem[0]"
-                        :card-name="currentDItem[1]"
-                        :card-unit="currentDItem[2]"
-                        :card-price="currentDItem[3]"
+                        :card-id="currentDItem['id']"
+                        :card-name="currentDItem['name']"
+                        :card-unit="currentDItem['unit']"
+                        :card-price="currentDItem['price']"
                         @item-change="changeDItem($event)"
                     ></CardFood>                                 
                 </div>
@@ -142,29 +142,21 @@ import AddNewCard from '../utils/addcard.vue';
       ...mapGetters([
         'User',
         'isLoading',
-        'foodAClass',
-        'foodBClass',
-        'foodBItem',
-        'foodCItem',
-        'rules'
-      ]),
-      isLoadingIN: function() {
-        return this.isLoading;
-      }
+      ])
     },
     watch: {
-        // 處理非同步
+        // Handle Async
         currentAClass: function(value) {
-            const BdefaultID = this.currentAClass[0][0];
-            const BdefaultName = this.currentAClass[0][1];
+            const BdefaultID = this.currentAClass[0]['id'];
+            const BdefaultName = this.currentAClass[0]['name'];
 
-            // // 給B區塊標題名字
+            // Give B blokc a name
             this.currentACardName = BdefaultName;
             this.currentACardID = BdefaultID;
             this.getBClass(BdefaultID);
             this.getBItem(BdefaultID);
         },
-        isLoadingIN (value) {
+        isLoading (value) {
             if (value) {
                 this.$Message.loading({
                     content: 'Loading...',
@@ -173,19 +165,17 @@ import AddNewCard from '../utils/addcard.vue';
             }
         }
     },
-    // 改进vue的初始化数据调用时机 --
+    // Improve initialization data call timing 
     // https://www.jianshu.com/p/2048f1a66c33
     methods: {        
         AClassOnClick: function(ACardName, ACategoryID) {
-            console.log('點了A區哪張卡', ACardName);
-            console.log('點了A區哪張卡', ACategoryID);
-            // ID從卡傳來了        
             this.DCardShow = false;
-            // 給B區塊標題名字
+            // Give B blokc a name
             this.currentACardName = ACardName;
             this.currentACardID   = ACategoryID;
-            // 清空C區塊
+            // Clean C block
             this.currentCItem = '';
+            this.currentDItemName = '尚無項目';
 
             this.getBClass(ACategoryID);
             this.getBItem(ACategoryID);
@@ -193,15 +183,13 @@ import AddNewCard from '../utils/addcard.vue';
         BClassOnClick: function(BCardName, BCategoryID) {
             this.CCardShow = true;
             this.DCardShow = false;
-            // 給C區塊名字
+            // Give C blokc a name
             this.currentBCardName = BCardName;
             this.currentBCardID = BCategoryID;
             this.getCItem(BCategoryID);
         },
 
         BItemOnClick: function(BItemName, BItem) {
-            // 這個直接寫在抓來的ITEM裡面了
-            console.log(BItem);
             this.CCardShow = false;
             this.DCardShow = true;
             this.currentBCardName = '尚無項目';
@@ -209,17 +197,15 @@ import AddNewCard from '../utils/addcard.vue';
             this.currentDItem = BItem;
         },
         CItemOnClick: function(CITemName, CItem) {
-            console.log('C Item OnClick', CITemName);
             this.DCardShow = true;            
             this.currentDItemName = CITemName;
             this.currentDItem = CItem;
-            console.log('當CITEM被點了',this.currentDItem);
          },
         async getAClass() {
             this.currentAClass = await axios.get(process.env.API_HOST + `/IngredientsCategory/Get`)
             .then(function (response) {
-                const nameList = response.data.map(item => Object.values(item));
-                return nameList;
+                console.log('response', response.data);
+                return response.data;
             })
             .catch(function (error) {
                 console.log(error);
@@ -228,8 +214,7 @@ import AddNewCard from '../utils/addcard.vue';
         async getBClass(ACategoryID) {
             this.currentBClass = await axios.get(process.env.API_HOST + `/IngredientsCategory/GetByCategoryID/${ACategoryID}`)
             .then(function (response) {
-                const nameList = response.data.map(item => Object.values(item));
-                return nameList;
+                return response.data;
             })
             .catch(function (error) {
                 console.log(error);
@@ -238,41 +223,20 @@ import AddNewCard from '../utils/addcard.vue';
         async getBItem(ACategoryID) {
             this.currentBItem = await axios.get(process.env.API_HOST + `/Ingredients/GetByCategoryID/${ACategoryID}`)
             .then(function (response) {
-                const nameList = response.data.map(item => Object.values(item));
-                return nameList;
+                return response.data;
             })
             .catch(function (error) {
                 console.log(error);
             });
         },
         async getCItem(BCategoryID) {
-            console.log('currentCItem CategoryID', BCategoryID);
-            // "ID": 4,
-            // "Name": "南澳小黃瓜",
-            // "Unit": "公克",
-            // "Price": 40,
-            // "IngredientsCategoryID": 10,
-            // "IngredientsCategoryName": "五穀根莖類"
             this.currentCItem = await axios.get(process.env.API_HOST + `/Ingredients/GetByCategoryID/${BCategoryID}`)
             .then(function (response) {
-                const nameList = response.data.map(item => Object.values(item));
-                return nameList;
+                return response.data;
             })
             .catch(function (error) {
                 console.log(error);
             });
-        },
-        async getDItem(ItemID) {
-            // 廢氣中---------------
-            this.currentDItem = await axios.get(process.env.API_HOST + `/Ingredients/GetByCategoryID/${ItemID}`)
-            .then(function (response) {
-                const nameList = response.data.map(item => Object.values(item));
-                return nameList;
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-            // 廢氣中---------------
         },
         addNewAClass ($event) {
             const ClassFile = {
@@ -291,7 +255,7 @@ import AddNewCard from '../utils/addcard.vue';
                 return true;
             })
             .catch(function (error) {
-                console.log('error', error);
+                console.log(error);
             });
         },
         addNewBClass($event, ACategoryID) {
@@ -301,7 +265,6 @@ import AddNewCard from '../utils/addcard.vue';
                                 "AccountID": 0,
                                 "IsFirst": false
                               };
-            console.log('ClassFile', ClassFile);
             this.addNewBClassCard(ClassFile);
         }, 
         async addNewBClassCard (ClassFile) {
@@ -309,7 +272,6 @@ import AddNewCard from '../utils/addcard.vue';
             const vm = this;
             await axios.post(process.env.API_HOST + `/IngredientsCategory/Create`, ClassFile)
             .then(function (response) {
-                console.log('addNewBClassCard', response); 
                 vm.getBClass(vm.currentACardID);
                 return true;
             })
@@ -399,13 +361,14 @@ import AddNewCard from '../utils/addcard.vue';
         },   
         changeBItemName(newName, BITem) {
             const ClassFile = {
-                                "ID": BITem[0],
+                                "ID": BITem['id'],
                                 "Name": newName,
-                                "Unit": BITem[2],
-                                "Price": BITem[3],
+                                "Unit": BITem['unit'],
+                                "Price": BITem['price'],
                                 "AccountID": 0
                                };
             this.changeBItemCardName(ClassFile);
+            console.log('changeBItemName', ClassFile);
         },
         async changeBItemCardName(ClassFile) {
             const vm = this;
@@ -440,8 +403,6 @@ import AddNewCard from '../utils/addcard.vue';
             });
         },
         changeDItem(obj) {
-            console.log('DITem--------*******', obj);
-            console.log('DITem--------*******', this.currentDItem[0]);
             this.changeDItemInfo(obj);
         },
         async changeDItemInfo(obj) {
@@ -480,8 +441,6 @@ import AddNewCard from '../utils/addcard.vue';
             const vm = this;
             await axios.post(process.env.API_HOST + `/IngredientsCategory/Delete`, { "ID":BCategoryID })
             .then(function (response) {
-                console.log(response);
-                console.log('delete success');
                 vm.getBClass(vm.currentACardID);
                 return;
             })

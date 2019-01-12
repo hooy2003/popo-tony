@@ -16,7 +16,7 @@
                     >
                     </Area>
                     <AddNewArea  class="add-new-card"
-                                  @add-area-name="addNewArea($event)"
+                                 @add-area-name="addNewArea($event)"
                     >
                     </AddNewArea>
                 </div>
@@ -95,16 +95,13 @@ import AddNewArea from './addNewArea.vue'
       ...mapGetters([
           'isLoading'
       ]),
-      isLoadingIN: function() {
-        return this.isLoading;
-      }
     },
     watch: {
         currentArea: function(value) {
             const PrinterAreaID = this.currentArea[0]['printerAreaID'];
             this.getPrinter(PrinterAreaID); 
         },
-        isLoadingIN (value) {
+        isLoading (value) {
             if (value) {
                 this.$Message.loading({
                     content: 'Loading...',
@@ -169,7 +166,7 @@ import AddNewArea from './addNewArea.vue'
                                 "accountID": 0
                               };
             const vm = this;
-            // axios's config 寫法
+            // axios's config writing
             await axios.delete(process.env.API_HOST + `/PrinterArea/Delete`, { data: ClassFile})
             .then(function (response) {
                 vm.getPrinterArea();
@@ -214,7 +211,6 @@ import AddNewArea from './addNewArea.vue'
                                 "accountID": 0
                               };
             const vm = this;
-            console.log('PrinterChangeName', ClassFile);
             await axios.put(process.env.API_HOST + `/Printer/Update`, ClassFile)
             .then(function (response) {
                 vm.getPrinter(vm.AreaId);

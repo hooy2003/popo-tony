@@ -82,7 +82,7 @@ import { mapGetters } from 'vuex';
         methods: {
             changeInfo () {
                 this.needSendToParent["printerID"] = this.printerId;
-                //把input值傳給父
+                // Send input value to parent
                 this.$emit('printer-info-change', this.needSendToParent); 
             }
         }

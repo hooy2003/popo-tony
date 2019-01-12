@@ -23,34 +23,13 @@ const state = {
     },
     isLoading: false,
     isLoadingTimer: null,
-    billing: [
-        "櫃檯出單機",
-        "廚房出單機"
-    ],
-    rules1: [
-        "結帳相關規則"
-    ],
-    rules2: [
-        "客戶聯規則1",
-        "客戶聯規則2"
-    ],
-    rules3: [
-        "麵食區",
-        "飲料區",
-        "A區",
-        "B區"
-    ],
 };
 
 
 const getters = {
     User: state => state.User,    
     errorState: state => state.errorState,
-    isLoading: state => state.isLoading,
-    billing: state => state.billing,
-    rules1: state => state.rules1,
-    rules2: state => state.rules2,
-    rules3: state => state.rules3
+    isLoading: state => state.isLoading
 };
 
 const actions = {
